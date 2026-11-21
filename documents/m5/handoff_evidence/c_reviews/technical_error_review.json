@@ -1,0 +1,519 @@
+{
+  "schema_version": "m5_support_review.v1",
+  "request_id": "008c81ce43654bcfbde99c88c4cdb7d0",
+  "created_at_utc": "2026-11-21T04:53:32.485184+00:00",
+  "decision": "ERROR",
+  "method": "llm_judge",
+  "human_review": "not_performed",
+  "review_required": true,
+  "publication_ready": false,
+  "local_validation": "pass",
+  "checks": {
+    "support": "unchecked",
+    "answer_scope": "unchecked"
+  },
+  "judge": {
+    "requested_model": "deepseek-flash",
+    "returned_model": "deepseek-flash",
+    "prompt_version": "m5-support-en-v0.10",
+    "temperature": 0,
+    "max_output_tokens": 2400,
+    "calls": 1,
+    "input_tokens": 2798,
+    "output_tokens": 380,
+    "latency_ms": 2339.93,
+    "cost_usd": null
+  },
+  "limitations": [
+    "Automatic reviews can be wrong and do not replace human gold evaluation.",
+    "Separate calls to the same model are not independent reliable adjudication.",
+    "Official offline token counts are enforced locally; provider parity remains unverified."
+  ],
+  "error": {
+    "code": "INVALID_JUDGE_OUTPUT",
+    "message": "Invalid overall review fields."
+  },
+  "input_snapshot": {
+    "schema_version": "answer_response.v1",
+    "implementation_version": "m5-token-budget-v0.5",
+    "output_language": "en",
+    "request_id": "008c81ce43654bcfbde99c88c4cdb7d0",
+    "created_at_utc": "2026-11-21T04:34:28.474036+00:00",
+    "status": "ANSWERED",
+    "claims": [
+      {
+        "text": "The event that sparked the IAU's 2006 vote was the discovery of a distant celestial body that would come to be called Eris.",
+        "source_ids": [
+          "S1"
+        ],
+        "evidence_quotes": [
+          {
+            "source_id": "S1",
+            "quote": "The event that sparked the IAU’s 2006 vote was the discovery of a distant celestial body that would come to be called Eris."
+          }
+        ],
+        "claim_id": "C1",
+        "located_quotes": [
+          {
+            "source_id": "S1",
+            "chunk_id": "951ab6dba6e88adeddb4ba162b847682387a1a88e4d5a28c4da41aa7e7935eeb",
+            "quote": "The event that sparked the IAU’s 2006 vote was the discovery of a distant celestial body that would come to be called Eris.",
+            "char_start": 980,
+            "char_end": 1103
+          }
+        ]
+      },
+      {
+        "text": "Eris was located in the Kuiper Belt, beyond Neptune, where Pluto also resides.",
+        "source_ids": [
+          "S1"
+        ],
+        "evidence_quotes": [
+          {
+            "source_id": "S1",
+            "quote": "Eris was out in the Kuiper Belt, beyond Neptune – where Pluto also resides."
+          }
+        ],
+        "claim_id": "C2",
+        "located_quotes": [
+          {
+            "source_id": "S1",
+            "chunk_id": "951ab6dba6e88adeddb4ba162b847682387a1a88e4d5a28c4da41aa7e7935eeb",
+            "quote": "Eris was out in the Kuiper Belt, beyond Neptune – where Pluto also resides.",
+            "char_start": 1104,
+            "char_end": 1179
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "source_id": "S1",
+        "rank": 1,
+        "chunk_id": "951ab6dba6e88adeddb4ba162b847682387a1a88e4d5a28c4da41aa7e7935eeb",
+        "document_id": "science/2026/aug/31/forbidden-planet-was-plutos-2006-demotion-a-big-mistake",
+        "chunk_index": 1,
+        "text": "Forbidden planet: was Pluto’s 2006 demotion a big mistake?\n\n“My being involved with advocating for Pluto started on the day of the vote,” says writer, actor and amateur astronomer Laurel Kornfeld. “I was like: wait a minute, this is wrong.” When we meet on Zoom she is wearing a T-shirt that says: “Pluto Resistance, 20 years: 2006-2026.” The campaign to reinstate Pluto – with its passionate advocates, ongoing debates, occasional protests and petitions – seems to be largely confined to the US. “It is more of an issue in the United States,” says Metzger. “This was the one we discovered.” So, the planet’s demotion was a source of wounded pride? “I’ll admit there was some of that – among the public, not the scientists.” More recently, the campaign has taken on a populist tinge, with Trump’s Nasa administrator, Jared Isaacman, telling a congressional committee in April that he was in favour of a rethink. “I am very much in the camp of Make Pluto a Planet Again,” he said. The event that sparked the IAU’s 2006 vote was the discovery of a distant celestial body that would come to be called Eris. Eris was out in the Kuiper Belt, beyond Neptune – where Pluto also resides.",
+        "text_sha256": "50029f28629a35f9c000e0fe2c32980107d931d47feed34711534327ac15f1d8",
+        "citation": {
+          "url": "https://www.theguardian.com/science/2026/aug/31/forbidden-planet-was-plutos-2006-demotion-a-big-mistake",
+          "title": "Forbidden planet: was Pluto’s 2006 demotion a big mistake?",
+          "published_at_utc": "2026-08-31T04:00:16Z",
+          "source_name": "The Guardian",
+          "source_domain": "theguardian.com"
+        },
+        "url": "https://www.theguardian.com/science/2026/aug/31/forbidden-planet-was-plutos-2006-demotion-a-big-mistake",
+        "title": "Forbidden planet: was Pluto’s 2006 demotion a big mistake?",
+        "published_at_utc": "2026-08-31T04:00:16Z"
+      }
+    ],
+    "answer": "The event that sparked the IAU's 2006 vote was the discovery of a distant celestial body that would come to be called Eris. [S1]\nEris was located in the Kuiper Belt, beyond Neptune, where Pluto also resides. [S1]",
+    "missing_information": [],
+    "review_required": true,
+    "publication_ready": false,
+    "validation": {
+      "input": "pass",
+      "schema": "pass",
+      "citation_ids": "pass",
+      "quote_match": "pass",
+      "support": "unchecked",
+      "answerability": "unchecked"
+    },
+    "generation": {
+      "model": "deepseek-flash",
+      "prompt_version": "m5-generation-en-v0.7.2",
+      "calls": [
+        {
+          "attempt": 1,
+          "input_tokens": 2242,
+          "output_tokens": 165,
+          "returned_model": "deepseek-flash",
+          "latency_ms": 1788.0,
+          "error_code": null,
+          "token_budget": {
+            "profile_version": "m5-token-budget-v0.5",
+            "method": "official_offline_tokenizer",
+            "check_status": "PASS",
+            "requested_model": "deepseek-flash",
+            "tokenizer_version": "0.22.2",
+            "tokenizer_sha256": "89085f12ef79460ac5f66d1119325ddfc694b4ab209d80bbd81d35f081dc9614",
+            "template_sha256": "841f8cf146e3f0ad1082594a31f68ecf7608c20467ef355081333d85bbaeb1cb",
+            "template_scope": "official_sample_system_user_add_generation_prompt",
+            "source_url": "https://api-docs.deepseek.com/quick_start/token_usage",
+            "includes": [
+              "system_prompt",
+              "serialized_user_content",
+              "sample_chat_markers"
+            ],
+            "input_tokens_local": 2218,
+            "output_tokens_reserved": 1600,
+            "safety_margin_tokens": 512,
+            "application_total_token_limit": 8192,
+            "total_tokens_reserved": 4330,
+            "headroom_tokens": 3862,
+            "provider_tokenizer_parity_verified": false,
+            "api_usage_is_authoritative": true,
+            "payload_sha256": "20c1bfa4359f4aca5380d4a67046acdfe204bb63382e44dd1bac5f0ca02f6e08",
+            "provider_input_tokens": 2242,
+            "provider_minus_local_tokens": 24,
+            "observation": "single_response_comparison_not_parity_verification"
+          }
+        }
+      ],
+      "max_calls": 1,
+      "input_tokens": 2242,
+      "output_tokens": 165,
+      "token_usage_complete": true,
+      "latency_ms": 1788.0,
+      "cost_usd": null
+    },
+    "evidence": [
+      {
+        "source_id": "S1",
+        "rank": 1,
+        "chunk_id": "951ab6dba6e88adeddb4ba162b847682387a1a88e4d5a28c4da41aa7e7935eeb",
+        "document_id": "science/2026/aug/31/forbidden-planet-was-plutos-2006-demotion-a-big-mistake",
+        "chunk_index": 1,
+        "text": "Forbidden planet: was Pluto’s 2006 demotion a big mistake?\n\n“My being involved with advocating for Pluto started on the day of the vote,” says writer, actor and amateur astronomer Laurel Kornfeld. “I was like: wait a minute, this is wrong.” When we meet on Zoom she is wearing a T-shirt that says: “Pluto Resistance, 20 years: 2006-2026.” The campaign to reinstate Pluto – with its passionate advocates, ongoing debates, occasional protests and petitions – seems to be largely confined to the US. “It is more of an issue in the United States,” says Metzger. “This was the one we discovered.” So, the planet’s demotion was a source of wounded pride? “I’ll admit there was some of that – among the public, not the scientists.” More recently, the campaign has taken on a populist tinge, with Trump’s Nasa administrator, Jared Isaacman, telling a congressional committee in April that he was in favour of a rethink. “I am very much in the camp of Make Pluto a Planet Again,” he said. The event that sparked the IAU’s 2006 vote was the discovery of a distant celestial body that would come to be called Eris. Eris was out in the Kuiper Belt, beyond Neptune – where Pluto also resides.",
+        "text_sha256": "50029f28629a35f9c000e0fe2c32980107d931d47feed34711534327ac15f1d8",
+        "citation": {
+          "url": "https://www.theguardian.com/science/2026/aug/31/forbidden-planet-was-plutos-2006-demotion-a-big-mistake",
+          "title": "Forbidden planet: was Pluto’s 2006 demotion a big mistake?",
+          "published_at_utc": "2026-08-31T04:00:16Z",
+          "source_name": "The Guardian",
+          "source_domain": "theguardian.com"
+        }
+      },
+      {
+        "source_id": "S2",
+        "rank": 2,
+        "chunk_id": "c1724697de88ec359e2b6bea3fd36e4aeffa7bc0da894ff76a7852323d4b90d6",
+        "document_id": "science/2026/aug/31/forbidden-planet-was-plutos-2006-demotion-a-big-mistake",
+        "chunk_index": 8,
+        "text": "Forbidden planet: was Pluto’s 2006 demotion a big mistake?\n\nPluto’s reputation as an underdog, the picked-on kid, may stem from the 2006 vote, but one could argue it was punching above its weight for years. How would they have voted on Pluto’s planetary status if they had known the truth in 1930? And will it take another vote to satisfy Pluto’s defenders? “People have locked in,” says Metzger. “We would have a less useful vote today than we did back in the 2006 timeframe. So we don’t want another vote. What we want is for people to recognise that voting was a mistake, and we’re not going to do that any more. We’re going to go back to the scientific method.”",
+        "text_sha256": "26b81046581928eec1932c7fb2ed9947b9ec1e48e921773c470f328da4df324d",
+        "citation": {
+          "url": "https://www.theguardian.com/science/2026/aug/31/forbidden-planet-was-plutos-2006-demotion-a-big-mistake",
+          "title": "Forbidden planet: was Pluto’s 2006 demotion a big mistake?",
+          "published_at_utc": "2026-08-31T04:00:16Z",
+          "source_name": "The Guardian",
+          "source_domain": "theguardian.com"
+        }
+      },
+      {
+        "source_id": "S3",
+        "rank": 3,
+        "chunk_id": "ee1553f14034313ff3cc9a7dec6449fa3d7853054835f36747ea656e6a0e5846",
+        "document_id": "science/2026/aug/31/forbidden-planet-was-plutos-2006-demotion-a-big-mistake",
+        "chunk_index": 0,
+        "text": "Forbidden planet: was Pluto’s 2006 demotion a big mistake?\n\nTwenty years ago, Pluto got demoted. After a vote by the International Astronomical Union (IAU) in August 2006, Pluto was relegated from major planet to dwarf planet status. Our solar system dropped from nine planets to eight. At the time, many scientists were unhappy with the decision. Two decades on, the debate is, if anything, even more polarised. “The definition of a planet they created, you can’t use it at all,” says Philip Metzger, the director of the Stephen W Hawking Centre for Microgravity Research and Education at the University of Central Florida. “It makes the definition of a planet completely non-useful in science.” Metzger is one of a number of scientists and lay people who consider Pluto’s demotion a big mistake. For some, Pluto’s downgraded status is the source of their affection for the ex-planet. “Pluto represents the underdog that so many people root for, the small kid on the block that is being picked on,” says Kevin Schindler, historian at the Lowell Observatory in Arizona, where Pluto was discovered in 1930. For others, the IAU’s decision, and the way it was taken, is central to the debate.",
+        "text_sha256": "4397334658f355bfc892d664a0c93b9c7fe6201d7914cd0a3f47a532bd13d18f",
+        "citation": {
+          "url": "https://www.theguardian.com/science/2026/aug/31/forbidden-planet-was-plutos-2006-demotion-a-big-mistake",
+          "title": "Forbidden planet: was Pluto’s 2006 demotion a big mistake?",
+          "published_at_utc": "2026-08-31T04:00:16Z",
+          "source_name": "The Guardian",
+          "source_domain": "theguardian.com"
+        }
+      }
+    ],
+    "excluded_evidence": [
+      {
+        "chunk_id": "d106587b39f125c72d3088595f8ce11de76bf016fbe4df851c27cf6e5f8d663e",
+        "reason": "not_in_m4_packed_context"
+      },
+      {
+        "chunk_id": "86ac0c7611ef13091d7d1dd5387d6aaa7e136869953b65370bfc24ece7c0eaf9",
+        "reason": "not_in_m4_packed_context"
+      }
+    ],
+    "warnings": [],
+    "validation_log": [
+      {
+        "attempt": 1,
+        "result": "pass"
+      }
+    ],
+    "error": null,
+    "m4_input": {
+      "source_schema_version": "retrieval_response.v2",
+      "input_kind": "saved_packed_example",
+      "live_retrieval_executed": false,
+      "input_object_sha256": "a59355ff0f3de9a04b51f7bf451b04f4392a2c799299a5b77e9e1a8e925f88da",
+      "candidate_count": 5,
+      "original_input": {
+        "retrieval": {
+          "schema_version": "retrieval_response.v2",
+          "request_id": "008c81ce43654bcfbde99c88c4cdb7d0",
+          "query": "What discovery sparked the IAU's 2006 vote on Pluto?",
+          "retrieval_query": "What discovery sparked the IAU's 2006 vote on Pluto?",
+          "status": "OK",
+          "index": {
+            "strategy": "C",
+            "collection": "chunks_c_e9f8efe647_c6c1836bed",
+            "manifest_sha256": "c5f99cd5d7218722f5ed8e2c85cdc6bb4a7ad09ed1896ec7a831bdb4fef51034"
+          },
+          "config": {
+            "mode": "hybrid",
+            "top_k": 5,
+            "candidate_k": 30,
+            "rrf_constant": 60
+          },
+          "filters": null,
+          "results": [
+            {
+              "rank": 1,
+              "chunk_id": "951ab6dba6e88adeddb4ba162b847682387a1a88e4d5a28c4da41aa7e7935eeb",
+              "document_id": "science/2026/aug/31/forbidden-planet-was-plutos-2006-demotion-a-big-mistake",
+              "chunk_index": 1,
+              "text": "Forbidden planet: was Pluto’s 2006 demotion a big mistake?\n\n“My being involved with advocating for Pluto started on the day of the vote,” says writer, actor and amateur astronomer Laurel Kornfeld. “I was like: wait a minute, this is wrong.” When we meet on Zoom she is wearing a T-shirt that says: “Pluto Resistance, 20 years: 2006-2026.” The campaign to reinstate Pluto – with its passionate advocates, ongoing debates, occasional protests and petitions – seems to be largely confined to the US. “It is more of an issue in the United States,” says Metzger. “This was the one we discovered.” So, the planet’s demotion was a source of wounded pride? “I’ll admit there was some of that – among the public, not the scientists.” More recently, the campaign has taken on a populist tinge, with Trump’s Nasa administrator, Jared Isaacman, telling a congressional committee in April that he was in favour of a rethink. “I am very much in the camp of Make Pluto a Planet Again,” he said. The event that sparked the IAU’s 2006 vote was the discovery of a distant celestial body that would come to be called Eris. Eris was out in the Kuiper Belt, beyond Neptune – where Pluto also resides.",
+              "text_sha256": "50029f28629a35f9c000e0fe2c32980107d931d47feed34711534327ac15f1d8",
+              "citation": {
+                "url": "https://www.theguardian.com/science/2026/aug/31/forbidden-planet-was-plutos-2006-demotion-a-big-mistake",
+                "title": "Forbidden planet: was Pluto’s 2006 demotion a big mistake?",
+                "published_at_utc": "2026-08-31T04:00:16Z",
+                "source_name": "The Guardian",
+                "source_domain": "theguardian.com"
+              },
+              "retrieved_by": [
+                "dense",
+                "bm25"
+              ],
+              "scores": {
+                "distance": 0.2860147953033447,
+                "similarity": 0.7139852046966553,
+                "bm25": 37.521296513030194,
+                "rrf": 0.03278688524590164,
+                "rerank": null
+              }
+            },
+            {
+              "rank": 2,
+              "chunk_id": "c1724697de88ec359e2b6bea3fd36e4aeffa7bc0da894ff76a7852323d4b90d6",
+              "document_id": "science/2026/aug/31/forbidden-planet-was-plutos-2006-demotion-a-big-mistake",
+              "chunk_index": 8,
+              "text": "Forbidden planet: was Pluto’s 2006 demotion a big mistake?\n\nPluto’s reputation as an underdog, the picked-on kid, may stem from the 2006 vote, but one could argue it was punching above its weight for years. How would they have voted on Pluto’s planetary status if they had known the truth in 1930? And will it take another vote to satisfy Pluto’s defenders? “People have locked in,” says Metzger. “We would have a less useful vote today than we did back in the 2006 timeframe. So we don’t want another vote. What we want is for people to recognise that voting was a mistake, and we’re not going to do that any more. We’re going to go back to the scientific method.”",
+              "text_sha256": "26b81046581928eec1932c7fb2ed9947b9ec1e48e921773c470f328da4df324d",
+              "citation": {
+                "url": "https://www.theguardian.com/science/2026/aug/31/forbidden-planet-was-plutos-2006-demotion-a-big-mistake",
+                "title": "Forbidden planet: was Pluto’s 2006 demotion a big mistake?",
+                "published_at_utc": "2026-08-31T04:00:16Z",
+                "source_name": "The Guardian",
+                "source_domain": "theguardian.com"
+              },
+              "retrieved_by": [
+                "dense",
+                "bm25"
+              ],
+              "scores": {
+                "distance": 0.3141779899597168,
+                "similarity": 0.6858220100402832,
+                "bm25": 32.65091734927486,
+                "rrf": 0.03225806451612903,
+                "rerank": null
+              }
+            },
+            {
+              "rank": 3,
+              "chunk_id": "ee1553f14034313ff3cc9a7dec6449fa3d7853054835f36747ea656e6a0e5846",
+              "document_id": "science/2026/aug/31/forbidden-planet-was-plutos-2006-demotion-a-big-mistake",
+              "chunk_index": 0,
+              "text": "Forbidden planet: was Pluto’s 2006 demotion a big mistake?\n\nTwenty years ago, Pluto got demoted. After a vote by the International Astronomical Union (IAU) in August 2006, Pluto was relegated from major planet to dwarf planet status. Our solar system dropped from nine planets to eight. At the time, many scientists were unhappy with the decision. Two decades on, the debate is, if anything, even more polarised. “The definition of a planet they created, you can’t use it at all,” says Philip Metzger, the director of the Stephen W Hawking Centre for Microgravity Research and Education at the University of Central Florida. “It makes the definition of a planet completely non-useful in science.” Metzger is one of a number of scientists and lay people who consider Pluto’s demotion a big mistake. For some, Pluto’s downgraded status is the source of their affection for the ex-planet. “Pluto represents the underdog that so many people root for, the small kid on the block that is being picked on,” says Kevin Schindler, historian at the Lowell Observatory in Arizona, where Pluto was discovered in 1930. For others, the IAU’s decision, and the way it was taken, is central to the debate.",
+              "text_sha256": "4397334658f355bfc892d664a0c93b9c7fe6201d7914cd0a3f47a532bd13d18f",
+              "citation": {
+                "url": "https://www.theguardian.com/science/2026/aug/31/forbidden-planet-was-plutos-2006-demotion-a-big-mistake",
+                "title": "Forbidden planet: was Pluto’s 2006 demotion a big mistake?",
+                "published_at_utc": "2026-08-31T04:00:16Z",
+                "source_name": "The Guardian",
+                "source_domain": "theguardian.com"
+              },
+              "retrieved_by": [
+                "dense",
+                "bm25"
+              ],
+              "scores": {
+                "distance": 0.3882042169570923,
+                "similarity": 0.6117957830429077,
+                "bm25": 26.011637409548083,
+                "rrf": 0.031746031746031744,
+                "rerank": null
+              }
+            },
+            {
+              "rank": 4,
+              "chunk_id": "d106587b39f125c72d3088595f8ce11de76bf016fbe4df851c27cf6e5f8d663e",
+              "document_id": "science/2026/aug/31/forbidden-planet-was-plutos-2006-demotion-a-big-mistake",
+              "chunk_index": 2,
+              "text": "Forbidden planet: was Pluto’s 2006 demotion a big mistake?\n\nIt was roughly the same size as Pluto (less volume, but more mass). If Pluto was a planet, the argument went, then so was Eris. And if Eris wasn’t a planet, how could Pluto continue to be one? Eris and Pluto were by no means alone in the Kuiper Belt. Other smaller bodies were discovered around the same time, including Haumea, Makemake and Sedna. Were these also planets? There were likely many more similar objects still to be found. How would schoolchildren manage a planetary roster that might number in the hundreds? In search of a solution, the IAU came up with a three-point definition of a planet: it must orbit the Sun; it must have sufficient mass to pull itself into a round shape; and it must have “cleared its neighbourhood” – meaning it must gravitationally dominate the area in which it orbits. Nothing beyond Neptune that we knew about qualified; Pluto was out. It was the last point in particular that upset a lot of Pluto advocates, because a body’s ability to clear its neighbourhood depends a lot on the neighbourhood.",
+              "text_sha256": "0753981dce5a8eb241534f7cf22945bd9146039b5f65d70e808eb3de196c24df",
+              "citation": {
+                "url": "https://www.theguardian.com/science/2026/aug/31/forbidden-planet-was-plutos-2006-demotion-a-big-mistake",
+                "title": "Forbidden planet: was Pluto’s 2006 demotion a big mistake?",
+                "published_at_utc": "2026-08-31T04:00:16Z",
+                "source_name": "The Guardian",
+                "source_domain": "theguardian.com"
+              },
+              "retrieved_by": [
+                "dense",
+                "bm25"
+              ],
+              "scores": {
+                "distance": 0.3982440233230591,
+                "similarity": 0.6017559766769409,
+                "bm25": 20.688273192337146,
+                "rrf": 0.030776515151515152,
+                "rerank": null
+              }
+            },
+            {
+              "rank": 5,
+              "chunk_id": "86ac0c7611ef13091d7d1dd5387d6aaa7e136869953b65370bfc24ece7c0eaf9",
+              "document_id": "science/2026/aug/31/forbidden-planet-was-plutos-2006-demotion-a-big-mistake",
+              "chunk_index": 4,
+              "text": "Forbidden planet: was Pluto’s 2006 demotion a big mistake?\n\nMany planetary scientists, including Metzger, simply do not use the IAU definition. When the New Horizons spacecraft made its flyby of Pluto in 2015, the geophysical camp seized what it saw as an advantage. Pluto definitely had the geophysical makings of a planet, they maintained. It had mountains, evidence of recent geological activity, and water ice hills floating on frozen nitrogen. It might even be able to support life. How could that not be a planet? Those agitating for Pluto’s planetary status do not, by and large, recognise any problems stemming from reinstatement. They welcome a definition broad enough to take in hundreds of new planets, as taxing as that might be for children and their wallcharts. “The more the merrier,” says Paul Byrne, associate professor of earth, environmental and planetary sciences at Washington University in St Louis.",
+              "text_sha256": "1e658b8c24f9a74de6d346ed64cc28b2b832b6f479fb27154ca55e3df98282e8",
+              "citation": {
+                "url": "https://www.theguardian.com/science/2026/aug/31/forbidden-planet-was-plutos-2006-demotion-a-big-mistake",
+                "title": "Forbidden planet: was Pluto’s 2006 demotion a big mistake?",
+                "published_at_utc": "2026-08-31T04:00:16Z",
+                "source_name": "The Guardian",
+                "source_domain": "theguardian.com"
+              },
+              "retrieved_by": [
+                "dense",
+                "bm25"
+              ],
+              "scores": {
+                "distance": 0.4558117389678955,
+                "similarity": 0.5441882610321045,
+                "bm25": 21.807609527961684,
+                "rrf": 0.030330882352941176,
+                "rerank": null
+              }
+            }
+          ],
+          "warnings": [],
+          "error": null,
+          "timing_ms": {
+            "encode": 65.98369999846909,
+            "search": 45.35869999381248,
+            "rerank": 0.0,
+            "total": 117.82640000456013
+          }
+        },
+        "context": "[951ab6dba6e88adeddb4ba162b847682387a1a88e4d5a28c4da41aa7e7935eeb] Forbidden planet: was Pluto’s 2006 demotion a big mistake?\nhttps://www.theguardian.com/science/2026/aug/31/forbidden-planet-was-plutos-2006-demotion-a-big-mistake\nForbidden planet: was Pluto’s 2006 demotion a big mistake?\n\n“My being involved with advocating for Pluto started on the day of the vote,” says writer, actor and amateur astronomer Laurel Kornfeld. “I was like: wait a minute, this is wrong.” When we meet on Zoom she is wearing a T-shirt that says: “Pluto Resistance, 20 years: 2006-2026.” The campaign to reinstate Pluto – with its passionate advocates, ongoing debates, occasional protests and petitions – seems to be largely confined to the US. “It is more of an issue in the United States,” says Metzger. “This was the one we discovered.” So, the planet’s demotion was a source of wounded pride? “I’ll admit there was some of that – among the public, not the scientists.” More recently, the campaign has taken on a populist tinge, with Trump’s Nasa administrator, Jared Isaacman, telling a congressional committee in April that he was in favour of a rethink. “I am very much in the camp of Make Pluto a Planet Again,” he said. The event that sparked the IAU’s 2006 vote was the discovery of a distant celestial body that would come to be called Eris. Eris was out in the Kuiper Belt, beyond Neptune – where Pluto also resides.\n\n[c1724697de88ec359e2b6bea3fd36e4aeffa7bc0da894ff76a7852323d4b90d6] Forbidden planet: was Pluto’s 2006 demotion a big mistake?\nhttps://www.theguardian.com/science/2026/aug/31/forbidden-planet-was-plutos-2006-demotion-a-big-mistake\nForbidden planet: was Pluto’s 2006 demotion a big mistake?\n\nPluto’s reputation as an underdog, the picked-on kid, may stem from the 2006 vote, but one could argue it was punching above its weight for years. How would they have voted on Pluto’s planetary status if they had known the truth in 1930? And will it take another vote to satisfy Pluto’s defenders? “People have locked in,” says Metzger. “We would have a less useful vote today than we did back in the 2006 timeframe. So we don’t want another vote. What we want is for people to recognise that voting was a mistake, and we’re not going to do that any more. We’re going to go back to the scientific method.”\n\n[ee1553f14034313ff3cc9a7dec6449fa3d7853054835f36747ea656e6a0e5846] Forbidden planet: was Pluto’s 2006 demotion a big mistake?\nhttps://www.theguardian.com/science/2026/aug/31/forbidden-planet-was-plutos-2006-demotion-a-big-mistake\nForbidden planet: was Pluto’s 2006 demotion a big mistake?\n\nTwenty years ago, Pluto got demoted. After a vote by the International Astronomical Union (IAU) in August 2006, Pluto was relegated from major planet to dwarf planet status. Our solar system dropped from nine planets to eight. At the time, many scientists were unhappy with the decision. Two decades on, the debate is, if anything, even more polarised. “The definition of a planet they created, you can’t use it at all,” says Philip Metzger, the director of the Stephen W Hawking Centre for Microgravity Research and Education at the University of Central Florida. “It makes the definition of a planet completely non-useful in science.” Metzger is one of a number of scientists and lay people who consider Pluto’s demotion a big mistake. For some, Pluto’s downgraded status is the source of their affection for the ex-planet. “Pluto represents the underdog that so many people root for, the small kid on the block that is being picked on,” says Kevin Schindler, historian at the Lowell Observatory in Arizona, where Pluto was discovered in 1930. For others, the IAU’s decision, and the way it was taken, is central to the debate.\n\n",
+        "context_tokens": 1012,
+        "selected_chunk_ids": [
+          "951ab6dba6e88adeddb4ba162b847682387a1a88e4d5a28c4da41aa7e7935eeb",
+          "c1724697de88ec359e2b6bea3fd36e4aeffa7bc0da894ff76a7852323d4b90d6",
+          "ee1553f14034313ff3cc9a7dec6449fa3d7853054835f36747ea656e6a0e5846"
+        ]
+      },
+      "selected_chunk_ids": [
+        "951ab6dba6e88adeddb4ba162b847682387a1a88e4d5a28c4da41aa7e7935eeb",
+        "c1724697de88ec359e2b6bea3fd36e4aeffa7bc0da894ff76a7852323d4b90d6",
+        "ee1553f14034313ff3cc9a7dec6449fa3d7853054835f36747ea656e6a0e5846"
+      ],
+      "reported_context_tokens": 1012,
+      "budget_tokenizer": "M4 embedding tokenizer proxy; count not recomputed by M5",
+      "generation_token_budget_verified": false,
+      "final_evidence_chunk_ids": [
+        "951ab6dba6e88adeddb4ba162b847682387a1a88e4d5a28c4da41aa7e7935eeb",
+        "c1724697de88ec359e2b6bea3fd36e4aeffa7bc0da894ff76a7852323d4b90d6",
+        "ee1553f14034313ff3cc9a7dec6449fa3d7853054835f36747ea656e6a0e5846"
+      ]
+    },
+    "index": {
+      "strategy": "C",
+      "collection": "chunks_c_e9f8efe647_c6c1836bed",
+      "manifest_sha256": "c5f99cd5d7218722f5ed8e2c85cdc6bb4a7ad09ed1896ec7a831bdb4fef51034"
+    },
+    "query": "What discovery sparked the IAU's 2006 vote on Pluto?",
+    "retrieval_query": "What discovery sparked the IAU's 2006 vote on Pluto?",
+    "retrieval_config": {
+      "mode": "hybrid",
+      "top_k": 5,
+      "candidate_k": 30,
+      "rrf_constant": 60
+    },
+    "filters": null,
+    "retrieval_timing_ms": {
+      "encode": 65.98369999846909,
+      "search": 45.35869999381248,
+      "rerank": 0.0,
+      "total": 117.82640000456013
+    },
+    "context_limit": {
+      "method": "utf8_bytes",
+      "limit": 16000,
+      "includes": "system_prompt_and_serialized_user_content",
+      "model_tokenizer_budget_implemented": true,
+      "provider_tokenizer_parity_verified": false
+    },
+    "token_budget": {
+      "profile_version": "m5-token-budget-v0.5",
+      "method": "official_offline_tokenizer",
+      "check_status": "PASS",
+      "requested_model": "deepseek-flash",
+      "tokenizer_version": "0.22.2",
+      "tokenizer_sha256": "89085f12ef79460ac5f66d1119325ddfc694b4ab209d80bbd81d35f081dc9614",
+      "template_sha256": "841f8cf146e3f0ad1082594a31f68ecf7608c20467ef355081333d85bbaeb1cb",
+      "template_scope": "official_sample_system_user_add_generation_prompt",
+      "source_url": "https://api-docs.deepseek.com/quick_start/token_usage",
+      "includes": [
+        "system_prompt",
+        "serialized_user_content",
+        "sample_chat_markers"
+      ],
+      "input_tokens_local": 2218,
+      "output_tokens_reserved": 1600,
+      "safety_margin_tokens": 512,
+      "application_total_token_limit": 8192,
+      "total_tokens_reserved": 4330,
+      "headroom_tokens": 3862,
+      "provider_tokenizer_parity_verified": false,
+      "api_usage_is_authoritative": true,
+      "payload_sha256": "20c1bfa4359f4aca5380d4a67046acdfe204bb63382e44dd1bac5f0ca02f6e08",
+      "provider_input_tokens": null,
+      "provider_minus_local_tokens": null,
+      "observation": "not_available"
+    },
+    "timing_ms": {
+      "total": 1811.98
+    }
+  },
+  "input_object_sha256": "b91a20e2fa1e79947c4a64c22e61a83942a2aadbccc9704d4774c01eeb8fd1c8",
+  "token_budget": {
+    "profile_version": "m5-token-budget-v0.5",
+    "method": "official_offline_tokenizer",
+    "check_status": "PASS",
+    "requested_model": "deepseek-flash",
+    "tokenizer_version": "0.22.2",
+    "tokenizer_sha256": "89085f12ef79460ac5f66d1119325ddfc694b4ab209d80bbd81d35f081dc9614",
+    "template_sha256": "841f8cf146e3f0ad1082594a31f68ecf7608c20467ef355081333d85bbaeb1cb",
+    "template_scope": "official_sample_system_user_add_generation_prompt",
+    "source_url": "https://api-docs.deepseek.com/quick_start/token_usage",
+    "includes": [
+      "system_prompt",
+      "serialized_user_content",
+      "sample_chat_markers"
+    ],
+    "input_tokens_local": 2774,
+    "output_tokens_reserved": 2400,
+    "safety_margin_tokens": 512,
+    "application_total_token_limit": 8192,
+    "total_tokens_reserved": 5686,
+    "headroom_tokens": 2506,
+    "provider_tokenizer_parity_verified": false,
+    "api_usage_is_authoritative": true,
+    "payload_sha256": "89f8c8c77371bd239fa52da77a86a4b4a494f70d175e538dc4726004da0e8eb3",
+    "provider_input_tokens": 2798,
+    "provider_minus_local_tokens": 24,
+    "observation": "single_response_comparison_not_parity_verification"
+  },
+  "timing_ms": {
+    "total": 2725.66
+  },
+  "input_file_sha256": "e77ccfc09894558ac438ec85bbd2cda2ca40ee24feacc62640117fcb8034728a",
+  "input_file": "D:\\Cityu SemA\\CS5481\\CS5481_RAG-main\\CS5481_RAG-main\\examples\\m5\\c_validation\\real_eris_answer.json"
+}

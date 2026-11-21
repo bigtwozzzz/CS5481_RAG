@@ -1,0 +1,227 @@
+{
+  "schema_version": "m5_support_review.v1",
+  "request_id": "synthetic-wrong-number-001",
+  "created_at_utc": "2026-11-20T08:55:02.436620+00:00",
+  "decision": "FAIL",
+  "method": "llm_judge",
+  "human_review": "not_performed",
+  "review_required": true,
+  "publication_ready": false,
+  "local_validation": "pass",
+  "checks": {
+    "support": "fail",
+    "relevance": "pass",
+    "answer_scope": "fail"
+  },
+  "judge": {
+    "requested_model": "deepseek-flash",
+    "returned_model": "deepseek-flash",
+    "prompt_version": "m5-support-v0.2",
+    "temperature": 0,
+    "max_output_tokens": 2400,
+    "calls": 1,
+    "input_tokens": 1639,
+    "output_tokens": 202,
+    "latency_ms": 2323.0,
+    "cost_usd": null
+  },
+  "limitations": [
+    "自动判定可能出错，不能替代人工金标准。",
+    "同一模型的不同调用不代表独立可靠的审核。",
+    "24KB仅为临时字节限制，不是模型token预算。"
+  ],
+  "error": null,
+  "input_snapshot": {
+    "schema_version": "answer_response.v1",
+    "implementation_version": "m5-integration-v0.1",
+    "request_id": "synthetic-wrong-number-001",
+    "created_at_utc": "2026-11-20T08:37:12.443562+00:00",
+    "status": "ANSWERED",
+    "claims": [
+      {
+        "text": "澳大利亚政府正紧急寻求关于至少350名在尼泊尔失踪的澳大利亚人安危的信息。",
+        "source_ids": [
+          "S1"
+        ],
+        "evidence_quotes": [
+          {
+            "source_id": "S1",
+            "quote": "The Australian government is urgently seeking information on the welfare of at least 35 Australians missing in Nepal, after a catastrophic flash flood swept through the Nepal-Tibet border region."
+          }
+        ],
+        "claim_id": "C1",
+        "located_quotes": [
+          {
+            "source_id": "S1",
+            "chunk_id": "bc539165d46fb6403d8766de54aefbf57a1bf215ee8e7866c4306629f0a4e4ea",
+            "quote": "The Australian government is urgently seeking information on the welfare of at least 35 Australians missing in Nepal, after a catastrophic flash flood swept through the Nepal-Tibet border region.",
+            "char_start": 0,
+            "char_end": 195
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "source_id": "S1",
+        "rank": 1,
+        "chunk_id": "bc539165d46fb6403d8766de54aefbf57a1bf215ee8e7866c4306629f0a4e4ea",
+        "document_id": "australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+        "chunk_index": 0,
+        "text": "The Australian government is urgently seeking information on the welfare of at least 35 Australians missing in Nepal, after a catastrophic flash flood swept through the Nepal-Tibet border region.\n\nAssistant minister for foreign affairs, Matt Thistlethwaite, said on Thursday evening that the Department of Foreign Affairs and Trade (Dfat) was “working around the clock” to verify the status of the missing Australians. The figure is based on reports from the Nepali Tourism Board and officials on the ground.\n\nRelated: Flash floods on Nepal-Tibet border leave scores dead and hundreds missing\n\nThistlethwaite confirmed Dfat staff were operating from the post in Kathmandu, and that the government would send a crisis response team to the affected region.\n\n“We’re trying to make contact with those tour operators,” he said, adding that Australian officials were working with Nepali authorities to determine whether independent travellers not attached to a tour group could also be missing.",
+        "text_sha256": "d4f5a99d3e43562c206048f732098bd314dc93026618b60ef1d4e8379c6487a4",
+        "citation": {
+          "url": "https://www.theguardian.com/australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+          "title": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal",
+          "published_at_utc": "2026-08-27T18:18:50Z",
+          "source_name": "The Guardian",
+          "source_domain": "theguardian.com"
+        },
+        "url": "https://www.theguardian.com/australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+        "title": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal",
+        "published_at_utc": "2026-08-27T18:18:50Z"
+      }
+    ],
+    "answer": "澳大利亚政府正紧急寻求关于至少350名在尼泊尔失踪的澳大利亚人安危的信息。 [S1]",
+    "missing_information": [],
+    "review_required": true,
+    "publication_ready": false,
+    "validation": {
+      "input": "pass",
+      "schema": "pass",
+      "citation_ids": "pass",
+      "quote_match": "pass",
+      "support": "unchecked",
+      "answerability": "unchecked"
+    },
+    "generation": {
+      "model": null,
+      "calls": [],
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": null,
+      "note": "Synthetic mutation of an earlier answer; no generation API call produced this answer."
+    },
+    "evidence": [
+      {
+        "source_id": "S1",
+        "rank": 1,
+        "chunk_id": "bc539165d46fb6403d8766de54aefbf57a1bf215ee8e7866c4306629f0a4e4ea",
+        "document_id": "australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+        "chunk_index": 0,
+        "text": "The Australian government is urgently seeking information on the welfare of at least 35 Australians missing in Nepal, after a catastrophic flash flood swept through the Nepal-Tibet border region.\n\nAssistant minister for foreign affairs, Matt Thistlethwaite, said on Thursday evening that the Department of Foreign Affairs and Trade (Dfat) was “working around the clock” to verify the status of the missing Australians. The figure is based on reports from the Nepali Tourism Board and officials on the ground.\n\nRelated: Flash floods on Nepal-Tibet border leave scores dead and hundreds missing\n\nThistlethwaite confirmed Dfat staff were operating from the post in Kathmandu, and that the government would send a crisis response team to the affected region.\n\n“We’re trying to make contact with those tour operators,” he said, adding that Australian officials were working with Nepali authorities to determine whether independent travellers not attached to a tour group could also be missing.",
+        "text_sha256": "d4f5a99d3e43562c206048f732098bd314dc93026618b60ef1d4e8379c6487a4",
+        "citation": {
+          "url": "https://www.theguardian.com/australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+          "title": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal",
+          "published_at_utc": "2026-08-27T18:18:50Z",
+          "source_name": "The Guardian",
+          "source_domain": "theguardian.com"
+        },
+        "url": "https://www.theguardian.com/australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+        "title": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal",
+        "published_at_utc": "2026-08-27T18:18:50Z"
+      },
+      {
+        "source_id": "S2",
+        "rank": 2,
+        "chunk_id": "311913283b1e52c3ec35a129bcbfef1abfbde853b3abe83538c991a8da2d76c9",
+        "document_id": "australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+        "chunk_index": 1,
+        "text": "“This is the trekking season in Nepal, it’s a very popular time for people to visit in the adventure tourism industry,” he said. “It’s also a sacred Hindu site and an area of pilgrimage for people of Hindu faith.”\n\nThe minister said widespread damage to roads and telecommunications infrastructure had made it challenging to establish contact with large parts of the affected region.\n\n“It’s only based on the information that we’re receiving from the Nepalese government, obviously a lot more will be released over the coming 24 hours.”\n\nNearly 1,300 people in total are missing, the majority of them tourists, authorities have said, after a catastrophic flash flood hit Nepal and Tibet, roaring down valleys and wiping out entire villages. Nepal police said on Thursday night that 389 people have been confirmed dead, and 466 injured and rescued.\n\nThe people missing are from a range of countries, including the United States, Canada, India and the United Kingdom.\n\nThe missing Australians include one who was travelling with Kathmandu Holiday Tours and Travel.",
+        "text_sha256": "754c18565554a6b1fcb59ccd0ad820206cef7a14cec9224cd75eeb47f7519885",
+        "citation": {
+          "url": "https://www.theguardian.com/australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+          "title": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal",
+          "published_at_utc": "2026-08-27T18:18:50Z",
+          "source_name": "The Guardian",
+          "source_domain": "theguardian.com"
+        }
+      }
+    ],
+    "excluded_evidence": [],
+    "warnings": [
+      "固定输入样例，未执行检索；计时0为占位，不得用于实验报告。",
+      "人为构造的错误数字测试，非模型原始输出，不得作为正式答案或实际生成失败案例。"
+    ],
+    "validation_log": [
+      {
+        "attempt": 1,
+        "result": "pass"
+      }
+    ],
+    "error": null,
+    "index": {
+      "strategy": "B",
+      "collection": "chunks_b_4ef08cb904_c6c1836bed",
+      "manifest_sha256": "e60919f16bb510087c3fdcab0454733318086c4b908d97ecdd64845cd0eff526"
+    },
+    "query": "根据提供的报道，至少有多少名澳大利亚人在尼泊尔失踪？",
+    "retrieval_query": "Australians missing Nepal flood",
+    "retrieval_config": {
+      "mode": "fixture",
+      "candidate_k": 2,
+      "top_k": 2
+    },
+    "filters": null,
+    "retrieval_timing_ms": {
+      "encode": 0,
+      "search": 0,
+      "rerank": 0,
+      "total": 0
+    },
+    "fixture": {
+      "is_fixture": true,
+      "selection": "chunks_B.jsonl 前两条",
+      "index_manifest_path": "data/vector_store/manifests/chunks_b_4ef08cb904_c6c1836bed.manifest.json"
+    },
+    "context_limit": {
+      "method": "utf8_bytes",
+      "limit": 16000,
+      "includes": "system_prompt_and_serialized_user_content",
+      "model_tokenizer_budget_implemented": false
+    },
+    "timing_ms": {
+      "total": null
+    },
+    "synthetic_test": {
+      "is_synthetic": true,
+      "purpose": "Check whether the reviewer rejects a claim with an unsupported number despite valid citations and exact quotes.",
+      "mutation": "Claim and rendered answer: at least 35 -> at least 350. Evidence and exact quotes unchanged.",
+      "expected_decision": "FAIL",
+      "expected_reason": "The evidence establishes at least 35, but does not establish at least 350. This is unsupported; a lower bound of 35 does not logically exclude 350.",
+      "actual_live_decision": "NOT_RUN",
+      "original_record_path": "D:\\Cityu SemA\\CS5481\\CS5481_RAG-main\\CS5481_RAG-main\\m5_runs\\m5_cae577f8d0d5433f8455da85736480b3.json",
+      "original_record_sha256": "f80a8dc6925fdbc7512aed20d245a4248d429edd9631978534cd5f12f4a8f5ba",
+      "not_for_publication": true
+    }
+  },
+  "input_object_sha256": "64db39e06ea2650984246f92d86327b1863e76490ff1e42d6bc2a020e491731e",
+  "claim_reviews": [
+    {
+      "claim_id": "C1",
+      "verdict": "contradicted",
+      "relevant": true,
+      "reason": "草稿称“至少350名”，但所引原文明确为“at least 35 Australians missing”，数字相差十倍，陈述与证据直接矛盾。",
+      "citation_reviews": [
+        {
+          "source_id": "S1",
+          "verdict": "contradicts",
+          "reason": "引文原文为“at least 35 Australians missing in Nepal”，支持至少35人而非至少350人，与草稿数字矛盾。"
+        }
+      ]
+    }
+  ],
+  "answer_review": {
+    "recommended_status": "ANSWERED",
+    "status_appropriate": false,
+    "missing_information_accurate": true,
+    "no_unresolved_conflicts": true,
+    "reason": "问题问至少多少名澳大利亚人在尼泊尔失踪，证据明确给出至少35人；草稿却写成至少350人，属数字错误，不能视为正确回答。missing_information为空合理，无来源冲突，但答案状态不应为ANSWERED。"
+  },
+  "timing_ms": {
+    "total": 8481.23
+  },
+  "input_file_sha256": "cac86765f40f3add1858f9012de0889c63e9b4a2e88d9fc57d1e9c3a21cba94e",
+  "input_file": "C:\\Users\\13523\\Documents\\Codex\\2026-11-18\\new-chat\\outputs\\M5_negative_case_v0_2\\m5_wrong_number.json"
+}

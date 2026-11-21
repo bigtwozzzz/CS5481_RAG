@@ -59,3 +59,13 @@ data/vector_store/*
 
 # Large chunk inputs are distributed in the M3 Release data archive
 data/chunks/*.jsonl
+
+# M5 local environments and generated runs
+.venv*/
+m5_runs/
+m4_update_backups/
+m5_update_backups/
+M4_work/
+model_cache/
+runtime_chroma*/
+# End M5 local exclusions

@@ -1,0 +1,777 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:cs5481:validation_report.v1",
+  "title": "validation_report.v1",
+  "description": "Adapter view of an existing automatic review, bound to the exact answer hash. NOT_RUN is not PASS; ERROR is not refusal. This version does not represent human annotations.",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "validation_report.v1"
+    },
+    "request_id": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "answer_object_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "decision": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "ERROR",
+        "NOT_RUN",
+        "NOT_APPLICABLE"
+      ]
+    },
+    "method": {
+      "enum": [
+        "llm_judge",
+        "local_check_only",
+        "not_run"
+      ]
+    },
+    "human_review": {
+      "const": "not_performed"
+    },
+    "publication_ready": {
+      "const": false
+    },
+    "checks": {
+      "type": "object",
+      "properties": {
+        "support": {
+          "enum": [
+            "pass",
+            "fail",
+            "unchecked",
+            "not_applicable"
+          ]
+        },
+        "relevance": {
+          "enum": [
+            "pass",
+            "fail",
+            "unchecked",
+            "not_applicable"
+          ]
+        },
+        "answer_scope": {
+          "enum": [
+            "pass",
+            "fail",
+            "unchecked"
+          ]
+        }
+      },
+      "required": [
+        "support",
+        "answer_scope"
+      ],
+      "additionalProperties": false
+    },
+    "claim_reviews": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "claim_id": {
+            "type": "string",
+            "pattern": "^C[1-9][0-9]*$"
+          },
+          "verdict": {
+            "enum": [
+              "supported",
+              "unsupported",
+              "contradicted",
+              "uncertain"
+            ]
+          },
+          "relevant": {
+            "type": "boolean"
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "citation_reviews": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "source_id": {
+                  "type": "string",
+                  "pattern": "^S[1-9][0-9]*$"
+                },
+                "verdict": {
+                  "enum": [
+                    "supports",
+                    "partial",
+                    "unrelated",
+                    "contradicts"
+                  ]
+                },
+                "reason": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                }
+              },
+              "required": [
+                "source_id",
+                "verdict",
+                "reason"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 1
+          },
+          "scope_role": {
+            "enum": [
+              "direct_answer",
+              "essential_qualification",
+              "unnecessary"
+            ]
+          },
+          "relevance_reason": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          }
+        },
+        "required": [
+          "claim_id",
+          "verdict",
+          "relevant",
+          "reason",
+          "citation_reviews"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "answer_review": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "recommended_status": {
+              "enum": [
+                "ANSWERED",
+                "PARTIAL",
+                "INSUFFICIENT_SOURCES"
+              ]
+            },
+            "status_appropriate": {
+              "type": "boolean"
+            },
+            "missing_information_accurate": {
+              "type": "boolean"
+            },
+            "no_unresolved_conflicts": {
+              "type": "boolean"
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            }
+          },
+          "required": [
+            "recommended_status",
+            "status_appropriate",
+            "missing_information_accurate",
+            "no_unresolved_conflicts",
+            "reason"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "error": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/error"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "source_review_sha256": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "judge": {
+      "anyOf": [
+        {
+          "type": "object"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "request_id",
+    "answer_object_sha256",
+    "decision",
+    "method",
+    "human_review",
+    "publication_ready",
+    "checks",
+    "claim_reviews",
+    "answer_review",
+    "error",
+    "source_review_sha256",
+    "judge"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "decision": {
+            "enum": [
+              "PASS",
+              "FAIL"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "method": {
+            "const": "llm_judge"
+          },
+          "source_review_sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "judge": {
+            "type": "object"
+          },
+          "answer_review": {
+            "type": "object",
+            "properties": {
+              "recommended_status": {
+                "enum": [
+                  "ANSWERED",
+                  "PARTIAL",
+                  "INSUFFICIENT_SOURCES"
+                ]
+              },
+              "status_appropriate": {
+                "type": "boolean"
+              },
+              "missing_information_accurate": {
+                "type": "boolean"
+              },
+              "no_unresolved_conflicts": {
+                "type": "boolean"
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              }
+            },
+            "required": [
+              "recommended_status",
+              "status_appropriate",
+              "missing_information_accurate",
+              "no_unresolved_conflicts",
+              "reason"
+            ],
+            "additionalProperties": false
+          },
+          "error": {
+            "const": null
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "decision": {
+            "const": "ERROR"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "error": {
+            "$ref": "#/$defs/error"
+          },
+          "claim_reviews": {
+            "type": "array",
+            "maxItems": 0
+          },
+          "answer_review": {
+            "const": null
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "decision": {
+            "enum": [
+              "NOT_RUN",
+              "NOT_APPLICABLE"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "error": {
+            "const": null
+          },
+          "claim_reviews": {
+            "type": "array",
+            "maxItems": 0
+          },
+          "answer_review": {
+            "const": null
+          },
+          "checks": {
+            "properties": {
+              "support": {
+                "enum": [
+                  "unchecked",
+                  "not_applicable"
+                ]
+              },
+              "answer_scope": {
+                "const": "unchecked"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "decision": {
+            "const": "PASS"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "checks": {
+            "properties": {
+              "support": {
+                "enum": [
+                  "pass",
+                  "not_applicable"
+                ]
+              },
+              "relevance": {
+                "enum": [
+                  "pass",
+                  "not_applicable"
+                ]
+              },
+              "answer_scope": {
+                "const": "pass"
+              }
+            },
+            "required": [
+              "relevance"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "judge": {
+            "type": "object",
+            "required": [
+              "prompt_version"
+            ],
+            "properties": {
+              "prompt_version": {
+                "enum": [
+                  "m5-support-en-v0.10",
+                  "m5-support-en-v0.10.1"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "claim_reviews": {
+            "items": {
+              "required": [
+                "scope_role",
+                "relevance_reason"
+              ],
+              "allOf": [
+                {
+                  "if": {
+                    "properties": {
+                      "scope_role": {
+                        "const": "unnecessary"
+                      }
+                    }
+                  },
+                  "then": {
+                    "properties": {
+                      "relevant": {
+                        "const": false
+                      }
+                    }
+                  },
+                  "else": {
+                    "properties": {
+                      "relevant": {
+                        "const": true
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "error": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "message": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "diagnostics": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "code",
+        "message"
+      ],
+      "additionalProperties": true
+    },
+    "citation": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "published_at_utc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "source_name": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "source_domain": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        }
+      },
+      "required": [
+        "url",
+        "title",
+        "published_at_utc",
+        "source_name",
+        "source_domain"
+      ],
+      "additionalProperties": true
+    },
+    "evidence": {
+      "type": "object",
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "pattern": "^S[1-9][0-9]*$"
+        },
+        "rank": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "chunk_id": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "document_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "chunk_index": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "text_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "citation": {
+          "$ref": "#/$defs/citation"
+        }
+      },
+      "required": [
+        "source_id",
+        "rank",
+        "chunk_id",
+        "document_id",
+        "chunk_index",
+        "text",
+        "text_sha256",
+        "citation"
+      ],
+      "additionalProperties": false
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "pattern": "^S[1-9][0-9]*$"
+        },
+        "rank": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "chunk_id": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "document_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "chunk_index": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "text_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "citation": {
+          "$ref": "#/$defs/citation"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "published_at_utc": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "source_id",
+        "rank",
+        "chunk_id",
+        "document_id",
+        "chunk_index",
+        "text",
+        "text_sha256",
+        "citation",
+        "url",
+        "title",
+        "published_at_utc"
+      ],
+      "additionalProperties": false
+    },
+    "quote": {
+      "type": "object",
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "pattern": "^S[1-9][0-9]*$"
+        },
+        "quote": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        }
+      },
+      "required": [
+        "source_id",
+        "quote"
+      ],
+      "additionalProperties": false
+    },
+    "claim": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^S[1-9][0-9]*$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "evidence_quotes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/quote"
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "text",
+        "source_ids",
+        "evidence_quotes"
+      ],
+      "additionalProperties": false
+    },
+    "located": {
+      "type": "object",
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "pattern": "^S[1-9][0-9]*$"
+        },
+        "chunk_id": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "quote": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "char_start": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "char_end": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "required": [
+        "source_id",
+        "chunk_id",
+        "quote",
+        "char_start",
+        "char_end"
+      ],
+      "additionalProperties": false
+    },
+    "saved_claim": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^S[1-9][0-9]*$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "evidence_quotes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/quote"
+          },
+          "minItems": 1
+        },
+        "claim_id": {
+          "type": "string",
+          "pattern": "^C[1-9][0-9]*$"
+        },
+        "located_quotes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/located"
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "text",
+        "source_ids",
+        "evidence_quotes",
+        "claim_id",
+        "located_quotes"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

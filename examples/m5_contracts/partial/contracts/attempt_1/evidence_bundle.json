@@ -1,0 +1,77 @@
+{
+  "schema_version": "evidence_bundle.v1",
+  "request_id": "fixture-answerable-001",
+  "query": "According to the supplied report, at least how many Australians are missing in Nepal?",
+  "status": "READY",
+  "evidence": [
+    {
+      "source_id": "S1",
+      "rank": 1,
+      "chunk_id": "bc539165d46fb6403d8766de54aefbf57a1bf215ee8e7866c4306629f0a4e4ea",
+      "document_id": "australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+      "chunk_index": 0,
+      "text": "The Australian government is urgently seeking information on the welfare of at least 35 Australians missing in Nepal, after a catastrophic flash flood swept through the Nepal-Tibet border region.\n\nAssistant minister for foreign affairs, Matt Thistlethwaite, said on Thursday evening that the Department of Foreign Affairs and Trade (Dfat) was “working around the clock” to verify the status of the missing Australians. The figure is based on reports from the Nepali Tourism Board and officials on the ground.\n\nRelated: Flash floods on Nepal-Tibet border leave scores dead and hundreds missing\n\nThistlethwaite confirmed Dfat staff were operating from the post in Kathmandu, and that the government would send a crisis response team to the affected region.\n\n“We’re trying to make contact with those tour operators,” he said, adding that Australian officials were working with Nepali authorities to determine whether independent travellers not attached to a tour group could also be missing.",
+      "text_sha256": "d4f5a99d3e43562c206048f732098bd314dc93026618b60ef1d4e8379c6487a4",
+      "citation": {
+        "url": "https://www.theguardian.com/australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+        "title": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal",
+        "published_at_utc": "2026-08-27T18:18:50Z",
+        "source_name": "The Guardian",
+        "source_domain": "theguardian.com"
+      }
+    },
+    {
+      "source_id": "S2",
+      "rank": 2,
+      "chunk_id": "311913283b1e52c3ec35a129bcbfef1abfbde853b3abe83538c991a8da2d76c9",
+      "document_id": "australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+      "chunk_index": 1,
+      "text": "“This is the trekking season in Nepal, it’s a very popular time for people to visit in the adventure tourism industry,” he said. “It’s also a sacred Hindu site and an area of pilgrimage for people of Hindu faith.”\n\nThe minister said widespread damage to roads and telecommunications infrastructure had made it challenging to establish contact with large parts of the affected region.\n\n“It’s only based on the information that we’re receiving from the Nepalese government, obviously a lot more will be released over the coming 24 hours.”\n\nNearly 1,300 people in total are missing, the majority of them tourists, authorities have said, after a catastrophic flash flood hit Nepal and Tibet, roaring down valleys and wiping out entire villages. Nepal police said on Thursday night that 389 people have been confirmed dead, and 466 injured and rescued.\n\nThe people missing are from a range of countries, including the United States, Canada, India and the United Kingdom.\n\nThe missing Australians include one who was travelling with Kathmandu Holiday Tours and Travel.",
+      "text_sha256": "754c18565554a6b1fcb59ccd0ad820206cef7a14cec9224cd75eeb47f7519885",
+      "citation": {
+        "url": "https://www.theguardian.com/australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+        "title": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal",
+        "published_at_utc": "2026-08-27T18:18:50Z",
+        "source_name": "The Guardian",
+        "source_domain": "theguardian.com"
+      }
+    }
+  ],
+  "index": {
+    "strategy": "B",
+    "collection": "chunks_b_4ef08cb904_c6c1836bed",
+    "manifest_sha256": "e60919f16bb510087c3fdcab0454733318086c4b908d97ecdd64845cd0eff526"
+  },
+  "excluded_evidence": [],
+  "token_budget": {
+    "profile_version": "m5-token-budget-v0.5",
+    "method": "official_offline_tokenizer",
+    "check_status": "PASS",
+    "requested_model": "deepseek-flash",
+    "tokenizer_version": "0.22.2",
+    "tokenizer_sha256": "89085f12ef79460ac5f66d1119325ddfc694b4ab209d80bbd81d35f081dc9614",
+    "template_sha256": "841f8cf146e3f0ad1082594a31f68ecf7608c20467ef355081333d85bbaeb1cb",
+    "template_scope": "official_sample_system_user_add_generation_prompt",
+    "source_url": "https://api-docs.deepseek.com/quick_start/token_usage",
+    "includes": [
+      "system_prompt",
+      "serialized_user_content",
+      "sample_chat_markers"
+    ],
+    "input_tokens_local": 1452,
+    "output_tokens_reserved": 1600,
+    "safety_margin_tokens": 512,
+    "application_total_token_limit": 8192,
+    "total_tokens_reserved": 3564,
+    "headroom_tokens": 4628,
+    "provider_tokenizer_parity_verified": false,
+    "api_usage_is_authoritative": true,
+    "payload_sha256": "6689435d341fd9b7057dff591d701c97f0fd40095ae7c173ac9c843eebf9feb0",
+    "provider_input_tokens": null,
+    "provider_minus_local_tokens": null,
+    "observation": "not_available"
+  },
+  "source_record_sha256": "18655c780892c8a57f9a60f32c961106b7e4d5f8e471da9f8e5a7ae7fd490ed6",
+  "evidence_scope": "selected_for_generation_not_proof_of_api_submission",
+  "error": null
+}

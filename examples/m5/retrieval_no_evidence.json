@@ -1,0 +1,34 @@
+{
+  "schema_version": "retrieval_response.v1",
+  "request_id": "fixture-no_evidence",
+  "query": "According to the supplied report, at least how many Australians are missing in Nepal?",
+  "retrieval_query": "Australians missing Nepal flood",
+  "status": "NO_EVIDENCE",
+  "index": {
+    "strategy": "B",
+    "collection": "chunks_b_4ef08cb904_c6c1836bed",
+    "manifest_sha256": "e60919f16bb510087c3fdcab0454733318086c4b908d97ecdd64845cd0eff526"
+  },
+  "config": {
+    "mode": "fixture",
+    "candidate_k": 2,
+    "top_k": 2
+  },
+  "filters": null,
+  "results": [],
+  "timing_ms": {
+    "encode": 0,
+    "search": 0,
+    "rerank": 0,
+    "total": 0
+  },
+  "warnings": [
+    "Fixed input fixture; no retrieval was run. Zero timings are placeholders and must not be reported as measured performance."
+  ],
+  "error": null,
+  "fixture": {
+    "is_fixture": true,
+    "selection": "First two records in chunks_B.jsonl",
+    "index_manifest_path": "data/vector_store/manifests/chunks_b_4ef08cb904_c6c1836bed.manifest.json"
+  }
+}

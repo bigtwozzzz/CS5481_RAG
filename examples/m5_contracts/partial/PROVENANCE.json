@@ -1,0 +1,7 @@
+{
+  "synthetic": true,
+  "live_api_calls": 0,
+  "description": "Offline fixture with mocked generation and review, or deterministic retrieval error. Recorded API calls are simulated.",
+  "semantic_accuracy_evidence": false,
+  "human_approval": false
+}

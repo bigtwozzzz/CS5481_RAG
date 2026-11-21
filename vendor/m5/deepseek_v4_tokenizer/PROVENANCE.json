@@ -1,0 +1,23 @@
+{
+  "source_page": "https://api-docs.deepseek.com/quick_start/token_usage",
+  "archive_url": "https://cdn.deepseek.com/api-docs/deepseek_v4_tokenizer.zip",
+  "archive_sha256": "e7310d1dafe0a86d8a5629fe78a7c763760f651db9b8682718a1781dcd6fe495",
+  "accessed_on": "2026-11-20",
+  "asset_sha256": {
+    "tokenizer.json": "89085f12ef79460ac5f66d1119325ddfc694b4ab209d80bbd81d35f081dc9614",
+    "tokenizer_config.json": "841f8cf146e3f0ad1082594a31f68ecf7608c20467ef355081333d85bbaeb1cb"
+  },
+  "model_page": "https://api-docs.deepseek.com/quick_start/pricing",
+  "documented_model": "deepseek-flash",
+  "documented_version": "DeepSeek-V4.1-Flash-1017",
+  "documented_context_length": "1M",
+  "application_total_token_limit": 8192,
+  "tokenizer_config_model_max_length": 16384,
+  "provider_tokenizer_parity_verified": false,
+  "notes": [
+    "The official documentation links this V4 sample; it does not pin it to the current V4.1 API alias.",
+    "The application uses an intentionally smaller 8192-token local budget, not the model maximum.",
+    "No external Python code or trust_remote_code is executed; only tokenizer JSON data is loaded.",
+    "No special license file was included in the downloaded archive; this is source provenance, not a license assertion."
+  ]
+}
