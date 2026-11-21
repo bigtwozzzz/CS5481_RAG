@@ -1,0 +1,157 @@
+{
+  "status": "PASS",
+  "synthetic": false,
+  "live_retrieval_calls": 6,
+  "api_calls": 0,
+  "quality_evaluation": false,
+  "config": {
+    "strategy": "C",
+    "mode": "hybrid",
+    "top_k": 5,
+    "candidate_k": 30,
+    "rrf_constant": 60,
+    "context_tokens": 1024,
+    "packing_policy": "legacy_break_v1"
+  },
+  "cases": [
+    {
+      "id": "a-smoke-eris",
+      "k": 3,
+      "candidate_count": 3,
+      "folder": "k3\\item_1",
+      "policies": [
+        {
+          "policy": "legacy_break_v1",
+          "selected_count": 3,
+          "m4_tokens": 1012,
+          "raw_candidates_sha256": "f95027ecbb020bf1f05dfb102af7fa3e83ba42542c6ec70960862eb3e1961ce3",
+          "checks": "PASS"
+        },
+        {
+          "policy": "skip_continue_dedup_v1",
+          "selected_count": 3,
+          "m4_tokens": 1012,
+          "raw_candidates_sha256": "f95027ecbb020bf1f05dfb102af7fa3e83ba42542c6ec70960862eb3e1961ce3",
+          "checks": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "a-smoke-passports",
+      "k": 3,
+      "candidate_count": 3,
+      "folder": "k3\\item_2",
+      "policies": [
+        {
+          "policy": "legacy_break_v1",
+          "selected_count": 3,
+          "m4_tokens": 924,
+          "raw_candidates_sha256": "92da300da6b7d6cdd26710a366a2559c7139686a26a814aed2729aa249a3b2e6",
+          "checks": "PASS"
+        },
+        {
+          "policy": "skip_continue_dedup_v1",
+          "selected_count": 3,
+          "m4_tokens": 924,
+          "raw_candidates_sha256": "92da300da6b7d6cdd26710a366a2559c7139686a26a814aed2729aa249a3b2e6",
+          "checks": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "a-smoke-eris",
+      "k": 5,
+      "candidate_count": 5,
+      "folder": "k5\\item_1",
+      "policies": [
+        {
+          "policy": "legacy_break_v1",
+          "selected_count": 3,
+          "m4_tokens": 1012,
+          "raw_candidates_sha256": "8d7a6ab553ba2305991ebc2c3fd265b28af377a415bce6ba35037c19ec3efb1c",
+          "checks": "PASS"
+        },
+        {
+          "policy": "skip_continue_dedup_v1",
+          "selected_count": 3,
+          "m4_tokens": 1012,
+          "raw_candidates_sha256": "8d7a6ab553ba2305991ebc2c3fd265b28af377a415bce6ba35037c19ec3efb1c",
+          "checks": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "a-smoke-passports",
+      "k": 5,
+      "candidate_count": 5,
+      "folder": "k5\\item_2",
+      "policies": [
+        {
+          "policy": "legacy_break_v1",
+          "selected_count": 3,
+          "m4_tokens": 924,
+          "raw_candidates_sha256": "f7dc8733b54c54aefe7c740fa2910f691788d3922a4da123682e498ecb5fb4fc",
+          "checks": "PASS"
+        },
+        {
+          "policy": "skip_continue_dedup_v1",
+          "selected_count": 3,
+          "m4_tokens": 924,
+          "raw_candidates_sha256": "f7dc8733b54c54aefe7c740fa2910f691788d3922a4da123682e498ecb5fb4fc",
+          "checks": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "a-smoke-eris",
+      "k": 10,
+      "candidate_count": 10,
+      "folder": "k10\\item_1",
+      "policies": [
+        {
+          "policy": "legacy_break_v1",
+          "selected_count": 3,
+          "m4_tokens": 1012,
+          "raw_candidates_sha256": "a69010e63fd2dfb17586fd19e05e0f4d7032a38d7afc615aa6bf8513d1df1d20",
+          "checks": "PASS"
+        },
+        {
+          "policy": "skip_continue_dedup_v1",
+          "selected_count": 3,
+          "m4_tokens": 1012,
+          "raw_candidates_sha256": "a69010e63fd2dfb17586fd19e05e0f4d7032a38d7afc615aa6bf8513d1df1d20",
+          "checks": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "a-smoke-passports",
+      "k": 10,
+      "candidate_count": 10,
+      "folder": "k10\\item_2",
+      "policies": [
+        {
+          "policy": "legacy_break_v1",
+          "selected_count": 3,
+          "m4_tokens": 924,
+          "raw_candidates_sha256": "fcd518f866821852adc4481b5979341cebeab2d99e8df6d0266892d3b9099add",
+          "checks": "PASS"
+        },
+        {
+          "policy": "skip_continue_dedup_v1",
+          "selected_count": 3,
+          "m4_tokens": 924,
+          "raw_candidates_sha256": "fcd518f866821852adc4481b5979341cebeab2d99e8df6d0266892d3b9099add",
+          "checks": "PASS"
+        }
+      ]
+    }
+  ],
+  "manifest_sha256": {
+    "A": "4e1614c8965a300b577b8c9736215e4c7cb3ddfccf3e7943282de8e6f20717a5",
+    "B": "e60919f16bb510087c3fdcab0454733318086c4b908d97ecdd64845cd0eff526",
+    "C": "c5f99cd5d7218722f5ed8e2c85cdc6bb4a7ad09ed1896ec7a831bdb4fef51034"
+  },
+  "model_snapshot": "D:\\Cityu SemA\\CS5481\\M4_work\\model_cache\\models--sentence-transformers--all-MiniLM-L6-v2\\snapshots\\1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "m4_tokenizer": "actual cached embedding model tokenizer"
+}

@@ -1,0 +1,10 @@
+{
+  "schema_version": "m5_pricing.v1",
+  "model": "deepseek-flash",
+  "currency": "USD",
+  "input_cache_hit_per_million": null,
+  "input_cache_miss_per_million": null,
+  "output_per_million": null,
+  "source_url": "https://api-docs.deepseek.com/quick_start/pricing",
+  "verified_at_utc": null
+}

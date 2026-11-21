@@ -1,0 +1,36 @@
+{
+  "schema_version": "validation_report.v1",
+  "request_id": "d5d537ed926b4e6eaf71abff1e679641",
+  "answer_object_sha256": "07584995c98ca410e6a5027c34298f8b822440a6a7b8aa1cb3d604478a14b63b",
+  "decision": "PASS",
+  "method": "llm_judge",
+  "human_review": "not_performed",
+  "publication_ready": false,
+  "checks": {
+    "support": "not_applicable",
+    "relevance": "not_applicable",
+    "answer_scope": "pass"
+  },
+  "claim_reviews": [],
+  "answer_review": {
+    "recommended_status": "INSUFFICIENT_SOURCES",
+    "status_appropriate": true,
+    "missing_information_accurate": true,
+    "no_unresolved_conflicts": true,
+    "reason": "The question asks for the passport numbers of the Australians missing in Nepal. The supplied reports discuss the number of missing Australians (39, at least 35, 38) and rescue efforts but contain no passport numbers. The draft correctly makes no claims and states the passport numbers are not provided. The missing-information entry is accurate and contains no unsupported assertions. No material conflicts affect the answer."
+  },
+  "error": null,
+  "source_review_sha256": "d0e7dba1355626c17c33b1ada246cf2d325c5c4c9ab3e24f06fee987083d5e84",
+  "judge": {
+    "requested_model": "deepseek-flash",
+    "returned_model": "deepseek-flash",
+    "prompt_version": "m5-support-en-v0.7.2",
+    "temperature": 0,
+    "max_output_tokens": 2400,
+    "calls": 1,
+    "input_tokens": 2288,
+    "output_tokens": 128,
+    "latency_ms": 2023.89,
+    "cost_usd": null
+  }
+}

@@ -1,0 +1,2571 @@
+{
+  "schema_version": "m5_pipeline.v1",
+  "implementation_version": "m5-token-budget-v0.5",
+  "created_at_utc": "2026-11-20T15:52:59.220262+00:00",
+  "status": "PARTIAL",
+  "gate": "AUTOMATIC_REVIEW_PASSED",
+  "active_stage": null,
+  "publication_ready": false,
+  "human_review": "not_performed",
+  "output_language": "en",
+  "answer": "The Department of Foreign Affairs and Trade was \"working around the clock\" to verify the status of the missing Australians. [S1]\nDfat staff were operating from the post in Kathmandu. [S1]\nThe government would send a crisis response team to the affected region. [S1]\nAustralian officials were trying to make contact with tour operators. [S1]\nAustralian officials were working with Nepali authorities to determine whether independent travellers not attached to a tour group could also be missing. [S1]\nThe government said it was \"focused on establishing their whereabouts and supporting their families\". [S3]\nThe minister said the government would \"continue to do what we can to try and locate those people\". [S3]\nMissing information: The supplied reports do not provide the missing travellers' passport numbers.",
+  "claims": [
+    {
+      "text": "The Department of Foreign Affairs and Trade was \"working around the clock\" to verify the status of the missing Australians.",
+      "source_ids": [
+        "S1"
+      ],
+      "evidence_quotes": [
+        {
+          "source_id": "S1",
+          "quote": "the Department of Foreign Affairs and Trade (Dfat) was “working around the clock” to verify the status of the missing Australians"
+        }
+      ],
+      "claim_id": "C1",
+      "located_quotes": [
+        {
+          "source_id": "S1",
+          "chunk_id": "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+          "quote": "the Department of Foreign Affairs and Trade (Dfat) was “working around the clock” to verify the status of the missing Australians",
+          "char_start": 382,
+          "char_end": 511
+        }
+      ]
+    },
+    {
+      "text": "Dfat staff were operating from the post in Kathmandu.",
+      "source_ids": [
+        "S1"
+      ],
+      "evidence_quotes": [
+        {
+          "source_id": "S1",
+          "quote": "Thistlethwaite confirmed Dfat staff were operating from the post in Kathmandu"
+        }
+      ],
+      "claim_id": "C2",
+      "located_quotes": [
+        {
+          "source_id": "S1",
+          "chunk_id": "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+          "quote": "Thistlethwaite confirmed Dfat staff were operating from the post in Kathmandu",
+          "char_start": 686,
+          "char_end": 763
+        }
+      ]
+    },
+    {
+      "text": "The government would send a crisis response team to the affected region.",
+      "source_ids": [
+        "S1"
+      ],
+      "evidence_quotes": [
+        {
+          "source_id": "S1",
+          "quote": "the government would send a crisis response team to the affected region"
+        }
+      ],
+      "claim_id": "C3",
+      "located_quotes": [
+        {
+          "source_id": "S1",
+          "chunk_id": "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+          "quote": "the government would send a crisis response team to the affected region",
+          "char_start": 774,
+          "char_end": 845
+        }
+      ]
+    },
+    {
+      "text": "Australian officials were trying to make contact with tour operators.",
+      "source_ids": [
+        "S1"
+      ],
+      "evidence_quotes": [
+        {
+          "source_id": "S1",
+          "quote": "“We’re trying to make contact with those tour operators,” he said"
+        }
+      ],
+      "claim_id": "C4",
+      "located_quotes": [
+        {
+          "source_id": "S1",
+          "chunk_id": "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+          "quote": "“We’re trying to make contact with those tour operators,” he said",
+          "char_start": 847,
+          "char_end": 912
+        }
+      ]
+    },
+    {
+      "text": "Australian officials were working with Nepali authorities to determine whether independent travellers not attached to a tour group could also be missing.",
+      "source_ids": [
+        "S1"
+      ],
+      "evidence_quotes": [
+        {
+          "source_id": "S1",
+          "quote": "Australian officials were working with Nepali authorities to determine whether independent travellers not attached to a tour group could also be missing"
+        }
+      ],
+      "claim_id": "C5",
+      "located_quotes": [
+        {
+          "source_id": "S1",
+          "chunk_id": "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+          "quote": "Australian officials were working with Nepali authorities to determine whether independent travellers not attached to a tour group could also be missing",
+          "char_start": 926,
+          "char_end": 1078
+        }
+      ]
+    },
+    {
+      "text": "The government said it was \"focused on establishing their whereabouts and supporting their families\".",
+      "source_ids": [
+        "S3"
+      ],
+      "evidence_quotes": [
+        {
+          "source_id": "S3",
+          "quote": "the government was “focused on establishing their whereabouts and supporting their families”"
+        }
+      ],
+      "claim_id": "C6",
+      "located_quotes": [
+        {
+          "source_id": "S3",
+          "chunk_id": "0384fde223a2c41e7911866149317ad89daa2c270b58af111180b72c8ae670f0",
+          "quote": "the government was “focused on establishing their whereabouts and supporting their families”",
+          "char_start": 1076,
+          "char_end": 1168
+        }
+      ]
+    },
+    {
+      "text": "The minister said the government would \"continue to do what we can to try and locate those people\".",
+      "source_ids": [
+        "S3"
+      ],
+      "evidence_quotes": [
+        {
+          "source_id": "S3",
+          "quote": "we’ll continue to do what we can to try and locate those people"
+        }
+      ],
+      "claim_id": "C7",
+      "located_quotes": [
+        {
+          "source_id": "S3",
+          "chunk_id": "0384fde223a2c41e7911866149317ad89daa2c270b58af111180b72c8ae670f0",
+          "quote": "we’ll continue to do what we can to try and locate those people",
+          "char_start": 939,
+          "char_end": 1002
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "S1",
+      "rank": 1,
+      "chunk_id": "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+      "document_id": "australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+      "chunk_index": 0,
+      "text": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal\n\nThe Australian government is urgently seeking information on the welfare of at least 35 Australians missing in Nepal, after a catastrophic flash flood swept through the Nepal-Tibet border region. Assistant minister for foreign affairs, Matt Thistlethwaite, said on Thursday evening that the Department of Foreign Affairs and Trade (Dfat) was “working around the clock” to verify the status of the missing Australians. The figure is based on reports from the Nepali Tourism Board and officials on the ground. Related: Flash floods on Nepal-Tibet border leave scores dead and hundreds missing Thistlethwaite confirmed Dfat staff were operating from the post in Kathmandu, and that the government would send a crisis response team to the affected region. “We’re trying to make contact with those tour operators,” he said, adding that Australian officials were working with Nepali authorities to determine whether independent travellers not attached to a tour group could also be missing.",
+      "text_sha256": "3740b069e84cd83005a88c629b41424439e2005aeaac2a341ac9669620c971b6",
+      "citation": {
+        "url": "https://www.theguardian.com/australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+        "title": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal",
+        "published_at_utc": "2026-08-27T18:18:50Z",
+        "source_name": "The Guardian",
+        "source_domain": "theguardian.com"
+      },
+      "url": "https://www.theguardian.com/australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+      "title": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal",
+      "published_at_utc": "2026-08-27T18:18:50Z"
+    },
+    {
+      "source_id": "S3",
+      "rank": 3,
+      "chunk_id": "0384fde223a2c41e7911866149317ad89daa2c270b58af111180b72c8ae670f0",
+      "document_id": "world/2026/sep/01/missing-australian-found-alive-nepal-tibet-floods",
+      "chunk_index": 0,
+      "text": "Relief as five Australians missing in Nepal-Tibet flood disaster found alive\n\nA total of five Australians missing after devastating floods ravaged the Nepal-Tibet border last week have been found. Of the five Australians confirmed safe, one was found in Nepal, one in Tibet, and three outside the crisis-hit area. The total number still missing is 38. These Australians had not spoken to families and next of kin since the disaster struck seven days ago. There were “grave concerns” for the dozens of citizens still missing in the disaster, the minister for multicultural affairs, Anne Aly, told the ABC on Wednesday morning. “There are real logistic issues, including communications to find out where people are,” she said. Related: How the deadly Nepal and Tibet flash flood unfolded – a visual guide “For those families that are still waiting, those 38 individuals unaccounted for, we understand that it’s a really concerning time, and we’ll continue to do what we can to try and locate those people.” Earlier, the minister for the Pacific, Pat Conroy, told Radio National the government was “focused on establishing their whereabouts and supporting their families”.",
+      "text_sha256": "0c1270755f8b67e8638d5f21b2337b36e18460a9cc97756e545763544d653a8c",
+      "citation": {
+        "url": "https://www.theguardian.com/world/2026/sep/01/missing-australian-found-alive-nepal-tibet-floods",
+        "title": "Relief as five Australians missing in Nepal-Tibet flood disaster found alive",
+        "published_at_utc": "2026-09-02T01:59:06Z",
+        "source_name": "The Guardian",
+        "source_domain": "theguardian.com"
+      },
+      "url": "https://www.theguardian.com/world/2026/sep/01/missing-australian-found-alive-nepal-tibet-floods",
+      "title": "Relief as five Australians missing in Nepal-Tibet flood disaster found alive",
+      "published_at_utc": "2026-09-02T01:59:06Z"
+    }
+  ],
+  "missing_information": [
+    "The supplied reports do not provide the missing travellers' passport numbers."
+  ],
+  "answer_status": "PARTIAL",
+  "answer_record": {
+    "schema_version": "answer_response.v1",
+    "implementation_version": "m5-token-budget-v0.5",
+    "output_language": "en",
+    "request_id": "3476b59908d14002aa6b880b54ab853d",
+    "created_at_utc": "2026-11-20T15:52:59.473003+00:00",
+    "status": "PARTIAL",
+    "claims": [
+      {
+        "text": "The Department of Foreign Affairs and Trade was \"working around the clock\" to verify the status of the missing Australians.",
+        "source_ids": [
+          "S1"
+        ],
+        "evidence_quotes": [
+          {
+            "source_id": "S1",
+            "quote": "the Department of Foreign Affairs and Trade (Dfat) was “working around the clock” to verify the status of the missing Australians"
+          }
+        ],
+        "claim_id": "C1",
+        "located_quotes": [
+          {
+            "source_id": "S1",
+            "chunk_id": "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+            "quote": "the Department of Foreign Affairs and Trade (Dfat) was “working around the clock” to verify the status of the missing Australians",
+            "char_start": 382,
+            "char_end": 511
+          }
+        ]
+      },
+      {
+        "text": "Dfat staff were operating from the post in Kathmandu.",
+        "source_ids": [
+          "S1"
+        ],
+        "evidence_quotes": [
+          {
+            "source_id": "S1",
+            "quote": "Thistlethwaite confirmed Dfat staff were operating from the post in Kathmandu"
+          }
+        ],
+        "claim_id": "C2",
+        "located_quotes": [
+          {
+            "source_id": "S1",
+            "chunk_id": "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+            "quote": "Thistlethwaite confirmed Dfat staff were operating from the post in Kathmandu",
+            "char_start": 686,
+            "char_end": 763
+          }
+        ]
+      },
+      {
+        "text": "The government would send a crisis response team to the affected region.",
+        "source_ids": [
+          "S1"
+        ],
+        "evidence_quotes": [
+          {
+            "source_id": "S1",
+            "quote": "the government would send a crisis response team to the affected region"
+          }
+        ],
+        "claim_id": "C3",
+        "located_quotes": [
+          {
+            "source_id": "S1",
+            "chunk_id": "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+            "quote": "the government would send a crisis response team to the affected region",
+            "char_start": 774,
+            "char_end": 845
+          }
+        ]
+      },
+      {
+        "text": "Australian officials were trying to make contact with tour operators.",
+        "source_ids": [
+          "S1"
+        ],
+        "evidence_quotes": [
+          {
+            "source_id": "S1",
+            "quote": "“We’re trying to make contact with those tour operators,” he said"
+          }
+        ],
+        "claim_id": "C4",
+        "located_quotes": [
+          {
+            "source_id": "S1",
+            "chunk_id": "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+            "quote": "“We’re trying to make contact with those tour operators,” he said",
+            "char_start": 847,
+            "char_end": 912
+          }
+        ]
+      },
+      {
+        "text": "Australian officials were working with Nepali authorities to determine whether independent travellers not attached to a tour group could also be missing.",
+        "source_ids": [
+          "S1"
+        ],
+        "evidence_quotes": [
+          {
+            "source_id": "S1",
+            "quote": "Australian officials were working with Nepali authorities to determine whether independent travellers not attached to a tour group could also be missing"
+          }
+        ],
+        "claim_id": "C5",
+        "located_quotes": [
+          {
+            "source_id": "S1",
+            "chunk_id": "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+            "quote": "Australian officials were working with Nepali authorities to determine whether independent travellers not attached to a tour group could also be missing",
+            "char_start": 926,
+            "char_end": 1078
+          }
+        ]
+      },
+      {
+        "text": "The government said it was \"focused on establishing their whereabouts and supporting their families\".",
+        "source_ids": [
+          "S3"
+        ],
+        "evidence_quotes": [
+          {
+            "source_id": "S3",
+            "quote": "the government was “focused on establishing their whereabouts and supporting their families”"
+          }
+        ],
+        "claim_id": "C6",
+        "located_quotes": [
+          {
+            "source_id": "S3",
+            "chunk_id": "0384fde223a2c41e7911866149317ad89daa2c270b58af111180b72c8ae670f0",
+            "quote": "the government was “focused on establishing their whereabouts and supporting their families”",
+            "char_start": 1076,
+            "char_end": 1168
+          }
+        ]
+      },
+      {
+        "text": "The minister said the government would \"continue to do what we can to try and locate those people\".",
+        "source_ids": [
+          "S3"
+        ],
+        "evidence_quotes": [
+          {
+            "source_id": "S3",
+            "quote": "we’ll continue to do what we can to try and locate those people"
+          }
+        ],
+        "claim_id": "C7",
+        "located_quotes": [
+          {
+            "source_id": "S3",
+            "chunk_id": "0384fde223a2c41e7911866149317ad89daa2c270b58af111180b72c8ae670f0",
+            "quote": "we’ll continue to do what we can to try and locate those people",
+            "char_start": 939,
+            "char_end": 1002
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "source_id": "S1",
+        "rank": 1,
+        "chunk_id": "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+        "document_id": "australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+        "chunk_index": 0,
+        "text": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal\n\nThe Australian government is urgently seeking information on the welfare of at least 35 Australians missing in Nepal, after a catastrophic flash flood swept through the Nepal-Tibet border region. Assistant minister for foreign affairs, Matt Thistlethwaite, said on Thursday evening that the Department of Foreign Affairs and Trade (Dfat) was “working around the clock” to verify the status of the missing Australians. The figure is based on reports from the Nepali Tourism Board and officials on the ground. Related: Flash floods on Nepal-Tibet border leave scores dead and hundreds missing Thistlethwaite confirmed Dfat staff were operating from the post in Kathmandu, and that the government would send a crisis response team to the affected region. “We’re trying to make contact with those tour operators,” he said, adding that Australian officials were working with Nepali authorities to determine whether independent travellers not attached to a tour group could also be missing.",
+        "text_sha256": "3740b069e84cd83005a88c629b41424439e2005aeaac2a341ac9669620c971b6",
+        "citation": {
+          "url": "https://www.theguardian.com/australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+          "title": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal",
+          "published_at_utc": "2026-08-27T18:18:50Z",
+          "source_name": "The Guardian",
+          "source_domain": "theguardian.com"
+        },
+        "url": "https://www.theguardian.com/australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+        "title": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal",
+        "published_at_utc": "2026-08-27T18:18:50Z"
+      },
+      {
+        "source_id": "S3",
+        "rank": 3,
+        "chunk_id": "0384fde223a2c41e7911866149317ad89daa2c270b58af111180b72c8ae670f0",
+        "document_id": "world/2026/sep/01/missing-australian-found-alive-nepal-tibet-floods",
+        "chunk_index": 0,
+        "text": "Relief as five Australians missing in Nepal-Tibet flood disaster found alive\n\nA total of five Australians missing after devastating floods ravaged the Nepal-Tibet border last week have been found. Of the five Australians confirmed safe, one was found in Nepal, one in Tibet, and three outside the crisis-hit area. The total number still missing is 38. These Australians had not spoken to families and next of kin since the disaster struck seven days ago. There were “grave concerns” for the dozens of citizens still missing in the disaster, the minister for multicultural affairs, Anne Aly, told the ABC on Wednesday morning. “There are real logistic issues, including communications to find out where people are,” she said. Related: How the deadly Nepal and Tibet flash flood unfolded – a visual guide “For those families that are still waiting, those 38 individuals unaccounted for, we understand that it’s a really concerning time, and we’ll continue to do what we can to try and locate those people.” Earlier, the minister for the Pacific, Pat Conroy, told Radio National the government was “focused on establishing their whereabouts and supporting their families”.",
+        "text_sha256": "0c1270755f8b67e8638d5f21b2337b36e18460a9cc97756e545763544d653a8c",
+        "citation": {
+          "url": "https://www.theguardian.com/world/2026/sep/01/missing-australian-found-alive-nepal-tibet-floods",
+          "title": "Relief as five Australians missing in Nepal-Tibet flood disaster found alive",
+          "published_at_utc": "2026-09-02T01:59:06Z",
+          "source_name": "The Guardian",
+          "source_domain": "theguardian.com"
+        },
+        "url": "https://www.theguardian.com/world/2026/sep/01/missing-australian-found-alive-nepal-tibet-floods",
+        "title": "Relief as five Australians missing in Nepal-Tibet flood disaster found alive",
+        "published_at_utc": "2026-09-02T01:59:06Z"
+      }
+    ],
+    "answer": "The Department of Foreign Affairs and Trade was \"working around the clock\" to verify the status of the missing Australians. [S1]\nDfat staff were operating from the post in Kathmandu. [S1]\nThe government would send a crisis response team to the affected region. [S1]\nAustralian officials were trying to make contact with tour operators. [S1]\nAustralian officials were working with Nepali authorities to determine whether independent travellers not attached to a tour group could also be missing. [S1]\nThe government said it was \"focused on establishing their whereabouts and supporting their families\". [S3]\nThe minister said the government would \"continue to do what we can to try and locate those people\". [S3]\nMissing information: The supplied reports do not provide the missing travellers' passport numbers.",
+    "missing_information": [
+      "The supplied reports do not provide the missing travellers' passport numbers."
+    ],
+    "review_required": true,
+    "publication_ready": false,
+    "validation": {
+      "input": "pass",
+      "schema": "pass",
+      "citation_ids": "pass",
+      "quote_match": "pass",
+      "support": "unchecked",
+      "answerability": "unchecked"
+    },
+    "generation": {
+      "model": "deepseek-flash",
+      "prompt_version": "m5-generation-en-v0.7.2",
+      "calls": [
+        {
+          "attempt": 1,
+          "input_tokens": 2235,
+          "output_tokens": 471,
+          "returned_model": "deepseek-flash",
+          "latency_ms": 2484.13,
+          "error_code": null,
+          "token_budget": {
+            "profile_version": "m5-token-budget-v0.5",
+            "method": "official_offline_tokenizer",
+            "check_status": "PASS",
+            "requested_model": "deepseek-flash",
+            "tokenizer_version": "0.22.2",
+            "tokenizer_sha256": "89085f12ef79460ac5f66d1119325ddfc694b4ab209d80bbd81d35f081dc9614",
+            "template_sha256": "841f8cf146e3f0ad1082594a31f68ecf7608c20467ef355081333d85bbaeb1cb",
+            "template_scope": "official_sample_system_user_add_generation_prompt",
+            "source_url": "https://api-docs.deepseek.com/quick_start/token_usage",
+            "includes": [
+              "system_prompt",
+              "serialized_user_content",
+              "sample_chat_markers"
+            ],
+            "input_tokens_local": 2211,
+            "output_tokens_reserved": 1600,
+            "safety_margin_tokens": 512,
+            "application_total_token_limit": 8192,
+            "total_tokens_reserved": 4323,
+            "headroom_tokens": 3869,
+            "provider_tokenizer_parity_verified": false,
+            "api_usage_is_authoritative": true,
+            "payload_sha256": "98702cb7540e2619f86ddf3d774f39f97234b417cf75742b89bd9686cba831df",
+            "provider_input_tokens": 2235,
+            "provider_minus_local_tokens": 24,
+            "observation": "single_response_comparison_not_parity_verification"
+          }
+        }
+      ],
+      "max_calls": 1,
+      "input_tokens": 2235,
+      "output_tokens": 471,
+      "token_usage_complete": true,
+      "latency_ms": 2484.13,
+      "cost_usd": null
+    },
+    "evidence": [
+      {
+        "source_id": "S1",
+        "rank": 1,
+        "chunk_id": "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+        "document_id": "australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+        "chunk_index": 0,
+        "text": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal\n\nThe Australian government is urgently seeking information on the welfare of at least 35 Australians missing in Nepal, after a catastrophic flash flood swept through the Nepal-Tibet border region. Assistant minister for foreign affairs, Matt Thistlethwaite, said on Thursday evening that the Department of Foreign Affairs and Trade (Dfat) was “working around the clock” to verify the status of the missing Australians. The figure is based on reports from the Nepali Tourism Board and officials on the ground. Related: Flash floods on Nepal-Tibet border leave scores dead and hundreds missing Thistlethwaite confirmed Dfat staff were operating from the post in Kathmandu, and that the government would send a crisis response team to the affected region. “We’re trying to make contact with those tour operators,” he said, adding that Australian officials were working with Nepali authorities to determine whether independent travellers not attached to a tour group could also be missing.",
+        "text_sha256": "3740b069e84cd83005a88c629b41424439e2005aeaac2a341ac9669620c971b6",
+        "citation": {
+          "url": "https://www.theguardian.com/australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+          "title": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal",
+          "published_at_utc": "2026-08-27T18:18:50Z",
+          "source_name": "The Guardian",
+          "source_domain": "theguardian.com"
+        }
+      },
+      {
+        "source_id": "S2",
+        "rank": 2,
+        "chunk_id": "773b378d447b0bcc879e74d6b6f89c89e34aba7520757275317a64adf12e6f5d",
+        "document_id": "australia-news/2026/aug/27/children-among-australian-tourists-missing-feared-dead-nepal-tibet-floods",
+        "chunk_index": 4,
+        "text": "Nepal floods: children as young as 11 among 39 Australians missing after disaster\n\n“All of us, including the volunteers and support teams are deeply anguished and are doing our utmost to assist in the rescue,” Sadhguru posted on X. “There has been no official information on the whereabouts of any of the people who were at the immigration office. “We are working with the authorities to see if we can get to the location and stand ready to be part of the rescue efforts, regardless of the risk involved.” Kathmandu Holiday Tours and Travels is reporting one missing Australian, and was contacted for comment. As many as six Australians were also reported to be travelling with Kailash Journeys guides, who were also contacted for comment. The brother of one missing woman told Radio New Zealand she was hiking with friends from Australia with the group. The Trekkers’ Society, which posted a statement confirming 92 travellers including 77 foreign nationals had gone missing. They did not specify in the statement if any Australians were among those missing, but were contacted for comment. The number of missing Australians is based on those reported by tour groups in the areaWong confirmed.",
+        "text_sha256": "0bb4838d8a1fb99da3ecbbbfa9010ad25ae24bf86d9b03d1a79a4596ebc4066f",
+        "citation": {
+          "url": "https://www.theguardian.com/australia-news/2026/aug/27/children-among-australian-tourists-missing-feared-dead-nepal-tibet-floods",
+          "title": "Nepal floods: children as young as 11 among 39 Australians missing after disaster",
+          "published_at_utc": "2026-08-27T11:00:48Z",
+          "source_name": "The Guardian",
+          "source_domain": "theguardian.com"
+        }
+      },
+      {
+        "source_id": "S3",
+        "rank": 3,
+        "chunk_id": "0384fde223a2c41e7911866149317ad89daa2c270b58af111180b72c8ae670f0",
+        "document_id": "world/2026/sep/01/missing-australian-found-alive-nepal-tibet-floods",
+        "chunk_index": 0,
+        "text": "Relief as five Australians missing in Nepal-Tibet flood disaster found alive\n\nA total of five Australians missing after devastating floods ravaged the Nepal-Tibet border last week have been found. Of the five Australians confirmed safe, one was found in Nepal, one in Tibet, and three outside the crisis-hit area. The total number still missing is 38. These Australians had not spoken to families and next of kin since the disaster struck seven days ago. There were “grave concerns” for the dozens of citizens still missing in the disaster, the minister for multicultural affairs, Anne Aly, told the ABC on Wednesday morning. “There are real logistic issues, including communications to find out where people are,” she said. Related: How the deadly Nepal and Tibet flash flood unfolded – a visual guide “For those families that are still waiting, those 38 individuals unaccounted for, we understand that it’s a really concerning time, and we’ll continue to do what we can to try and locate those people.” Earlier, the minister for the Pacific, Pat Conroy, told Radio National the government was “focused on establishing their whereabouts and supporting their families”.",
+        "text_sha256": "0c1270755f8b67e8638d5f21b2337b36e18460a9cc97756e545763544d653a8c",
+        "citation": {
+          "url": "https://www.theguardian.com/world/2026/sep/01/missing-australian-found-alive-nepal-tibet-floods",
+          "title": "Relief as five Australians missing in Nepal-Tibet flood disaster found alive",
+          "published_at_utc": "2026-09-02T01:59:06Z",
+          "source_name": "The Guardian",
+          "source_domain": "theguardian.com"
+        }
+      }
+    ],
+    "excluded_evidence": [
+      {
+        "chunk_id": "394a86666d945866a9f4b60c08e426e57ced932ecbbe57fccac6e473965ed7bf",
+        "reason": "not_in_m4_packed_context"
+      },
+      {
+        "chunk_id": "bd0822d9004e4f3385332aa87b50b6f0a5e5b1145c72a3a5fd9f1926d3e2f2d0",
+        "reason": "not_in_m4_packed_context"
+      }
+    ],
+    "warnings": [],
+    "validation_log": [
+      {
+        "attempt": 1,
+        "result": "pass"
+      }
+    ],
+    "error": null,
+    "m4_input": {
+      "source_schema_version": "retrieval_response.v2",
+      "input_kind": "saved_packed_example",
+      "live_retrieval_executed": false,
+      "input_object_sha256": "6a6b32ada97f4f7ec147b7d3596e2c86fc353c1c0a3f33502f5fb43388ca257e",
+      "candidate_count": 5,
+      "original_input": {
+        "retrieval": {
+          "schema_version": "retrieval_response.v2",
+          "request_id": "3476b59908d14002aa6b880b54ab853d",
+          "query": "According to the retrieved reports, what actions did the Australian government take to locate Australians missing in Nepal, and what are the missing travellers' passport numbers?",
+          "retrieval_query": "According to the retrieved reports, what actions did the Australian government take to locate Australians missing in Nepal, and what are the missing travellers' passport numbers?",
+          "status": "OK",
+          "index": {
+            "strategy": "C",
+            "collection": "chunks_c_e9f8efe647_c6c1836bed",
+            "manifest_sha256": "c5f99cd5d7218722f5ed8e2c85cdc6bb4a7ad09ed1896ec7a831bdb4fef51034"
+          },
+          "config": {
+            "mode": "hybrid",
+            "top_k": 5,
+            "candidate_k": 30,
+            "rrf_constant": 60
+          },
+          "filters": null,
+          "results": [
+            {
+              "rank": 1,
+              "chunk_id": "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+              "document_id": "australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+              "chunk_index": 0,
+              "text": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal\n\nThe Australian government is urgently seeking information on the welfare of at least 35 Australians missing in Nepal, after a catastrophic flash flood swept through the Nepal-Tibet border region. Assistant minister for foreign affairs, Matt Thistlethwaite, said on Thursday evening that the Department of Foreign Affairs and Trade (Dfat) was “working around the clock” to verify the status of the missing Australians. The figure is based on reports from the Nepali Tourism Board and officials on the ground. Related: Flash floods on Nepal-Tibet border leave scores dead and hundreds missing Thistlethwaite confirmed Dfat staff were operating from the post in Kathmandu, and that the government would send a crisis response team to the affected region. “We’re trying to make contact with those tour operators,” he said, adding that Australian officials were working with Nepali authorities to determine whether independent travellers not attached to a tour group could also be missing.",
+              "text_sha256": "3740b069e84cd83005a88c629b41424439e2005aeaac2a341ac9669620c971b6",
+              "citation": {
+                "url": "https://www.theguardian.com/australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+                "title": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal",
+                "published_at_utc": "2026-08-27T18:18:50Z",
+                "source_name": "The Guardian",
+                "source_domain": "theguardian.com"
+              },
+              "retrieved_by": [
+                "dense",
+                "bm25"
+              ],
+              "scores": {
+                "distance": 0.207927405834198,
+                "similarity": 0.792072594165802,
+                "bm25": 38.6328708289955,
+                "rrf": 0.03252247488101534,
+                "rerank": null
+              }
+            },
+            {
+              "rank": 2,
+              "chunk_id": "773b378d447b0bcc879e74d6b6f89c89e34aba7520757275317a64adf12e6f5d",
+              "document_id": "australia-news/2026/aug/27/children-among-australian-tourists-missing-feared-dead-nepal-tibet-floods",
+              "chunk_index": 4,
+              "text": "Nepal floods: children as young as 11 among 39 Australians missing after disaster\n\n“All of us, including the volunteers and support teams are deeply anguished and are doing our utmost to assist in the rescue,” Sadhguru posted on X. “There has been no official information on the whereabouts of any of the people who were at the immigration office. “We are working with the authorities to see if we can get to the location and stand ready to be part of the rescue efforts, regardless of the risk involved.” Kathmandu Holiday Tours and Travels is reporting one missing Australian, and was contacted for comment. As many as six Australians were also reported to be travelling with Kailash Journeys guides, who were also contacted for comment. The brother of one missing woman told Radio New Zealand she was hiking with friends from Australia with the group. The Trekkers’ Society, which posted a statement confirming 92 travellers including 77 foreign nationals had gone missing. They did not specify in the statement if any Australians were among those missing, but were contacted for comment. The number of missing Australians is based on those reported by tour groups in the areaWong confirmed.",
+              "text_sha256": "0bb4838d8a1fb99da3ecbbbfa9010ad25ae24bf86d9b03d1a79a4596ebc4066f",
+              "citation": {
+                "url": "https://www.theguardian.com/australia-news/2026/aug/27/children-among-australian-tourists-missing-feared-dead-nepal-tibet-floods",
+                "title": "Nepal floods: children as young as 11 among 39 Australians missing after disaster",
+                "published_at_utc": "2026-08-27T11:00:48Z",
+                "source_name": "The Guardian",
+                "source_domain": "theguardian.com"
+              },
+              "retrieved_by": [
+                "dense",
+                "bm25"
+              ],
+              "scores": {
+                "distance": 0.24902278184890747,
+                "similarity": 0.7509772181510925,
+                "bm25": 31.357150124460745,
+                "rrf": 0.03149801587301587,
+                "rerank": null
+              }
+            },
+            {
+              "rank": 3,
+              "chunk_id": "0384fde223a2c41e7911866149317ad89daa2c270b58af111180b72c8ae670f0",
+              "document_id": "world/2026/sep/01/missing-australian-found-alive-nepal-tibet-floods",
+              "chunk_index": 0,
+              "text": "Relief as five Australians missing in Nepal-Tibet flood disaster found alive\n\nA total of five Australians missing after devastating floods ravaged the Nepal-Tibet border last week have been found. Of the five Australians confirmed safe, one was found in Nepal, one in Tibet, and three outside the crisis-hit area. The total number still missing is 38. These Australians had not spoken to families and next of kin since the disaster struck seven days ago. There were “grave concerns” for the dozens of citizens still missing in the disaster, the minister for multicultural affairs, Anne Aly, told the ABC on Wednesday morning. “There are real logistic issues, including communications to find out where people are,” she said. Related: How the deadly Nepal and Tibet flash flood unfolded – a visual guide “For those families that are still waiting, those 38 individuals unaccounted for, we understand that it’s a really concerning time, and we’ll continue to do what we can to try and locate those people.” Earlier, the minister for the Pacific, Pat Conroy, told Radio National the government was “focused on establishing their whereabouts and supporting their families”.",
+              "text_sha256": "0c1270755f8b67e8638d5f21b2337b36e18460a9cc97756e545763544d653a8c",
+              "citation": {
+                "url": "https://www.theguardian.com/world/2026/sep/01/missing-australian-found-alive-nepal-tibet-floods",
+                "title": "Relief as five Australians missing in Nepal-Tibet flood disaster found alive",
+                "published_at_utc": "2026-09-02T01:59:06Z",
+                "source_name": "The Guardian",
+                "source_domain": "theguardian.com"
+              },
+              "retrieved_by": [
+                "dense",
+                "bm25"
+              ],
+              "scores": {
+                "distance": 0.25698524713516235,
+                "similarity": 0.7430147528648376,
+                "bm25": 31.79444208561777,
+                "rrf": 0.03128054740957967,
+                "rerank": null
+              }
+            },
+            {
+              "rank": 4,
+              "chunk_id": "394a86666d945866a9f4b60c08e426e57ced932ecbbe57fccac6e473965ed7bf",
+              "document_id": "australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+              "chunk_index": 3,
+              "text": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal\n\nThis is a very distressing time for those community members.” Interactive Wong said she would not confirm details of the missing Australians until the government had engaged with their next of kin, but acknowledged many tourists travel to the region for trekking opportunities and spiritual reasons. Nepal’s embassy in Canberra has also requested urgent assistance. “We are reaching out to the Australian government and hopefully they will provide assistance to us. We are in communication with them,” said the embassy’s second secretary, Saroj Paneru. Paneru said the government would be seeking financial assistance, but also technical support as it searches for missing people. He said the embassy was still trying to verify the number of Australians who were missing in the region affected by flash flooding. “The tourism industry in Nepal is working to collect information about anyone who was in the affected area,” he said.",
+              "text_sha256": "132a3a0355b789147b7acc84558df2237f776d35fa1bd8aa0c6269268b472397",
+              "citation": {
+                "url": "https://www.theguardian.com/australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+                "title": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal",
+                "published_at_utc": "2026-08-27T18:18:50Z",
+                "source_name": "The Guardian",
+                "source_domain": "theguardian.com"
+              },
+              "retrieved_by": [
+                "dense",
+                "bm25"
+              ],
+              "scores": {
+                "distance": 0.17919975519180298,
+                "similarity": 0.820800244808197,
+                "bm25": 29.13795753467218,
+                "rrf": 0.031099324975891997,
+                "rerank": null
+              }
+            },
+            {
+              "rank": 5,
+              "chunk_id": "bd0822d9004e4f3385332aa87b50b6f0a5e5b1145c72a3a5fd9f1926d3e2f2d0",
+              "document_id": "world/2026/aug/29/australians-missing-nepal-floods-total-rises-albanese-dfat-personnel-arriving",
+              "chunk_index": 0,
+              "text": "Number of Australians missing in Nepal’s deadly floods rises again, as Albanese deploys more personnel\n\nThe number of Australians who were reported missing in the catastrophic Nepal flooding disaster has risen to 41, as one family celebrates after an unaccounted-for woman made contact with them yesterday. It means three additional Australians were confirmed missing overnight – up from 38 who remained unaccounted for on Friday evening. The Australian government’s Department of Foreign Affairs has been urgently working with local authorities to contact Australian woman Cara Severino, 25, who became the first Australian reported missing who has been confirmed safe. Related: ‘So desperately loved’: ADF member among dozens of Australians missing in Nepal floods as families pray for safe return Severino contacted her parents, Debbie and Frank Severino, on Friday morning, informing them she was hiking away from the disaster zone to Kathmandu with a group of Nepali hikers – a trek of more than 110km.",
+              "text_sha256": "83470187ab1bb4ce1eceff00cc7adcb1a91bc59a1d251f7416d3f03a74a32bc6",
+              "citation": {
+                "url": "https://www.theguardian.com/world/2026/aug/29/australians-missing-nepal-floods-total-rises-albanese-dfat-personnel-arriving",
+                "title": "Number of Australians missing in Nepal’s deadly floods rises again, as Albanese deploys more personnel",
+                "published_at_utc": "2026-08-28T22:53:57Z",
+                "source_name": "The Guardian",
+                "source_domain": "theguardian.com"
+              },
+              "retrieved_by": [
+                "dense",
+                "bm25"
+              ],
+              "scores": {
+                "distance": 0.2611656188964844,
+                "similarity": 0.7388343811035156,
+                "bm25": 30.202698223791224,
+                "rrf": 0.029857397504456328,
+                "rerank": null
+              }
+            }
+          ],
+          "warnings": [],
+          "error": null,
+          "timing_ms": {
+            "encode": 10.9000999982527,
+            "search": 63.6233999975957,
+            "rerank": 0.0,
+            "total": 78.95239999925252
+          }
+        },
+        "context": "[004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e] Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal\nhttps://www.theguardian.com/australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods\nAustralian officials ‘working around the clock’ to check welfare of tourists missing in Nepal\n\nThe Australian government is urgently seeking information on the welfare of at least 35 Australians missing in Nepal, after a catastrophic flash flood swept through the Nepal-Tibet border region. Assistant minister for foreign affairs, Matt Thistlethwaite, said on Thursday evening that the Department of Foreign Affairs and Trade (Dfat) was “working around the clock” to verify the status of the missing Australians. The figure is based on reports from the Nepali Tourism Board and officials on the ground. Related: Flash floods on Nepal-Tibet border leave scores dead and hundreds missing Thistlethwaite confirmed Dfat staff were operating from the post in Kathmandu, and that the government would send a crisis response team to the affected region. “We’re trying to make contact with those tour operators,” he said, adding that Australian officials were working with Nepali authorities to determine whether independent travellers not attached to a tour group could also be missing.\n\n[773b378d447b0bcc879e74d6b6f89c89e34aba7520757275317a64adf12e6f5d] Nepal floods: children as young as 11 among 39 Australians missing after disaster\nhttps://www.theguardian.com/australia-news/2026/aug/27/children-among-australian-tourists-missing-feared-dead-nepal-tibet-floods\nNepal floods: children as young as 11 among 39 Australians missing after disaster\n\n“All of us, including the volunteers and support teams are deeply anguished and are doing our utmost to assist in the rescue,” Sadhguru posted on X. “There has been no official information on the whereabouts of any of the people who were at the immigration office. “We are working with the authorities to see if we can get to the location and stand ready to be part of the rescue efforts, regardless of the risk involved.” Kathmandu Holiday Tours and Travels is reporting one missing Australian, and was contacted for comment. As many as six Australians were also reported to be travelling with Kailash Journeys guides, who were also contacted for comment. The brother of one missing woman told Radio New Zealand she was hiking with friends from Australia with the group. The Trekkers’ Society, which posted a statement confirming 92 travellers including 77 foreign nationals had gone missing. They did not specify in the statement if any Australians were among those missing, but were contacted for comment. The number of missing Australians is based on those reported by tour groups in the areaWong confirmed.\n\n[0384fde223a2c41e7911866149317ad89daa2c270b58af111180b72c8ae670f0] Relief as five Australians missing in Nepal-Tibet flood disaster found alive\nhttps://www.theguardian.com/world/2026/sep/01/missing-australian-found-alive-nepal-tibet-floods\nRelief as five Australians missing in Nepal-Tibet flood disaster found alive\n\nA total of five Australians missing after devastating floods ravaged the Nepal-Tibet border last week have been found. Of the five Australians confirmed safe, one was found in Nepal, one in Tibet, and three outside the crisis-hit area. The total number still missing is 38. These Australians had not spoken to families and next of kin since the disaster struck seven days ago. There were “grave concerns” for the dozens of citizens still missing in the disaster, the minister for multicultural affairs, Anne Aly, told the ABC on Wednesday morning. “There are real logistic issues, including communications to find out where people are,” she said. Related: How the deadly Nepal and Tibet flash flood unfolded – a visual guide “For those families that are still waiting, those 38 individuals unaccounted for, we understand that it’s a really concerning time, and we’ll continue to do what we can to try and locate those people.” Earlier, the minister for the Pacific, Pat Conroy, told Radio National the government was “focused on establishing their whereabouts and supporting their families”.\n\n",
+        "context_tokens": 959,
+        "selected_chunk_ids": [
+          "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+          "773b378d447b0bcc879e74d6b6f89c89e34aba7520757275317a64adf12e6f5d",
+          "0384fde223a2c41e7911866149317ad89daa2c270b58af111180b72c8ae670f0"
+        ]
+      },
+      "selected_chunk_ids": [
+        "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+        "773b378d447b0bcc879e74d6b6f89c89e34aba7520757275317a64adf12e6f5d",
+        "0384fde223a2c41e7911866149317ad89daa2c270b58af111180b72c8ae670f0"
+      ],
+      "reported_context_tokens": 959,
+      "budget_tokenizer": "M4 embedding tokenizer proxy; count not recomputed by M5",
+      "generation_token_budget_verified": false,
+      "final_evidence_chunk_ids": [
+        "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+        "773b378d447b0bcc879e74d6b6f89c89e34aba7520757275317a64adf12e6f5d",
+        "0384fde223a2c41e7911866149317ad89daa2c270b58af111180b72c8ae670f0"
+      ]
+    },
+    "index": {
+      "strategy": "C",
+      "collection": "chunks_c_e9f8efe647_c6c1836bed",
+      "manifest_sha256": "c5f99cd5d7218722f5ed8e2c85cdc6bb4a7ad09ed1896ec7a831bdb4fef51034"
+    },
+    "query": "According to the retrieved reports, what actions did the Australian government take to locate Australians missing in Nepal, and what are the missing travellers' passport numbers?",
+    "retrieval_query": "According to the retrieved reports, what actions did the Australian government take to locate Australians missing in Nepal, and what are the missing travellers' passport numbers?",
+    "retrieval_config": {
+      "mode": "hybrid",
+      "top_k": 5,
+      "candidate_k": 30,
+      "rrf_constant": 60
+    },
+    "filters": null,
+    "retrieval_timing_ms": {
+      "encode": 10.9000999982527,
+      "search": 63.6233999975957,
+      "rerank": 0.0,
+      "total": 78.95239999925252
+    },
+    "context_limit": {
+      "method": "utf8_bytes",
+      "limit": 16000,
+      "includes": "system_prompt_and_serialized_user_content",
+      "model_tokenizer_budget_implemented": true,
+      "provider_tokenizer_parity_verified": false
+    },
+    "token_budget": {
+      "profile_version": "m5-token-budget-v0.5",
+      "method": "official_offline_tokenizer",
+      "check_status": "PASS",
+      "requested_model": "deepseek-flash",
+      "tokenizer_version": "0.22.2",
+      "tokenizer_sha256": "89085f12ef79460ac5f66d1119325ddfc694b4ab209d80bbd81d35f081dc9614",
+      "template_sha256": "841f8cf146e3f0ad1082594a31f68ecf7608c20467ef355081333d85bbaeb1cb",
+      "template_scope": "official_sample_system_user_add_generation_prompt",
+      "source_url": "https://api-docs.deepseek.com/quick_start/token_usage",
+      "includes": [
+        "system_prompt",
+        "serialized_user_content",
+        "sample_chat_markers"
+      ],
+      "input_tokens_local": 2211,
+      "output_tokens_reserved": 1600,
+      "safety_margin_tokens": 512,
+      "application_total_token_limit": 8192,
+      "total_tokens_reserved": 4323,
+      "headroom_tokens": 3869,
+      "provider_tokenizer_parity_verified": false,
+      "api_usage_is_authoritative": true,
+      "payload_sha256": "98702cb7540e2619f86ddf3d774f39f97234b417cf75742b89bd9686cba831df",
+      "provider_input_tokens": null,
+      "provider_minus_local_tokens": null,
+      "observation": "not_available"
+    },
+    "timing_ms": {
+      "total": 8190.39
+    }
+  },
+  "attempts": [
+    {
+      "number": 1,
+      "generation": {
+        "schema_version": "answer_response.v1",
+        "implementation_version": "m5-token-budget-v0.5",
+        "output_language": "en",
+        "request_id": "3476b59908d14002aa6b880b54ab853d",
+        "created_at_utc": "2026-11-20T15:52:59.473003+00:00",
+        "status": "PARTIAL",
+        "claims": [
+          {
+            "text": "The Department of Foreign Affairs and Trade was \"working around the clock\" to verify the status of the missing Australians.",
+            "source_ids": [
+              "S1"
+            ],
+            "evidence_quotes": [
+              {
+                "source_id": "S1",
+                "quote": "the Department of Foreign Affairs and Trade (Dfat) was “working around the clock” to verify the status of the missing Australians"
+              }
+            ],
+            "claim_id": "C1",
+            "located_quotes": [
+              {
+                "source_id": "S1",
+                "chunk_id": "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+                "quote": "the Department of Foreign Affairs and Trade (Dfat) was “working around the clock” to verify the status of the missing Australians",
+                "char_start": 382,
+                "char_end": 511
+              }
+            ]
+          },
+          {
+            "text": "Dfat staff were operating from the post in Kathmandu.",
+            "source_ids": [
+              "S1"
+            ],
+            "evidence_quotes": [
+              {
+                "source_id": "S1",
+                "quote": "Thistlethwaite confirmed Dfat staff were operating from the post in Kathmandu"
+              }
+            ],
+            "claim_id": "C2",
+            "located_quotes": [
+              {
+                "source_id": "S1",
+                "chunk_id": "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+                "quote": "Thistlethwaite confirmed Dfat staff were operating from the post in Kathmandu",
+                "char_start": 686,
+                "char_end": 763
+              }
+            ]
+          },
+          {
+            "text": "The government would send a crisis response team to the affected region.",
+            "source_ids": [
+              "S1"
+            ],
+            "evidence_quotes": [
+              {
+                "source_id": "S1",
+                "quote": "the government would send a crisis response team to the affected region"
+              }
+            ],
+            "claim_id": "C3",
+            "located_quotes": [
+              {
+                "source_id": "S1",
+                "chunk_id": "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+                "quote": "the government would send a crisis response team to the affected region",
+                "char_start": 774,
+                "char_end": 845
+              }
+            ]
+          },
+          {
+            "text": "Australian officials were trying to make contact with tour operators.",
+            "source_ids": [
+              "S1"
+            ],
+            "evidence_quotes": [
+              {
+                "source_id": "S1",
+                "quote": "“We’re trying to make contact with those tour operators,” he said"
+              }
+            ],
+            "claim_id": "C4",
+            "located_quotes": [
+              {
+                "source_id": "S1",
+                "chunk_id": "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+                "quote": "“We’re trying to make contact with those tour operators,” he said",
+                "char_start": 847,
+                "char_end": 912
+              }
+            ]
+          },
+          {
+            "text": "Australian officials were working with Nepali authorities to determine whether independent travellers not attached to a tour group could also be missing.",
+            "source_ids": [
+              "S1"
+            ],
+            "evidence_quotes": [
+              {
+                "source_id": "S1",
+                "quote": "Australian officials were working with Nepali authorities to determine whether independent travellers not attached to a tour group could also be missing"
+              }
+            ],
+            "claim_id": "C5",
+            "located_quotes": [
+              {
+                "source_id": "S1",
+                "chunk_id": "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+                "quote": "Australian officials were working with Nepali authorities to determine whether independent travellers not attached to a tour group could also be missing",
+                "char_start": 926,
+                "char_end": 1078
+              }
+            ]
+          },
+          {
+            "text": "The government said it was \"focused on establishing their whereabouts and supporting their families\".",
+            "source_ids": [
+              "S3"
+            ],
+            "evidence_quotes": [
+              {
+                "source_id": "S3",
+                "quote": "the government was “focused on establishing their whereabouts and supporting their families”"
+              }
+            ],
+            "claim_id": "C6",
+            "located_quotes": [
+              {
+                "source_id": "S3",
+                "chunk_id": "0384fde223a2c41e7911866149317ad89daa2c270b58af111180b72c8ae670f0",
+                "quote": "the government was “focused on establishing their whereabouts and supporting their families”",
+                "char_start": 1076,
+                "char_end": 1168
+              }
+            ]
+          },
+          {
+            "text": "The minister said the government would \"continue to do what we can to try and locate those people\".",
+            "source_ids": [
+              "S3"
+            ],
+            "evidence_quotes": [
+              {
+                "source_id": "S3",
+                "quote": "we’ll continue to do what we can to try and locate those people"
+              }
+            ],
+            "claim_id": "C7",
+            "located_quotes": [
+              {
+                "source_id": "S3",
+                "chunk_id": "0384fde223a2c41e7911866149317ad89daa2c270b58af111180b72c8ae670f0",
+                "quote": "we’ll continue to do what we can to try and locate those people",
+                "char_start": 939,
+                "char_end": 1002
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "source_id": "S1",
+            "rank": 1,
+            "chunk_id": "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+            "document_id": "australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+            "chunk_index": 0,
+            "text": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal\n\nThe Australian government is urgently seeking information on the welfare of at least 35 Australians missing in Nepal, after a catastrophic flash flood swept through the Nepal-Tibet border region. Assistant minister for foreign affairs, Matt Thistlethwaite, said on Thursday evening that the Department of Foreign Affairs and Trade (Dfat) was “working around the clock” to verify the status of the missing Australians. The figure is based on reports from the Nepali Tourism Board and officials on the ground. Related: Flash floods on Nepal-Tibet border leave scores dead and hundreds missing Thistlethwaite confirmed Dfat staff were operating from the post in Kathmandu, and that the government would send a crisis response team to the affected region. “We’re trying to make contact with those tour operators,” he said, adding that Australian officials were working with Nepali authorities to determine whether independent travellers not attached to a tour group could also be missing.",
+            "text_sha256": "3740b069e84cd83005a88c629b41424439e2005aeaac2a341ac9669620c971b6",
+            "citation": {
+              "url": "https://www.theguardian.com/australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+              "title": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal",
+              "published_at_utc": "2026-08-27T18:18:50Z",
+              "source_name": "The Guardian",
+              "source_domain": "theguardian.com"
+            },
+            "url": "https://www.theguardian.com/australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+            "title": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal",
+            "published_at_utc": "2026-08-27T18:18:50Z"
+          },
+          {
+            "source_id": "S3",
+            "rank": 3,
+            "chunk_id": "0384fde223a2c41e7911866149317ad89daa2c270b58af111180b72c8ae670f0",
+            "document_id": "world/2026/sep/01/missing-australian-found-alive-nepal-tibet-floods",
+            "chunk_index": 0,
+            "text": "Relief as five Australians missing in Nepal-Tibet flood disaster found alive\n\nA total of five Australians missing after devastating floods ravaged the Nepal-Tibet border last week have been found. Of the five Australians confirmed safe, one was found in Nepal, one in Tibet, and three outside the crisis-hit area. The total number still missing is 38. These Australians had not spoken to families and next of kin since the disaster struck seven days ago. There were “grave concerns” for the dozens of citizens still missing in the disaster, the minister for multicultural affairs, Anne Aly, told the ABC on Wednesday morning. “There are real logistic issues, including communications to find out where people are,” she said. Related: How the deadly Nepal and Tibet flash flood unfolded – a visual guide “For those families that are still waiting, those 38 individuals unaccounted for, we understand that it’s a really concerning time, and we’ll continue to do what we can to try and locate those people.” Earlier, the minister for the Pacific, Pat Conroy, told Radio National the government was “focused on establishing their whereabouts and supporting their families”.",
+            "text_sha256": "0c1270755f8b67e8638d5f21b2337b36e18460a9cc97756e545763544d653a8c",
+            "citation": {
+              "url": "https://www.theguardian.com/world/2026/sep/01/missing-australian-found-alive-nepal-tibet-floods",
+              "title": "Relief as five Australians missing in Nepal-Tibet flood disaster found alive",
+              "published_at_utc": "2026-09-02T01:59:06Z",
+              "source_name": "The Guardian",
+              "source_domain": "theguardian.com"
+            },
+            "url": "https://www.theguardian.com/world/2026/sep/01/missing-australian-found-alive-nepal-tibet-floods",
+            "title": "Relief as five Australians missing in Nepal-Tibet flood disaster found alive",
+            "published_at_utc": "2026-09-02T01:59:06Z"
+          }
+        ],
+        "answer": "The Department of Foreign Affairs and Trade was \"working around the clock\" to verify the status of the missing Australians. [S1]\nDfat staff were operating from the post in Kathmandu. [S1]\nThe government would send a crisis response team to the affected region. [S1]\nAustralian officials were trying to make contact with tour operators. [S1]\nAustralian officials were working with Nepali authorities to determine whether independent travellers not attached to a tour group could also be missing. [S1]\nThe government said it was \"focused on establishing their whereabouts and supporting their families\". [S3]\nThe minister said the government would \"continue to do what we can to try and locate those people\". [S3]\nMissing information: The supplied reports do not provide the missing travellers' passport numbers.",
+        "missing_information": [
+          "The supplied reports do not provide the missing travellers' passport numbers."
+        ],
+        "review_required": true,
+        "publication_ready": false,
+        "validation": {
+          "input": "pass",
+          "schema": "pass",
+          "citation_ids": "pass",
+          "quote_match": "pass",
+          "support": "unchecked",
+          "answerability": "unchecked"
+        },
+        "generation": {
+          "model": "deepseek-flash",
+          "prompt_version": "m5-generation-en-v0.7.2",
+          "calls": [
+            {
+              "attempt": 1,
+              "input_tokens": 2235,
+              "output_tokens": 471,
+              "returned_model": "deepseek-flash",
+              "latency_ms": 2484.13,
+              "error_code": null,
+              "token_budget": {
+                "profile_version": "m5-token-budget-v0.5",
+                "method": "official_offline_tokenizer",
+                "check_status": "PASS",
+                "requested_model": "deepseek-flash",
+                "tokenizer_version": "0.22.2",
+                "tokenizer_sha256": "89085f12ef79460ac5f66d1119325ddfc694b4ab209d80bbd81d35f081dc9614",
+                "template_sha256": "841f8cf146e3f0ad1082594a31f68ecf7608c20467ef355081333d85bbaeb1cb",
+                "template_scope": "official_sample_system_user_add_generation_prompt",
+                "source_url": "https://api-docs.deepseek.com/quick_start/token_usage",
+                "includes": [
+                  "system_prompt",
+                  "serialized_user_content",
+                  "sample_chat_markers"
+                ],
+                "input_tokens_local": 2211,
+                "output_tokens_reserved": 1600,
+                "safety_margin_tokens": 512,
+                "application_total_token_limit": 8192,
+                "total_tokens_reserved": 4323,
+                "headroom_tokens": 3869,
+                "provider_tokenizer_parity_verified": false,
+                "api_usage_is_authoritative": true,
+                "payload_sha256": "98702cb7540e2619f86ddf3d774f39f97234b417cf75742b89bd9686cba831df",
+                "provider_input_tokens": 2235,
+                "provider_minus_local_tokens": 24,
+                "observation": "single_response_comparison_not_parity_verification"
+              }
+            }
+          ],
+          "max_calls": 1,
+          "input_tokens": 2235,
+          "output_tokens": 471,
+          "token_usage_complete": true,
+          "latency_ms": 2484.13,
+          "cost_usd": null
+        },
+        "evidence": [
+          {
+            "source_id": "S1",
+            "rank": 1,
+            "chunk_id": "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+            "document_id": "australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+            "chunk_index": 0,
+            "text": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal\n\nThe Australian government is urgently seeking information on the welfare of at least 35 Australians missing in Nepal, after a catastrophic flash flood swept through the Nepal-Tibet border region. Assistant minister for foreign affairs, Matt Thistlethwaite, said on Thursday evening that the Department of Foreign Affairs and Trade (Dfat) was “working around the clock” to verify the status of the missing Australians. The figure is based on reports from the Nepali Tourism Board and officials on the ground. Related: Flash floods on Nepal-Tibet border leave scores dead and hundreds missing Thistlethwaite confirmed Dfat staff were operating from the post in Kathmandu, and that the government would send a crisis response team to the affected region. “We’re trying to make contact with those tour operators,” he said, adding that Australian officials were working with Nepali authorities to determine whether independent travellers not attached to a tour group could also be missing.",
+            "text_sha256": "3740b069e84cd83005a88c629b41424439e2005aeaac2a341ac9669620c971b6",
+            "citation": {
+              "url": "https://www.theguardian.com/australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+              "title": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal",
+              "published_at_utc": "2026-08-27T18:18:50Z",
+              "source_name": "The Guardian",
+              "source_domain": "theguardian.com"
+            }
+          },
+          {
+            "source_id": "S2",
+            "rank": 2,
+            "chunk_id": "773b378d447b0bcc879e74d6b6f89c89e34aba7520757275317a64adf12e6f5d",
+            "document_id": "australia-news/2026/aug/27/children-among-australian-tourists-missing-feared-dead-nepal-tibet-floods",
+            "chunk_index": 4,
+            "text": "Nepal floods: children as young as 11 among 39 Australians missing after disaster\n\n“All of us, including the volunteers and support teams are deeply anguished and are doing our utmost to assist in the rescue,” Sadhguru posted on X. “There has been no official information on the whereabouts of any of the people who were at the immigration office. “We are working with the authorities to see if we can get to the location and stand ready to be part of the rescue efforts, regardless of the risk involved.” Kathmandu Holiday Tours and Travels is reporting one missing Australian, and was contacted for comment. As many as six Australians were also reported to be travelling with Kailash Journeys guides, who were also contacted for comment. The brother of one missing woman told Radio New Zealand she was hiking with friends from Australia with the group. The Trekkers’ Society, which posted a statement confirming 92 travellers including 77 foreign nationals had gone missing. They did not specify in the statement if any Australians were among those missing, but were contacted for comment. The number of missing Australians is based on those reported by tour groups in the areaWong confirmed.",
+            "text_sha256": "0bb4838d8a1fb99da3ecbbbfa9010ad25ae24bf86d9b03d1a79a4596ebc4066f",
+            "citation": {
+              "url": "https://www.theguardian.com/australia-news/2026/aug/27/children-among-australian-tourists-missing-feared-dead-nepal-tibet-floods",
+              "title": "Nepal floods: children as young as 11 among 39 Australians missing after disaster",
+              "published_at_utc": "2026-08-27T11:00:48Z",
+              "source_name": "The Guardian",
+              "source_domain": "theguardian.com"
+            }
+          },
+          {
+            "source_id": "S3",
+            "rank": 3,
+            "chunk_id": "0384fde223a2c41e7911866149317ad89daa2c270b58af111180b72c8ae670f0",
+            "document_id": "world/2026/sep/01/missing-australian-found-alive-nepal-tibet-floods",
+            "chunk_index": 0,
+            "text": "Relief as five Australians missing in Nepal-Tibet flood disaster found alive\n\nA total of five Australians missing after devastating floods ravaged the Nepal-Tibet border last week have been found. Of the five Australians confirmed safe, one was found in Nepal, one in Tibet, and three outside the crisis-hit area. The total number still missing is 38. These Australians had not spoken to families and next of kin since the disaster struck seven days ago. There were “grave concerns” for the dozens of citizens still missing in the disaster, the minister for multicultural affairs, Anne Aly, told the ABC on Wednesday morning. “There are real logistic issues, including communications to find out where people are,” she said. Related: How the deadly Nepal and Tibet flash flood unfolded – a visual guide “For those families that are still waiting, those 38 individuals unaccounted for, we understand that it’s a really concerning time, and we’ll continue to do what we can to try and locate those people.” Earlier, the minister for the Pacific, Pat Conroy, told Radio National the government was “focused on establishing their whereabouts and supporting their families”.",
+            "text_sha256": "0c1270755f8b67e8638d5f21b2337b36e18460a9cc97756e545763544d653a8c",
+            "citation": {
+              "url": "https://www.theguardian.com/world/2026/sep/01/missing-australian-found-alive-nepal-tibet-floods",
+              "title": "Relief as five Australians missing in Nepal-Tibet flood disaster found alive",
+              "published_at_utc": "2026-09-02T01:59:06Z",
+              "source_name": "The Guardian",
+              "source_domain": "theguardian.com"
+            }
+          }
+        ],
+        "excluded_evidence": [
+          {
+            "chunk_id": "394a86666d945866a9f4b60c08e426e57ced932ecbbe57fccac6e473965ed7bf",
+            "reason": "not_in_m4_packed_context"
+          },
+          {
+            "chunk_id": "bd0822d9004e4f3385332aa87b50b6f0a5e5b1145c72a3a5fd9f1926d3e2f2d0",
+            "reason": "not_in_m4_packed_context"
+          }
+        ],
+        "warnings": [],
+        "validation_log": [
+          {
+            "attempt": 1,
+            "result": "pass"
+          }
+        ],
+        "error": null,
+        "m4_input": {
+          "source_schema_version": "retrieval_response.v2",
+          "input_kind": "saved_packed_example",
+          "live_retrieval_executed": false,
+          "input_object_sha256": "6a6b32ada97f4f7ec147b7d3596e2c86fc353c1c0a3f33502f5fb43388ca257e",
+          "candidate_count": 5,
+          "original_input": {
+            "retrieval": {
+              "schema_version": "retrieval_response.v2",
+              "request_id": "3476b59908d14002aa6b880b54ab853d",
+              "query": "According to the retrieved reports, what actions did the Australian government take to locate Australians missing in Nepal, and what are the missing travellers' passport numbers?",
+              "retrieval_query": "According to the retrieved reports, what actions did the Australian government take to locate Australians missing in Nepal, and what are the missing travellers' passport numbers?",
+              "status": "OK",
+              "index": {
+                "strategy": "C",
+                "collection": "chunks_c_e9f8efe647_c6c1836bed",
+                "manifest_sha256": "c5f99cd5d7218722f5ed8e2c85cdc6bb4a7ad09ed1896ec7a831bdb4fef51034"
+              },
+              "config": {
+                "mode": "hybrid",
+                "top_k": 5,
+                "candidate_k": 30,
+                "rrf_constant": 60
+              },
+              "filters": null,
+              "results": [
+                {
+                  "rank": 1,
+                  "chunk_id": "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+                  "document_id": "australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+                  "chunk_index": 0,
+                  "text": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal\n\nThe Australian government is urgently seeking information on the welfare of at least 35 Australians missing in Nepal, after a catastrophic flash flood swept through the Nepal-Tibet border region. Assistant minister for foreign affairs, Matt Thistlethwaite, said on Thursday evening that the Department of Foreign Affairs and Trade (Dfat) was “working around the clock” to verify the status of the missing Australians. The figure is based on reports from the Nepali Tourism Board and officials on the ground. Related: Flash floods on Nepal-Tibet border leave scores dead and hundreds missing Thistlethwaite confirmed Dfat staff were operating from the post in Kathmandu, and that the government would send a crisis response team to the affected region. “We’re trying to make contact with those tour operators,” he said, adding that Australian officials were working with Nepali authorities to determine whether independent travellers not attached to a tour group could also be missing.",
+                  "text_sha256": "3740b069e84cd83005a88c629b41424439e2005aeaac2a341ac9669620c971b6",
+                  "citation": {
+                    "url": "https://www.theguardian.com/australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+                    "title": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal",
+                    "published_at_utc": "2026-08-27T18:18:50Z",
+                    "source_name": "The Guardian",
+                    "source_domain": "theguardian.com"
+                  },
+                  "retrieved_by": [
+                    "dense",
+                    "bm25"
+                  ],
+                  "scores": {
+                    "distance": 0.207927405834198,
+                    "similarity": 0.792072594165802,
+                    "bm25": 38.6328708289955,
+                    "rrf": 0.03252247488101534,
+                    "rerank": null
+                  }
+                },
+                {
+                  "rank": 2,
+                  "chunk_id": "773b378d447b0bcc879e74d6b6f89c89e34aba7520757275317a64adf12e6f5d",
+                  "document_id": "australia-news/2026/aug/27/children-among-australian-tourists-missing-feared-dead-nepal-tibet-floods",
+                  "chunk_index": 4,
+                  "text": "Nepal floods: children as young as 11 among 39 Australians missing after disaster\n\n“All of us, including the volunteers and support teams are deeply anguished and are doing our utmost to assist in the rescue,” Sadhguru posted on X. “There has been no official information on the whereabouts of any of the people who were at the immigration office. “We are working with the authorities to see if we can get to the location and stand ready to be part of the rescue efforts, regardless of the risk involved.” Kathmandu Holiday Tours and Travels is reporting one missing Australian, and was contacted for comment. As many as six Australians were also reported to be travelling with Kailash Journeys guides, who were also contacted for comment. The brother of one missing woman told Radio New Zealand she was hiking with friends from Australia with the group. The Trekkers’ Society, which posted a statement confirming 92 travellers including 77 foreign nationals had gone missing. They did not specify in the statement if any Australians were among those missing, but were contacted for comment. The number of missing Australians is based on those reported by tour groups in the areaWong confirmed.",
+                  "text_sha256": "0bb4838d8a1fb99da3ecbbbfa9010ad25ae24bf86d9b03d1a79a4596ebc4066f",
+                  "citation": {
+                    "url": "https://www.theguardian.com/australia-news/2026/aug/27/children-among-australian-tourists-missing-feared-dead-nepal-tibet-floods",
+                    "title": "Nepal floods: children as young as 11 among 39 Australians missing after disaster",
+                    "published_at_utc": "2026-08-27T11:00:48Z",
+                    "source_name": "The Guardian",
+                    "source_domain": "theguardian.com"
+                  },
+                  "retrieved_by": [
+                    "dense",
+                    "bm25"
+                  ],
+                  "scores": {
+                    "distance": 0.24902278184890747,
+                    "similarity": 0.7509772181510925,
+                    "bm25": 31.357150124460745,
+                    "rrf": 0.03149801587301587,
+                    "rerank": null
+                  }
+                },
+                {
+                  "rank": 3,
+                  "chunk_id": "0384fde223a2c41e7911866149317ad89daa2c270b58af111180b72c8ae670f0",
+                  "document_id": "world/2026/sep/01/missing-australian-found-alive-nepal-tibet-floods",
+                  "chunk_index": 0,
+                  "text": "Relief as five Australians missing in Nepal-Tibet flood disaster found alive\n\nA total of five Australians missing after devastating floods ravaged the Nepal-Tibet border last week have been found. Of the five Australians confirmed safe, one was found in Nepal, one in Tibet, and three outside the crisis-hit area. The total number still missing is 38. These Australians had not spoken to families and next of kin since the disaster struck seven days ago. There were “grave concerns” for the dozens of citizens still missing in the disaster, the minister for multicultural affairs, Anne Aly, told the ABC on Wednesday morning. “There are real logistic issues, including communications to find out where people are,” she said. Related: How the deadly Nepal and Tibet flash flood unfolded – a visual guide “For those families that are still waiting, those 38 individuals unaccounted for, we understand that it’s a really concerning time, and we’ll continue to do what we can to try and locate those people.” Earlier, the minister for the Pacific, Pat Conroy, told Radio National the government was “focused on establishing their whereabouts and supporting their families”.",
+                  "text_sha256": "0c1270755f8b67e8638d5f21b2337b36e18460a9cc97756e545763544d653a8c",
+                  "citation": {
+                    "url": "https://www.theguardian.com/world/2026/sep/01/missing-australian-found-alive-nepal-tibet-floods",
+                    "title": "Relief as five Australians missing in Nepal-Tibet flood disaster found alive",
+                    "published_at_utc": "2026-09-02T01:59:06Z",
+                    "source_name": "The Guardian",
+                    "source_domain": "theguardian.com"
+                  },
+                  "retrieved_by": [
+                    "dense",
+                    "bm25"
+                  ],
+                  "scores": {
+                    "distance": 0.25698524713516235,
+                    "similarity": 0.7430147528648376,
+                    "bm25": 31.79444208561777,
+                    "rrf": 0.03128054740957967,
+                    "rerank": null
+                  }
+                },
+                {
+                  "rank": 4,
+                  "chunk_id": "394a86666d945866a9f4b60c08e426e57ced932ecbbe57fccac6e473965ed7bf",
+                  "document_id": "australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+                  "chunk_index": 3,
+                  "text": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal\n\nThis is a very distressing time for those community members.” Interactive Wong said she would not confirm details of the missing Australians until the government had engaged with their next of kin, but acknowledged many tourists travel to the region for trekking opportunities and spiritual reasons. Nepal’s embassy in Canberra has also requested urgent assistance. “We are reaching out to the Australian government and hopefully they will provide assistance to us. We are in communication with them,” said the embassy’s second secretary, Saroj Paneru. Paneru said the government would be seeking financial assistance, but also technical support as it searches for missing people. He said the embassy was still trying to verify the number of Australians who were missing in the region affected by flash flooding. “The tourism industry in Nepal is working to collect information about anyone who was in the affected area,” he said.",
+                  "text_sha256": "132a3a0355b789147b7acc84558df2237f776d35fa1bd8aa0c6269268b472397",
+                  "citation": {
+                    "url": "https://www.theguardian.com/australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+                    "title": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal",
+                    "published_at_utc": "2026-08-27T18:18:50Z",
+                    "source_name": "The Guardian",
+                    "source_domain": "theguardian.com"
+                  },
+                  "retrieved_by": [
+                    "dense",
+                    "bm25"
+                  ],
+                  "scores": {
+                    "distance": 0.17919975519180298,
+                    "similarity": 0.820800244808197,
+                    "bm25": 29.13795753467218,
+                    "rrf": 0.031099324975891997,
+                    "rerank": null
+                  }
+                },
+                {
+                  "rank": 5,
+                  "chunk_id": "bd0822d9004e4f3385332aa87b50b6f0a5e5b1145c72a3a5fd9f1926d3e2f2d0",
+                  "document_id": "world/2026/aug/29/australians-missing-nepal-floods-total-rises-albanese-dfat-personnel-arriving",
+                  "chunk_index": 0,
+                  "text": "Number of Australians missing in Nepal’s deadly floods rises again, as Albanese deploys more personnel\n\nThe number of Australians who were reported missing in the catastrophic Nepal flooding disaster has risen to 41, as one family celebrates after an unaccounted-for woman made contact with them yesterday. It means three additional Australians were confirmed missing overnight – up from 38 who remained unaccounted for on Friday evening. The Australian government’s Department of Foreign Affairs has been urgently working with local authorities to contact Australian woman Cara Severino, 25, who became the first Australian reported missing who has been confirmed safe. Related: ‘So desperately loved’: ADF member among dozens of Australians missing in Nepal floods as families pray for safe return Severino contacted her parents, Debbie and Frank Severino, on Friday morning, informing them she was hiking away from the disaster zone to Kathmandu with a group of Nepali hikers – a trek of more than 110km.",
+                  "text_sha256": "83470187ab1bb4ce1eceff00cc7adcb1a91bc59a1d251f7416d3f03a74a32bc6",
+                  "citation": {
+                    "url": "https://www.theguardian.com/world/2026/aug/29/australians-missing-nepal-floods-total-rises-albanese-dfat-personnel-arriving",
+                    "title": "Number of Australians missing in Nepal’s deadly floods rises again, as Albanese deploys more personnel",
+                    "published_at_utc": "2026-08-28T22:53:57Z",
+                    "source_name": "The Guardian",
+                    "source_domain": "theguardian.com"
+                  },
+                  "retrieved_by": [
+                    "dense",
+                    "bm25"
+                  ],
+                  "scores": {
+                    "distance": 0.2611656188964844,
+                    "similarity": 0.7388343811035156,
+                    "bm25": 30.202698223791224,
+                    "rrf": 0.029857397504456328,
+                    "rerank": null
+                  }
+                }
+              ],
+              "warnings": [],
+              "error": null,
+              "timing_ms": {
+                "encode": 10.9000999982527,
+                "search": 63.6233999975957,
+                "rerank": 0.0,
+                "total": 78.95239999925252
+              }
+            },
+            "context": "[004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e] Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal\nhttps://www.theguardian.com/australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods\nAustralian officials ‘working around the clock’ to check welfare of tourists missing in Nepal\n\nThe Australian government is urgently seeking information on the welfare of at least 35 Australians missing in Nepal, after a catastrophic flash flood swept through the Nepal-Tibet border region. Assistant minister for foreign affairs, Matt Thistlethwaite, said on Thursday evening that the Department of Foreign Affairs and Trade (Dfat) was “working around the clock” to verify the status of the missing Australians. The figure is based on reports from the Nepali Tourism Board and officials on the ground. Related: Flash floods on Nepal-Tibet border leave scores dead and hundreds missing Thistlethwaite confirmed Dfat staff were operating from the post in Kathmandu, and that the government would send a crisis response team to the affected region. “We’re trying to make contact with those tour operators,” he said, adding that Australian officials were working with Nepali authorities to determine whether independent travellers not attached to a tour group could also be missing.\n\n[773b378d447b0bcc879e74d6b6f89c89e34aba7520757275317a64adf12e6f5d] Nepal floods: children as young as 11 among 39 Australians missing after disaster\nhttps://www.theguardian.com/australia-news/2026/aug/27/children-among-australian-tourists-missing-feared-dead-nepal-tibet-floods\nNepal floods: children as young as 11 among 39 Australians missing after disaster\n\n“All of us, including the volunteers and support teams are deeply anguished and are doing our utmost to assist in the rescue,” Sadhguru posted on X. “There has been no official information on the whereabouts of any of the people who were at the immigration office. “We are working with the authorities to see if we can get to the location and stand ready to be part of the rescue efforts, regardless of the risk involved.” Kathmandu Holiday Tours and Travels is reporting one missing Australian, and was contacted for comment. As many as six Australians were also reported to be travelling with Kailash Journeys guides, who were also contacted for comment. The brother of one missing woman told Radio New Zealand she was hiking with friends from Australia with the group. The Trekkers’ Society, which posted a statement confirming 92 travellers including 77 foreign nationals had gone missing. They did not specify in the statement if any Australians were among those missing, but were contacted for comment. The number of missing Australians is based on those reported by tour groups in the areaWong confirmed.\n\n[0384fde223a2c41e7911866149317ad89daa2c270b58af111180b72c8ae670f0] Relief as five Australians missing in Nepal-Tibet flood disaster found alive\nhttps://www.theguardian.com/world/2026/sep/01/missing-australian-found-alive-nepal-tibet-floods\nRelief as five Australians missing in Nepal-Tibet flood disaster found alive\n\nA total of five Australians missing after devastating floods ravaged the Nepal-Tibet border last week have been found. Of the five Australians confirmed safe, one was found in Nepal, one in Tibet, and three outside the crisis-hit area. The total number still missing is 38. These Australians had not spoken to families and next of kin since the disaster struck seven days ago. There were “grave concerns” for the dozens of citizens still missing in the disaster, the minister for multicultural affairs, Anne Aly, told the ABC on Wednesday morning. “There are real logistic issues, including communications to find out where people are,” she said. Related: How the deadly Nepal and Tibet flash flood unfolded – a visual guide “For those families that are still waiting, those 38 individuals unaccounted for, we understand that it’s a really concerning time, and we’ll continue to do what we can to try and locate those people.” Earlier, the minister for the Pacific, Pat Conroy, told Radio National the government was “focused on establishing their whereabouts and supporting their families”.\n\n",
+            "context_tokens": 959,
+            "selected_chunk_ids": [
+              "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+              "773b378d447b0bcc879e74d6b6f89c89e34aba7520757275317a64adf12e6f5d",
+              "0384fde223a2c41e7911866149317ad89daa2c270b58af111180b72c8ae670f0"
+            ]
+          },
+          "selected_chunk_ids": [
+            "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+            "773b378d447b0bcc879e74d6b6f89c89e34aba7520757275317a64adf12e6f5d",
+            "0384fde223a2c41e7911866149317ad89daa2c270b58af111180b72c8ae670f0"
+          ],
+          "reported_context_tokens": 959,
+          "budget_tokenizer": "M4 embedding tokenizer proxy; count not recomputed by M5",
+          "generation_token_budget_verified": false,
+          "final_evidence_chunk_ids": [
+            "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+            "773b378d447b0bcc879e74d6b6f89c89e34aba7520757275317a64adf12e6f5d",
+            "0384fde223a2c41e7911866149317ad89daa2c270b58af111180b72c8ae670f0"
+          ]
+        },
+        "index": {
+          "strategy": "C",
+          "collection": "chunks_c_e9f8efe647_c6c1836bed",
+          "manifest_sha256": "c5f99cd5d7218722f5ed8e2c85cdc6bb4a7ad09ed1896ec7a831bdb4fef51034"
+        },
+        "query": "According to the retrieved reports, what actions did the Australian government take to locate Australians missing in Nepal, and what are the missing travellers' passport numbers?",
+        "retrieval_query": "According to the retrieved reports, what actions did the Australian government take to locate Australians missing in Nepal, and what are the missing travellers' passport numbers?",
+        "retrieval_config": {
+          "mode": "hybrid",
+          "top_k": 5,
+          "candidate_k": 30,
+          "rrf_constant": 60
+        },
+        "filters": null,
+        "retrieval_timing_ms": {
+          "encode": 10.9000999982527,
+          "search": 63.6233999975957,
+          "rerank": 0.0,
+          "total": 78.95239999925252
+        },
+        "context_limit": {
+          "method": "utf8_bytes",
+          "limit": 16000,
+          "includes": "system_prompt_and_serialized_user_content",
+          "model_tokenizer_budget_implemented": true,
+          "provider_tokenizer_parity_verified": false
+        },
+        "token_budget": {
+          "profile_version": "m5-token-budget-v0.5",
+          "method": "official_offline_tokenizer",
+          "check_status": "PASS",
+          "requested_model": "deepseek-flash",
+          "tokenizer_version": "0.22.2",
+          "tokenizer_sha256": "89085f12ef79460ac5f66d1119325ddfc694b4ab209d80bbd81d35f081dc9614",
+          "template_sha256": "841f8cf146e3f0ad1082594a31f68ecf7608c20467ef355081333d85bbaeb1cb",
+          "template_scope": "official_sample_system_user_add_generation_prompt",
+          "source_url": "https://api-docs.deepseek.com/quick_start/token_usage",
+          "includes": [
+            "system_prompt",
+            "serialized_user_content",
+            "sample_chat_markers"
+          ],
+          "input_tokens_local": 2211,
+          "output_tokens_reserved": 1600,
+          "safety_margin_tokens": 512,
+          "application_total_token_limit": 8192,
+          "total_tokens_reserved": 4323,
+          "headroom_tokens": 3869,
+          "provider_tokenizer_parity_verified": false,
+          "api_usage_is_authoritative": true,
+          "payload_sha256": "98702cb7540e2619f86ddf3d774f39f97234b417cf75742b89bd9686cba831df",
+          "provider_input_tokens": null,
+          "provider_minus_local_tokens": null,
+          "observation": "not_available"
+        },
+        "timing_ms": {
+          "total": 8190.39
+        }
+      },
+      "review": {
+        "schema_version": "m5_support_review.v1",
+        "request_id": "3476b59908d14002aa6b880b54ab853d",
+        "created_at_utc": "2026-11-20T15:53:07.678435+00:00",
+        "decision": "PASS",
+        "method": "llm_judge",
+        "human_review": "not_performed",
+        "review_required": true,
+        "publication_ready": false,
+        "local_validation": "pass",
+        "checks": {
+          "support": "pass",
+          "relevance": "pass",
+          "answer_scope": "pass"
+        },
+        "judge": {
+          "requested_model": "deepseek-flash",
+          "returned_model": "deepseek-flash",
+          "prompt_version": "m5-support-en-v0.7.2",
+          "temperature": 0,
+          "max_output_tokens": 2400,
+          "calls": 1,
+          "input_tokens": 2880,
+          "output_tokens": 670,
+          "latency_ms": 2803.76,
+          "cost_usd": null
+        },
+        "limitations": [
+          "Automatic reviews can be wrong and do not replace human gold evaluation.",
+          "Separate calls to the same model are not independent reliable adjudication.",
+          "Official offline token counts are enforced locally; provider parity remains unverified."
+        ],
+        "error": null,
+        "input_snapshot": {
+          "schema_version": "answer_response.v1",
+          "implementation_version": "m5-token-budget-v0.5",
+          "output_language": "en",
+          "request_id": "3476b59908d14002aa6b880b54ab853d",
+          "created_at_utc": "2026-11-20T15:52:59.473003+00:00",
+          "status": "PARTIAL",
+          "claims": [
+            {
+              "text": "The Department of Foreign Affairs and Trade was \"working around the clock\" to verify the status of the missing Australians.",
+              "source_ids": [
+                "S1"
+              ],
+              "evidence_quotes": [
+                {
+                  "source_id": "S1",
+                  "quote": "the Department of Foreign Affairs and Trade (Dfat) was “working around the clock” to verify the status of the missing Australians"
+                }
+              ],
+              "claim_id": "C1",
+              "located_quotes": [
+                {
+                  "source_id": "S1",
+                  "chunk_id": "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+                  "quote": "the Department of Foreign Affairs and Trade (Dfat) was “working around the clock” to verify the status of the missing Australians",
+                  "char_start": 382,
+                  "char_end": 511
+                }
+              ]
+            },
+            {
+              "text": "Dfat staff were operating from the post in Kathmandu.",
+              "source_ids": [
+                "S1"
+              ],
+              "evidence_quotes": [
+                {
+                  "source_id": "S1",
+                  "quote": "Thistlethwaite confirmed Dfat staff were operating from the post in Kathmandu"
+                }
+              ],
+              "claim_id": "C2",
+              "located_quotes": [
+                {
+                  "source_id": "S1",
+                  "chunk_id": "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+                  "quote": "Thistlethwaite confirmed Dfat staff were operating from the post in Kathmandu",
+                  "char_start": 686,
+                  "char_end": 763
+                }
+              ]
+            },
+            {
+              "text": "The government would send a crisis response team to the affected region.",
+              "source_ids": [
+                "S1"
+              ],
+              "evidence_quotes": [
+                {
+                  "source_id": "S1",
+                  "quote": "the government would send a crisis response team to the affected region"
+                }
+              ],
+              "claim_id": "C3",
+              "located_quotes": [
+                {
+                  "source_id": "S1",
+                  "chunk_id": "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+                  "quote": "the government would send a crisis response team to the affected region",
+                  "char_start": 774,
+                  "char_end": 845
+                }
+              ]
+            },
+            {
+              "text": "Australian officials were trying to make contact with tour operators.",
+              "source_ids": [
+                "S1"
+              ],
+              "evidence_quotes": [
+                {
+                  "source_id": "S1",
+                  "quote": "“We’re trying to make contact with those tour operators,” he said"
+                }
+              ],
+              "claim_id": "C4",
+              "located_quotes": [
+                {
+                  "source_id": "S1",
+                  "chunk_id": "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+                  "quote": "“We’re trying to make contact with those tour operators,” he said",
+                  "char_start": 847,
+                  "char_end": 912
+                }
+              ]
+            },
+            {
+              "text": "Australian officials were working with Nepali authorities to determine whether independent travellers not attached to a tour group could also be missing.",
+              "source_ids": [
+                "S1"
+              ],
+              "evidence_quotes": [
+                {
+                  "source_id": "S1",
+                  "quote": "Australian officials were working with Nepali authorities to determine whether independent travellers not attached to a tour group could also be missing"
+                }
+              ],
+              "claim_id": "C5",
+              "located_quotes": [
+                {
+                  "source_id": "S1",
+                  "chunk_id": "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+                  "quote": "Australian officials were working with Nepali authorities to determine whether independent travellers not attached to a tour group could also be missing",
+                  "char_start": 926,
+                  "char_end": 1078
+                }
+              ]
+            },
+            {
+              "text": "The government said it was \"focused on establishing their whereabouts and supporting their families\".",
+              "source_ids": [
+                "S3"
+              ],
+              "evidence_quotes": [
+                {
+                  "source_id": "S3",
+                  "quote": "the government was “focused on establishing their whereabouts and supporting their families”"
+                }
+              ],
+              "claim_id": "C6",
+              "located_quotes": [
+                {
+                  "source_id": "S3",
+                  "chunk_id": "0384fde223a2c41e7911866149317ad89daa2c270b58af111180b72c8ae670f0",
+                  "quote": "the government was “focused on establishing their whereabouts and supporting their families”",
+                  "char_start": 1076,
+                  "char_end": 1168
+                }
+              ]
+            },
+            {
+              "text": "The minister said the government would \"continue to do what we can to try and locate those people\".",
+              "source_ids": [
+                "S3"
+              ],
+              "evidence_quotes": [
+                {
+                  "source_id": "S3",
+                  "quote": "we’ll continue to do what we can to try and locate those people"
+                }
+              ],
+              "claim_id": "C7",
+              "located_quotes": [
+                {
+                  "source_id": "S3",
+                  "chunk_id": "0384fde223a2c41e7911866149317ad89daa2c270b58af111180b72c8ae670f0",
+                  "quote": "we’ll continue to do what we can to try and locate those people",
+                  "char_start": 939,
+                  "char_end": 1002
+                }
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "source_id": "S1",
+              "rank": 1,
+              "chunk_id": "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+              "document_id": "australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+              "chunk_index": 0,
+              "text": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal\n\nThe Australian government is urgently seeking information on the welfare of at least 35 Australians missing in Nepal, after a catastrophic flash flood swept through the Nepal-Tibet border region. Assistant minister for foreign affairs, Matt Thistlethwaite, said on Thursday evening that the Department of Foreign Affairs and Trade (Dfat) was “working around the clock” to verify the status of the missing Australians. The figure is based on reports from the Nepali Tourism Board and officials on the ground. Related: Flash floods on Nepal-Tibet border leave scores dead and hundreds missing Thistlethwaite confirmed Dfat staff were operating from the post in Kathmandu, and that the government would send a crisis response team to the affected region. “We’re trying to make contact with those tour operators,” he said, adding that Australian officials were working with Nepali authorities to determine whether independent travellers not attached to a tour group could also be missing.",
+              "text_sha256": "3740b069e84cd83005a88c629b41424439e2005aeaac2a341ac9669620c971b6",
+              "citation": {
+                "url": "https://www.theguardian.com/australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+                "title": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal",
+                "published_at_utc": "2026-08-27T18:18:50Z",
+                "source_name": "The Guardian",
+                "source_domain": "theguardian.com"
+              },
+              "url": "https://www.theguardian.com/australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+              "title": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal",
+              "published_at_utc": "2026-08-27T18:18:50Z"
+            },
+            {
+              "source_id": "S3",
+              "rank": 3,
+              "chunk_id": "0384fde223a2c41e7911866149317ad89daa2c270b58af111180b72c8ae670f0",
+              "document_id": "world/2026/sep/01/missing-australian-found-alive-nepal-tibet-floods",
+              "chunk_index": 0,
+              "text": "Relief as five Australians missing in Nepal-Tibet flood disaster found alive\n\nA total of five Australians missing after devastating floods ravaged the Nepal-Tibet border last week have been found. Of the five Australians confirmed safe, one was found in Nepal, one in Tibet, and three outside the crisis-hit area. The total number still missing is 38. These Australians had not spoken to families and next of kin since the disaster struck seven days ago. There were “grave concerns” for the dozens of citizens still missing in the disaster, the minister for multicultural affairs, Anne Aly, told the ABC on Wednesday morning. “There are real logistic issues, including communications to find out where people are,” she said. Related: How the deadly Nepal and Tibet flash flood unfolded – a visual guide “For those families that are still waiting, those 38 individuals unaccounted for, we understand that it’s a really concerning time, and we’ll continue to do what we can to try and locate those people.” Earlier, the minister for the Pacific, Pat Conroy, told Radio National the government was “focused on establishing their whereabouts and supporting their families”.",
+              "text_sha256": "0c1270755f8b67e8638d5f21b2337b36e18460a9cc97756e545763544d653a8c",
+              "citation": {
+                "url": "https://www.theguardian.com/world/2026/sep/01/missing-australian-found-alive-nepal-tibet-floods",
+                "title": "Relief as five Australians missing in Nepal-Tibet flood disaster found alive",
+                "published_at_utc": "2026-09-02T01:59:06Z",
+                "source_name": "The Guardian",
+                "source_domain": "theguardian.com"
+              },
+              "url": "https://www.theguardian.com/world/2026/sep/01/missing-australian-found-alive-nepal-tibet-floods",
+              "title": "Relief as five Australians missing in Nepal-Tibet flood disaster found alive",
+              "published_at_utc": "2026-09-02T01:59:06Z"
+            }
+          ],
+          "answer": "The Department of Foreign Affairs and Trade was \"working around the clock\" to verify the status of the missing Australians. [S1]\nDfat staff were operating from the post in Kathmandu. [S1]\nThe government would send a crisis response team to the affected region. [S1]\nAustralian officials were trying to make contact with tour operators. [S1]\nAustralian officials were working with Nepali authorities to determine whether independent travellers not attached to a tour group could also be missing. [S1]\nThe government said it was \"focused on establishing their whereabouts and supporting their families\". [S3]\nThe minister said the government would \"continue to do what we can to try and locate those people\". [S3]\nMissing information: The supplied reports do not provide the missing travellers' passport numbers.",
+          "missing_information": [
+            "The supplied reports do not provide the missing travellers' passport numbers."
+          ],
+          "review_required": true,
+          "publication_ready": false,
+          "validation": {
+            "input": "pass",
+            "schema": "pass",
+            "citation_ids": "pass",
+            "quote_match": "pass",
+            "support": "unchecked",
+            "answerability": "unchecked"
+          },
+          "generation": {
+            "model": "deepseek-flash",
+            "prompt_version": "m5-generation-en-v0.7.2",
+            "calls": [
+              {
+                "attempt": 1,
+                "input_tokens": 2235,
+                "output_tokens": 471,
+                "returned_model": "deepseek-flash",
+                "latency_ms": 2484.13,
+                "error_code": null,
+                "token_budget": {
+                  "profile_version": "m5-token-budget-v0.5",
+                  "method": "official_offline_tokenizer",
+                  "check_status": "PASS",
+                  "requested_model": "deepseek-flash",
+                  "tokenizer_version": "0.22.2",
+                  "tokenizer_sha256": "89085f12ef79460ac5f66d1119325ddfc694b4ab209d80bbd81d35f081dc9614",
+                  "template_sha256": "841f8cf146e3f0ad1082594a31f68ecf7608c20467ef355081333d85bbaeb1cb",
+                  "template_scope": "official_sample_system_user_add_generation_prompt",
+                  "source_url": "https://api-docs.deepseek.com/quick_start/token_usage",
+                  "includes": [
+                    "system_prompt",
+                    "serialized_user_content",
+                    "sample_chat_markers"
+                  ],
+                  "input_tokens_local": 2211,
+                  "output_tokens_reserved": 1600,
+                  "safety_margin_tokens": 512,
+                  "application_total_token_limit": 8192,
+                  "total_tokens_reserved": 4323,
+                  "headroom_tokens": 3869,
+                  "provider_tokenizer_parity_verified": false,
+                  "api_usage_is_authoritative": true,
+                  "payload_sha256": "98702cb7540e2619f86ddf3d774f39f97234b417cf75742b89bd9686cba831df",
+                  "provider_input_tokens": 2235,
+                  "provider_minus_local_tokens": 24,
+                  "observation": "single_response_comparison_not_parity_verification"
+                }
+              }
+            ],
+            "max_calls": 1,
+            "input_tokens": 2235,
+            "output_tokens": 471,
+            "token_usage_complete": true,
+            "latency_ms": 2484.13,
+            "cost_usd": null
+          },
+          "evidence": [
+            {
+              "source_id": "S1",
+              "rank": 1,
+              "chunk_id": "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+              "document_id": "australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+              "chunk_index": 0,
+              "text": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal\n\nThe Australian government is urgently seeking information on the welfare of at least 35 Australians missing in Nepal, after a catastrophic flash flood swept through the Nepal-Tibet border region. Assistant minister for foreign affairs, Matt Thistlethwaite, said on Thursday evening that the Department of Foreign Affairs and Trade (Dfat) was “working around the clock” to verify the status of the missing Australians. The figure is based on reports from the Nepali Tourism Board and officials on the ground. Related: Flash floods on Nepal-Tibet border leave scores dead and hundreds missing Thistlethwaite confirmed Dfat staff were operating from the post in Kathmandu, and that the government would send a crisis response team to the affected region. “We’re trying to make contact with those tour operators,” he said, adding that Australian officials were working with Nepali authorities to determine whether independent travellers not attached to a tour group could also be missing.",
+              "text_sha256": "3740b069e84cd83005a88c629b41424439e2005aeaac2a341ac9669620c971b6",
+              "citation": {
+                "url": "https://www.theguardian.com/australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+                "title": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal",
+                "published_at_utc": "2026-08-27T18:18:50Z",
+                "source_name": "The Guardian",
+                "source_domain": "theguardian.com"
+              }
+            },
+            {
+              "source_id": "S2",
+              "rank": 2,
+              "chunk_id": "773b378d447b0bcc879e74d6b6f89c89e34aba7520757275317a64adf12e6f5d",
+              "document_id": "australia-news/2026/aug/27/children-among-australian-tourists-missing-feared-dead-nepal-tibet-floods",
+              "chunk_index": 4,
+              "text": "Nepal floods: children as young as 11 among 39 Australians missing after disaster\n\n“All of us, including the volunteers and support teams are deeply anguished and are doing our utmost to assist in the rescue,” Sadhguru posted on X. “There has been no official information on the whereabouts of any of the people who were at the immigration office. “We are working with the authorities to see if we can get to the location and stand ready to be part of the rescue efforts, regardless of the risk involved.” Kathmandu Holiday Tours and Travels is reporting one missing Australian, and was contacted for comment. As many as six Australians were also reported to be travelling with Kailash Journeys guides, who were also contacted for comment. The brother of one missing woman told Radio New Zealand she was hiking with friends from Australia with the group. The Trekkers’ Society, which posted a statement confirming 92 travellers including 77 foreign nationals had gone missing. They did not specify in the statement if any Australians were among those missing, but were contacted for comment. The number of missing Australians is based on those reported by tour groups in the areaWong confirmed.",
+              "text_sha256": "0bb4838d8a1fb99da3ecbbbfa9010ad25ae24bf86d9b03d1a79a4596ebc4066f",
+              "citation": {
+                "url": "https://www.theguardian.com/australia-news/2026/aug/27/children-among-australian-tourists-missing-feared-dead-nepal-tibet-floods",
+                "title": "Nepal floods: children as young as 11 among 39 Australians missing after disaster",
+                "published_at_utc": "2026-08-27T11:00:48Z",
+                "source_name": "The Guardian",
+                "source_domain": "theguardian.com"
+              }
+            },
+            {
+              "source_id": "S3",
+              "rank": 3,
+              "chunk_id": "0384fde223a2c41e7911866149317ad89daa2c270b58af111180b72c8ae670f0",
+              "document_id": "world/2026/sep/01/missing-australian-found-alive-nepal-tibet-floods",
+              "chunk_index": 0,
+              "text": "Relief as five Australians missing in Nepal-Tibet flood disaster found alive\n\nA total of five Australians missing after devastating floods ravaged the Nepal-Tibet border last week have been found. Of the five Australians confirmed safe, one was found in Nepal, one in Tibet, and three outside the crisis-hit area. The total number still missing is 38. These Australians had not spoken to families and next of kin since the disaster struck seven days ago. There were “grave concerns” for the dozens of citizens still missing in the disaster, the minister for multicultural affairs, Anne Aly, told the ABC on Wednesday morning. “There are real logistic issues, including communications to find out where people are,” she said. Related: How the deadly Nepal and Tibet flash flood unfolded – a visual guide “For those families that are still waiting, those 38 individuals unaccounted for, we understand that it’s a really concerning time, and we’ll continue to do what we can to try and locate those people.” Earlier, the minister for the Pacific, Pat Conroy, told Radio National the government was “focused on establishing their whereabouts and supporting their families”.",
+              "text_sha256": "0c1270755f8b67e8638d5f21b2337b36e18460a9cc97756e545763544d653a8c",
+              "citation": {
+                "url": "https://www.theguardian.com/world/2026/sep/01/missing-australian-found-alive-nepal-tibet-floods",
+                "title": "Relief as five Australians missing in Nepal-Tibet flood disaster found alive",
+                "published_at_utc": "2026-09-02T01:59:06Z",
+                "source_name": "The Guardian",
+                "source_domain": "theguardian.com"
+              }
+            }
+          ],
+          "excluded_evidence": [
+            {
+              "chunk_id": "394a86666d945866a9f4b60c08e426e57ced932ecbbe57fccac6e473965ed7bf",
+              "reason": "not_in_m4_packed_context"
+            },
+            {
+              "chunk_id": "bd0822d9004e4f3385332aa87b50b6f0a5e5b1145c72a3a5fd9f1926d3e2f2d0",
+              "reason": "not_in_m4_packed_context"
+            }
+          ],
+          "warnings": [],
+          "validation_log": [
+            {
+              "attempt": 1,
+              "result": "pass"
+            }
+          ],
+          "error": null,
+          "m4_input": {
+            "source_schema_version": "retrieval_response.v2",
+            "input_kind": "saved_packed_example",
+            "live_retrieval_executed": false,
+            "input_object_sha256": "6a6b32ada97f4f7ec147b7d3596e2c86fc353c1c0a3f33502f5fb43388ca257e",
+            "candidate_count": 5,
+            "original_input": {
+              "retrieval": {
+                "schema_version": "retrieval_response.v2",
+                "request_id": "3476b59908d14002aa6b880b54ab853d",
+                "query": "According to the retrieved reports, what actions did the Australian government take to locate Australians missing in Nepal, and what are the missing travellers' passport numbers?",
+                "retrieval_query": "According to the retrieved reports, what actions did the Australian government take to locate Australians missing in Nepal, and what are the missing travellers' passport numbers?",
+                "status": "OK",
+                "index": {
+                  "strategy": "C",
+                  "collection": "chunks_c_e9f8efe647_c6c1836bed",
+                  "manifest_sha256": "c5f99cd5d7218722f5ed8e2c85cdc6bb4a7ad09ed1896ec7a831bdb4fef51034"
+                },
+                "config": {
+                  "mode": "hybrid",
+                  "top_k": 5,
+                  "candidate_k": 30,
+                  "rrf_constant": 60
+                },
+                "filters": null,
+                "results": [
+                  {
+                    "rank": 1,
+                    "chunk_id": "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+                    "document_id": "australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+                    "chunk_index": 0,
+                    "text": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal\n\nThe Australian government is urgently seeking information on the welfare of at least 35 Australians missing in Nepal, after a catastrophic flash flood swept through the Nepal-Tibet border region. Assistant minister for foreign affairs, Matt Thistlethwaite, said on Thursday evening that the Department of Foreign Affairs and Trade (Dfat) was “working around the clock” to verify the status of the missing Australians. The figure is based on reports from the Nepali Tourism Board and officials on the ground. Related: Flash floods on Nepal-Tibet border leave scores dead and hundreds missing Thistlethwaite confirmed Dfat staff were operating from the post in Kathmandu, and that the government would send a crisis response team to the affected region. “We’re trying to make contact with those tour operators,” he said, adding that Australian officials were working with Nepali authorities to determine whether independent travellers not attached to a tour group could also be missing.",
+                    "text_sha256": "3740b069e84cd83005a88c629b41424439e2005aeaac2a341ac9669620c971b6",
+                    "citation": {
+                      "url": "https://www.theguardian.com/australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+                      "title": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal",
+                      "published_at_utc": "2026-08-27T18:18:50Z",
+                      "source_name": "The Guardian",
+                      "source_domain": "theguardian.com"
+                    },
+                    "retrieved_by": [
+                      "dense",
+                      "bm25"
+                    ],
+                    "scores": {
+                      "distance": 0.207927405834198,
+                      "similarity": 0.792072594165802,
+                      "bm25": 38.6328708289955,
+                      "rrf": 0.03252247488101534,
+                      "rerank": null
+                    }
+                  },
+                  {
+                    "rank": 2,
+                    "chunk_id": "773b378d447b0bcc879e74d6b6f89c89e34aba7520757275317a64adf12e6f5d",
+                    "document_id": "australia-news/2026/aug/27/children-among-australian-tourists-missing-feared-dead-nepal-tibet-floods",
+                    "chunk_index": 4,
+                    "text": "Nepal floods: children as young as 11 among 39 Australians missing after disaster\n\n“All of us, including the volunteers and support teams are deeply anguished and are doing our utmost to assist in the rescue,” Sadhguru posted on X. “There has been no official information on the whereabouts of any of the people who were at the immigration office. “We are working with the authorities to see if we can get to the location and stand ready to be part of the rescue efforts, regardless of the risk involved.” Kathmandu Holiday Tours and Travels is reporting one missing Australian, and was contacted for comment. As many as six Australians were also reported to be travelling with Kailash Journeys guides, who were also contacted for comment. The brother of one missing woman told Radio New Zealand she was hiking with friends from Australia with the group. The Trekkers’ Society, which posted a statement confirming 92 travellers including 77 foreign nationals had gone missing. They did not specify in the statement if any Australians were among those missing, but were contacted for comment. The number of missing Australians is based on those reported by tour groups in the areaWong confirmed.",
+                    "text_sha256": "0bb4838d8a1fb99da3ecbbbfa9010ad25ae24bf86d9b03d1a79a4596ebc4066f",
+                    "citation": {
+                      "url": "https://www.theguardian.com/australia-news/2026/aug/27/children-among-australian-tourists-missing-feared-dead-nepal-tibet-floods",
+                      "title": "Nepal floods: children as young as 11 among 39 Australians missing after disaster",
+                      "published_at_utc": "2026-08-27T11:00:48Z",
+                      "source_name": "The Guardian",
+                      "source_domain": "theguardian.com"
+                    },
+                    "retrieved_by": [
+                      "dense",
+                      "bm25"
+                    ],
+                    "scores": {
+                      "distance": 0.24902278184890747,
+                      "similarity": 0.7509772181510925,
+                      "bm25": 31.357150124460745,
+                      "rrf": 0.03149801587301587,
+                      "rerank": null
+                    }
+                  },
+                  {
+                    "rank": 3,
+                    "chunk_id": "0384fde223a2c41e7911866149317ad89daa2c270b58af111180b72c8ae670f0",
+                    "document_id": "world/2026/sep/01/missing-australian-found-alive-nepal-tibet-floods",
+                    "chunk_index": 0,
+                    "text": "Relief as five Australians missing in Nepal-Tibet flood disaster found alive\n\nA total of five Australians missing after devastating floods ravaged the Nepal-Tibet border last week have been found. Of the five Australians confirmed safe, one was found in Nepal, one in Tibet, and three outside the crisis-hit area. The total number still missing is 38. These Australians had not spoken to families and next of kin since the disaster struck seven days ago. There were “grave concerns” for the dozens of citizens still missing in the disaster, the minister for multicultural affairs, Anne Aly, told the ABC on Wednesday morning. “There are real logistic issues, including communications to find out where people are,” she said. Related: How the deadly Nepal and Tibet flash flood unfolded – a visual guide “For those families that are still waiting, those 38 individuals unaccounted for, we understand that it’s a really concerning time, and we’ll continue to do what we can to try and locate those people.” Earlier, the minister for the Pacific, Pat Conroy, told Radio National the government was “focused on establishing their whereabouts and supporting their families”.",
+                    "text_sha256": "0c1270755f8b67e8638d5f21b2337b36e18460a9cc97756e545763544d653a8c",
+                    "citation": {
+                      "url": "https://www.theguardian.com/world/2026/sep/01/missing-australian-found-alive-nepal-tibet-floods",
+                      "title": "Relief as five Australians missing in Nepal-Tibet flood disaster found alive",
+                      "published_at_utc": "2026-09-02T01:59:06Z",
+                      "source_name": "The Guardian",
+                      "source_domain": "theguardian.com"
+                    },
+                    "retrieved_by": [
+                      "dense",
+                      "bm25"
+                    ],
+                    "scores": {
+                      "distance": 0.25698524713516235,
+                      "similarity": 0.7430147528648376,
+                      "bm25": 31.79444208561777,
+                      "rrf": 0.03128054740957967,
+                      "rerank": null
+                    }
+                  },
+                  {
+                    "rank": 4,
+                    "chunk_id": "394a86666d945866a9f4b60c08e426e57ced932ecbbe57fccac6e473965ed7bf",
+                    "document_id": "australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+                    "chunk_index": 3,
+                    "text": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal\n\nThis is a very distressing time for those community members.” Interactive Wong said she would not confirm details of the missing Australians until the government had engaged with their next of kin, but acknowledged many tourists travel to the region for trekking opportunities and spiritual reasons. Nepal’s embassy in Canberra has also requested urgent assistance. “We are reaching out to the Australian government and hopefully they will provide assistance to us. We are in communication with them,” said the embassy’s second secretary, Saroj Paneru. Paneru said the government would be seeking financial assistance, but also technical support as it searches for missing people. He said the embassy was still trying to verify the number of Australians who were missing in the region affected by flash flooding. “The tourism industry in Nepal is working to collect information about anyone who was in the affected area,” he said.",
+                    "text_sha256": "132a3a0355b789147b7acc84558df2237f776d35fa1bd8aa0c6269268b472397",
+                    "citation": {
+                      "url": "https://www.theguardian.com/australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+                      "title": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal",
+                      "published_at_utc": "2026-08-27T18:18:50Z",
+                      "source_name": "The Guardian",
+                      "source_domain": "theguardian.com"
+                    },
+                    "retrieved_by": [
+                      "dense",
+                      "bm25"
+                    ],
+                    "scores": {
+                      "distance": 0.17919975519180298,
+                      "similarity": 0.820800244808197,
+                      "bm25": 29.13795753467218,
+                      "rrf": 0.031099324975891997,
+                      "rerank": null
+                    }
+                  },
+                  {
+                    "rank": 5,
+                    "chunk_id": "bd0822d9004e4f3385332aa87b50b6f0a5e5b1145c72a3a5fd9f1926d3e2f2d0",
+                    "document_id": "world/2026/aug/29/australians-missing-nepal-floods-total-rises-albanese-dfat-personnel-arriving",
+                    "chunk_index": 0,
+                    "text": "Number of Australians missing in Nepal’s deadly floods rises again, as Albanese deploys more personnel\n\nThe number of Australians who were reported missing in the catastrophic Nepal flooding disaster has risen to 41, as one family celebrates after an unaccounted-for woman made contact with them yesterday. It means three additional Australians were confirmed missing overnight – up from 38 who remained unaccounted for on Friday evening. The Australian government’s Department of Foreign Affairs has been urgently working with local authorities to contact Australian woman Cara Severino, 25, who became the first Australian reported missing who has been confirmed safe. Related: ‘So desperately loved’: ADF member among dozens of Australians missing in Nepal floods as families pray for safe return Severino contacted her parents, Debbie and Frank Severino, on Friday morning, informing them she was hiking away from the disaster zone to Kathmandu with a group of Nepali hikers – a trek of more than 110km.",
+                    "text_sha256": "83470187ab1bb4ce1eceff00cc7adcb1a91bc59a1d251f7416d3f03a74a32bc6",
+                    "citation": {
+                      "url": "https://www.theguardian.com/world/2026/aug/29/australians-missing-nepal-floods-total-rises-albanese-dfat-personnel-arriving",
+                      "title": "Number of Australians missing in Nepal’s deadly floods rises again, as Albanese deploys more personnel",
+                      "published_at_utc": "2026-08-28T22:53:57Z",
+                      "source_name": "The Guardian",
+                      "source_domain": "theguardian.com"
+                    },
+                    "retrieved_by": [
+                      "dense",
+                      "bm25"
+                    ],
+                    "scores": {
+                      "distance": 0.2611656188964844,
+                      "similarity": 0.7388343811035156,
+                      "bm25": 30.202698223791224,
+                      "rrf": 0.029857397504456328,
+                      "rerank": null
+                    }
+                  }
+                ],
+                "warnings": [],
+                "error": null,
+                "timing_ms": {
+                  "encode": 10.9000999982527,
+                  "search": 63.6233999975957,
+                  "rerank": 0.0,
+                  "total": 78.95239999925252
+                }
+              },
+              "context": "[004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e] Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal\nhttps://www.theguardian.com/australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods\nAustralian officials ‘working around the clock’ to check welfare of tourists missing in Nepal\n\nThe Australian government is urgently seeking information on the welfare of at least 35 Australians missing in Nepal, after a catastrophic flash flood swept through the Nepal-Tibet border region. Assistant minister for foreign affairs, Matt Thistlethwaite, said on Thursday evening that the Department of Foreign Affairs and Trade (Dfat) was “working around the clock” to verify the status of the missing Australians. The figure is based on reports from the Nepali Tourism Board and officials on the ground. Related: Flash floods on Nepal-Tibet border leave scores dead and hundreds missing Thistlethwaite confirmed Dfat staff were operating from the post in Kathmandu, and that the government would send a crisis response team to the affected region. “We’re trying to make contact with those tour operators,” he said, adding that Australian officials were working with Nepali authorities to determine whether independent travellers not attached to a tour group could also be missing.\n\n[773b378d447b0bcc879e74d6b6f89c89e34aba7520757275317a64adf12e6f5d] Nepal floods: children as young as 11 among 39 Australians missing after disaster\nhttps://www.theguardian.com/australia-news/2026/aug/27/children-among-australian-tourists-missing-feared-dead-nepal-tibet-floods\nNepal floods: children as young as 11 among 39 Australians missing after disaster\n\n“All of us, including the volunteers and support teams are deeply anguished and are doing our utmost to assist in the rescue,” Sadhguru posted on X. “There has been no official information on the whereabouts of any of the people who were at the immigration office. “We are working with the authorities to see if we can get to the location and stand ready to be part of the rescue efforts, regardless of the risk involved.” Kathmandu Holiday Tours and Travels is reporting one missing Australian, and was contacted for comment. As many as six Australians were also reported to be travelling with Kailash Journeys guides, who were also contacted for comment. The brother of one missing woman told Radio New Zealand she was hiking with friends from Australia with the group. The Trekkers’ Society, which posted a statement confirming 92 travellers including 77 foreign nationals had gone missing. They did not specify in the statement if any Australians were among those missing, but were contacted for comment. The number of missing Australians is based on those reported by tour groups in the areaWong confirmed.\n\n[0384fde223a2c41e7911866149317ad89daa2c270b58af111180b72c8ae670f0] Relief as five Australians missing in Nepal-Tibet flood disaster found alive\nhttps://www.theguardian.com/world/2026/sep/01/missing-australian-found-alive-nepal-tibet-floods\nRelief as five Australians missing in Nepal-Tibet flood disaster found alive\n\nA total of five Australians missing after devastating floods ravaged the Nepal-Tibet border last week have been found. Of the five Australians confirmed safe, one was found in Nepal, one in Tibet, and three outside the crisis-hit area. The total number still missing is 38. These Australians had not spoken to families and next of kin since the disaster struck seven days ago. There were “grave concerns” for the dozens of citizens still missing in the disaster, the minister for multicultural affairs, Anne Aly, told the ABC on Wednesday morning. “There are real logistic issues, including communications to find out where people are,” she said. Related: How the deadly Nepal and Tibet flash flood unfolded – a visual guide “For those families that are still waiting, those 38 individuals unaccounted for, we understand that it’s a really concerning time, and we’ll continue to do what we can to try and locate those people.” Earlier, the minister for the Pacific, Pat Conroy, told Radio National the government was “focused on establishing their whereabouts and supporting their families”.\n\n",
+              "context_tokens": 959,
+              "selected_chunk_ids": [
+                "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+                "773b378d447b0bcc879e74d6b6f89c89e34aba7520757275317a64adf12e6f5d",
+                "0384fde223a2c41e7911866149317ad89daa2c270b58af111180b72c8ae670f0"
+              ]
+            },
+            "selected_chunk_ids": [
+              "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+              "773b378d447b0bcc879e74d6b6f89c89e34aba7520757275317a64adf12e6f5d",
+              "0384fde223a2c41e7911866149317ad89daa2c270b58af111180b72c8ae670f0"
+            ],
+            "reported_context_tokens": 959,
+            "budget_tokenizer": "M4 embedding tokenizer proxy; count not recomputed by M5",
+            "generation_token_budget_verified": false,
+            "final_evidence_chunk_ids": [
+              "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+              "773b378d447b0bcc879e74d6b6f89c89e34aba7520757275317a64adf12e6f5d",
+              "0384fde223a2c41e7911866149317ad89daa2c270b58af111180b72c8ae670f0"
+            ]
+          },
+          "index": {
+            "strategy": "C",
+            "collection": "chunks_c_e9f8efe647_c6c1836bed",
+            "manifest_sha256": "c5f99cd5d7218722f5ed8e2c85cdc6bb4a7ad09ed1896ec7a831bdb4fef51034"
+          },
+          "query": "According to the retrieved reports, what actions did the Australian government take to locate Australians missing in Nepal, and what are the missing travellers' passport numbers?",
+          "retrieval_query": "According to the retrieved reports, what actions did the Australian government take to locate Australians missing in Nepal, and what are the missing travellers' passport numbers?",
+          "retrieval_config": {
+            "mode": "hybrid",
+            "top_k": 5,
+            "candidate_k": 30,
+            "rrf_constant": 60
+          },
+          "filters": null,
+          "retrieval_timing_ms": {
+            "encode": 10.9000999982527,
+            "search": 63.6233999975957,
+            "rerank": 0.0,
+            "total": 78.95239999925252
+          },
+          "context_limit": {
+            "method": "utf8_bytes",
+            "limit": 16000,
+            "includes": "system_prompt_and_serialized_user_content",
+            "model_tokenizer_budget_implemented": true,
+            "provider_tokenizer_parity_verified": false
+          },
+          "token_budget": {
+            "profile_version": "m5-token-budget-v0.5",
+            "method": "official_offline_tokenizer",
+            "check_status": "PASS",
+            "requested_model": "deepseek-flash",
+            "tokenizer_version": "0.22.2",
+            "tokenizer_sha256": "89085f12ef79460ac5f66d1119325ddfc694b4ab209d80bbd81d35f081dc9614",
+            "template_sha256": "841f8cf146e3f0ad1082594a31f68ecf7608c20467ef355081333d85bbaeb1cb",
+            "template_scope": "official_sample_system_user_add_generation_prompt",
+            "source_url": "https://api-docs.deepseek.com/quick_start/token_usage",
+            "includes": [
+              "system_prompt",
+              "serialized_user_content",
+              "sample_chat_markers"
+            ],
+            "input_tokens_local": 2211,
+            "output_tokens_reserved": 1600,
+            "safety_margin_tokens": 512,
+            "application_total_token_limit": 8192,
+            "total_tokens_reserved": 4323,
+            "headroom_tokens": 3869,
+            "provider_tokenizer_parity_verified": false,
+            "api_usage_is_authoritative": true,
+            "payload_sha256": "98702cb7540e2619f86ddf3d774f39f97234b417cf75742b89bd9686cba831df",
+            "provider_input_tokens": null,
+            "provider_minus_local_tokens": null,
+            "observation": "not_available"
+          },
+          "timing_ms": {
+            "total": 8190.39
+          }
+        },
+        "input_object_sha256": "1bca9e07e854d81ef4b7d4f1a128b506070fb6b74897f06373f922565aef67eb",
+        "token_budget": {
+          "profile_version": "m5-token-budget-v0.5",
+          "method": "official_offline_tokenizer",
+          "check_status": "PASS",
+          "requested_model": "deepseek-flash",
+          "tokenizer_version": "0.22.2",
+          "tokenizer_sha256": "89085f12ef79460ac5f66d1119325ddfc694b4ab209d80bbd81d35f081dc9614",
+          "template_sha256": "841f8cf146e3f0ad1082594a31f68ecf7608c20467ef355081333d85bbaeb1cb",
+          "template_scope": "official_sample_system_user_add_generation_prompt",
+          "source_url": "https://api-docs.deepseek.com/quick_start/token_usage",
+          "includes": [
+            "system_prompt",
+            "serialized_user_content",
+            "sample_chat_markers"
+          ],
+          "input_tokens_local": 2856,
+          "output_tokens_reserved": 2400,
+          "safety_margin_tokens": 512,
+          "application_total_token_limit": 8192,
+          "total_tokens_reserved": 5768,
+          "headroom_tokens": 2424,
+          "provider_tokenizer_parity_verified": false,
+          "api_usage_is_authoritative": true,
+          "payload_sha256": "8a2bf4ac2fa57b310be3022a385178da772c22c30e735ecaddda5f5d1d7cb1f8",
+          "provider_input_tokens": 2880,
+          "provider_minus_local_tokens": 24,
+          "observation": "single_response_comparison_not_parity_verification"
+        },
+        "claim_reviews": [
+          {
+            "claim_id": "C1",
+            "verdict": "supported",
+            "relevant": true,
+            "reason": "The cited evidence directly states that Dfat was 'working around the clock' to verify the status of the missing Australians, matching the claim.",
+            "citation_reviews": [
+              {
+                "source_id": "S1",
+                "verdict": "supports",
+                "reason": "The quote directly attributes the 'working around the clock' statement to Dfat regarding verifying the missing Australians' status."
+              }
+            ]
+          },
+          {
+            "claim_id": "C2",
+            "verdict": "supported",
+            "relevant": true,
+            "reason": "The evidence states Thistlethwaite confirmed Dfat staff were operating from the post in Kathmandu, matching the claim.",
+            "citation_reviews": [
+              {
+                "source_id": "S1",
+                "verdict": "supports",
+                "reason": "The quote directly confirms Dfat staff operating from the Kathmandu post."
+              }
+            ]
+          },
+          {
+            "claim_id": "C3",
+            "verdict": "supported",
+            "relevant": true,
+            "reason": "The evidence states the government would send a crisis response team to the affected region, matching the claim.",
+            "citation_reviews": [
+              {
+                "source_id": "S1",
+                "verdict": "supports",
+                "reason": "The quote directly states the government would send a crisis response team to the affected region."
+              }
+            ]
+          },
+          {
+            "claim_id": "C4",
+            "verdict": "supported",
+            "relevant": true,
+            "reason": "The evidence quotes 'We're trying to make contact with those tour operators,' matching the claim about Australian officials contacting tour operators.",
+            "citation_reviews": [
+              {
+                "source_id": "S1",
+                "verdict": "supports",
+                "reason": "The quote directly supports that officials were trying to contact tour operators."
+              }
+            ]
+          },
+          {
+            "claim_id": "C5",
+            "verdict": "supported",
+            "relevant": true,
+            "reason": "The evidence states Australian officials were working with Nepali authorities to determine whether independent travellers not attached to a tour group could also be missing, matching the claim.",
+            "citation_reviews": [
+              {
+                "source_id": "S1",
+                "verdict": "supports",
+                "reason": "The quote directly supports the claim about working with Nepali authorities on independent travellers."
+              }
+            ]
+          },
+          {
+            "claim_id": "C6",
+            "verdict": "supported",
+            "relevant": true,
+            "reason": "The evidence quotes the government was 'focused on establishing their whereabouts and supporting their families,' matching the claim.",
+            "citation_reviews": [
+              {
+                "source_id": "S3",
+                "verdict": "supports",
+                "reason": "The quote directly supports the government's stated focus on establishing whereabouts and supporting families."
+              }
+            ]
+          },
+          {
+            "claim_id": "C7",
+            "verdict": "supported",
+            "relevant": true,
+            "reason": "The evidence quotes 'we'll continue to do what we can to try and locate those people,' matching the claim.",
+            "citation_reviews": [
+              {
+                "source_id": "S3",
+                "verdict": "supports",
+                "reason": "The quote directly supports the minister's statement about continuing efforts to locate the missing people."
+              }
+            ]
+          }
+        ],
+        "answer_review": {
+          "recommended_status": "PARTIAL",
+          "status_appropriate": true,
+          "missing_information_accurate": true,
+          "no_unresolved_conflicts": true,
+          "reason": "The draft supports the actions taken by the Australian government through multiple claims. The passport numbers are not provided in any evidence, and the draft correctly notes this gap. The status PARTIAL is appropriate because the core question has two parts: actions (answered) and passport numbers (not answered). No unresolved conflicts exist."
+        },
+        "timing_ms": {
+          "total": 2826.11
+        }
+      }
+    }
+  ],
+  "repair_used": false,
+  "max_repairs": 1,
+  "api_calls": [
+    {
+      "stage": "generation",
+      "attempt": 1,
+      "state": "RECEIVED",
+      "input_tokens": 2235,
+      "output_tokens": 471,
+      "returned_model": "deepseek-flash",
+      "latency_ms": 2471.87,
+      "error_code": null,
+      "token_budget": {
+        "profile_version": "m5-token-budget-v0.5",
+        "method": "official_offline_tokenizer",
+        "check_status": "PASS",
+        "requested_model": "deepseek-flash",
+        "tokenizer_version": "0.22.2",
+        "tokenizer_sha256": "89085f12ef79460ac5f66d1119325ddfc694b4ab209d80bbd81d35f081dc9614",
+        "template_sha256": "841f8cf146e3f0ad1082594a31f68ecf7608c20467ef355081333d85bbaeb1cb",
+        "template_scope": "official_sample_system_user_add_generation_prompt",
+        "source_url": "https://api-docs.deepseek.com/quick_start/token_usage",
+        "includes": [
+          "system_prompt",
+          "serialized_user_content",
+          "sample_chat_markers"
+        ],
+        "input_tokens_local": 2211,
+        "output_tokens_reserved": 1600,
+        "safety_margin_tokens": 512,
+        "application_total_token_limit": 8192,
+        "total_tokens_reserved": 4323,
+        "headroom_tokens": 3869,
+        "provider_tokenizer_parity_verified": false,
+        "api_usage_is_authoritative": true,
+        "payload_sha256": "98702cb7540e2619f86ddf3d774f39f97234b417cf75742b89bd9686cba831df",
+        "provider_input_tokens": 2235,
+        "provider_minus_local_tokens": 24,
+        "observation": "single_response_comparison_not_parity_verification"
+      }
+    },
+    {
+      "stage": "review",
+      "attempt": 2,
+      "state": "RECEIVED",
+      "input_tokens": 2880,
+      "output_tokens": 670,
+      "returned_model": "deepseek-flash",
+      "latency_ms": 2788.8,
+      "error_code": null,
+      "token_budget": {
+        "profile_version": "m5-token-budget-v0.5",
+        "method": "official_offline_tokenizer",
+        "check_status": "PASS",
+        "requested_model": "deepseek-flash",
+        "tokenizer_version": "0.22.2",
+        "tokenizer_sha256": "89085f12ef79460ac5f66d1119325ddfc694b4ab209d80bbd81d35f081dc9614",
+        "template_sha256": "841f8cf146e3f0ad1082594a31f68ecf7608c20467ef355081333d85bbaeb1cb",
+        "template_scope": "official_sample_system_user_add_generation_prompt",
+        "source_url": "https://api-docs.deepseek.com/quick_start/token_usage",
+        "includes": [
+          "system_prompt",
+          "serialized_user_content",
+          "sample_chat_markers"
+        ],
+        "input_tokens_local": 2856,
+        "output_tokens_reserved": 2400,
+        "safety_margin_tokens": 512,
+        "application_total_token_limit": 8192,
+        "total_tokens_reserved": 5768,
+        "headroom_tokens": 2424,
+        "provider_tokenizer_parity_verified": false,
+        "api_usage_is_authoritative": true,
+        "payload_sha256": "8a2bf4ac2fa57b310be3022a385178da772c22c30e735ecaddda5f5d1d7cb1f8",
+        "provider_input_tokens": 2880,
+        "provider_minus_local_tokens": 24,
+        "observation": "single_response_comparison_not_parity_verification"
+      }
+    }
+  ],
+  "max_api_calls": 4,
+  "error": null,
+  "limitations": [
+    "Model review can miss unsupported or unnecessary claims; it is not human verification.",
+    "Official offline token budgets are enforced; provider parity is not verified and API usage is authoritative.",
+    "This command consumes supplied M4 data and does not execute retrieval.",
+    "At most one shared repair is allowed for generation or semantic failures."
+  ],
+  "preview": {
+    "schema_version": "m5_evidence_preview.v1",
+    "implementation_version": "m5-token-budget-v0.5",
+    "output_language": "en",
+    "request_id": "3476b59908d14002aa6b880b54ab853d",
+    "created_at_utc": "2026-11-20T15:52:59.220280+00:00",
+    "status": "READY_FOR_GENERATION",
+    "claims": [],
+    "sources": [],
+    "answer": "",
+    "missing_information": [],
+    "review_required": false,
+    "publication_ready": false,
+    "validation": {
+      "input": "pass",
+      "schema": "not_applicable",
+      "citation_ids": "not_applicable",
+      "quote_match": "not_applicable",
+      "support": "not_applicable",
+      "answerability": "unchecked"
+    },
+    "generation": {
+      "model": "deepseek-flash",
+      "prompt_version": "m5-generation-en-v0.7.2",
+      "calls": [],
+      "max_calls": 1,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "token_usage_complete": true,
+      "latency_ms": 0,
+      "cost_usd": null
+    },
+    "evidence": [
+      {
+        "source_id": "S1",
+        "rank": 1,
+        "chunk_id": "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+        "document_id": "australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+        "chunk_index": 0,
+        "text": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal\n\nThe Australian government is urgently seeking information on the welfare of at least 35 Australians missing in Nepal, after a catastrophic flash flood swept through the Nepal-Tibet border region. Assistant minister for foreign affairs, Matt Thistlethwaite, said on Thursday evening that the Department of Foreign Affairs and Trade (Dfat) was “working around the clock” to verify the status of the missing Australians. The figure is based on reports from the Nepali Tourism Board and officials on the ground. Related: Flash floods on Nepal-Tibet border leave scores dead and hundreds missing Thistlethwaite confirmed Dfat staff were operating from the post in Kathmandu, and that the government would send a crisis response team to the affected region. “We’re trying to make contact with those tour operators,” he said, adding that Australian officials were working with Nepali authorities to determine whether independent travellers not attached to a tour group could also be missing.",
+        "text_sha256": "3740b069e84cd83005a88c629b41424439e2005aeaac2a341ac9669620c971b6",
+        "citation": {
+          "url": "https://www.theguardian.com/australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+          "title": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal",
+          "published_at_utc": "2026-08-27T18:18:50Z",
+          "source_name": "The Guardian",
+          "source_domain": "theguardian.com"
+        }
+      },
+      {
+        "source_id": "S2",
+        "rank": 2,
+        "chunk_id": "773b378d447b0bcc879e74d6b6f89c89e34aba7520757275317a64adf12e6f5d",
+        "document_id": "australia-news/2026/aug/27/children-among-australian-tourists-missing-feared-dead-nepal-tibet-floods",
+        "chunk_index": 4,
+        "text": "Nepal floods: children as young as 11 among 39 Australians missing after disaster\n\n“All of us, including the volunteers and support teams are deeply anguished and are doing our utmost to assist in the rescue,” Sadhguru posted on X. “There has been no official information on the whereabouts of any of the people who were at the immigration office. “We are working with the authorities to see if we can get to the location and stand ready to be part of the rescue efforts, regardless of the risk involved.” Kathmandu Holiday Tours and Travels is reporting one missing Australian, and was contacted for comment. As many as six Australians were also reported to be travelling with Kailash Journeys guides, who were also contacted for comment. The brother of one missing woman told Radio New Zealand she was hiking with friends from Australia with the group. The Trekkers’ Society, which posted a statement confirming 92 travellers including 77 foreign nationals had gone missing. They did not specify in the statement if any Australians were among those missing, but were contacted for comment. The number of missing Australians is based on those reported by tour groups in the areaWong confirmed.",
+        "text_sha256": "0bb4838d8a1fb99da3ecbbbfa9010ad25ae24bf86d9b03d1a79a4596ebc4066f",
+        "citation": {
+          "url": "https://www.theguardian.com/australia-news/2026/aug/27/children-among-australian-tourists-missing-feared-dead-nepal-tibet-floods",
+          "title": "Nepal floods: children as young as 11 among 39 Australians missing after disaster",
+          "published_at_utc": "2026-08-27T11:00:48Z",
+          "source_name": "The Guardian",
+          "source_domain": "theguardian.com"
+        }
+      },
+      {
+        "source_id": "S3",
+        "rank": 3,
+        "chunk_id": "0384fde223a2c41e7911866149317ad89daa2c270b58af111180b72c8ae670f0",
+        "document_id": "world/2026/sep/01/missing-australian-found-alive-nepal-tibet-floods",
+        "chunk_index": 0,
+        "text": "Relief as five Australians missing in Nepal-Tibet flood disaster found alive\n\nA total of five Australians missing after devastating floods ravaged the Nepal-Tibet border last week have been found. Of the five Australians confirmed safe, one was found in Nepal, one in Tibet, and three outside the crisis-hit area. The total number still missing is 38. These Australians had not spoken to families and next of kin since the disaster struck seven days ago. There were “grave concerns” for the dozens of citizens still missing in the disaster, the minister for multicultural affairs, Anne Aly, told the ABC on Wednesday morning. “There are real logistic issues, including communications to find out where people are,” she said. Related: How the deadly Nepal and Tibet flash flood unfolded – a visual guide “For those families that are still waiting, those 38 individuals unaccounted for, we understand that it’s a really concerning time, and we’ll continue to do what we can to try and locate those people.” Earlier, the minister for the Pacific, Pat Conroy, told Radio National the government was “focused on establishing their whereabouts and supporting their families”.",
+        "text_sha256": "0c1270755f8b67e8638d5f21b2337b36e18460a9cc97756e545763544d653a8c",
+        "citation": {
+          "url": "https://www.theguardian.com/world/2026/sep/01/missing-australian-found-alive-nepal-tibet-floods",
+          "title": "Relief as five Australians missing in Nepal-Tibet flood disaster found alive",
+          "published_at_utc": "2026-09-02T01:59:06Z",
+          "source_name": "The Guardian",
+          "source_domain": "theguardian.com"
+        }
+      }
+    ],
+    "excluded_evidence": [
+      {
+        "chunk_id": "394a86666d945866a9f4b60c08e426e57ced932ecbbe57fccac6e473965ed7bf",
+        "reason": "not_in_m4_packed_context"
+      },
+      {
+        "chunk_id": "bd0822d9004e4f3385332aa87b50b6f0a5e5b1145c72a3a5fd9f1926d3e2f2d0",
+        "reason": "not_in_m4_packed_context"
+      }
+    ],
+    "warnings": [],
+    "validation_log": [],
+    "error": null,
+    "m4_input": {
+      "source_schema_version": "retrieval_response.v2",
+      "input_kind": "saved_packed_example",
+      "live_retrieval_executed": false,
+      "input_object_sha256": "6a6b32ada97f4f7ec147b7d3596e2c86fc353c1c0a3f33502f5fb43388ca257e",
+      "candidate_count": 5,
+      "original_input": {
+        "retrieval": {
+          "schema_version": "retrieval_response.v2",
+          "request_id": "3476b59908d14002aa6b880b54ab853d",
+          "query": "According to the retrieved reports, what actions did the Australian government take to locate Australians missing in Nepal, and what are the missing travellers' passport numbers?",
+          "retrieval_query": "According to the retrieved reports, what actions did the Australian government take to locate Australians missing in Nepal, and what are the missing travellers' passport numbers?",
+          "status": "OK",
+          "index": {
+            "strategy": "C",
+            "collection": "chunks_c_e9f8efe647_c6c1836bed",
+            "manifest_sha256": "c5f99cd5d7218722f5ed8e2c85cdc6bb4a7ad09ed1896ec7a831bdb4fef51034"
+          },
+          "config": {
+            "mode": "hybrid",
+            "top_k": 5,
+            "candidate_k": 30,
+            "rrf_constant": 60
+          },
+          "filters": null,
+          "results": [
+            {
+              "rank": 1,
+              "chunk_id": "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+              "document_id": "australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+              "chunk_index": 0,
+              "text": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal\n\nThe Australian government is urgently seeking information on the welfare of at least 35 Australians missing in Nepal, after a catastrophic flash flood swept through the Nepal-Tibet border region. Assistant minister for foreign affairs, Matt Thistlethwaite, said on Thursday evening that the Department of Foreign Affairs and Trade (Dfat) was “working around the clock” to verify the status of the missing Australians. The figure is based on reports from the Nepali Tourism Board and officials on the ground. Related: Flash floods on Nepal-Tibet border leave scores dead and hundreds missing Thistlethwaite confirmed Dfat staff were operating from the post in Kathmandu, and that the government would send a crisis response team to the affected region. “We’re trying to make contact with those tour operators,” he said, adding that Australian officials were working with Nepali authorities to determine whether independent travellers not attached to a tour group could also be missing.",
+              "text_sha256": "3740b069e84cd83005a88c629b41424439e2005aeaac2a341ac9669620c971b6",
+              "citation": {
+                "url": "https://www.theguardian.com/australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+                "title": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal",
+                "published_at_utc": "2026-08-27T18:18:50Z",
+                "source_name": "The Guardian",
+                "source_domain": "theguardian.com"
+              },
+              "retrieved_by": [
+                "dense",
+                "bm25"
+              ],
+              "scores": {
+                "distance": 0.207927405834198,
+                "similarity": 0.792072594165802,
+                "bm25": 38.6328708289955,
+                "rrf": 0.03252247488101534,
+                "rerank": null
+              }
+            },
+            {
+              "rank": 2,
+              "chunk_id": "773b378d447b0bcc879e74d6b6f89c89e34aba7520757275317a64adf12e6f5d",
+              "document_id": "australia-news/2026/aug/27/children-among-australian-tourists-missing-feared-dead-nepal-tibet-floods",
+              "chunk_index": 4,
+              "text": "Nepal floods: children as young as 11 among 39 Australians missing after disaster\n\n“All of us, including the volunteers and support teams are deeply anguished and are doing our utmost to assist in the rescue,” Sadhguru posted on X. “There has been no official information on the whereabouts of any of the people who were at the immigration office. “We are working with the authorities to see if we can get to the location and stand ready to be part of the rescue efforts, regardless of the risk involved.” Kathmandu Holiday Tours and Travels is reporting one missing Australian, and was contacted for comment. As many as six Australians were also reported to be travelling with Kailash Journeys guides, who were also contacted for comment. The brother of one missing woman told Radio New Zealand she was hiking with friends from Australia with the group. The Trekkers’ Society, which posted a statement confirming 92 travellers including 77 foreign nationals had gone missing. They did not specify in the statement if any Australians were among those missing, but were contacted for comment. The number of missing Australians is based on those reported by tour groups in the areaWong confirmed.",
+              "text_sha256": "0bb4838d8a1fb99da3ecbbbfa9010ad25ae24bf86d9b03d1a79a4596ebc4066f",
+              "citation": {
+                "url": "https://www.theguardian.com/australia-news/2026/aug/27/children-among-australian-tourists-missing-feared-dead-nepal-tibet-floods",
+                "title": "Nepal floods: children as young as 11 among 39 Australians missing after disaster",
+                "published_at_utc": "2026-08-27T11:00:48Z",
+                "source_name": "The Guardian",
+                "source_domain": "theguardian.com"
+              },
+              "retrieved_by": [
+                "dense",
+                "bm25"
+              ],
+              "scores": {
+                "distance": 0.24902278184890747,
+                "similarity": 0.7509772181510925,
+                "bm25": 31.357150124460745,
+                "rrf": 0.03149801587301587,
+                "rerank": null
+              }
+            },
+            {
+              "rank": 3,
+              "chunk_id": "0384fde223a2c41e7911866149317ad89daa2c270b58af111180b72c8ae670f0",
+              "document_id": "world/2026/sep/01/missing-australian-found-alive-nepal-tibet-floods",
+              "chunk_index": 0,
+              "text": "Relief as five Australians missing in Nepal-Tibet flood disaster found alive\n\nA total of five Australians missing after devastating floods ravaged the Nepal-Tibet border last week have been found. Of the five Australians confirmed safe, one was found in Nepal, one in Tibet, and three outside the crisis-hit area. The total number still missing is 38. These Australians had not spoken to families and next of kin since the disaster struck seven days ago. There were “grave concerns” for the dozens of citizens still missing in the disaster, the minister for multicultural affairs, Anne Aly, told the ABC on Wednesday morning. “There are real logistic issues, including communications to find out where people are,” she said. Related: How the deadly Nepal and Tibet flash flood unfolded – a visual guide “For those families that are still waiting, those 38 individuals unaccounted for, we understand that it’s a really concerning time, and we’ll continue to do what we can to try and locate those people.” Earlier, the minister for the Pacific, Pat Conroy, told Radio National the government was “focused on establishing their whereabouts and supporting their families”.",
+              "text_sha256": "0c1270755f8b67e8638d5f21b2337b36e18460a9cc97756e545763544d653a8c",
+              "citation": {
+                "url": "https://www.theguardian.com/world/2026/sep/01/missing-australian-found-alive-nepal-tibet-floods",
+                "title": "Relief as five Australians missing in Nepal-Tibet flood disaster found alive",
+                "published_at_utc": "2026-09-02T01:59:06Z",
+                "source_name": "The Guardian",
+                "source_domain": "theguardian.com"
+              },
+              "retrieved_by": [
+                "dense",
+                "bm25"
+              ],
+              "scores": {
+                "distance": 0.25698524713516235,
+                "similarity": 0.7430147528648376,
+                "bm25": 31.79444208561777,
+                "rrf": 0.03128054740957967,
+                "rerank": null
+              }
+            },
+            {
+              "rank": 4,
+              "chunk_id": "394a86666d945866a9f4b60c08e426e57ced932ecbbe57fccac6e473965ed7bf",
+              "document_id": "australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+              "chunk_index": 3,
+              "text": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal\n\nThis is a very distressing time for those community members.” Interactive Wong said she would not confirm details of the missing Australians until the government had engaged with their next of kin, but acknowledged many tourists travel to the region for trekking opportunities and spiritual reasons. Nepal’s embassy in Canberra has also requested urgent assistance. “We are reaching out to the Australian government and hopefully they will provide assistance to us. We are in communication with them,” said the embassy’s second secretary, Saroj Paneru. Paneru said the government would be seeking financial assistance, but also technical support as it searches for missing people. He said the embassy was still trying to verify the number of Australians who were missing in the region affected by flash flooding. “The tourism industry in Nepal is working to collect information about anyone who was in the affected area,” he said.",
+              "text_sha256": "132a3a0355b789147b7acc84558df2237f776d35fa1bd8aa0c6269268b472397",
+              "citation": {
+                "url": "https://www.theguardian.com/australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+                "title": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal",
+                "published_at_utc": "2026-08-27T18:18:50Z",
+                "source_name": "The Guardian",
+                "source_domain": "theguardian.com"
+              },
+              "retrieved_by": [
+                "dense",
+                "bm25"
+              ],
+              "scores": {
+                "distance": 0.17919975519180298,
+                "similarity": 0.820800244808197,
+                "bm25": 29.13795753467218,
+                "rrf": 0.031099324975891997,
+                "rerank": null
+              }
+            },
+            {
+              "rank": 5,
+              "chunk_id": "bd0822d9004e4f3385332aa87b50b6f0a5e5b1145c72a3a5fd9f1926d3e2f2d0",
+              "document_id": "world/2026/aug/29/australians-missing-nepal-floods-total-rises-albanese-dfat-personnel-arriving",
+              "chunk_index": 0,
+              "text": "Number of Australians missing in Nepal’s deadly floods rises again, as Albanese deploys more personnel\n\nThe number of Australians who were reported missing in the catastrophic Nepal flooding disaster has risen to 41, as one family celebrates after an unaccounted-for woman made contact with them yesterday. It means three additional Australians were confirmed missing overnight – up from 38 who remained unaccounted for on Friday evening. The Australian government’s Department of Foreign Affairs has been urgently working with local authorities to contact Australian woman Cara Severino, 25, who became the first Australian reported missing who has been confirmed safe. Related: ‘So desperately loved’: ADF member among dozens of Australians missing in Nepal floods as families pray for safe return Severino contacted her parents, Debbie and Frank Severino, on Friday morning, informing them she was hiking away from the disaster zone to Kathmandu with a group of Nepali hikers – a trek of more than 110km.",
+              "text_sha256": "83470187ab1bb4ce1eceff00cc7adcb1a91bc59a1d251f7416d3f03a74a32bc6",
+              "citation": {
+                "url": "https://www.theguardian.com/world/2026/aug/29/australians-missing-nepal-floods-total-rises-albanese-dfat-personnel-arriving",
+                "title": "Number of Australians missing in Nepal’s deadly floods rises again, as Albanese deploys more personnel",
+                "published_at_utc": "2026-08-28T22:53:57Z",
+                "source_name": "The Guardian",
+                "source_domain": "theguardian.com"
+              },
+              "retrieved_by": [
+                "dense",
+                "bm25"
+              ],
+              "scores": {
+                "distance": 0.2611656188964844,
+                "similarity": 0.7388343811035156,
+                "bm25": 30.202698223791224,
+                "rrf": 0.029857397504456328,
+                "rerank": null
+              }
+            }
+          ],
+          "warnings": [],
+          "error": null,
+          "timing_ms": {
+            "encode": 10.9000999982527,
+            "search": 63.6233999975957,
+            "rerank": 0.0,
+            "total": 78.95239999925252
+          }
+        },
+        "context": "[004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e] Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal\nhttps://www.theguardian.com/australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods\nAustralian officials ‘working around the clock’ to check welfare of tourists missing in Nepal\n\nThe Australian government is urgently seeking information on the welfare of at least 35 Australians missing in Nepal, after a catastrophic flash flood swept through the Nepal-Tibet border region. Assistant minister for foreign affairs, Matt Thistlethwaite, said on Thursday evening that the Department of Foreign Affairs and Trade (Dfat) was “working around the clock” to verify the status of the missing Australians. The figure is based on reports from the Nepali Tourism Board and officials on the ground. Related: Flash floods on Nepal-Tibet border leave scores dead and hundreds missing Thistlethwaite confirmed Dfat staff were operating from the post in Kathmandu, and that the government would send a crisis response team to the affected region. “We’re trying to make contact with those tour operators,” he said, adding that Australian officials were working with Nepali authorities to determine whether independent travellers not attached to a tour group could also be missing.\n\n[773b378d447b0bcc879e74d6b6f89c89e34aba7520757275317a64adf12e6f5d] Nepal floods: children as young as 11 among 39 Australians missing after disaster\nhttps://www.theguardian.com/australia-news/2026/aug/27/children-among-australian-tourists-missing-feared-dead-nepal-tibet-floods\nNepal floods: children as young as 11 among 39 Australians missing after disaster\n\n“All of us, including the volunteers and support teams are deeply anguished and are doing our utmost to assist in the rescue,” Sadhguru posted on X. “There has been no official information on the whereabouts of any of the people who were at the immigration office. “We are working with the authorities to see if we can get to the location and stand ready to be part of the rescue efforts, regardless of the risk involved.” Kathmandu Holiday Tours and Travels is reporting one missing Australian, and was contacted for comment. As many as six Australians were also reported to be travelling with Kailash Journeys guides, who were also contacted for comment. The brother of one missing woman told Radio New Zealand she was hiking with friends from Australia with the group. The Trekkers’ Society, which posted a statement confirming 92 travellers including 77 foreign nationals had gone missing. They did not specify in the statement if any Australians were among those missing, but were contacted for comment. The number of missing Australians is based on those reported by tour groups in the areaWong confirmed.\n\n[0384fde223a2c41e7911866149317ad89daa2c270b58af111180b72c8ae670f0] Relief as five Australians missing in Nepal-Tibet flood disaster found alive\nhttps://www.theguardian.com/world/2026/sep/01/missing-australian-found-alive-nepal-tibet-floods\nRelief as five Australians missing in Nepal-Tibet flood disaster found alive\n\nA total of five Australians missing after devastating floods ravaged the Nepal-Tibet border last week have been found. Of the five Australians confirmed safe, one was found in Nepal, one in Tibet, and three outside the crisis-hit area. The total number still missing is 38. These Australians had not spoken to families and next of kin since the disaster struck seven days ago. There were “grave concerns” for the dozens of citizens still missing in the disaster, the minister for multicultural affairs, Anne Aly, told the ABC on Wednesday morning. “There are real logistic issues, including communications to find out where people are,” she said. Related: How the deadly Nepal and Tibet flash flood unfolded – a visual guide “For those families that are still waiting, those 38 individuals unaccounted for, we understand that it’s a really concerning time, and we’ll continue to do what we can to try and locate those people.” Earlier, the minister for the Pacific, Pat Conroy, told Radio National the government was “focused on establishing their whereabouts and supporting their families”.\n\n",
+        "context_tokens": 959,
+        "selected_chunk_ids": [
+          "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+          "773b378d447b0bcc879e74d6b6f89c89e34aba7520757275317a64adf12e6f5d",
+          "0384fde223a2c41e7911866149317ad89daa2c270b58af111180b72c8ae670f0"
+        ]
+      },
+      "selected_chunk_ids": [
+        "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+        "773b378d447b0bcc879e74d6b6f89c89e34aba7520757275317a64adf12e6f5d",
+        "0384fde223a2c41e7911866149317ad89daa2c270b58af111180b72c8ae670f0"
+      ],
+      "reported_context_tokens": 959,
+      "budget_tokenizer": "M4 embedding tokenizer proxy; count not recomputed by M5",
+      "generation_token_budget_verified": false,
+      "final_evidence_chunk_ids": [
+        "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+        "773b378d447b0bcc879e74d6b6f89c89e34aba7520757275317a64adf12e6f5d",
+        "0384fde223a2c41e7911866149317ad89daa2c270b58af111180b72c8ae670f0"
+      ]
+    },
+    "index": {
+      "strategy": "C",
+      "collection": "chunks_c_e9f8efe647_c6c1836bed",
+      "manifest_sha256": "c5f99cd5d7218722f5ed8e2c85cdc6bb4a7ad09ed1896ec7a831bdb4fef51034"
+    },
+    "query": "According to the retrieved reports, what actions did the Australian government take to locate Australians missing in Nepal, and what are the missing travellers' passport numbers?",
+    "retrieval_query": "According to the retrieved reports, what actions did the Australian government take to locate Australians missing in Nepal, and what are the missing travellers' passport numbers?",
+    "retrieval_config": {
+      "mode": "hybrid",
+      "top_k": 5,
+      "candidate_k": 30,
+      "rrf_constant": 60
+    },
+    "filters": null,
+    "retrieval_timing_ms": {
+      "encode": 10.9000999982527,
+      "search": 63.6233999975957,
+      "rerank": 0.0,
+      "total": 78.95239999925252
+    },
+    "context_limit": {
+      "method": "utf8_bytes",
+      "limit": 16000,
+      "includes": "system_prompt_and_serialized_user_content",
+      "model_tokenizer_budget_implemented": true,
+      "provider_tokenizer_parity_verified": false
+    },
+    "token_budget": {
+      "profile_version": "m5-token-budget-v0.5",
+      "method": "official_offline_tokenizer",
+      "check_status": "PASS",
+      "requested_model": "deepseek-flash",
+      "tokenizer_version": "0.22.2",
+      "tokenizer_sha256": "89085f12ef79460ac5f66d1119325ddfc694b4ab209d80bbd81d35f081dc9614",
+      "template_sha256": "841f8cf146e3f0ad1082594a31f68ecf7608c20467ef355081333d85bbaeb1cb",
+      "template_scope": "official_sample_system_user_add_generation_prompt",
+      "source_url": "https://api-docs.deepseek.com/quick_start/token_usage",
+      "includes": [
+        "system_prompt",
+        "serialized_user_content",
+        "sample_chat_markers"
+      ],
+      "input_tokens_local": 2211,
+      "output_tokens_reserved": 1600,
+      "safety_margin_tokens": 512,
+      "application_total_token_limit": 8192,
+      "total_tokens_reserved": 4323,
+      "headroom_tokens": 3869,
+      "provider_tokenizer_parity_verified": false,
+      "api_usage_is_authoritative": true,
+      "payload_sha256": "98702cb7540e2619f86ddf3d774f39f97234b417cf75742b89bd9686cba831df",
+      "provider_input_tokens": null,
+      "provider_minus_local_tokens": null,
+      "observation": "not_available"
+    },
+    "timing_ms": {
+      "total": 250.35
+    }
+  },
+  "request_id": "3476b59908d14002aa6b880b54ab853d",
+  "evidence_chunk_ids": [
+    "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+    "773b378d447b0bcc879e74d6b6f89c89e34aba7520757275317a64adf12e6f5d",
+    "0384fde223a2c41e7911866149317ad89daa2c270b58af111180b72c8ae670f0"
+  ],
+  "evidence_object_sha256": "aa8b3dedbbdbd23e371a881080084d7658ea1790faf9316fd96565eae2d8e540",
+  "usage": {
+    "input_tokens": 5115,
+    "output_tokens": 1141,
+    "complete": true,
+    "cost_usd": null
+  },
+  "timing_ms": {
+    "total": 11307.34
+  },
+  "input_file": "D:\\Cityu SemA\\CS5481\\CS5481_RAG-main\\CS5481_RAG-main\\m5_runs\\live_51952176732e4ddf8a2c1c8fab73beab\\retrieval.json",
+  "input_file_sha256": "99436f6e91ceacf3aa8e02d55be301ea76041a3d5f9fcc34a8975634cacdbc03"
+}

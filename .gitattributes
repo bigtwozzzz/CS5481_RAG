@@ -1,0 +1,19 @@
+# Preserve reviewed M5 bytes and hash-bound artifacts across Git checkouts.
+/scripts/m5_generation/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/scripts/m5_live/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/scripts/m4_retrieval/cli.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/scripts/m4_retrieval/packing.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/tests/test_m5*.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/documents/m5/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/examples/m5/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/examples/m5_contracts/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/vendor/m5/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/configs/m4_m5.yaml -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/configs/m5_pricing.template.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/schemas/evidence_bundle.v1.schema.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/schemas/generation_draft.v1.schema.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/schemas/validation_report.v1.schema.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/schemas/answer_response.v1.schema.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/requirements-m5*.txt -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/M5_README_FIRST.md -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/.gitattributes -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

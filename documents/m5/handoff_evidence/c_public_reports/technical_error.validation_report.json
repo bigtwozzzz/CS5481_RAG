@@ -1,0 +1,32 @@
+{
+  "schema_version": "validation_report.v1",
+  "request_id": "008c81ce43654bcfbde99c88c4cdb7d0",
+  "answer_object_sha256": "b91a20e2fa1e79947c4a64c22e61a83942a2aadbccc9704d4774c01eeb8fd1c8",
+  "decision": "ERROR",
+  "method": "llm_judge",
+  "human_review": "not_performed",
+  "publication_ready": false,
+  "checks": {
+    "support": "unchecked",
+    "answer_scope": "unchecked"
+  },
+  "claim_reviews": [],
+  "answer_review": null,
+  "error": {
+    "code": "INVALID_JUDGE_OUTPUT",
+    "message": "Invalid overall review fields."
+  },
+  "source_review_sha256": "f39069f7b63afab5b64a4774a0ae298dbd663346dbf2ffa5594de94f61b811a7",
+  "judge": {
+    "requested_model": "deepseek-flash",
+    "returned_model": "deepseek-flash",
+    "prompt_version": "m5-support-en-v0.10",
+    "temperature": 0,
+    "max_output_tokens": 2400,
+    "calls": 1,
+    "input_tokens": 2798,
+    "output_tokens": 380,
+    "latency_ms": 2339.93,
+    "cost_usd": null
+  }
+}

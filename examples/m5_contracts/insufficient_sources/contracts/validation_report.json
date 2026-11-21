@@ -1,0 +1,36 @@
+{
+  "schema_version": "validation_report.v1",
+  "request_id": "fixture-answerable-001",
+  "answer_object_sha256": "f7bb703b4903a0d71ba04b288300c57de9ed0ee329fbd804a917ac489b05ae70",
+  "decision": "PASS",
+  "method": "llm_judge",
+  "human_review": "not_performed",
+  "publication_ready": false,
+  "checks": {
+    "support": "not_applicable",
+    "relevance": "not_applicable",
+    "answer_scope": "pass"
+  },
+  "claim_reviews": [],
+  "answer_review": {
+    "recommended_status": "INSUFFICIENT_SOURCES",
+    "status_appropriate": true,
+    "missing_information_accurate": true,
+    "no_unresolved_conflicts": true,
+    "reason": "Mock scope review."
+  },
+  "error": null,
+  "source_review_sha256": "4ede04cb4ad08cde9da26cbae50f5dd71dd17ac2ffd335e96702ccae15697ba4",
+  "judge": {
+    "requested_model": "deepseek-flash",
+    "returned_model": "offline-test",
+    "prompt_version": "m5-support-en-v0.4",
+    "temperature": 0,
+    "max_output_tokens": 2400,
+    "calls": 1,
+    "input_tokens": 100,
+    "output_tokens": 20,
+    "latency_ms": 13.5,
+    "cost_usd": null
+  }
+}

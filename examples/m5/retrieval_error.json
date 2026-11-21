@@ -1,0 +1,33 @@
+{
+  "schema_version": "retrieval_response.v1",
+  "request_id": "fixture-error",
+  "query": "According to the supplied report, at least how many Australians are missing in Nepal?",
+  "retrieval_query": "Australians missing Nepal flood",
+  "status": "ERROR",
+  "index": null,
+  "config": {
+    "mode": "fixture",
+    "candidate_k": 2,
+    "top_k": 2
+  },
+  "filters": null,
+  "results": [],
+  "timing_ms": {
+    "encode": 0,
+    "search": 0,
+    "rerank": 0,
+    "total": 0
+  },
+  "warnings": [
+    "Fixed input fixture; no retrieval was run. Zero timings are placeholders and must not be reported as measured performance."
+  ],
+  "error": {
+    "code": "INDEX_NOT_FOUND",
+    "message": "Simulated error: retrieval index does not exist."
+  },
+  "fixture": {
+    "is_fixture": true,
+    "selection": "First two records in chunks_B.jsonl",
+    "index_manifest_path": "data/vector_store/manifests/chunks_b_4ef08cb904_c6c1836bed.manifest.json"
+  }
+}

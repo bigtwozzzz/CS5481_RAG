@@ -1,0 +1,244 @@
+{
+  "classification_required": true,
+  "default_use": "Historical functional/regression evidence, not an independent evaluation set.",
+  "records": [
+    {
+      "file": "a_functional/summary.json",
+      "sha256": "e359819d92de736827fc99facd669c28c0da1a38cf265cdde0671ab398ebedab",
+      "kind": "real_functional_check_summary",
+      "notes": "Two previously used questions; 6 retrieval configurations; no quality evaluation.",
+      "independent_evaluation_sample": false
+    },
+    {
+      "file": "a_functional/retrieval_checks.json",
+      "sha256": "6d9bf30da8b60d9b1d3b0bc6ae144c997f5ad9aeeb352420387db24ed2513371",
+      "kind": "real_functional_check_summary",
+      "notes": "Two previously used questions; 6 retrieval configurations; no quality evaluation.",
+      "independent_evaluation_sample": false
+    },
+    {
+      "file": "b_paid/item_0001/contracts/attempt_1/answer.json",
+      "sha256": "e77ccfc09894558ac438ec85bbd2cda2ca40ee24feacc62640117fcb8034728a",
+      "kind": "historical_real_api_batch",
+      "notes": "Historical v0.9 batch; first answer contains a known unnecessary sentence. Old prices and absolute paths are provenance only; not a new evaluation.",
+      "independent_evaluation_sample": false
+    },
+    {
+      "file": "b_paid/item_0001/contracts/attempt_1/evidence_bundle.json",
+      "sha256": "7074a5cf09f28afe174e7706d2c7d477762ea730c9ca7284e1a31e7f370a88db",
+      "kind": "historical_real_api_batch",
+      "notes": "Historical v0.9 batch; first answer contains a known unnecessary sentence. Old prices and absolute paths are provenance only; not a new evaluation.",
+      "independent_evaluation_sample": false
+    },
+    {
+      "file": "b_paid/item_0001/contracts/attempt_1/generation_draft.json",
+      "sha256": "08573eb3e150502d10bd881d28c38b23d0b2695815acd7d14f79e258ec2241ee",
+      "kind": "historical_real_api_batch",
+      "notes": "Historical v0.9 batch; first answer contains a known unnecessary sentence. Old prices and absolute paths are provenance only; not a new evaluation.",
+      "independent_evaluation_sample": false
+    },
+    {
+      "file": "b_paid/item_0001/contracts/attempt_1/validation_report.json",
+      "sha256": "054021bc6a3a6006d3f3c8c7cda53f7e0ab1df0832d50e6b506d12dc17e3ebbb",
+      "kind": "historical_real_api_batch",
+      "notes": "Historical v0.9 batch; first answer contains a known unnecessary sentence. Old prices and absolute paths are provenance only; not a new evaluation.",
+      "independent_evaluation_sample": false
+    },
+    {
+      "file": "b_paid/item_0001/contracts/evidence_bundle.json",
+      "sha256": "7074a5cf09f28afe174e7706d2c7d477762ea730c9ca7284e1a31e7f370a88db",
+      "kind": "historical_real_api_batch",
+      "notes": "Historical v0.9 batch; first answer contains a known unnecessary sentence. Old prices and absolute paths are provenance only; not a new evaluation.",
+      "independent_evaluation_sample": false
+    },
+    {
+      "file": "b_paid/item_0001/contracts/final_answer.json",
+      "sha256": "e77ccfc09894558ac438ec85bbd2cda2ca40ee24feacc62640117fcb8034728a",
+      "kind": "historical_real_api_batch",
+      "notes": "Historical v0.9 batch; first answer contains a known unnecessary sentence. Old prices and absolute paths are provenance only; not a new evaluation.",
+      "independent_evaluation_sample": false
+    },
+    {
+      "file": "b_paid/item_0001/contracts/validation_report.json",
+      "sha256": "054021bc6a3a6006d3f3c8c7cda53f7e0ab1df0832d50e6b506d12dc17e3ebbb",
+      "kind": "historical_real_api_batch",
+      "notes": "Historical v0.9 batch; first answer contains a known unnecessary sentence. Old prices and absolute paths are provenance only; not a new evaluation.",
+      "independent_evaluation_sample": false
+    },
+    {
+      "file": "b_paid/item_0001/pipeline.json",
+      "sha256": "4b2364ffc32f9e863e752a2df828272f7254d8d0a996f68fcdd0aa98ec13b028",
+      "kind": "historical_real_api_batch",
+      "notes": "Historical v0.9 batch; first answer contains a known unnecessary sentence. Old prices and absolute paths are provenance only; not a new evaluation.",
+      "independent_evaluation_sample": false
+    },
+    {
+      "file": "b_paid/item_0001/retrieval.json",
+      "sha256": "8a735e97b32175420213d22777c0d79a1c6854aefeffaa7d92d92fe53a280d01",
+      "kind": "historical_real_api_batch",
+      "notes": "Historical v0.9 batch; first answer contains a known unnecessary sentence. Old prices and absolute paths are provenance only; not a new evaluation.",
+      "independent_evaluation_sample": false
+    },
+    {
+      "file": "b_paid/item_0002/contracts/attempt_1/answer.json",
+      "sha256": "0c76edb2f7fa14eb6429ce568f77fd5ff4e8cd35f8dc98a1ccfd2249c4ca298f",
+      "kind": "historical_real_api_batch",
+      "notes": "Historical v0.9 batch; first answer contains a known unnecessary sentence. Old prices and absolute paths are provenance only; not a new evaluation.",
+      "independent_evaluation_sample": false
+    },
+    {
+      "file": "b_paid/item_0002/contracts/attempt_1/evidence_bundle.json",
+      "sha256": "737fa6e4170425db009e4b55db59734059aed65fc26bd76c5499bf4868cbba04",
+      "kind": "historical_real_api_batch",
+      "notes": "Historical v0.9 batch; first answer contains a known unnecessary sentence. Old prices and absolute paths are provenance only; not a new evaluation.",
+      "independent_evaluation_sample": false
+    },
+    {
+      "file": "b_paid/item_0002/contracts/attempt_1/generation_draft.json",
+      "sha256": "c2f8c354805bd41371bcfa6126c7463b0b927959d0cd6492f795d9279d740be4",
+      "kind": "historical_real_api_batch",
+      "notes": "Historical v0.9 batch; first answer contains a known unnecessary sentence. Old prices and absolute paths are provenance only; not a new evaluation.",
+      "independent_evaluation_sample": false
+    },
+    {
+      "file": "b_paid/item_0002/contracts/attempt_1/validation_report.json",
+      "sha256": "5367e0151247ef9227ee98a8435a410210611c5385ae1e8bcb822f2b7b5231b7",
+      "kind": "historical_real_api_batch",
+      "notes": "Historical v0.9 batch; first answer contains a known unnecessary sentence. Old prices and absolute paths are provenance only; not a new evaluation.",
+      "independent_evaluation_sample": false
+    },
+    {
+      "file": "b_paid/item_0002/contracts/evidence_bundle.json",
+      "sha256": "737fa6e4170425db009e4b55db59734059aed65fc26bd76c5499bf4868cbba04",
+      "kind": "historical_real_api_batch",
+      "notes": "Historical v0.9 batch; first answer contains a known unnecessary sentence. Old prices and absolute paths are provenance only; not a new evaluation.",
+      "independent_evaluation_sample": false
+    },
+    {
+      "file": "b_paid/item_0002/contracts/final_answer.json",
+      "sha256": "0c76edb2f7fa14eb6429ce568f77fd5ff4e8cd35f8dc98a1ccfd2249c4ca298f",
+      "kind": "historical_real_api_batch",
+      "notes": "Historical v0.9 batch; first answer contains a known unnecessary sentence. Old prices and absolute paths are provenance only; not a new evaluation.",
+      "independent_evaluation_sample": false
+    },
+    {
+      "file": "b_paid/item_0002/contracts/validation_report.json",
+      "sha256": "5367e0151247ef9227ee98a8435a410210611c5385ae1e8bcb822f2b7b5231b7",
+      "kind": "historical_real_api_batch",
+      "notes": "Historical v0.9 batch; first answer contains a known unnecessary sentence. Old prices and absolute paths are provenance only; not a new evaluation.",
+      "independent_evaluation_sample": false
+    },
+    {
+      "file": "b_paid/item_0002/pipeline.json",
+      "sha256": "36a53a8dadc73260c8c87431469e6ee95ec842678bfdb734b122699bf261ef98",
+      "kind": "historical_real_api_batch",
+      "notes": "Historical v0.9 batch; first answer contains a known unnecessary sentence. Old prices and absolute paths are provenance only; not a new evaluation.",
+      "independent_evaluation_sample": false
+    },
+    {
+      "file": "b_paid/item_0002/retrieval.json",
+      "sha256": "8e1b3d5b9885db3b491ee4a38676dbec45a9adba0863997c6fad9f88eac131a3",
+      "kind": "historical_real_api_batch",
+      "notes": "Historical v0.9 batch; first answer contains a known unnecessary sentence. Old prices and absolute paths are provenance only; not a new evaluation.",
+      "independent_evaluation_sample": false
+    },
+    {
+      "file": "b_paid/predictions.jsonl",
+      "sha256": "de929fe8b8bcf0696a2f4aa4f2213d7b75fd40a1139b1b6dd45a25adc4f829ec",
+      "kind": "historical_real_api_batch",
+      "notes": "Historical v0.9 batch; first answer contains a known unnecessary sentence. Old prices and absolute paths are provenance only; not a new evaluation.",
+      "independent_evaluation_sample": false
+    },
+    {
+      "file": "b_paid/run.json",
+      "sha256": "c953a4ce60266e08917f70b89ebde8d57c9064eccc407d83278dd85b082ddbda",
+      "kind": "historical_real_api_batch",
+      "notes": "Historical v0.9 batch; first answer contains a known unnecessary sentence. Old prices and absolute paths are provenance only; not a new evaluation.",
+      "independent_evaluation_sample": false
+    },
+    {
+      "file": "c_reviews/answer.json",
+      "sha256": "e77ccfc09894558ac438ec85bbd2cda2ca40ee24feacc62640117fcb8034728a",
+      "kind": "historical_review_records",
+      "notes": "Read original/current versions separately. Wrong-number draft was intentionally altered; all automatic verdicts remain distinct from human gold.",
+      "independent_evaluation_sample": false
+    },
+    {
+      "file": "c_reviews/current_review.json",
+      "sha256": "06b8f9acf810fb7c2885c4d8d2022e315e9104ee919fbecd66a29efff491d7e4",
+      "kind": "historical_review_records",
+      "notes": "Read original/current versions separately. Wrong-number draft was intentionally altered; all automatic verdicts remain distinct from human gold.",
+      "independent_evaluation_sample": false
+    },
+    {
+      "file": "c_reviews/historical_wrong_number_review.json",
+      "sha256": "fc17264cb548f6d7ebb0858585bb4773cd70950e732ab70e8d7f276e0b02e9a9",
+      "kind": "historical_review_records",
+      "notes": "Read original/current versions separately. Wrong-number draft was intentionally altered; all automatic verdicts remain distinct from human gold.",
+      "independent_evaluation_sample": false
+    },
+    {
+      "file": "c_reviews/original_provenance.json",
+      "sha256": "c74ece959445bd389957bd1a3d0b523988b4726dcba944482ae9b597ea1ac598",
+      "kind": "historical_review_records",
+      "notes": "Read original/current versions separately. Wrong-number draft was intentionally altered; all automatic verdicts remain distinct from human gold.",
+      "independent_evaluation_sample": false
+    },
+    {
+      "file": "c_reviews/original_review.json",
+      "sha256": "cf9f7f5534252c9a15318094ca58d774708be24fa5fa277225a3a08b07d4a984",
+      "kind": "historical_review_records",
+      "notes": "Read original/current versions separately. Wrong-number draft was intentionally altered; all automatic verdicts remain distinct from human gold.",
+      "independent_evaluation_sample": false
+    },
+    {
+      "file": "c_reviews/technical_error_review.json",
+      "sha256": "00dbef60df81d658a6d4808bba2cd272badf4652140f18fb301527a221f7ddf2",
+      "kind": "historical_review_records",
+      "notes": "Read original/current versions separately. Wrong-number draft was intentionally altered; all automatic verdicts remain distinct from human gold.",
+      "independent_evaluation_sample": false
+    },
+    {
+      "file": "c_public_reports/current.validation_report.json",
+      "sha256": "afb5d9207780b70e6e782ed15f2e3bf2babbe777494feac7575c4f2315340847",
+      "kind": "offline_export_of_saved_records",
+      "notes": "Contract export, zero new model calls; not a new semantic evaluation.",
+      "independent_evaluation_sample": false
+    },
+    {
+      "file": "c_public_reports/local_validation.json",
+      "sha256": "f4eb234c544f8ec3b6b46c4b7973a6db4414598d95412f26a5950f172830653e",
+      "kind": "offline_export_of_saved_records",
+      "notes": "Contract export, zero new model calls; not a new semantic evaluation.",
+      "independent_evaluation_sample": false
+    },
+    {
+      "file": "c_public_reports/original.validation_report.json",
+      "sha256": "037178f7839b137196c5a8b195cbb9df443fba86ff818dc149d0653e8a88a3f9",
+      "kind": "offline_export_of_saved_records",
+      "notes": "Contract export, zero new model calls; not a new semantic evaluation.",
+      "independent_evaluation_sample": false
+    },
+    {
+      "file": "c_public_reports/technical_error.validation_report.json",
+      "sha256": "813370333ab11c250cbee561f291a4ce9d6d1796c628d25478517d94f841a5e8",
+      "kind": "offline_export_of_saved_records",
+      "notes": "Contract export, zero new model calls; not a new semantic evaluation.",
+      "independent_evaluation_sample": false
+    },
+    {
+      "file": "historical_states/partial.pipeline.json",
+      "sha256": "0455418e1bed59e23ad937e9da818a88c64fa941160430b478a9a4489a8d69da",
+      "kind": "historical_real_run",
+      "notes": "Different historical code version; functional illustration only.",
+      "independent_evaluation_sample": false
+    },
+    {
+      "file": "historical_states/error.pipeline.json",
+      "sha256": "52b35340851076ea46a388762da847347f7c2f77613a7fa932ed142613299c98",
+      "kind": "historical_real_run",
+      "notes": "Different historical code version; functional illustration only.",
+      "independent_evaluation_sample": false
+    }
+  ]
+}

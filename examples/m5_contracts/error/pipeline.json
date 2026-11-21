@@ -1,0 +1,155 @@
+{
+  "schema_version": "m5_pipeline.v1",
+  "implementation_version": "m5-token-budget-v0.5",
+  "created_at_utc": "2026-11-20T14:38:54.236383+00:00",
+  "status": "ERROR",
+  "gate": "ERROR",
+  "active_stage": null,
+  "publication_ready": false,
+  "human_review": "not_performed",
+  "output_language": "en",
+  "answer": "",
+  "claims": [],
+  "sources": [],
+  "missing_information": [],
+  "answer_status": null,
+  "answer_record": null,
+  "attempts": [],
+  "repair_used": false,
+  "max_repairs": 1,
+  "api_calls": [],
+  "max_api_calls": 4,
+  "error": {
+    "code": "RETRIEVAL_ERROR",
+    "message": "Retrieval failed. An answer cannot be generated."
+  },
+  "limitations": [
+    "Model review can miss unsupported or unnecessary claims; it is not human verification.",
+    "Official offline token budgets are enforced; provider parity is not verified and API usage is authoritative.",
+    "This command consumes supplied M4 data and does not execute retrieval.",
+    "At most one shared repair is allowed for generation or semantic failures."
+  ],
+  "preview": {
+    "schema_version": "answer_response.v1",
+    "implementation_version": "m5-token-budget-v0.5",
+    "output_language": "en",
+    "request_id": "fixture-error",
+    "created_at_utc": "2026-11-20T14:38:54.236454+00:00",
+    "status": "ERROR",
+    "claims": [],
+    "sources": [],
+    "answer": "",
+    "missing_information": [],
+    "review_required": false,
+    "publication_ready": false,
+    "validation": {
+      "input": "pass",
+      "schema": "unchecked",
+      "citation_ids": "not_applicable",
+      "quote_match": "not_applicable",
+      "support": "not_applicable",
+      "answerability": "unchecked"
+    },
+    "generation": {
+      "model": "deepseek-flash",
+      "prompt_version": "m5-generation-en-v0.4",
+      "calls": [],
+      "max_calls": 1,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "token_usage_complete": true,
+      "latency_ms": 0,
+      "cost_usd": null
+    },
+    "evidence": [],
+    "excluded_evidence": [],
+    "warnings": [
+      "Fixed input fixture; no retrieval was run. Zero timings are placeholders and must not be reported as measured performance."
+    ],
+    "validation_log": [],
+    "error": {
+      "code": "RETRIEVAL_ERROR",
+      "message": "Retrieval failed. An answer cannot be generated."
+    },
+    "m4_input": {
+      "source_schema_version": "retrieval_response.v1",
+      "input_kind": "retrieval_response",
+      "live_retrieval_executed": false,
+      "input_object_sha256": "ee785a6eb02cc54e1997871d38a1fab588bb3da6ebe13279cbae51870c793906",
+      "candidate_count": 0,
+      "original_input": {
+        "schema_version": "retrieval_response.v1",
+        "request_id": "fixture-error",
+        "query": "According to the supplied report, at least how many Australians are missing in Nepal?",
+        "retrieval_query": "Australians missing Nepal flood",
+        "status": "ERROR",
+        "index": null,
+        "config": {
+          "mode": "fixture",
+          "candidate_k": 2,
+          "top_k": 2
+        },
+        "filters": null,
+        "results": [],
+        "timing_ms": {
+          "encode": 0,
+          "search": 0,
+          "rerank": 0,
+          "total": 0
+        },
+        "warnings": [
+          "Fixed input fixture; no retrieval was run. Zero timings are placeholders and must not be reported as measured performance."
+        ],
+        "error": {
+          "code": "INDEX_NOT_FOUND",
+          "message": "Simulated error: retrieval index does not exist."
+        },
+        "fixture": {
+          "is_fixture": true,
+          "selection": "First two records in chunks_B.jsonl",
+          "index_manifest_path": "data/vector_store/manifests/chunks_b_4ef08cb904_c6c1836bed.manifest.json"
+        }
+      },
+      "selected_chunk_ids": [],
+      "selection": "All returned candidates, subject to the M5 byte limit",
+      "generation_token_budget_verified": false
+    },
+    "index": null,
+    "query": "According to the supplied report, at least how many Australians are missing in Nepal?",
+    "retrieval_query": "Australians missing Nepal flood",
+    "retrieval_config": {
+      "mode": "fixture",
+      "candidate_k": 2,
+      "top_k": 2
+    },
+    "filters": null,
+    "retrieval_timing_ms": {
+      "encode": 0,
+      "search": 0,
+      "rerank": 0,
+      "total": 0
+    },
+    "fixture": {
+      "is_fixture": true,
+      "selection": "First two records in chunks_B.jsonl",
+      "index_manifest_path": "data/vector_store/manifests/chunks_b_4ef08cb904_c6c1836bed.manifest.json"
+    },
+    "upstream_error": {
+      "code": "INDEX_NOT_FOUND",
+      "message": "Simulated error: retrieval index does not exist."
+    },
+    "timing_ms": {
+      "total": 0.66
+    }
+  },
+  "request_id": "fixture-error",
+  "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "complete": true,
+    "cost_usd": null
+  },
+  "timing_ms": {
+    "total": 0.93
+  }
+}

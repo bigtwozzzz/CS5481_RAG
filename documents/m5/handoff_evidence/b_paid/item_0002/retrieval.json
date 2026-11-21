@@ -1,0 +1,168 @@
+{
+  "retrieval": {
+    "schema_version": "retrieval_response.v2",
+    "request_id": "d5d537ed926b4e6eaf71abff1e679641",
+    "query": "According to the retrieved reports, what are the passport numbers of the Australians missing in Nepal?",
+    "retrieval_query": "According to the retrieved reports, what are the passport numbers of the Australians missing in Nepal?",
+    "status": "OK",
+    "index": {
+      "strategy": "C",
+      "collection": "chunks_c_e9f8efe647_c6c1836bed",
+      "manifest_sha256": "c5f99cd5d7218722f5ed8e2c85cdc6bb4a7ad09ed1896ec7a831bdb4fef51034"
+    },
+    "config": {
+      "mode": "hybrid",
+      "top_k": 5,
+      "candidate_k": 30,
+      "rrf_constant": 60
+    },
+    "filters": null,
+    "results": [
+      {
+        "rank": 1,
+        "chunk_id": "b8a7c23f6fd374a3eea85e746c798aea5765ece318ba278e01a820419732263f",
+        "document_id": "australia-news/2026/aug/27/children-among-australian-tourists-missing-feared-dead-nepal-tibet-floods",
+        "chunk_index": 5,
+        "text": "Nepal floods: children as young as 11 among 39 Australians missing after disaster\n\n“I can only outline the numbers that we are aware of to date … but I would say the number is at least 34,” Wong said. “Those numbers are being provided … through tour operators. “We will continue to try and ascertain if there are any other Australians who are not accounted for and over and above the 34.” On Friday morning, Wong confirmed the number of missing Australians had increased to 39. The Hindu Council of Australia said in a statement that its thoughts and prayers were with the missing and “all those anxiously awaiting news of their loved ones”. “We stand in solidarity with the people of Nepal, the affected families, the rescue teams and all communities impacted by this tragedy,” Sai Paravastu, the national president, said in the statement. “We particularly recognise the distress being experienced by Australian families who are seeking information about loved ones in the affected region.”",
+        "text_sha256": "ba99ca3faa50b1e743f021dc6569418aa04b33b770ec34800cae33fe639b6f2b",
+        "citation": {
+          "url": "https://www.theguardian.com/australia-news/2026/aug/27/children-among-australian-tourists-missing-feared-dead-nepal-tibet-floods",
+          "title": "Nepal floods: children as young as 11 among 39 Australians missing after disaster",
+          "published_at_utc": "2026-08-27T11:00:48Z",
+          "source_name": "The Guardian",
+          "source_domain": "theguardian.com"
+        },
+        "retrieved_by": [
+          "dense",
+          "bm25"
+        ],
+        "scores": {
+          "distance": 0.30274391174316406,
+          "similarity": 0.6972560882568359,
+          "bm25": 27.089605230394493,
+          "rrf": 0.03278688524590164,
+          "rerank": null
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+        "document_id": "australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+        "chunk_index": 0,
+        "text": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal\n\nThe Australian government is urgently seeking information on the welfare of at least 35 Australians missing in Nepal, after a catastrophic flash flood swept through the Nepal-Tibet border region. Assistant minister for foreign affairs, Matt Thistlethwaite, said on Thursday evening that the Department of Foreign Affairs and Trade (Dfat) was “working around the clock” to verify the status of the missing Australians. The figure is based on reports from the Nepali Tourism Board and officials on the ground. Related: Flash floods on Nepal-Tibet border leave scores dead and hundreds missing Thistlethwaite confirmed Dfat staff were operating from the post in Kathmandu, and that the government would send a crisis response team to the affected region. “We’re trying to make contact with those tour operators,” he said, adding that Australian officials were working with Nepali authorities to determine whether independent travellers not attached to a tour group could also be missing.",
+        "text_sha256": "3740b069e84cd83005a88c629b41424439e2005aeaac2a341ac9669620c971b6",
+        "citation": {
+          "url": "https://www.theguardian.com/australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods",
+          "title": "Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal",
+          "published_at_utc": "2026-08-27T18:18:50Z",
+          "source_name": "The Guardian",
+          "source_domain": "theguardian.com"
+        },
+        "retrieved_by": [
+          "dense",
+          "bm25"
+        ],
+        "scores": {
+          "distance": 0.3282897472381592,
+          "similarity": 0.6717102527618408,
+          "bm25": 24.458996206442613,
+          "rrf": 0.03149801587301587,
+          "rerank": null
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": "0384fde223a2c41e7911866149317ad89daa2c270b58af111180b72c8ae670f0",
+        "document_id": "world/2026/sep/01/missing-australian-found-alive-nepal-tibet-floods",
+        "chunk_index": 0,
+        "text": "Relief as five Australians missing in Nepal-Tibet flood disaster found alive\n\nA total of five Australians missing after devastating floods ravaged the Nepal-Tibet border last week have been found. Of the five Australians confirmed safe, one was found in Nepal, one in Tibet, and three outside the crisis-hit area. The total number still missing is 38. These Australians had not spoken to families and next of kin since the disaster struck seven days ago. There were “grave concerns” for the dozens of citizens still missing in the disaster, the minister for multicultural affairs, Anne Aly, told the ABC on Wednesday morning. “There are real logistic issues, including communications to find out where people are,” she said. Related: How the deadly Nepal and Tibet flash flood unfolded – a visual guide “For those families that are still waiting, those 38 individuals unaccounted for, we understand that it’s a really concerning time, and we’ll continue to do what we can to try and locate those people.” Earlier, the minister for the Pacific, Pat Conroy, told Radio National the government was “focused on establishing their whereabouts and supporting their families”.",
+        "text_sha256": "0c1270755f8b67e8638d5f21b2337b36e18460a9cc97756e545763544d653a8c",
+        "citation": {
+          "url": "https://www.theguardian.com/world/2026/sep/01/missing-australian-found-alive-nepal-tibet-floods",
+          "title": "Relief as five Australians missing in Nepal-Tibet flood disaster found alive",
+          "published_at_utc": "2026-09-02T01:59:06Z",
+          "source_name": "The Guardian",
+          "source_domain": "theguardian.com"
+        },
+        "retrieved_by": [
+          "dense",
+          "bm25"
+        ],
+        "scores": {
+          "distance": 0.3349999189376831,
+          "similarity": 0.6650000810623169,
+          "bm25": 24.334860358062812,
+          "rrf": 0.031009615384615385,
+          "rerank": null
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": "d7f06e8f007bea138ef5e790516d784e83c2febf86a26a61b1d5d39e5d270438",
+        "document_id": "world/2026/aug/31/nepal-tibet-floods-australians-missing-list-names-what-we-know-so-far-ntwnfb",
+        "chunk_index": 0,
+        "text": "Australians missing in the Nepal floods: what we know so far\n\nThe number of Australians missing in the Nepal-Tibet flash flooding disaster has fallen from 36 to 35, after another person was confirmed safe on Tuesday. The Australian citizen, who was in Nepal and uncontactable in the wake of the flash flooding on 26 August, confirmed they were safe and well and did not require consular assistance. It comes after seven previously unaccounted for Australians were confirmed safe in recent days, with one found in Nepal, one in Tibet and three outside the crisis-hit area. A Sydney woman, Cara Severino, 25, was also safely located in Nepal more than two days after the floods. The names of the Australians confirmed safe have not yet been released. Pilgrims trekking to a holy site in Tibet make up the majority of Australians who have been reported missing after the deadly flash floods and landslides tore through valleys on the Nepal-Tibet border. Most were travelling with Himalayan Glacier Adventures, Kailash Journeys and the Isha Foundation. Related: ‘The house got carried 100 metres away’: some Nepal flood victims had minutes of notice.",
+        "text_sha256": "6ac1e963affeb45116330d84d707432089a33c08e3ae050e32e47188a2f10fdb",
+        "citation": {
+          "url": "https://www.theguardian.com/world/2026/aug/31/nepal-tibet-floods-australians-missing-list-names-what-we-know-so-far-ntwnfb",
+          "title": "Australians missing in the Nepal floods: what we know so far",
+          "published_at_utc": "2026-09-08T07:39:08Z",
+          "source_name": "The Guardian",
+          "source_domain": "theguardian.com"
+        },
+        "retrieved_by": [
+          "dense",
+          "bm25"
+        ],
+        "scores": {
+          "distance": 0.3425034284591675,
+          "similarity": 0.6574965715408325,
+          "bm25": 23.95173668837603,
+          "rrf": 0.030309988518943745,
+          "rerank": null
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": "bd0822d9004e4f3385332aa87b50b6f0a5e5b1145c72a3a5fd9f1926d3e2f2d0",
+        "document_id": "world/2026/aug/29/australians-missing-nepal-floods-total-rises-albanese-dfat-personnel-arriving",
+        "chunk_index": 0,
+        "text": "Number of Australians missing in Nepal’s deadly floods rises again, as Albanese deploys more personnel\n\nThe number of Australians who were reported missing in the catastrophic Nepal flooding disaster has risen to 41, as one family celebrates after an unaccounted-for woman made contact with them yesterday. It means three additional Australians were confirmed missing overnight – up from 38 who remained unaccounted for on Friday evening. The Australian government’s Department of Foreign Affairs has been urgently working with local authorities to contact Australian woman Cara Severino, 25, who became the first Australian reported missing who has been confirmed safe. Related: ‘So desperately loved’: ADF member among dozens of Australians missing in Nepal floods as families pray for safe return Severino contacted her parents, Debbie and Frank Severino, on Friday morning, informing them she was hiking away from the disaster zone to Kathmandu with a group of Nepali hikers – a trek of more than 110km.",
+        "text_sha256": "83470187ab1bb4ce1eceff00cc7adcb1a91bc59a1d251f7416d3f03a74a32bc6",
+        "citation": {
+          "url": "https://www.theguardian.com/world/2026/aug/29/australians-missing-nepal-floods-total-rises-albanese-dfat-personnel-arriving",
+          "title": "Number of Australians missing in Nepal’s deadly floods rises again, as Albanese deploys more personnel",
+          "published_at_utc": "2026-08-28T22:53:57Z",
+          "source_name": "The Guardian",
+          "source_domain": "theguardian.com"
+        },
+        "retrieved_by": [
+          "dense",
+          "bm25"
+        ],
+        "scores": {
+          "distance": 0.3400895595550537,
+          "similarity": 0.6599104404449463,
+          "bm25": 22.370800021375484,
+          "rrf": 0.028850145288501453,
+          "rerank": null
+        }
+      }
+    ],
+    "warnings": [],
+    "error": null,
+    "timing_ms": {
+      "encode": 15.725999997812323,
+      "search": 91.70269999594893,
+      "rerank": 0.0,
+      "total": 115.08020000474062
+    }
+  },
+  "context": "[b8a7c23f6fd374a3eea85e746c798aea5765ece318ba278e01a820419732263f] Nepal floods: children as young as 11 among 39 Australians missing after disaster\nhttps://www.theguardian.com/australia-news/2026/aug/27/children-among-australian-tourists-missing-feared-dead-nepal-tibet-floods\nNepal floods: children as young as 11 among 39 Australians missing after disaster\n\n“I can only outline the numbers that we are aware of to date … but I would say the number is at least 34,” Wong said. “Those numbers are being provided … through tour operators. “We will continue to try and ascertain if there are any other Australians who are not accounted for and over and above the 34.” On Friday morning, Wong confirmed the number of missing Australians had increased to 39. The Hindu Council of Australia said in a statement that its thoughts and prayers were with the missing and “all those anxiously awaiting news of their loved ones”. “We stand in solidarity with the people of Nepal, the affected families, the rescue teams and all communities impacted by this tragedy,” Sai Paravastu, the national president, said in the statement. “We particularly recognise the distress being experienced by Australian families who are seeking information about loved ones in the affected region.”\n\n[004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e] Australian officials ‘working around the clock’ to check welfare of tourists missing in Nepal\nhttps://www.theguardian.com/australia-news/2026/aug/27/australian-tourists-reported-missing-nepal-tibet-floods\nAustralian officials ‘working around the clock’ to check welfare of tourists missing in Nepal\n\nThe Australian government is urgently seeking information on the welfare of at least 35 Australians missing in Nepal, after a catastrophic flash flood swept through the Nepal-Tibet border region. Assistant minister for foreign affairs, Matt Thistlethwaite, said on Thursday evening that the Department of Foreign Affairs and Trade (Dfat) was “working around the clock” to verify the status of the missing Australians. The figure is based on reports from the Nepali Tourism Board and officials on the ground. Related: Flash floods on Nepal-Tibet border leave scores dead and hundreds missing Thistlethwaite confirmed Dfat staff were operating from the post in Kathmandu, and that the government would send a crisis response team to the affected region. “We’re trying to make contact with those tour operators,” he said, adding that Australian officials were working with Nepali authorities to determine whether independent travellers not attached to a tour group could also be missing.\n\n[0384fde223a2c41e7911866149317ad89daa2c270b58af111180b72c8ae670f0] Relief as five Australians missing in Nepal-Tibet flood disaster found alive\nhttps://www.theguardian.com/world/2026/sep/01/missing-australian-found-alive-nepal-tibet-floods\nRelief as five Australians missing in Nepal-Tibet flood disaster found alive\n\nA total of five Australians missing after devastating floods ravaged the Nepal-Tibet border last week have been found. Of the five Australians confirmed safe, one was found in Nepal, one in Tibet, and three outside the crisis-hit area. The total number still missing is 38. These Australians had not spoken to families and next of kin since the disaster struck seven days ago. There were “grave concerns” for the dozens of citizens still missing in the disaster, the minister for multicultural affairs, Anne Aly, told the ABC on Wednesday morning. “There are real logistic issues, including communications to find out where people are,” she said. Related: How the deadly Nepal and Tibet flash flood unfolded – a visual guide “For those families that are still waiting, those 38 individuals unaccounted for, we understand that it’s a really concerning time, and we’ll continue to do what we can to try and locate those people.” Earlier, the minister for the Pacific, Pat Conroy, told Radio National the government was “focused on establishing their whereabouts and supporting their families”.\n\n",
+  "context_tokens": 924,
+  "selected_chunk_ids": [
+    "b8a7c23f6fd374a3eea85e746c798aea5765ece318ba278e01a820419732263f",
+    "004e4a658f47a40ba0ce06c141c7d399601ed309bf1eabdb4f2f9bb85dd0803e",
+    "0384fde223a2c41e7911866149317ad89daa2c270b58af111180b72c8ae670f0"
+  ]
+}

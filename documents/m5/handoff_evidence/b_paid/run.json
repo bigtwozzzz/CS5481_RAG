@@ -1,0 +1,114 @@
+{
+  "schema_version": "m5_b_batch.v1",
+  "implementation_version": "m5-b-orchestration-v0.9",
+  "created_at_utc": "2026-11-21T04:34:28.086427+00:00",
+  "status": "COMPLETE",
+  "mode": "generate",
+  "publication_ready": false,
+  "human_review": "not_performed",
+  "a_run_file": "D:\\Cityu SemA\\CS5481\\CS5481_RAG-main\\CS5481_RAG-main\\m5_runs\\b_23f2ee94ecc943f5bb954584b8c01fbc\\retrieval\\run.json",
+  "a_run_sha256": "8b4a52bc940cbce7bf481036cd8600f33cac1ebe48752bae9537f02847ba0e30",
+  "a_input_sha256": "94f2d9d74cdd788b1f66d59aaf6cb4eb7a933ea56c9f6336c2c14b3fe6cebb5f",
+  "retrieval_config": {
+    "strategy": "C",
+    "mode": "hybrid",
+    "top_k": 5,
+    "candidate_k": 30,
+    "rrf_constant": 60,
+    "context_tokens": 1024,
+    "packing_policy": "skip_continue_dedup_v1"
+  },
+  "request_count": 2,
+  "completed_count": 2,
+  "max_api_requests": 8,
+  "api_requests": 4,
+  "network_retries_per_call": 0,
+  "content_repairs_per_item": 1,
+  "pricing_snapshot": {
+    "schema_version": "m5_pricing.v1",
+    "model": "deepseek-flash",
+    "currency": "USD",
+    "input_cache_hit_per_million": "0.003",
+    "input_cache_miss_per_million": "0.15",
+    "output_per_million": "0.60",
+    "source_url": "https://api-docs.deepseek.com/quick_start/pricing",
+    "verified_at_utc": "2026-11-21T04:32:59.865465Z"
+  },
+  "results_file": "predictions.jsonl",
+  "automatic_resume": false,
+  "code_sha256": {
+    "scripts/m5_generation/api.py": "efcac86543e126986521a8591a46e4b3a6bdf62ee6470daba84d4b21eaf82757",
+    "scripts/m5_generation/pipeline.py": "fae14264c5299675b9f9b210357f7eae85267cd6950c4285aa56ef051040bc03",
+    "scripts/m5_generation/batch.py": "2de2f33f538cbb9f5ad1046c80f242067675bcb28acaf76d61b4937e07554046",
+    "scripts/m5_generation/transport.py": "71c2028e3230ae24d98931ab1444f2ba50c8689fb3784d8423311d9405763b44",
+    "scripts/m5_generation/billing.py": "40a5828f67d88609f0d619c6cd2a9ffc6a60cb5885dc8cccffe1153b077d31cd",
+    "scripts/m5_generation/render.py": "e1072d46bb70d694022bf848f6110e1437e5331ab71533614475e108889d8510",
+    "scripts/m5_generation/generator.py": "3bc063baa99bfcc7ab44101307613120fff1e501e419be9cc5706f3e4f52ebb7",
+    "scripts/m5_generation/support.py": "09ec11e4e44b8cc2b5e5b7213a996663b9a3de19259fa8826165aec6c973c158",
+    "scripts/m5_generation/validator.py": "df8a87f332d723f26f17473c0c47da0aedadb9c65abdb4ce8cbc470e74942759",
+    "scripts/m5_generation/public_contracts.py": "776054fc6a77a058d84eed38156be7588c9ab1b4cdeb98f6734a51eca293c455",
+    "scripts/m5_generation/token_budget.py": "31cd660297f1bd678050c46d1017f7ac8b5bd6a3c0b5f391e039341b164c92de",
+    "scripts/m5_generation/prompts/generation_v1.txt": "f6a094e8693e3b6e883db3083f5aa7c691c4e24e917cb5ac9eb1707a21b6500f",
+    "scripts/m5_generation/prompts/repair_v1.txt": "2a5ebe21b2b0eca8ddcade0b47b4b35b322d7075070bf48ed43516c59fde66da",
+    "scripts/m5_generation/prompts/support_v1.txt": "f5fdd9b1113e1db6a294d0bb9441f9d5383565ea05a24edf53118666628b6354"
+  },
+  "limitations": [
+    "Automatic review is not human verification.",
+    "Cost estimates are not invoices.",
+    "A timeout or retry can incur unreported provider cost.",
+    "Historical A evidence is replayed unless live retrieval was explicitly requested."
+  ],
+  "active_item": null,
+  "status_counts": {
+    "ANSWERED": 1,
+    "INSUFFICIENT_SOURCES": 1
+  },
+  "billing": {
+    "method": "provider_usage_times_configured_rates",
+    "currency": "USD",
+    "pricing_snapshot": {
+      "schema_version": "m5_pricing.v1",
+      "model": "deepseek-flash",
+      "currency": "USD",
+      "input_cache_hit_per_million": "0.003",
+      "input_cache_miss_per_million": "0.15",
+      "output_per_million": "0.60",
+      "source_url": "https://api-docs.deepseek.com/quick_start/pricing",
+      "verified_at_utc": "2026-11-21T04:32:59.865465Z"
+    },
+    "pricing_valid": true,
+    "complete": true,
+    "total_cost": "0.000982344",
+    "known_response_cost": "0.000982344",
+    "missing_or_unknown_calls": [],
+    "per_request": [
+      {
+        "request": 1,
+        "cost": "0.000360036",
+        "reason": null
+      },
+      {
+        "request": 2,
+        "cost": "0.000437304",
+        "reason": null
+      },
+      {
+        "request": 3,
+        "cost": "0.00006606",
+        "reason": null
+      },
+      {
+        "request": 4,
+        "cost": "0.000118944",
+        "reason": null
+      }
+    ],
+    "not_an_invoice": true,
+    "scope": "All physical requests, including generation, review, repair and retries.",
+    "reason": "estimated_from_recorded_usage"
+  },
+  "timing_ms": {
+    "total": 8018.09
+  },
+  "predictions_sha256": "de929fe8b8bcf0696a2f4aa4f2213d7b75fd40a1139b1b6dd45a25adc4f829ec"
+}

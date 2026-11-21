@@ -1,0 +1,414 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:cs5481:generation_draft.v1",
+  "title": "generation_draft.v1",
+  "description": "Existing model-output wire format. The version is selected by the caller; no new field is sent to the model. ERROR is reserved for orchestration.",
+  "type": "object",
+  "properties": {
+    "status": {
+      "enum": [
+        "ANSWERED",
+        "PARTIAL",
+        "INSUFFICIENT_SOURCES"
+      ]
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/claim"
+      },
+      "minItems": 0
+    },
+    "missing_information": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      },
+      "minItems": 0
+    }
+  },
+  "required": [
+    "status",
+    "claims",
+    "missing_information"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "ANSWERED"
+          }
+        },
+        "required": [
+          "status"
+        ]
+      },
+      "then": {
+        "properties": {
+          "claims": {
+            "minItems": 1
+          },
+          "missing_information": {
+            "type": "array",
+            "maxItems": 0
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "PARTIAL"
+          }
+        },
+        "required": [
+          "status"
+        ]
+      },
+      "then": {
+        "properties": {
+          "claims": {
+            "minItems": 1
+          },
+          "missing_information": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "INSUFFICIENT_SOURCES"
+          }
+        },
+        "required": [
+          "status"
+        ]
+      },
+      "then": {
+        "properties": {
+          "claims": {
+            "type": "array",
+            "maxItems": 0
+          },
+          "missing_information": {
+            "minItems": 1
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "error": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "message": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "diagnostics": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "code",
+        "message"
+      ],
+      "additionalProperties": true
+    },
+    "citation": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "published_at_utc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "source_name": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "source_domain": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        }
+      },
+      "required": [
+        "url",
+        "title",
+        "published_at_utc",
+        "source_name",
+        "source_domain"
+      ],
+      "additionalProperties": true
+    },
+    "evidence": {
+      "type": "object",
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "pattern": "^S[1-9][0-9]*$"
+        },
+        "rank": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "chunk_id": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "document_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "chunk_index": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "text_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "citation": {
+          "$ref": "#/$defs/citation"
+        }
+      },
+      "required": [
+        "source_id",
+        "rank",
+        "chunk_id",
+        "document_id",
+        "chunk_index",
+        "text",
+        "text_sha256",
+        "citation"
+      ],
+      "additionalProperties": false
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "pattern": "^S[1-9][0-9]*$"
+        },
+        "rank": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "chunk_id": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "document_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "chunk_index": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "text_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "citation": {
+          "$ref": "#/$defs/citation"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "published_at_utc": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "source_id",
+        "rank",
+        "chunk_id",
+        "document_id",
+        "chunk_index",
+        "text",
+        "text_sha256",
+        "citation",
+        "url",
+        "title",
+        "published_at_utc"
+      ],
+      "additionalProperties": false
+    },
+    "quote": {
+      "type": "object",
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "pattern": "^S[1-9][0-9]*$"
+        },
+        "quote": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        }
+      },
+      "required": [
+        "source_id",
+        "quote"
+      ],
+      "additionalProperties": false
+    },
+    "claim": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^S[1-9][0-9]*$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "evidence_quotes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/quote"
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "text",
+        "source_ids",
+        "evidence_quotes"
+      ],
+      "additionalProperties": false
+    },
+    "located": {
+      "type": "object",
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "pattern": "^S[1-9][0-9]*$"
+        },
+        "chunk_id": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "quote": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "char_start": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "char_end": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "required": [
+        "source_id",
+        "chunk_id",
+        "quote",
+        "char_start",
+        "char_end"
+      ],
+      "additionalProperties": false
+    },
+    "saved_claim": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^S[1-9][0-9]*$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "evidence_quotes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/quote"
+          },
+          "minItems": 1
+        },
+        "claim_id": {
+          "type": "string",
+          "pattern": "^C[1-9][0-9]*$"
+        },
+        "located_quotes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/located"
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "text",
+        "source_ids",
+        "evidence_quotes",
+        "claim_id",
+        "located_quotes"
+      ],
+      "additionalProperties": false
+    }
+  }
+}
