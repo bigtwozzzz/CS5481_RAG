@@ -334,8 +334,8 @@ def main():
         for item in errors:
             print('ERROR: ' + item)
         return 1
-    print('M6 plan draft is consistent and not frozen.')
-    print('G0 and G1 have no accepted product entry. The draft plan is not the freeze record.')
+    print('Draft plan check passed. This command only reads the draft plan, which stays not_frozen by design.')
+    print('It does not judge results/m6/freeze_20261122_dev_protocols.json. G0 and G1 have no accepted product entry.')
     return 0
 
 
