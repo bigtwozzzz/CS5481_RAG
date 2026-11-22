@@ -41,6 +41,7 @@ temp/
 *.tmp
 
 # Local databases and runtime state
+.local-m4/
 data/state/
 *.sqlite
 *.sqlite3

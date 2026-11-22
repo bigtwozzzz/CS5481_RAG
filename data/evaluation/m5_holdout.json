@@ -1,0 +1,1676 @@
+[
+  {
+    "schema_version": "m6_qa.v1",
+    "id": "m5_holdout_001",
+    "split": "holdout",
+    "event_id": "event_lagoon",
+    "question": "What two kinds of evidence did Samuele Ongaro and colleagues combine to reconstruct the northern Adriatic landscape?",
+    "answerable": true,
+    "question_type": "multi_fact",
+    "reference_answer": "Seismic data and sedimentary cores from coastal basins in northern Italy, Slovenia and northern Croatia.",
+    "required_facts": [
+      {
+        "fact_id": "m5_holdout_001_f1",
+        "text": "Seismic data were used.",
+        "evidence_ids": [
+          "m5_holdout_001_e1"
+        ],
+        "weight": 1
+      },
+      {
+        "fact_id": "m5_holdout_001_f2",
+        "text": "Sedimentary cores were used.",
+        "evidence_ids": [
+          "m5_holdout_001_e1"
+        ],
+        "weight": 1
+      }
+    ],
+    "gold_evidence": [
+      {
+        "evidence_id": "m5_holdout_001_e1",
+        "document_id": "science/2026/oct/28/rising-seas-transformed-dry-land-venice-lagoon",
+        "quote": "Samuele Ongaro, at the University of Southampton, and colleagues combined seismic data with sedimentary cores from the coastal basins of northern Italy, Slovenia and northern Croatia to model changes in sea level across the region and reconstruct past landscapes over the past 10,000 years.",
+        "start_char": 283,
+        "end_char": 573,
+        "offset_basis": "body_text Unicode codepoints, [start,end)",
+        "title": "How rising seas transformed dry land into Venice lagoon",
+        "url": "https://www.theguardian.com/science/2026/oct/28/rising-seas-transformed-dry-land-venice-lagoon",
+        "published_at_utc": "2026-10-28T06:00:04Z",
+        "document_body_sha256": "d0c8c3ad7df0635fd88282ecded7bd335e3fb6f2240250953198c30825c95ea1"
+      }
+    ],
+    "context_evidence": [],
+    "no_answer_reason": null,
+    "unanswerability_audit": null,
+    "expected_status": "ANSWERED",
+    "source_document_ids": [
+      "science/2026/oct/28/rising-seas-transformed-dry-land-venice-lagoon"
+    ],
+    "answer_scope": "Supplied corpus snapshot; answer the specified report, not external world knowledge.",
+    "review": {
+      "agent_source_check": "PASS",
+      "agent_reviewer": "Codex",
+      "human_review_status": "PENDING",
+      "human_reviewer": null,
+      "adjudicator": null
+    }
+  },
+  {
+    "schema_version": "m6_qa.v1",
+    "id": "m5_holdout_002",
+    "split": "holdout",
+    "event_id": "event_lagoon",
+    "question": "According to the Venice lagoon study report, how fast did sea level sometimes rise and how long has the later period of relative stability lasted?",
+    "answerable": true,
+    "question_type": "multi_fact",
+    "reference_answer": "Sea level sometimes rose by up to 25 mm a year; relative stability followed over the past 6,000 years.",
+    "required_facts": [
+      {
+        "fact_id": "m5_holdout_002_f1",
+        "text": "Sea level sometimes rose by up to 25 mm a year.",
+        "evidence_ids": [
+          "m5_holdout_002_e1"
+        ],
+        "weight": 1
+      },
+      {
+        "fact_id": "m5_holdout_002_f2",
+        "text": "The period of relative stability lasted over the past 6,000 years.",
+        "evidence_ids": [
+          "m5_holdout_002_e2"
+        ],
+        "weight": 1
+      }
+    ],
+    "gold_evidence": [
+      {
+        "evidence_id": "m5_holdout_002_e1",
+        "document_id": "science/2026/oct/28/rising-seas-transformed-dry-land-venice-lagoon",
+        "quote": "Starting just over 10,000 years ago, sea level rose in fits and starts, sometimes by up to 25mm a year, forcing Mesolithic hunter-gatherer populations to shift their hunting and fishing activities as they adapted to a rapidly changing environment.",
+        "start_char": 816,
+        "end_char": 1063,
+        "offset_basis": "body_text Unicode codepoints, [start,end)",
+        "title": "How rising seas transformed dry land into Venice lagoon",
+        "url": "https://www.theguardian.com/science/2026/oct/28/rising-seas-transformed-dry-land-venice-lagoon",
+        "published_at_utc": "2026-10-28T06:00:04Z",
+        "document_body_sha256": "d0c8c3ad7df0635fd88282ecded7bd335e3fb6f2240250953198c30825c95ea1"
+      },
+      {
+        "evidence_id": "m5_holdout_002_e2",
+        "document_id": "science/2026/oct/28/rising-seas-transformed-dry-land-venice-lagoon",
+        "quote": "The most dramatic changes occurred in three distinct phases, followed by a period of relative stability over the past 6,000 years, which supported the formation of settlements and the advent of farming in the landscape we are familiar with today.",
+        "start_char": 1064,
+        "end_char": 1310,
+        "offset_basis": "body_text Unicode codepoints, [start,end)",
+        "title": "How rising seas transformed dry land into Venice lagoon",
+        "url": "https://www.theguardian.com/science/2026/oct/28/rising-seas-transformed-dry-land-venice-lagoon",
+        "published_at_utc": "2026-10-28T06:00:04Z",
+        "document_body_sha256": "d0c8c3ad7df0635fd88282ecded7bd335e3fb6f2240250953198c30825c95ea1"
+      }
+    ],
+    "context_evidence": [],
+    "no_answer_reason": null,
+    "unanswerability_audit": null,
+    "expected_status": "ANSWERED",
+    "source_document_ids": [
+      "science/2026/oct/28/rising-seas-transformed-dry-land-venice-lagoon"
+    ],
+    "answer_scope": "Supplied corpus snapshot; answer the specified report, not external world knowledge.",
+    "review": {
+      "agent_source_check": "PASS",
+      "agent_reviewer": "Codex",
+      "human_review_status": "PENDING",
+      "human_reviewer": null,
+      "adjudicator": null
+    }
+  },
+  {
+    "schema_version": "m6_qa.v1",
+    "id": "m5_holdout_003",
+    "split": "holdout",
+    "event_id": "event_weather",
+    "question": "In the film Pressure, which actors portray James Stagg and General Eisenhower, according to the weather-forecast report?",
+    "answerable": true,
+    "question_type": "multi_fact",
+    "reference_answer": "Andrew Scott portrays James Stagg, and Brendan Fraser portrays Eisenhower.",
+    "required_facts": [
+      {
+        "fact_id": "m5_holdout_003_f1",
+        "text": "Andrew Scott plays James Stagg.",
+        "evidence_ids": [
+          "m5_holdout_003_e1"
+        ],
+        "weight": 1
+      },
+      {
+        "fact_id": "m5_holdout_003_f2",
+        "text": "Brendan Fraser plays General Eisenhower.",
+        "evidence_ids": [
+          "m5_holdout_003_e1"
+        ],
+        "weight": 1
+      }
+    ],
+    "gold_evidence": [
+      {
+        "evidence_id": "m5_holdout_003_e1",
+        "document_id": "science/2026/sep/08/how-meteorologists-helped-recreate-one-of-historys-most-important-weather-forecasts",
+        "quote": "Dressed in a Royal Air Force uniform and sporting a trim moustache, Andrew Scott looks slightly queasy – as well he might. Behind him is a huge map of the Channel, and in front of him is Brendan Fraser, looming with a request: “I need a forecast,” he says.\n\nStarring in the film Pressure, based on a true story, Scott plays the meteorologist Gp Capt James Stagg – the man who must tell Gen Eisenhower – played by Fraser – whether conditions will be suitable for the D-day landings scheduled to take place on 5 June 1944.",
+        "start_char": 0,
+        "end_char": 520,
+        "offset_basis": "body_text Unicode codepoints, [start,end)",
+        "title": "How meteorologists recreated weather that helped decide second world war",
+        "url": "https://www.theguardian.com/science/2026/sep/08/how-meteorologists-helped-recreate-one-of-historys-most-important-weather-forecasts",
+        "published_at_utc": "2026-09-08T11:59:58Z",
+        "document_body_sha256": "a213e74e592222a822a22e544654eac7df35f03c3a061a215fdf780a436d2434"
+      }
+    ],
+    "context_evidence": [],
+    "no_answer_reason": null,
+    "unanswerability_audit": null,
+    "expected_status": "ANSWERED",
+    "source_document_ids": [
+      "science/2026/sep/08/how-meteorologists-helped-recreate-one-of-historys-most-important-weather-forecasts"
+    ],
+    "answer_scope": "Supplied corpus snapshot; answer the specified report, not external world knowledge.",
+    "review": {
+      "agent_source_check": "PASS",
+      "agent_reviewer": "Codex",
+      "human_review_status": "PENDING",
+      "human_reviewer": null,
+      "adjudicator": null,
+      "user_supplied_review": {
+        "status": "FINDINGS_RECEIVED_AND_SOURCE_CHECKED",
+        "reviewer_identity": "Not specified",
+        "finding": "Expanded existing evidence to include the opening paragraph containing both actors full names and the following role mappings.",
+        "formal_human_approval_claimed": false
+      }
+    }
+  },
+  {
+    "schema_version": "m6_qa.v1",
+    "id": "m5_holdout_004",
+    "split": "holdout",
+    "event_id": "event_weather",
+    "question": "Why were the D-day landings postponed from 5 June, and which date offered the suitable weather window described in the report?",
+    "answerable": true,
+    "question_type": "multi_fact",
+    "reference_answer": "Stagg judged 5 June too perilous; a small suitable window was identified for 6 June.",
+    "required_facts": [
+      {
+        "fact_id": "m5_holdout_004_f1",
+        "text": "Stagg judged the conditions for 5 June too perilous.",
+        "evidence_ids": [
+          "m5_holdout_004_e1"
+        ],
+        "weight": 1
+      },
+      {
+        "fact_id": "m5_holdout_004_f2",
+        "text": "A small suitable window was identified for 6 June.",
+        "evidence_ids": [
+          "m5_holdout_004_e2"
+        ],
+        "weight": 1
+      }
+    ],
+    "gold_evidence": [
+      {
+        "evidence_id": "m5_holdout_004_e1",
+        "document_id": "science/2026/sep/08/how-meteorologists-helped-recreate-one-of-historys-most-important-weather-forecasts",
+        "quote": "The teams were split about the forecast for 5 June – with Stagg concluding the conditions would be too perilous.",
+        "start_char": 2459,
+        "end_char": 2571,
+        "offset_basis": "body_text Unicode codepoints, [start,end)",
+        "title": "How meteorologists recreated weather that helped decide second world war",
+        "url": "https://www.theguardian.com/science/2026/sep/08/how-meteorologists-helped-recreate-one-of-historys-most-important-weather-forecasts",
+        "published_at_utc": "2026-09-08T11:59:58Z",
+        "document_body_sha256": "a213e74e592222a822a22e544654eac7df35f03c3a061a215fdf780a436d2434"
+      },
+      {
+        "evidence_id": "m5_holdout_004_e2",
+        "document_id": "science/2026/sep/08/how-meteorologists-helped-recreate-one-of-historys-most-important-weather-forecasts",
+        "quote": "But by the evening of 4 June a consensus emerged: there appeared to be a small but suitable window on 6 June.",
+        "start_char": 2601,
+        "end_char": 2710,
+        "offset_basis": "body_text Unicode codepoints, [start,end)",
+        "title": "How meteorologists recreated weather that helped decide second world war",
+        "url": "https://www.theguardian.com/science/2026/sep/08/how-meteorologists-helped-recreate-one-of-historys-most-important-weather-forecasts",
+        "published_at_utc": "2026-09-08T11:59:58Z",
+        "document_body_sha256": "a213e74e592222a822a22e544654eac7df35f03c3a061a215fdf780a436d2434"
+      }
+    ],
+    "context_evidence": [],
+    "no_answer_reason": null,
+    "unanswerability_audit": null,
+    "expected_status": "ANSWERED",
+    "source_document_ids": [
+      "science/2026/sep/08/how-meteorologists-helped-recreate-one-of-historys-most-important-weather-forecasts"
+    ],
+    "answer_scope": "Supplied corpus snapshot; answer the specified report, not external world knowledge.",
+    "review": {
+      "agent_source_check": "PASS",
+      "agent_reviewer": "Codex",
+      "human_review_status": "PENDING",
+      "human_reviewer": null,
+      "adjudicator": null
+    }
+  },
+  {
+    "schema_version": "m6_qa.v1",
+    "id": "m5_holdout_005",
+    "split": "holdout",
+    "event_id": "event_plant",
+    "question": "Which alpine plant did Darwin predict could eat insects, and in what year did he make that prediction?",
+    "answerable": true,
+    "question_type": "multi_fact",
+    "reference_answer": "Saxifraga candelabrum, in 1875.",
+    "required_facts": [
+      {
+        "fact_id": "m5_holdout_005_f1",
+        "text": "The plant was Saxifraga candelabrum.",
+        "evidence_ids": [
+          "m5_holdout_005_e1"
+        ],
+        "weight": 1
+      },
+      {
+        "fact_id": "m5_holdout_005_f2",
+        "text": "Darwin made the prediction in 1875.",
+        "evidence_ids": [
+          "m5_holdout_005_e1"
+        ],
+        "weight": 1
+      }
+    ],
+    "gold_evidence": [
+      {
+        "evidence_id": "m5_holdout_005_e1",
+        "document_id": "science/2026/sep/16/plantwatch-the-insect-eating-alpine-plant-that-proves-darwin-was-right",
+        "quote": "In 1875, Charles Darwin predicted that Saxifraga candelabrum, a small alpine plant, could eat insects.",
+        "start_char": 0,
+        "end_char": 102,
+        "offset_basis": "body_text Unicode codepoints, [start,end)",
+        "title": "Plantwatch: The insect-eating alpine plant that proves Darwin was right",
+        "url": "https://www.theguardian.com/science/2026/sep/16/plantwatch-the-insect-eating-alpine-plant-that-proves-darwin-was-right",
+        "published_at_utc": "2026-09-16T05:00:10Z",
+        "document_body_sha256": "45e114013b81dbff8c70e25598be29d1eda333e5b16fc503d2bc43fac19f3d19"
+      }
+    ],
+    "context_evidence": [],
+    "no_answer_reason": null,
+    "unanswerability_audit": null,
+    "expected_status": "ANSWERED",
+    "source_document_ids": [
+      "science/2026/sep/16/plantwatch-the-insect-eating-alpine-plant-that-proves-darwin-was-right"
+    ],
+    "answer_scope": "Supplied corpus snapshot; answer the specified report, not external world knowledge.",
+    "review": {
+      "agent_source_check": "PASS",
+      "agent_reviewer": "Codex",
+      "human_review_status": "PENDING",
+      "human_reviewer": null,
+      "adjudicator": null
+    }
+  },
+  {
+    "schema_version": "m6_qa.v1",
+    "id": "m5_holdout_006",
+    "split": "holdout",
+    "event_id": "event_plant",
+    "question": "How does Saxifraga candelabrum catch and digest midges, and which nutrient does it absorb from their remains?",
+    "answerable": true,
+    "question_type": "multi_fact",
+    "reference_answer": "Sweet glue on sticky hairs lures and traps midges, an enzyme digests them, and the plant absorbs nitrogen.",
+    "required_facts": [
+      {
+        "fact_id": "m5_holdout_006_f1",
+        "text": "Sweet glue on sticky hairs lures and traps midges.",
+        "evidence_ids": [
+          "m5_holdout_006_e1"
+        ],
+        "weight": 1
+      },
+      {
+        "fact_id": "m5_holdout_006_f2",
+        "text": "An enzyme digests the midges.",
+        "evidence_ids": [
+          "m5_holdout_006_e1"
+        ],
+        "weight": 1
+      },
+      {
+        "fact_id": "m5_holdout_006_f3",
+        "text": "The plant absorbs nitrogen from the remains.",
+        "evidence_ids": [
+          "m5_holdout_006_e2"
+        ],
+        "weight": 1
+      }
+    ],
+    "gold_evidence": [
+      {
+        "evidence_id": "m5_holdout_006_e1",
+        "document_id": "science/2026/sep/16/plantwatch-the-insect-eating-alpine-plant-that-proves-darwin-was-right",
+        "quote": "Its leaves, petals and stems are smothered in tiny, sticky hairs and – just as the evolutionary biologist suspected – the sweet glue on the hairs can lure and trap midges before digesting them with an enzyme.",
+        "start_char": 104,
+        "end_char": 312,
+        "offset_basis": "body_text Unicode codepoints, [start,end)",
+        "title": "Plantwatch: The insect-eating alpine plant that proves Darwin was right",
+        "url": "https://www.theguardian.com/science/2026/sep/16/plantwatch-the-insect-eating-alpine-plant-that-proves-darwin-was-right",
+        "published_at_utc": "2026-09-16T05:00:10Z",
+        "document_body_sha256": "45e114013b81dbff8c70e25598be29d1eda333e5b16fc503d2bc43fac19f3d19"
+      },
+      {
+        "evidence_id": "m5_holdout_006_e2",
+        "document_id": "science/2026/sep/16/plantwatch-the-insect-eating-alpine-plant-that-proves-darwin-was-right",
+        "quote": "The nitrogen from their remains is absorbed into the plant, which is essential for it to survive in the nutrient-poor soils of the Hengduan mountains in south-west China.",
+        "start_char": 314,
+        "end_char": 484,
+        "offset_basis": "body_text Unicode codepoints, [start,end)",
+        "title": "Plantwatch: The insect-eating alpine plant that proves Darwin was right",
+        "url": "https://www.theguardian.com/science/2026/sep/16/plantwatch-the-insect-eating-alpine-plant-that-proves-darwin-was-right",
+        "published_at_utc": "2026-09-16T05:00:10Z",
+        "document_body_sha256": "45e114013b81dbff8c70e25598be29d1eda333e5b16fc503d2bc43fac19f3d19"
+      }
+    ],
+    "context_evidence": [],
+    "no_answer_reason": null,
+    "unanswerability_audit": null,
+    "expected_status": "ANSWERED",
+    "source_document_ids": [
+      "science/2026/sep/16/plantwatch-the-insect-eating-alpine-plant-that-proves-darwin-was-right"
+    ],
+    "answer_scope": "Supplied corpus snapshot; answer the specified report, not external world knowledge.",
+    "review": {
+      "agent_source_check": "PASS",
+      "agent_reviewer": "Codex",
+      "human_review_status": "PENDING",
+      "human_reviewer": null,
+      "adjudicator": null
+    }
+  },
+  {
+    "schema_version": "m6_qa.v1",
+    "id": "m5_holdout_007",
+    "split": "holdout",
+    "event_id": "event_dyson",
+    "question": "What launch price and development duration does the report give for Dyson's camera-equipped toothbrush?",
+    "answerable": true,
+    "question_type": "multi_fact",
+    "reference_answer": "£420, with six years of development.",
+    "required_facts": [
+      {
+        "fact_id": "m5_holdout_007_f1",
+        "text": "The reported price is £420.",
+        "evidence_ids": [
+          "m5_holdout_007_e1"
+        ],
+        "weight": 1
+      },
+      {
+        "fact_id": "m5_holdout_007_f2",
+        "text": "Development took six years.",
+        "evidence_ids": [
+          "m5_holdout_007_e2"
+        ],
+        "weight": 1
+      }
+    ],
+    "gold_evidence": [
+      {
+        "evidence_id": "m5_holdout_007_e1",
+        "document_id": "technology/2026/sep/01/dyson-toothbrush-camera-films-live-footage-inside-mouth",
+        "quote": "Dyson, the home appliance maker that made its name inventing bagless vacuums and bladeless fans, has turned its attention to oral hygiene with a £420 all-singing, all-dancing toothbrush that can clean, floss and even spray tiny jets of mouthwash.",
+        "start_char": 168,
+        "end_char": 414,
+        "offset_basis": "body_text Unicode codepoints, [start,end)",
+        "title": "Dyson launches £420 toothbrush that films ‘live cleaning footage’ inside your mouth",
+        "url": "https://www.theguardian.com/technology/2026/sep/01/dyson-toothbrush-camera-films-live-footage-inside-mouth",
+        "published_at_utc": "2026-09-01T14:39:38Z",
+        "document_body_sha256": "cd204c4449904d15a76819d5b2a01f8157b6fc473d910df32f5e18f7a15742d1"
+      },
+      {
+        "evidence_id": "m5_holdout_007_e2",
+        "document_id": "technology/2026/sep/01/dyson-toothbrush-camera-films-live-footage-inside-mouth",
+        "quote": "In simpler times, a handle and bristles were enough, but the Dyson toothbrush, which took six years and the brainpower of 661 engineers to develop, has a “100k pixel macro lens camera” and an “anti-gravity (mouthwash) tank” on board.",
+        "start_char": 416,
+        "end_char": 649,
+        "offset_basis": "body_text Unicode codepoints, [start,end)",
+        "title": "Dyson launches £420 toothbrush that films ‘live cleaning footage’ inside your mouth",
+        "url": "https://www.theguardian.com/technology/2026/sep/01/dyson-toothbrush-camera-films-live-footage-inside-mouth",
+        "published_at_utc": "2026-09-01T14:39:38Z",
+        "document_body_sha256": "cd204c4449904d15a76819d5b2a01f8157b6fc473d910df32f5e18f7a15742d1"
+      }
+    ],
+    "context_evidence": [],
+    "no_answer_reason": null,
+    "unanswerability_audit": null,
+    "expected_status": "ANSWERED",
+    "source_document_ids": [
+      "technology/2026/sep/01/dyson-toothbrush-camera-films-live-footage-inside-mouth"
+    ],
+    "answer_scope": "Supplied corpus snapshot; answer the specified report, not external world knowledge.",
+    "review": {
+      "agent_source_check": "PASS",
+      "agent_reviewer": "Codex",
+      "human_review_status": "PENDING",
+      "human_reviewer": null,
+      "adjudicator": null
+    }
+  },
+  {
+    "schema_version": "m6_qa.v1",
+    "id": "m5_holdout_008",
+    "split": "holdout",
+    "event_id": "event_dyson",
+    "question": "What does Dyson compare its toothbrush camera to, and which app displays the live cleaning footage?",
+    "answerable": true,
+    "question_type": "multi_fact",
+    "reference_answer": "Dyson compares it to a high-quality endoscope; footage is shown in the MyDyson app.",
+    "required_facts": [
+      {
+        "fact_id": "m5_holdout_008_f1",
+        "text": "Dyson describes the camera as a high-quality endoscope.",
+        "evidence_ids": [
+          "m5_holdout_008_e1"
+        ],
+        "weight": 1
+      },
+      {
+        "fact_id": "m5_holdout_008_f2",
+        "text": "The footage appears in the MyDyson app.",
+        "evidence_ids": [
+          "m5_holdout_008_e2"
+        ],
+        "weight": 1
+      }
+    ],
+    "gold_evidence": [
+      {
+        "evidence_id": "m5_holdout_008_e1",
+        "document_id": "technology/2026/sep/01/dyson-toothbrush-camera-films-live-footage-inside-mouth",
+        "quote": "The camera functions as a “high-quality endoscope”, according to the company, enabling users to “see what their dentist sees”.",
+        "start_char": 651,
+        "end_char": 777,
+        "offset_basis": "body_text Unicode codepoints, [start,end)",
+        "title": "Dyson launches £420 toothbrush that films ‘live cleaning footage’ inside your mouth",
+        "url": "https://www.theguardian.com/technology/2026/sep/01/dyson-toothbrush-camera-films-live-footage-inside-mouth",
+        "published_at_utc": "2026-09-01T14:39:38Z",
+        "document_body_sha256": "cd204c4449904d15a76819d5b2a01f8157b6fc473d910df32f5e18f7a15742d1"
+      },
+      {
+        "evidence_id": "m5_holdout_008_e2",
+        "document_id": "technology/2026/sep/01/dyson-toothbrush-camera-films-live-footage-inside-mouth",
+        "quote": "The brusher can watch “live cleaning footage” on the MyDyson app and get feedback on their cleaning regime.",
+        "start_char": 778,
+        "end_char": 885,
+        "offset_basis": "body_text Unicode codepoints, [start,end)",
+        "title": "Dyson launches £420 toothbrush that films ‘live cleaning footage’ inside your mouth",
+        "url": "https://www.theguardian.com/technology/2026/sep/01/dyson-toothbrush-camera-films-live-footage-inside-mouth",
+        "published_at_utc": "2026-09-01T14:39:38Z",
+        "document_body_sha256": "cd204c4449904d15a76819d5b2a01f8157b6fc473d910df32f5e18f7a15742d1"
+      }
+    ],
+    "context_evidence": [],
+    "no_answer_reason": null,
+    "unanswerability_audit": null,
+    "expected_status": "ANSWERED",
+    "source_document_ids": [
+      "technology/2026/sep/01/dyson-toothbrush-camera-films-live-footage-inside-mouth"
+    ],
+    "answer_scope": "Supplied corpus snapshot; answer the specified report, not external world knowledge.",
+    "review": {
+      "agent_source_check": "PASS",
+      "agent_reviewer": "Codex",
+      "human_review_status": "PENDING",
+      "human_reviewer": null,
+      "adjudicator": null
+    }
+  },
+  {
+    "schema_version": "m6_qa.v1",
+    "id": "m5_holdout_009",
+    "split": "holdout",
+    "event_id": "event_dyson",
+    "question": "What peer-reviewed clinical trial registration number does the Dyson toothbrush launch report provide for the claim of up to 72% more plaque removal?",
+    "answerable": false,
+    "question_type": "hard_negative_related_missing_fact",
+    "reference_answer": "The report does not provide this information.",
+    "required_facts": [],
+    "gold_evidence": [],
+    "context_evidence": [
+      {
+        "evidence_id": "m5_holdout_009_context",
+        "document_id": "technology/2026/sep/01/dyson-toothbrush-camera-films-live-footage-inside-mouth",
+        "quote": "The brush claims to remove “up to 72% more plaque than market leading electric toothbrushes”.",
+        "start_char": 2189,
+        "end_char": 2282,
+        "offset_basis": "body_text Unicode codepoints, [start,end)",
+        "title": "Dyson launches £420 toothbrush that films ‘live cleaning footage’ inside your mouth",
+        "url": "https://www.theguardian.com/technology/2026/sep/01/dyson-toothbrush-camera-films-live-footage-inside-mouth",
+        "published_at_utc": "2026-09-01T14:39:38Z",
+        "document_body_sha256": "cd204c4449904d15a76819d5b2a01f8157b6fc473d910df32f5e18f7a15742d1"
+      }
+    ],
+    "no_answer_reason": "The article reports a product claim but provides no peer-reviewed trial registration number. The percentage is not a registration identifier or independent clinical verification.",
+    "unanswerability_audit": {
+      "missing_information": "A peer-reviewed clinical trial registration identifier.",
+      "corpus_documents_scanned": 3152,
+      "event_candidate_patterns": [
+        "dyson",
+        "toothbrush"
+      ],
+      "slot_patterns": [
+        "72%",
+        "trial",
+        "clinical",
+        "registr",
+        "study"
+      ],
+      "method": "Direct reading of anchor report plus exhaustive lexical event-candidate sweep of the local corpus; no vector retrieval or API.",
+      "checked_documents": [
+        {
+          "document_id": "technology/2026/sep/01/dyson-toothbrush-camera-films-live-footage-inside-mouth",
+          "matched_slot_contexts": [
+            " burst of mouth rinse to remove plaque as you brush, while the brush head cleans along the gum line and lifts surface stains. The brush claims to remove “up to 72% more plaque than market leading electric toothbrushes”.\n\nRelated: Doctors’ AI scribes get names of drugs and diagnoses wrong, NHS watchdog warns\n\nNo dental routine would be complete without toothpaste, and Dyson’s claims to be a “complete "
+          ],
+          "agent_conclusion": "No explicit value for the requested slot in this event context."
+        }
+      ],
+      "absence_is_not_proven_by_search_failure": true,
+      "limitations": "Agent assessment is provisional pending independent human review; lexical aliases may miss a relevant document."
+    },
+    "expected_status": "INSUFFICIENT_SOURCES",
+    "source_document_ids": [
+      "technology/2026/sep/01/dyson-toothbrush-camera-films-live-footage-inside-mouth"
+    ],
+    "answer_scope": "Supplied corpus snapshot and the specified report; do not fill missing slots with estimates, unrelated figures or external knowledge.",
+    "review": {
+      "agent_source_check": "PASS",
+      "agent_reviewer": "Codex",
+      "human_review_status": "PENDING",
+      "human_reviewer": null,
+      "adjudicator": null
+    }
+  },
+  {
+    "schema_version": "m6_qa.v1",
+    "id": "m5_holdout_010",
+    "split": "holdout",
+    "event_id": "event_cave",
+    "question": "For approximately how long and at what depth was Luca Olmetto trapped in the Sardinian cave, according to the rescue report?",
+    "answerable": true,
+    "question_type": "multi_fact",
+    "reference_answer": "For 26 hours, roughly 10 metres below ground.",
+    "required_facts": [
+      {
+        "fact_id": "m5_holdout_010_f1",
+        "text": "Olmetto was trapped for 26 hours.",
+        "evidence_ids": [
+          "m5_holdout_010_e1"
+        ],
+        "weight": 1
+      },
+      {
+        "fact_id": "m5_holdout_010_f2",
+        "text": "He was roughly 10 metres below ground.",
+        "evidence_ids": [
+          "m5_holdout_010_e1"
+        ],
+        "weight": 1
+      }
+    ],
+    "gold_evidence": [
+      {
+        "evidence_id": "m5_holdout_010_e1",
+        "document_id": "world/2026/oct/12/cave-rescue-sardinia-rockslide-gorroppeddu",
+        "quote": "A 31-year-old man has been pulled alive from a cave on the Italian island of Sardinia after being trapped roughly 10 metres below ground for 26 hours following a rockslide.",
+        "start_char": 0,
+        "end_char": 172,
+        "offset_basis": "body_text Unicode codepoints, [start,end)",
+        "title": "Man rescued from cave on Sardinia after being trapped by rockslide for 26 hours",
+        "url": "https://www.theguardian.com/world/2026/oct/12/cave-rescue-sardinia-rockslide-gorroppeddu",
+        "published_at_utc": "2026-10-12T17:40:38Z",
+        "document_body_sha256": "05d7292ad401b200157d52d3bd44b9bc1c6c319b79dcb2dae5be3743e024e7a3"
+      }
+    ],
+    "context_evidence": [],
+    "no_answer_reason": null,
+    "unanswerability_audit": null,
+    "expected_status": "ANSWERED",
+    "source_document_ids": [
+      "world/2026/oct/12/cave-rescue-sardinia-rockslide-gorroppeddu"
+    ],
+    "answer_scope": "Supplied corpus snapshot; answer the specified report, not external world knowledge.",
+    "review": {
+      "agent_source_check": "PASS",
+      "agent_reviewer": "Codex",
+      "human_review_status": "PENDING",
+      "human_reviewer": null,
+      "adjudicator": null
+    }
+  },
+  {
+    "schema_version": "m6_qa.v1",
+    "id": "m5_holdout_011",
+    "split": "holdout",
+    "event_id": "event_cave",
+    "question": "How many Alpine and Speleological Rescue Corps experts and firefighters were involved in Olmetto's rescue?",
+    "answerable": true,
+    "question_type": "multi_fact",
+    "reference_answer": "About 48 rescue corps experts and 30 firefighters.",
+    "required_facts": [
+      {
+        "fact_id": "m5_holdout_011_f1",
+        "text": "About 48 Alpine and Speleological Rescue Corps experts took part.",
+        "evidence_ids": [
+          "m5_holdout_011_e1"
+        ],
+        "weight": 1
+      },
+      {
+        "fact_id": "m5_holdout_011_f2",
+        "text": "30 firefighters took part.",
+        "evidence_ids": [
+          "m5_holdout_011_e1"
+        ],
+        "weight": 1
+      }
+    ],
+    "gold_evidence": [
+      {
+        "evidence_id": "m5_holdout_011_e1",
+        "document_id": "world/2026/oct/12/cave-rescue-sardinia-rockslide-gorroppeddu",
+        "quote": "About 48 experts from Sardinia’s Alpine and Speleological Rescue Corps and 30 firefighters, as well as civil protection staff, were involved in the rescue operation.",
+        "start_char": 1095,
+        "end_char": 1260,
+        "offset_basis": "body_text Unicode codepoints, [start,end)",
+        "title": "Man rescued from cave on Sardinia after being trapped by rockslide for 26 hours",
+        "url": "https://www.theguardian.com/world/2026/oct/12/cave-rescue-sardinia-rockslide-gorroppeddu",
+        "published_at_utc": "2026-10-12T17:40:38Z",
+        "document_body_sha256": "05d7292ad401b200157d52d3bd44b9bc1c6c319b79dcb2dae5be3743e024e7a3"
+      }
+    ],
+    "context_evidence": [],
+    "no_answer_reason": null,
+    "unanswerability_audit": null,
+    "expected_status": "ANSWERED",
+    "source_document_ids": [
+      "world/2026/oct/12/cave-rescue-sardinia-rockslide-gorroppeddu"
+    ],
+    "answer_scope": "Supplied corpus snapshot; answer the specified report, not external world knowledge.",
+    "review": {
+      "agent_source_check": "PASS",
+      "agent_reviewer": "Codex",
+      "human_review_status": "PENDING",
+      "human_reviewer": null,
+      "adjudicator": null
+    }
+  },
+  {
+    "schema_version": "m6_qa.v1",
+    "id": "m5_holdout_012",
+    "split": "holdout",
+    "event_id": "event_cave",
+    "question": "According to the Gorroppeddu cave rescue report, what was the name of the hospital to which Luca Olmetto was airlifted?",
+    "answerable": false,
+    "question_type": "hard_negative_related_missing_fact",
+    "reference_answer": "The report does not provide this information.",
+    "required_facts": [],
+    "gold_evidence": [],
+    "context_evidence": [
+      {
+        "evidence_id": "m5_holdout_012_context",
+        "document_id": "world/2026/oct/12/cave-rescue-sardinia-rockslide-gorroppeddu",
+        "quote": "According to Rai News, Olmetto was brought to the surface just after 6pm CET and stabilised by medical staff before being airlifted to hospital.",
+        "start_char": 949,
+        "end_char": 1093,
+        "offset_basis": "body_text Unicode codepoints, [start,end)",
+        "title": "Man rescued from cave on Sardinia after being trapped by rockslide for 26 hours",
+        "url": "https://www.theguardian.com/world/2026/oct/12/cave-rescue-sardinia-rockslide-gorroppeddu",
+        "published_at_utc": "2026-10-12T17:40:38Z",
+        "document_body_sha256": "05d7292ad401b200157d52d3bd44b9bc1c6c319b79dcb2dae5be3743e024e7a3"
+      }
+    ],
+    "no_answer_reason": "The report says he was airlifted to hospital but does not name the hospital. Do not substitute his hometown, the cave location or a hospital from the separate 2024 incident.",
+    "unanswerability_audit": {
+      "missing_information": "The receiving hospital name.",
+      "corpus_documents_scanned": 3152,
+      "event_candidate_patterns": [
+        "gorroppeddu|luca olmetto"
+      ],
+      "slot_patterns": [
+        "hospital",
+        "airlift",
+        "medical"
+      ],
+      "method": "Direct reading of anchor report plus exhaustive lexical event-candidate sweep of the local corpus; no vector retrieval or API.",
+      "checked_documents": [
+        {
+          "document_id": "world/2026/oct/12/cave-rescue-sardinia-rockslide-gorroppeddu",
+          "matched_slot_contexts": [
+            "is that covered the caver before extracting him from the cavity. According to Rai News, Olmetto was brought to the surface just after 6pm CET and stabilised by medical staff before being airlifted to hospital.\n\nAbout 48 experts from Sardinia’s Alpine and Speleological Rescue Corps and 30 firefighters, as well as civil protection staff, were involved in the rescue operation. A helicopter also provided mat",
+            "efore extracting him from the cavity. According to Rai News, Olmetto was brought to the surface just after 6pm CET and stabilised by medical staff before being airlifted to hospital.\n\nAbout 48 experts from Sardinia’s Alpine and Speleological Rescue Corps and 30 firefighters, as well as civil protection staff, were involved in the rescue operation. A helicopter also provided materials and equipment needed",
+            "ing him from the cavity. According to Rai News, Olmetto was brought to the surface just after 6pm CET and stabilised by medical staff before being airlifted to hospital.\n\nAbout 48 experts from Sardinia’s Alpine and Speleological Rescue Corps and 30 firefighters, as well as civil protection staff, were involved in the rescue operation. A helicopter also provided materials and equipment needed to make the s"
+          ],
+          "agent_conclusion": "No explicit value for the requested slot in this event context."
+        }
+      ],
+      "absence_is_not_proven_by_search_failure": true,
+      "limitations": "Agent assessment is provisional pending independent human review; lexical aliases may miss a relevant document."
+    },
+    "expected_status": "INSUFFICIENT_SOURCES",
+    "source_document_ids": [
+      "world/2026/oct/12/cave-rescue-sardinia-rockslide-gorroppeddu"
+    ],
+    "answer_scope": "Supplied corpus snapshot and the specified report; do not fill missing slots with estimates, unrelated figures or external knowledge.",
+    "review": {
+      "agent_source_check": "PASS",
+      "agent_reviewer": "Codex",
+      "human_review_status": "PENDING",
+      "human_reviewer": null,
+      "adjudicator": null
+    }
+  },
+  {
+    "schema_version": "m6_qa.v1",
+    "id": "m5_holdout_013",
+    "split": "holdout",
+    "event_id": "event_relics",
+    "question": "Under the Greek-Bulgarian cultural agreement, how many relics were to return to Athens and where had they been safeguarded?",
+    "answerable": true,
+    "question_type": "multi_fact",
+    "reference_answer": "48 relics, safeguarded at Bulgaria’s National History Museum.",
+    "required_facts": [
+      {
+        "fact_id": "m5_holdout_013_f1",
+        "text": "48 relics were to be returned to Athens.",
+        "evidence_ids": [
+          "m5_holdout_013_e1"
+        ],
+        "weight": 1
+      },
+      {
+        "fact_id": "m5_holdout_013_f2",
+        "text": "They had been safeguarded at the National History Museum in Bulgaria.",
+        "evidence_ids": [
+          "m5_holdout_013_e2"
+        ],
+        "weight": 1
+      }
+    ],
+    "gold_evidence": [
+      {
+        "evidence_id": "m5_holdout_013_e1",
+        "document_id": "world/2026/oct/03/remains-czar-samuel-return-bulgaria-greece-talks",
+        "quote": "Under the agreement, 48 relics, including icons, crosses and ornate ecclesiastical vessels, pillaged by Bulgarian troops from churches and monasteries in northern Greece during the first world war, will be returned to Athens.",
+        "start_char": 1615,
+        "end_char": 1840,
+        "offset_basis": "body_text Unicode codepoints, [start,end)",
+        "title": "Greece returns priceless relics – and suggests UK should follow suit with Parthenon marbles",
+        "url": "https://www.theguardian.com/world/2026/oct/03/remains-czar-samuel-return-bulgaria-greece-talks",
+        "published_at_utc": "2026-10-03T14:46:50Z",
+        "document_body_sha256": "718a6274b7b92b456815aecda07298ce1ab5cce2bc981e7b6d3cba8c866a91e2"
+      },
+      {
+        "evidence_id": "m5_holdout_013_e2",
+        "document_id": "world/2026/oct/03/remains-czar-samuel-return-bulgaria-greece-talks",
+        "quote": "In the more than 100 intervening years, they had been safeguarded at the National History Museum in Bulgaria.",
+        "start_char": 1841,
+        "end_char": 1950,
+        "offset_basis": "body_text Unicode codepoints, [start,end)",
+        "title": "Greece returns priceless relics – and suggests UK should follow suit with Parthenon marbles",
+        "url": "https://www.theguardian.com/world/2026/oct/03/remains-czar-samuel-return-bulgaria-greece-talks",
+        "published_at_utc": "2026-10-03T14:46:50Z",
+        "document_body_sha256": "718a6274b7b92b456815aecda07298ce1ab5cce2bc981e7b6d3cba8c866a91e2"
+      }
+    ],
+    "context_evidence": [],
+    "no_answer_reason": null,
+    "unanswerability_audit": null,
+    "expected_status": "ANSWERED",
+    "source_document_ids": [
+      "world/2026/oct/03/remains-czar-samuel-return-bulgaria-greece-talks"
+    ],
+    "answer_scope": "Supplied corpus snapshot; answer the specified report, not external world knowledge.",
+    "review": {
+      "agent_source_check": "PASS",
+      "agent_reviewer": "Codex",
+      "human_review_status": "PENDING",
+      "human_reviewer": null,
+      "adjudicator": null
+    }
+  },
+  {
+    "schema_version": "m6_qa.v1",
+    "id": "m5_holdout_014",
+    "split": "holdout",
+    "event_id": "event_relics",
+    "question": "How were Tsar Samuel's remains transported to Sofia, and what aerial escort and arrival salute accompanied them?",
+    "answerable": true,
+    "question_type": "multi_fact",
+    "reference_answer": "On a military aircraft, escorted by jet fighters, with a 21-gun salute on arrival.",
+    "required_facts": [
+      {
+        "fact_id": "m5_holdout_014_f1",
+        "text": "The remains were flown to Sofia on a military aircraft.",
+        "evidence_ids": [
+          "m5_holdout_014_e1"
+        ],
+        "weight": 1
+      },
+      {
+        "fact_id": "m5_holdout_014_f2",
+        "text": "Jet fighters escorted the aircraft.",
+        "evidence_ids": [
+          "m5_holdout_014_e1"
+        ],
+        "weight": 1
+      },
+      {
+        "fact_id": "m5_holdout_014_f3",
+        "text": "A 21-gun salute marked arrival.",
+        "evidence_ids": [
+          "m5_holdout_014_e1"
+        ],
+        "weight": 1
+      }
+    ],
+    "gold_evidence": [
+      {
+        "evidence_id": "m5_holdout_014_e1",
+        "document_id": "world/2026/oct/03/remains-czar-samuel-return-bulgaria-greece-talks",
+        "quote": "Authorities arranged a homecoming with full state honours, with the tsar’s bones flown to Sofia, the Bulgarian capital, on a military aircraft accompanied by an escort of jet fighters and a 21-gun salute upon arrival.",
+        "start_char": 2196,
+        "end_char": 2413,
+        "offset_basis": "body_text Unicode codepoints, [start,end)",
+        "title": "Greece returns priceless relics – and suggests UK should follow suit with Parthenon marbles",
+        "url": "https://www.theguardian.com/world/2026/oct/03/remains-czar-samuel-return-bulgaria-greece-talks",
+        "published_at_utc": "2026-10-03T14:46:50Z",
+        "document_body_sha256": "718a6274b7b92b456815aecda07298ce1ab5cce2bc981e7b6d3cba8c866a91e2"
+      }
+    ],
+    "context_evidence": [],
+    "no_answer_reason": null,
+    "unanswerability_audit": null,
+    "expected_status": "ANSWERED",
+    "source_document_ids": [
+      "world/2026/oct/03/remains-czar-samuel-return-bulgaria-greece-talks"
+    ],
+    "answer_scope": "Supplied corpus snapshot; answer the specified report, not external world knowledge.",
+    "review": {
+      "agent_source_check": "PASS",
+      "agent_reviewer": "Codex",
+      "human_review_status": "PENDING",
+      "human_reviewer": null,
+      "adjudicator": null
+    }
+  },
+  {
+    "schema_version": "m6_qa.v1",
+    "id": "m5_holdout_015",
+    "split": "holdout",
+    "event_id": "event_trains",
+    "question": "Which three European cities would Virgin Trains connect with London, and from which year, according to the track-access report?",
+    "answerable": true,
+    "question_type": "multi_fact",
+    "reference_answer": "Paris, Brussels and Amsterdam, from 2030.",
+    "required_facts": [
+      {
+        "fact_id": "m5_holdout_015_f1",
+        "text": "Paris was a planned destination.",
+        "evidence_ids": [
+          "m5_holdout_015_e1"
+        ],
+        "weight": 1
+      },
+      {
+        "fact_id": "m5_holdout_015_f2",
+        "text": "Brussels was a planned destination.",
+        "evidence_ids": [
+          "m5_holdout_015_e1"
+        ],
+        "weight": 1
+      },
+      {
+        "fact_id": "m5_holdout_015_f3",
+        "text": "Amsterdam was a planned destination.",
+        "evidence_ids": [
+          "m5_holdout_015_e1"
+        ],
+        "weight": 1
+      },
+      {
+        "fact_id": "m5_holdout_015_f4",
+        "text": "The planned start year was 2030.",
+        "evidence_ids": [
+          "m5_holdout_015_e1"
+        ],
+        "weight": 1
+      }
+    ],
+    "gold_evidence": [
+      {
+        "evidence_id": "m5_holdout_015_e1",
+        "document_id": "business/2026/aug/17/virgin-trains-services-to-europe-eurostar",
+        "quote": "Virgin Trains has been granted track access by the rail regulator to enable it to run services between London and Paris, Brussels and Amsterdam from 2030, in a key step towards breaking Eurostar’s monopoly on the cross-Channel passenger route.",
+        "start_char": 0,
+        "end_char": 243,
+        "offset_basis": "body_text Unicode codepoints, [start,end)",
+        "title": "Virgin Trains a step closer to running services to Europe in blow to Eurostar",
+        "url": "https://www.theguardian.com/business/2026/aug/17/virgin-trains-services-to-europe-eurostar",
+        "published_at_utc": "2026-08-17T16:41:07Z",
+        "document_body_sha256": "cfc173028d292dfede2305f99c0f17b7ac1b761962fd395d6bdb2669b57edf1c"
+      }
+    ],
+    "context_evidence": [],
+    "no_answer_reason": null,
+    "unanswerability_audit": null,
+    "expected_status": "ANSWERED",
+    "source_document_ids": [
+      "business/2026/aug/17/virgin-trains-services-to-europe-eurostar"
+    ],
+    "answer_scope": "Supplied corpus snapshot; answer the specified report, not external world knowledge.",
+    "review": {
+      "agent_source_check": "PASS",
+      "agent_reviewer": "Codex",
+      "human_review_status": "PENDING",
+      "human_reviewer": null,
+      "adjudicator": null
+    }
+  },
+  {
+    "schema_version": "m6_qa.v1",
+    "id": "m5_holdout_016",
+    "split": "holdout",
+    "event_id": "event_trains",
+    "question": "Did Virgin's announced track-access agreement already cover the Channel tunnel and mainland European networks, and which route did it cover?",
+    "answerable": true,
+    "question_type": "multi_fact",
+    "reference_answer": "No. It covered only HS1; access to the tunnel and mainland European rail networks still had to be secured.",
+    "required_facts": [
+      {
+        "fact_id": "m5_holdout_016_f1",
+        "text": "The agreement covered only HS1.",
+        "evidence_ids": [
+          "m5_holdout_016_e1"
+        ],
+        "weight": 1
+      },
+      {
+        "fact_id": "m5_holdout_016_f2",
+        "text": "Access to the Channel tunnel remained to be secured.",
+        "evidence_ids": [
+          "m5_holdout_016_e1"
+        ],
+        "weight": 1
+      },
+      {
+        "fact_id": "m5_holdout_016_f3",
+        "text": "Access to mainland European rail networks remained to be secured.",
+        "evidence_ids": [
+          "m5_holdout_016_e1"
+        ],
+        "weight": 1
+      }
+    ],
+    "gold_evidence": [
+      {
+        "evidence_id": "m5_holdout_016_e1",
+        "document_id": "business/2026/aug/17/virgin-trains-services-to-europe-eurostar",
+        "quote": "It only covers the HS1 route, however, and Virgin still needs to secure access to the tunnel and rail networks in mainland Europe.",
+        "start_char": 655,
+        "end_char": 785,
+        "offset_basis": "body_text Unicode codepoints, [start,end)",
+        "title": "Virgin Trains a step closer to running services to Europe in blow to Eurostar",
+        "url": "https://www.theguardian.com/business/2026/aug/17/virgin-trains-services-to-europe-eurostar",
+        "published_at_utc": "2026-08-17T16:41:07Z",
+        "document_body_sha256": "cfc173028d292dfede2305f99c0f17b7ac1b761962fd395d6bdb2669b57edf1c"
+      }
+    ],
+    "context_evidence": [],
+    "no_answer_reason": null,
+    "unanswerability_audit": null,
+    "expected_status": "ANSWERED",
+    "source_document_ids": [
+      "business/2026/aug/17/virgin-trains-services-to-europe-eurostar"
+    ],
+    "answer_scope": "Supplied corpus snapshot; answer the specified report, not external world knowledge.",
+    "review": {
+      "agent_source_check": "PASS",
+      "agent_reviewer": "Codex",
+      "human_review_status": "PENDING",
+      "human_reviewer": null,
+      "adjudicator": null
+    }
+  },
+  {
+    "schema_version": "m6_qa.v1",
+    "id": "m5_holdout_017",
+    "split": "holdout",
+    "event_id": "event_qantas",
+    "question": "What journey duration and planned starting period did Qantas announce for nonstop Sydney–New York flights in the report?",
+    "answerable": true,
+    "question_type": "multi_fact",
+    "reference_answer": "18 hours, starting from mid-2028.",
+    "required_facts": [
+      {
+        "fact_id": "m5_holdout_017_f1",
+        "text": "The planned nonstop duration was 18 hours.",
+        "evidence_ids": [
+          "m5_holdout_017_e1"
+        ],
+        "weight": 1
+      },
+      {
+        "fact_id": "m5_holdout_017_f2",
+        "text": "The announced start period was mid-2028.",
+        "evidence_ids": [
+          "m5_holdout_017_e1"
+        ],
+        "weight": 1
+      }
+    ],
+    "gold_evidence": [
+      {
+        "evidence_id": "m5_holdout_017_e1",
+        "document_id": "business/2026/sep/23/qantas-direct-flights-from-sydney-to-new-york",
+        "quote": "Qantas says travellers will be able to fly between Sydney and New York in just 18 hours from mid-2028 when the airline launches its second ultra long-haul route, cutting at least three hours from the travel time.",
+        "start_char": 0,
+        "end_char": 212,
+        "offset_basis": "body_text Unicode codepoints, [start,end)",
+        "title": "Qantas announces 18-hour direct flights from Sydney to New York with onboard ‘wellbeing zones’",
+        "url": "https://www.theguardian.com/business/2026/sep/23/qantas-direct-flights-from-sydney-to-new-york",
+        "published_at_utc": "2026-09-23T05:17:07Z",
+        "document_body_sha256": "f7ec481a618c5c139559945dd92f88261c4bde66af2d5af31bcf600c74fdafdf"
+      }
+    ],
+    "context_evidence": [],
+    "no_answer_reason": null,
+    "unanswerability_audit": null,
+    "expected_status": "ANSWERED",
+    "source_document_ids": [
+      "business/2026/sep/23/qantas-direct-flights-from-sydney-to-new-york"
+    ],
+    "answer_scope": "Supplied corpus snapshot; answer the specified report, not external world knowledge.",
+    "review": {
+      "agent_source_check": "PASS",
+      "agent_reviewer": "Codex",
+      "human_review_status": "PENDING",
+      "human_reviewer": null,
+      "adjudicator": null
+    }
+  },
+  {
+    "schema_version": "m6_qa.v1",
+    "id": "m5_holdout_018",
+    "split": "holdout",
+    "event_id": "event_qantas",
+    "question": "How many aircraft of which model did Qantas order for Project Sunrise, and what modification supports the long range?",
+    "answerable": true,
+    "question_type": "multi_fact",
+    "reference_answer": "12 Airbus A350–1000ULRs, fitted with extra fuel tanks.",
+    "required_facts": [
+      {
+        "fact_id": "m5_holdout_018_f1",
+        "text": "12 aircraft were ordered.",
+        "evidence_ids": [
+          "m5_holdout_018_e1"
+        ],
+        "weight": 1
+      },
+      {
+        "fact_id": "m5_holdout_018_f2",
+        "text": "The model was Airbus A350–1000ULR.",
+        "evidence_ids": [
+          "m5_holdout_018_e1"
+        ],
+        "weight": 1
+      },
+      {
+        "fact_id": "m5_holdout_018_f3",
+        "text": "The aircraft were fitted with extra fuel tanks.",
+        "evidence_ids": [
+          "m5_holdout_018_e1"
+        ],
+        "weight": 1
+      }
+    ],
+    "gold_evidence": [
+      {
+        "evidence_id": "m5_holdout_018_e1",
+        "document_id": "business/2026/sep/23/qantas-direct-flights-from-sydney-to-new-york",
+        "quote": "The company has ordered 12 Airbus A350–1000ULRs, fitted with extra fuel tanks, which can fly over 16,000km and up to 22 hours nonstop.",
+        "start_char": 1603,
+        "end_char": 1737,
+        "offset_basis": "body_text Unicode codepoints, [start,end)",
+        "title": "Qantas announces 18-hour direct flights from Sydney to New York with onboard ‘wellbeing zones’",
+        "url": "https://www.theguardian.com/business/2026/sep/23/qantas-direct-flights-from-sydney-to-new-york",
+        "published_at_utc": "2026-09-23T05:17:07Z",
+        "document_body_sha256": "f7ec481a618c5c139559945dd92f88261c4bde66af2d5af31bcf600c74fdafdf"
+      }
+    ],
+    "context_evidence": [],
+    "no_answer_reason": null,
+    "unanswerability_audit": null,
+    "expected_status": "ANSWERED",
+    "source_document_ids": [
+      "business/2026/sep/23/qantas-direct-flights-from-sydney-to-new-york"
+    ],
+    "answer_scope": "Supplied corpus snapshot; answer the specified report, not external world knowledge.",
+    "review": {
+      "agent_source_check": "PASS",
+      "agent_reviewer": "Codex",
+      "human_review_status": "PENDING",
+      "human_reviewer": null,
+      "adjudicator": null
+    }
+  },
+  {
+    "schema_version": "m6_qa.v1",
+    "id": "m5_holdout_019",
+    "split": "holdout",
+    "event_id": "event_qantas",
+    "question": "According to the Project Sunrise announcement, what is the exact published one-way fare for the new nonstop Sydney–New York service?",
+    "answerable": false,
+    "question_type": "hard_negative_related_missing_fact",
+    "reference_answer": "The report does not provide this information.",
+    "required_facts": [],
+    "gold_evidence": [],
+    "context_evidence": [
+      {
+        "evidence_id": "m5_holdout_019_context",
+        "document_id": "business/2026/sep/23/qantas-direct-flights-from-sydney-to-new-york",
+        "quote": "Qantas has not disclosed prices for the Project Sunrise routes.",
+        "start_char": 728,
+        "end_char": 791,
+        "offset_basis": "body_text Unicode codepoints, [start,end)",
+        "title": "Qantas announces 18-hour direct flights from Sydney to New York with onboard ‘wellbeing zones’",
+        "url": "https://www.theguardian.com/business/2026/sep/23/qantas-direct-flights-from-sydney-to-new-york",
+        "published_at_utc": "2026-09-23T05:17:07Z",
+        "document_body_sha256": "f7ec481a618c5c139559945dd92f88261c4bde66af2d5af31bcf600c74fdafdf"
+      }
+    ],
+    "no_answer_reason": "The new route’s prices had not been disclosed. Existing stopover fares and a suggested 20% premium do not establish an exact published nonstop fare.",
+    "unanswerability_audit": {
+      "missing_information": "An exact published one-way fare for the new nonstop route.",
+      "corpus_documents_scanned": 3152,
+      "event_candidate_patterns": [
+        "qantas",
+        "project sunrise|sydney to new york"
+      ],
+      "slot_patterns": [
+        "fare",
+        "price",
+        "cost",
+        "20%"
+      ],
+      "method": "Direct reading of anchor report plus exhaustive lexical event-candidate sweep of the local corpus; no vector retrieval or API.",
+      "checked_documents": [
+        {
+          "document_id": "business/2026/aug/27/qantas-profits-lowest-in-four-years-jet-fuel-costs-iran-conflict",
+          "matched_slot_contexts": [
+            "Qantas could increase ticket prices and plans to expand add-on fees at its low-budget carrier Jetstar, after the company said fuel costs contributed to its lowest pre-tax profits in four years.\n\nAfter delivering the airline’s annual results on Thursday, the Qantas chief exe",
+            "Qantas could increase ticket prices and plans to expand add-on fees at its low-budget carrier Jetstar, after the company said fuel costs contributed to its lowest pre-tax profits in four years.\n\nAfter delivering the airline’s annual results on Thursday, the Qantas chief executive, Vanessa Hudson, said the company could push for more revenue because passenger demand remaine",
+            " results on Thursday, the Qantas chief executive, Vanessa Hudson, said the company could push for more revenue because passenger demand remained strong despite cost-of-living pressures.\n\n“We are not saying that everything that can be done has been done, because we’re going to continue to drive where we see demand,” Hudson told analysts, who asked if further fare increases were planned.\n\n“We’re going t",
+            "aying that everything that can be done has been done, because we’re going to continue to drive where we see demand,” Hudson told analysts, who asked if further fare increases were planned.\n\n“We’re going to continue to push to maximise revenue and clearly, obviously, maximise earnings.”\n\nSign up for the Breaking News Australia email Qantas recorded a sharp decline in its pre-tax underlying profit – at ",
+            "p for the Breaking News Australia email Qantas recorded a sharp decline in its pre-tax underlying profit – at $2.06bn in the year to 30 June – with higher fuel prices linked to the Iran conflict denting the airline’s profitability.\n\nThose higher fuel costs were disproportionately felt by its older A380 fleet.\n\nQantas said it would start retiring the models – primarily used for long-haul international f",
+            "rlying profit – at $2.06bn in the year to 30 June – with higher fuel prices linked to the Iran conflict denting the airline’s profitability.\n\nThose higher fuel costs were disproportionately felt by its older A380 fleet.\n\nQantas said it would start retiring the models – primarily used for long-haul international flights – in 2028, rather than 2032 as planned, as it expected maintenance costs and disrup",
+            "said it would start retiring the models – primarily used for long-haul international flights – in 2028, rather than 2032 as planned, as it expected maintenance costs and disruptions to rise.\n\nThe company said it expects to buy up to 20 additional planes from 2030 as it continues its fleet renewal program.\n\nHudson said Airbus A350-1000s and Boeing 787 Dreamliners were being considered. But there were n",
+            "A350s like the ones to be used for Qantas’ planned Project Sunrise Sydney-London route.\n\nLooming Jetstar fees\n\nWhile airlines tend to hedge against rising fuel costs – a financial strategy to protect against volatile prices – it only offers partial protection. They also typically increase air fares and reduce seat capacity on less popular routes to maximise profits.\n\nQantas’s annual accounts show that",
+            "t Sunrise Sydney-London route.\n\nLooming Jetstar fees\n\nWhile airlines tend to hedge against rising fuel costs – a financial strategy to protect against volatile prices – it only offers partial protection. They also typically increase air fares and reduce seat capacity on less popular routes to maximise profits.\n\nQantas’s annual accounts show that while its international routes are less profitable than t",
+            "hedge against rising fuel costs – a financial strategy to protect against volatile prices – it only offers partial protection. They also typically increase air fares and reduce seat capacity on less popular routes to maximise profits.\n\nQantas’s annual accounts show that while its international routes are less profitable than they used to be, its Jetstar business remains a strong revenue earner and is ",
+            "advocates.\n\nStephanie Tully, Jetstar’s chief executive, told investors on Thursday the budget carrier planned to split more services from the individual ticket price in a bid to keep the advertised fare lower.\n\n“Obviously, we’ve launched a product in the last few weeks that’s got a bit of attention around baggage, but we’ve got many more to come,” Tully said. “So we’ve got a whole pipeline of ancillary",
+            " chief executive, told investors on Thursday the budget carrier planned to split more services from the individual ticket price in a bid to keep the advertised fare lower.\n\n“Obviously, we’ve launched a product in the last few weeks that’s got a bit of attention around baggage, but we’ve got many more to come,” Tully said. “So we’ve got a whole pipeline of ancillary [non-seat] initiatives.”\n\nRelated: ‘",
+            "nd meals and snacks, generate more than $1bn of Jetstar’s $6bn annual revenue. Tully said on Thursday that figure would rise significantly.\n\nThe median Jetstar fare was close to $150 in the year to June, up from nearly $100 in 2022, company reports indicate.\n\nMeanwhile, Qantas increased its overall revenue by 7% to $25.5bn over the 12 months. But it took on an extra $610m in fuel costs across its netw",
+            " in 2022, company reports indicate.\n\nMeanwhile, Qantas increased its overall revenue by 7% to $25.5bn over the 12 months. But it took on an extra $610m in fuel costs across its network, making the company less profitable.\n\nDays before the US and Israel struck Iran in late February, Qantas delivered a record $1.46bn pre-tax profit for the six months to December, as passengers shrugged off cost-of-livin",
+            "ore the US and Israel struck Iran in late February, Qantas delivered a record $1.46bn pre-tax profit for the six months to December, as passengers shrugged off cost-of-living pressures to travel within and outside Australia.\n\nIts rising fuel costs have been partially offset by ticket sales to new customers who switched to Qantas after cancelling flights at airlines with Middle East stopovers.\n\nQantas ",
+            "6bn pre-tax profit for the six months to December, as passengers shrugged off cost-of-living pressures to travel within and outside Australia.\n\nIts rising fuel costs have been partially offset by ticket sales to new customers who switched to Qantas after cancelling flights at airlines with Middle East stopovers.\n\nQantas said its loyalty scheme had increased underlying earnings by 12% in the year, to $",
+            "ll believed the points business would earn at least 5% more in the coming financial year and meet company targets of $800m in earnings by 2030.\n\nQantas’s share price rose more than 4% in early afternoon trading on Thursday."
+          ],
+          "agent_conclusion": "No explicit value for the requested slot in this event context."
+        },
+        {
+          "document_id": "business/2026/sep/23/qantas-direct-flights-from-sydney-to-new-york",
+          "matched_slot_contexts": [
+            "th airport to New York’s JFK airport. Qantas currently offers flights from Sydney to New York with a stopover in Los Angeles, which take 21 hours and typically cost more than $1,400 one way or more than $1,900 return.\n\nRelated: Qantas delays nonstop flights from Sydney to London – again\n\nQantas has not disclosed prices for the Project Sunrise routes. It has previously suggested direct fares could cost",
+            "cally cost more than $1,400 one way or more than $1,900 return.\n\nRelated: Qantas delays nonstop flights from Sydney to London – again\n\nQantas has not disclosed prices for the Project Sunrise routes. It has previously suggested direct fares could cost 20% more than stopover fares and said ticket prices are facing upward pressure.\n\nTickets for the Sydney to New York route are set to go on sale in August ",
+            "Qantas delays nonstop flights from Sydney to London – again\n\nQantas has not disclosed prices for the Project Sunrise routes. It has previously suggested direct fares could cost 20% more than stopover fares and said ticket prices are facing upward pressure.\n\nTickets for the Sydney to New York route are set to go on sale in August 2027, Qantas said. It has not specified which month flights will begin. W",
+            "s nonstop flights from Sydney to London – again\n\nQantas has not disclosed prices for the Project Sunrise routes. It has previously suggested direct fares could cost 20% more than stopover fares and said ticket prices are facing upward pressure.\n\nTickets for the Sydney to New York route are set to go on sale in August 2027, Qantas said. It has not specified which month flights will begin. When it annou",
+            "stop flights from Sydney to London – again\n\nQantas has not disclosed prices for the Project Sunrise routes. It has previously suggested direct fares could cost 20% more than stopover fares and said ticket prices are facing upward pressure.\n\nTickets for the Sydney to New York route are set to go on sale in August 2027, Qantas said. It has not specified which month flights will begin. When it announced",
+            "y to London – again\n\nQantas has not disclosed prices for the Project Sunrise routes. It has previously suggested direct fares could cost 20% more than stopover fares and said ticket prices are facing upward pressure.\n\nTickets for the Sydney to New York route are set to go on sale in August 2027, Qantas said. It has not specified which month flights will begin. When it announced the London route launch",
+            "antas has not disclosed prices for the Project Sunrise routes. It has previously suggested direct fares could cost 20% more than stopover fares and said ticket prices are facing upward pressure.\n\nTickets for the Sydney to New York route are set to go on sale in August 2027, Qantas said. It has not specified which month flights will begin. When it announced the London route launch date, the company said"
+          ],
+          "agent_conclusion": "No explicit value for the requested slot in this event context."
+        }
+      ],
+      "absence_is_not_proven_by_search_failure": true,
+      "limitations": "Agent assessment is provisional pending independent human review; lexical aliases may miss a relevant document."
+    },
+    "expected_status": "INSUFFICIENT_SOURCES",
+    "source_document_ids": [
+      "business/2026/sep/23/qantas-direct-flights-from-sydney-to-new-york"
+    ],
+    "answer_scope": "Supplied corpus snapshot and the specified report; do not fill missing slots with estimates, unrelated figures or external knowledge.",
+    "review": {
+      "agent_source_check": "PASS",
+      "agent_reviewer": "Codex",
+      "human_review_status": "PENDING",
+      "human_reviewer": null,
+      "adjudicator": null
+    }
+  },
+  {
+    "schema_version": "m6_qa.v1",
+    "id": "m5_holdout_020",
+    "split": "holdout",
+    "event_id": "event_kew",
+    "question": "How many glass panes does Kew's Palm House contain, and what condition of those panes contributes to the renovation need?",
+    "answerable": true,
+    "question_type": "multi_fact",
+    "reference_answer": "16,000 panes, described as warped and damaged.",
+    "required_facts": [
+      {
+        "fact_id": "m5_holdout_020_f1",
+        "text": "There were 16,000 glass panes.",
+        "evidence_ids": [
+          "m5_holdout_020_e1"
+        ],
+        "weight": 1
+      },
+      {
+        "fact_id": "m5_holdout_020_f2",
+        "text": "The panes were warped and damaged.",
+        "evidence_ids": [
+          "m5_holdout_020_e1"
+        ],
+        "weight": 1
+      }
+    ],
+    "gold_evidence": [
+      {
+        "evidence_id": "m5_holdout_020_e1",
+        "document_id": "science/2026/aug/27/kew-gardens-london-palm-house-renovation-project",
+        "quote": "The ornate ironwork is rusted and the 16,000 panes of glass it is comprised of are warped and damaged, making it difficult to maintain the hot, humid conditions its rare plants need.",
+        "start_char": 532,
+        "end_char": 714,
+        "offset_basis": "body_text Unicode codepoints, [start,end)",
+        "title": "‘Sad moments ahead’: Kew Gardens to fell rare trees in race to save Victorian greenhouse",
+        "url": "https://www.theguardian.com/science/2026/aug/27/kew-gardens-london-palm-house-renovation-project",
+        "published_at_utc": "2026-08-27T05:00:07Z",
+        "document_body_sha256": "1195e20f924b33cd3f4fe64cf3473868f13eec6737ee7585038a587187365740"
+      }
+    ],
+    "context_evidence": [],
+    "no_answer_reason": null,
+    "unanswerability_audit": null,
+    "expected_status": "ANSWERED",
+    "source_document_ids": [
+      "science/2026/aug/27/kew-gardens-london-palm-house-renovation-project"
+    ],
+    "answer_scope": "Supplied corpus snapshot; answer the specified report, not external world knowledge.",
+    "review": {
+      "agent_source_check": "PASS",
+      "agent_reviewer": "Codex",
+      "human_review_status": "PENDING",
+      "human_reviewer": null,
+      "adjudicator": null
+    }
+  },
+  {
+    "schema_version": "m6_qa.v1",
+    "id": "m5_holdout_021",
+    "split": "holdout",
+    "event_id": "event_kew",
+    "question": "Why could Kew's Ravenea Moorei specimen not produce seed on its own, and how many young plants were in the tropical nursery after the successful expedition?",
+    "answerable": true,
+    "question_type": "multi_fact",
+    "reference_answer": "The specimen was male and needed a female to produce seed; there were 10 young plants.",
+    "required_facts": [
+      {
+        "fact_id": "m5_holdout_021_f1",
+        "text": "The specimen was male.",
+        "evidence_ids": [
+          "m5_holdout_021_e1"
+        ],
+        "weight": 1
+      },
+      {
+        "fact_id": "m5_holdout_021_f2",
+        "text": "It could not produce seed without a female.",
+        "evidence_ids": [
+          "m5_holdout_021_e1"
+        ],
+        "weight": 1
+      },
+      {
+        "fact_id": "m5_holdout_021_f3",
+        "text": "There were 10 young plants in the tropical nursery.",
+        "evidence_ids": [
+          "m5_holdout_021_e2"
+        ],
+        "weight": 1
+      }
+    ],
+    "gold_evidence": [
+      {
+        "evidence_id": "m5_holdout_021_e1",
+        "document_id": "science/2026/aug/27/kew-gardens-london-palm-house-renovation-project",
+        "quote": "Kew’s specimen is male and cannot produce seed without a female.",
+        "start_char": 2277,
+        "end_char": 2341,
+        "offset_basis": "body_text Unicode codepoints, [start,end)",
+        "title": "‘Sad moments ahead’: Kew Gardens to fell rare trees in race to save Victorian greenhouse",
+        "url": "https://www.theguardian.com/science/2026/aug/27/kew-gardens-london-palm-house-renovation-project",
+        "published_at_utc": "2026-08-27T05:00:07Z",
+        "document_body_sha256": "1195e20f924b33cd3f4fe64cf3473868f13eec6737ee7585038a587187365740"
+      },
+      {
+        "evidence_id": "m5_holdout_021_e2",
+        "document_id": "science/2026/aug/27/kew-gardens-london-palm-house-renovation-project",
+        "quote": "Due to its success, the specimen in the greenhouse could be propagated, and there are now 10 young plants in the tropical nursery.",
+        "start_char": 2454,
+        "end_char": 2584,
+        "offset_basis": "body_text Unicode codepoints, [start,end)",
+        "title": "‘Sad moments ahead’: Kew Gardens to fell rare trees in race to save Victorian greenhouse",
+        "url": "https://www.theguardian.com/science/2026/aug/27/kew-gardens-london-palm-house-renovation-project",
+        "published_at_utc": "2026-08-27T05:00:07Z",
+        "document_body_sha256": "1195e20f924b33cd3f4fe64cf3473868f13eec6737ee7585038a587187365740"
+      }
+    ],
+    "context_evidence": [],
+    "no_answer_reason": null,
+    "unanswerability_audit": null,
+    "expected_status": "ANSWERED",
+    "source_document_ids": [
+      "science/2026/aug/27/kew-gardens-london-palm-house-renovation-project"
+    ],
+    "answer_scope": "Supplied corpus snapshot; answer the specified report, not external world knowledge.",
+    "review": {
+      "agent_source_check": "PASS",
+      "agent_reviewer": "Codex",
+      "human_review_status": "PENDING",
+      "human_reviewer": null,
+      "adjudicator": null
+    }
+  },
+  {
+    "schema_version": "m6_qa.v1",
+    "id": "m5_holdout_022",
+    "split": "holdout",
+    "event_id": "event_kew",
+    "question": "What exact pound-sterling fundraising target does the Palm House renovation report give for Kew's October campaign?",
+    "answerable": false,
+    "question_type": "hard_negative_related_missing_fact",
+    "reference_answer": "The report does not provide this information.",
+    "required_facts": [],
+    "gold_evidence": [],
+    "context_evidence": [
+      {
+        "evidence_id": "m5_holdout_022_context",
+        "document_id": "science/2026/aug/27/kew-gardens-london-palm-house-renovation-project",
+        "quote": "Kew will be starting a fundraising drive this October to “save London’s rainforest”, but if it all goes to plan the renovation will last for about 50 years.",
+        "start_char": 4220,
+        "end_char": 4376,
+        "offset_basis": "body_text Unicode codepoints, [start,end)",
+        "title": "‘Sad moments ahead’: Kew Gardens to fell rare trees in race to save Victorian greenhouse",
+        "url": "https://www.theguardian.com/science/2026/aug/27/kew-gardens-london-palm-house-renovation-project",
+        "published_at_utc": "2026-08-27T05:00:07Z",
+        "document_body_sha256": "1195e20f924b33cd3f4fe64cf3473868f13eec6737ee7585038a587187365740"
+      }
+    ],
+    "no_answer_reason": "The report describes an October fundraising drive and work conditional on funds, but does not state a pound-sterling fundraising target.",
+    "unanswerability_audit": {
+      "missing_information": "The numerical fundraising target in pounds.",
+      "corpus_documents_scanned": 3152,
+      "event_candidate_patterns": [
+        "palm house"
+      ],
+      "slot_patterns": [
+        "fund",
+        "£",
+        "cost",
+        "budget",
+        "million"
+      ],
+      "method": "Direct reading of anchor report plus exhaustive lexical event-candidate sweep of the local corpus; no vector retrieval or API.",
+      "checked_documents": [
+        {
+          "document_id": "science/2026/aug/27/kew-gardens-london-palm-house-renovation-project",
+          "matched_slot_contexts": [
+            "ve already begun emptying out the beds around the Palm House, which will remain open until the renovation project begins, scheduled to start in 2027 subject to funds being raised in time. “It’s a shame to see the empty beds. Sometimes, I go to where one of my favourite plants was and realise it’s gone!,” Spoelstra says.\n\nThe plants have been moved to a behind-the-scenes greenhouse, the tropical nurser",
+            " plants, I hope that this can work as a blueprint in horticulture, bringing plants back, and working with partners all over the world.”\n\nKew will be starting a fundraising drive this October to “save London’s rainforest”, but if it all goes to plan the renovation will last for about 50 years. This means the seeds and young plants Pickering is tending in the nursery will be in the Palm House for decade"
+          ],
+          "agent_conclusion": "No explicit value for the requested slot in this event context."
+        }
+      ],
+      "absence_is_not_proven_by_search_failure": true,
+      "limitations": "Agent assessment is provisional pending independent human review; lexical aliases may miss a relevant document."
+    },
+    "expected_status": "INSUFFICIENT_SOURCES",
+    "source_document_ids": [
+      "science/2026/aug/27/kew-gardens-london-palm-house-renovation-project"
+    ],
+    "answer_scope": "Supplied corpus snapshot and the specified report; do not fill missing slots with estimates, unrelated figures or external knowledge.",
+    "review": {
+      "agent_source_check": "PASS",
+      "agent_reviewer": "Codex",
+      "human_review_status": "PENDING",
+      "human_reviewer": null,
+      "adjudicator": null
+    }
+  },
+  {
+    "schema_version": "m6_qa.v1",
+    "id": "m5_holdout_023",
+    "split": "holdout",
+    "event_id": "event_banana",
+    "question": "Which enzyme's production was reduced in Tropic's non-browning bananas, and how many copies of a single gene were altered?",
+    "answerable": true,
+    "question_type": "multi_fact",
+    "reference_answer": "Polyphenol oxidase production was reduced by altering all three copies of a single gene.",
+    "required_facts": [
+      {
+        "fact_id": "m5_holdout_023_f1",
+        "text": "All three copies of a single gene were altered with Crispr-Cas9.",
+        "evidence_ids": [
+          "m5_holdout_023_e1"
+        ],
+        "weight": 1
+      },
+      {
+        "fact_id": "m5_holdout_023_f2",
+        "text": "The enzyme was polyphenol oxidase.",
+        "evidence_ids": [
+          "m5_holdout_023_e2"
+        ],
+        "weight": 1
+      }
+    ],
+    "gold_evidence": [
+      {
+        "evidence_id": "m5_holdout_023_e1",
+        "document_id": "science/2026/sep/28/gene-edited-non-browning-banana-britain-shops",
+        "quote": "Tropic developed the bananas by using a gene-editing technology called Crispr-Cas9 to alter all three copies of a single gene within the fruit.",
+        "start_char": 1650,
+        "end_char": 1793,
+        "offset_basis": "body_text Unicode codepoints, [start,end)",
+        "title": "Gene-edited bananas that don’t go brown could hit UK supermarkets",
+        "url": "https://www.theguardian.com/science/2026/sep/28/gene-edited-non-browning-banana-britain-shops",
+        "published_at_utc": "2026-09-28T15:50:44Z",
+        "document_body_sha256": "e685a2cfe89acab5c0f6c6f0fababbd241fc6ca85ae387e0f5887587b8bc9bc3"
+      },
+      {
+        "evidence_id": "m5_holdout_023_e2",
+        "document_id": "science/2026/sep/28/gene-edited-non-browning-banana-britain-shops",
+        "quote": "As a result, they were able to reduce the production of polyphenol oxidase, an enzyme that causes browning.",
+        "start_char": 1794,
+        "end_char": 1901,
+        "offset_basis": "body_text Unicode codepoints, [start,end)",
+        "title": "Gene-edited bananas that don’t go brown could hit UK supermarkets",
+        "url": "https://www.theguardian.com/science/2026/sep/28/gene-edited-non-browning-banana-britain-shops",
+        "published_at_utc": "2026-09-28T15:50:44Z",
+        "document_body_sha256": "e685a2cfe89acab5c0f6c6f0fababbd241fc6ca85ae387e0f5887587b8bc9bc3"
+      }
+    ],
+    "context_evidence": [],
+    "no_answer_reason": null,
+    "unanswerability_audit": null,
+    "expected_status": "ANSWERED",
+    "source_document_ids": [
+      "science/2026/sep/28/gene-edited-non-browning-banana-britain-shops"
+    ],
+    "answer_scope": "Supplied corpus snapshot; answer the specified report, not external world knowledge.",
+    "review": {
+      "agent_source_check": "PASS",
+      "agent_reviewer": "Codex",
+      "human_review_status": "PENDING",
+      "human_reviewer": null,
+      "adjudicator": null
+    }
+  },
+  {
+    "schema_version": "m6_qa.v1",
+    "id": "m5_holdout_024",
+    "split": "holdout",
+    "event_id": "event_banana",
+    "question": "What regulatory step had Defra completed for Tropic's bananas, and which safety-review step remained next according to the report?",
+    "answerable": true,
+    "question_type": "multi_fact",
+    "reference_answer": "Defra approved a marketing notice confirming precision-bred status; an FSA safety review was the next stage, not a completed market authorisation.",
+    "required_facts": [
+      {
+        "fact_id": "m5_holdout_024_f1",
+        "text": "Defra approved a marketing notice confirming precision-bred status.",
+        "evidence_ids": [
+          "m5_holdout_024_e1"
+        ],
+        "weight": 1
+      },
+      {
+        "fact_id": "m5_holdout_024_f2",
+        "text": "An FSA safety review was the next stage.",
+        "evidence_ids": [
+          "m5_holdout_024_e2"
+        ],
+        "weight": 1
+      }
+    ],
+    "gold_evidence": [
+      {
+        "evidence_id": "m5_holdout_024_e1",
+        "document_id": "science/2026/sep/28/gene-edited-non-browning-banana-britain-shops",
+        "quote": "The Department for Environment, Food and Rural Affairs (Defra) last week approved a marketing notice for the bananas, confirming their precision-bred status – one of two important requirements for them to be placed on the market.",
+        "start_char": 784,
+        "end_char": 1013,
+        "offset_basis": "body_text Unicode codepoints, [start,end)",
+        "title": "Gene-edited bananas that don’t go brown could hit UK supermarkets",
+        "url": "https://www.theguardian.com/science/2026/sep/28/gene-edited-non-browning-banana-britain-shops",
+        "published_at_utc": "2026-09-28T15:50:44Z",
+        "document_body_sha256": "e685a2cfe89acab5c0f6c6f0fababbd241fc6ca85ae387e0f5887587b8bc9bc3"
+      },
+      {
+        "evidence_id": "m5_holdout_024_e2",
+        "document_id": "science/2026/sep/28/gene-edited-non-browning-banana-britain-shops",
+        "quote": "Prof Cathie Martin, a project leader at the John Innes Centre in Norwich, who has worked on gene-edited tomatoes, said the next stage for all crops that had received marketing approval – including the new bananas – was a review by the FSA to ensure the safety of the products.",
+        "start_char": 1310,
+        "end_char": 1586,
+        "offset_basis": "body_text Unicode codepoints, [start,end)",
+        "title": "Gene-edited bananas that don’t go brown could hit UK supermarkets",
+        "url": "https://www.theguardian.com/science/2026/sep/28/gene-edited-non-browning-banana-britain-shops",
+        "published_at_utc": "2026-09-28T15:50:44Z",
+        "document_body_sha256": "e685a2cfe89acab5c0f6c6f0fababbd241fc6ca85ae387e0f5887587b8bc9bc3"
+      }
+    ],
+    "context_evidence": [],
+    "no_answer_reason": null,
+    "unanswerability_audit": null,
+    "expected_status": "ANSWERED",
+    "source_document_ids": [
+      "science/2026/sep/28/gene-edited-non-browning-banana-britain-shops"
+    ],
+    "answer_scope": "Supplied corpus snapshot; answer the specified report, not external world knowledge.",
+    "review": {
+      "agent_source_check": "PASS",
+      "agent_reviewer": "Codex",
+      "human_review_status": "PENDING",
+      "human_reviewer": null,
+      "adjudicator": null
+    }
+  },
+  {
+    "schema_version": "m6_qa.v1",
+    "id": "m5_holdout_025",
+    "split": "holdout",
+    "event_id": "event_banana",
+    "question": "What exact date does the non-browning banana report give for completion of the FSA safety review and final market authorisation?",
+    "answerable": false,
+    "question_type": "hard_negative_related_missing_fact",
+    "reference_answer": "The report does not provide this information.",
+    "required_facts": [],
+    "gold_evidence": [],
+    "context_evidence": [
+      {
+        "evidence_id": "m5_holdout_025_context",
+        "document_id": "science/2026/sep/28/gene-edited-non-browning-banana-britain-shops",
+        "quote": "“It is not entirely clear how long this will take,” she said.",
+        "start_char": 1587,
+        "end_char": 1648,
+        "offset_basis": "body_text Unicode codepoints, [start,end)",
+        "title": "Gene-edited bananas that don’t go brown could hit UK supermarkets",
+        "url": "https://www.theguardian.com/science/2026/sep/28/gene-edited-non-browning-banana-britain-shops",
+        "published_at_utc": "2026-09-28T15:50:44Z",
+        "document_body_sha256": "e685a2cfe89acab5c0f6c6f0fababbd241fc6ca85ae387e0f5887587b8bc9bc3"
+      }
+    ],
+    "no_answer_reason": "No exact completion date is given; the quoted expert explicitly says the review duration is unclear. Precision-bred status or overseas approval is not final English market authorisation.",
+    "unanswerability_audit": {
+      "missing_information": "An exact FSA review completion/final authorisation date.",
+      "corpus_documents_scanned": 3152,
+      "event_candidate_patterns": [
+        "tropic",
+        "banana"
+      ],
+      "slot_patterns": [
+        "fsa",
+        "authoris",
+        "approval",
+        "how long",
+        "date"
+      ],
+      "method": "Direct reading of anchor report plus exhaustive lexical event-candidate sweep of the local corpus; no vector retrieval or API.",
+      "checked_documents": [
+        {
+          "document_id": "science/2026/sep/28/gene-edited-non-browning-banana-britain-shops",
+          "matched_slot_contexts": [
+            "nanas, confirming their precision-bred status – one of two important requirements for them to be placed on the market.\n\nAccording to the Food Standards Agency (FSA), precision-bred status is given only if the genetic changes made could have been achieved through traditional breeding methods.\n\nThis is different from genetic modification because precision-bred organisms do not contain DNA from unrelate",
+            "in, a project leader at the John Innes Centre in Norwich, who has worked on gene-edited tomatoes, said the next stage for all crops that had received marketing approval – including the new bananas – was a review by the FSA to ensure the safety of the products. “It is not entirely clear how long this will take,” she said.\n\nTropic developed the bananas by using a gene-editing technology called Crispr-Cas9 t",
+            "ho has worked on gene-edited tomatoes, said the next stage for all crops that had received marketing approval – including the new bananas – was a review by the FSA to ensure the safety of the products. “It is not entirely clear how long this will take,” she said.\n\nTropic developed the bananas by using a gene-editing technology called Crispr-Cas9 to alter all three copies of a single gene within the f",
+            "rops that had received marketing approval – including the new bananas – was a review by the FSA to ensure the safety of the products. “It is not entirely clear how long this will take,” she said.\n\nTropic developed the bananas by using a gene-editing technology called Crispr-Cas9 to alter all three copies of a single gene within the fruit. As a result, they were able to reduce the production of polyphenol ",
+            "at are more compact or high in vitamin D.\n\nRegulations for precision-bred plants came into effect in November last year and apply only to England. However, the FSA notes precision-bred foods that are authorised and placed on the market in England can be sold in Wales and Scotland, provided they are not processed further, with similar rules for Northern Ireland. No precision-bred organisms have been g",
+            ".\n\nRegulations for precision-bred plants came into effect in November last year and apply only to England. However, the FSA notes precision-bred foods that are authorised and placed on the market in England can be sold in Wales and Scotland, provided they are not processed further, with similar rules for Northern Ireland. No precision-bred organisms have been granted market authorisation for sale in Engla",
+            "d in Wales and Scotland, provided they are not processed further, with similar rules for Northern Ireland. No precision-bred organisms have been granted market authorisation for sale in England.\n\nGershon said Tropic had gained regulatory approval for the non-browning bananas in 10 other countries including Japan, Brazil and the Philippines. The fruit is already being grown in Latin America.\n\nA Defra spoke",
+            " rules for Northern Ireland. No precision-bred organisms have been granted market authorisation for sale in England.\n\nGershon said Tropic had gained regulatory approval for the non-browning bananas in 10 other countries including Japan, Brazil and the Philippines. The fruit is already being grown in Latin America.\n\nA Defra spokesperson said: “Precision breeding offers huge potential to boost food security"
+          ],
+          "agent_conclusion": "No explicit value for the requested slot in this event context."
+        }
+      ],
+      "absence_is_not_proven_by_search_failure": true,
+      "limitations": "Agent assessment is provisional pending independent human review; lexical aliases may miss a relevant document."
+    },
+    "expected_status": "INSUFFICIENT_SOURCES",
+    "source_document_ids": [
+      "science/2026/sep/28/gene-edited-non-browning-banana-britain-shops"
+    ],
+    "answer_scope": "Supplied corpus snapshot and the specified report; do not fill missing slots with estimates, unrelated figures or external knowledge.",
+    "review": {
+      "agent_source_check": "PASS",
+      "agent_reviewer": "Codex",
+      "human_review_status": "PENDING",
+      "human_reviewer": null,
+      "adjudicator": null
+    }
+  }
+]

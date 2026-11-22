@@ -14,6 +14,12 @@ from scripts.m5_live.common import write_json
 ROOT=Path(__file__).resolve().parents[2]
 
 
+def default_m4_python(root=ROOT):
+    executable=Path('Scripts/python.exe') if os.name=='nt' else Path('bin/python')
+    candidates=[root/'.venv_m4'/executable, root/'.venv'/executable]
+    return next((path for path in candidates if path.is_file()),candidates[0])
+
+
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     source=parser.add_mutually_exclusive_group(required=True)
@@ -21,12 +27,16 @@ def main():
     source.add_argument('--question',help='One question: execute A retrieval first')
     source.add_argument('--input-jsonl',type=Path,help='Question JSONL: execute A retrieval first')
     parser.add_argument('--work-base',type=Path)
+    parser.add_argument('--m4-python',type=Path,default=default_m4_python(),
+                        help='M4 Python 3.11 interpreter; native .venv_m4 or existing .venv by default')
     parser.add_argument('--config',type=Path,default=ROOT/'configs/m4_m5.yaml')
     parser.add_argument('--packing-policy',choices=('legacy_break_v1','skip_continue_dedup_v1'),default='skip_continue_dedup_v1')
     parser.add_argument('--top-k',type=int,choices=(3,5,10),default=5)
     parser.add_argument('--max-items',type=int,default=10)
     parser.add_argument('--network-retries',type=int,choices=(0,1),default=1)
     parser.add_argument('--pricing-json',type=Path,help='Verified model/currency/cache rates; absent pricing leaves paid cost unknown')
+    parser.add_argument('--budget-profile',type=Path,
+                        help='Additional tokenizer budget profile. Does not replace the built-in deepseek-flash profile.')
     parser.add_argument('--output-dir',type=Path)
     mode=parser.add_mutually_exclusive_group()
     mode.add_argument('--generate',action='store_true',help='Enable paid calls; at most 4 logical / 8 physical requests per question')
@@ -37,7 +47,13 @@ def main():
         require(not run_dir.exists(),'OUTPUT_EXISTS','Choose a new output directory; no automatic resume is allowed.')
         require(1<=args.max_items<=1000,'INVALID_BATCH_LIMIT','max-items must be 1..1000.')
         pricing=bounded_json(args.pricing_json) if args.pricing_json else None
-        if pricing is not None:validate_pricing(pricing,'deepseek-flash')
+        model='deepseek-flash'
+        if args.budget_profile:
+            from .token_budget import load_budget_profile
+            profile=load_budget_profile(args.budget_profile)
+            model=profile['model']
+            print('Budget profile: '+profile['profile_version']+' model: '+model,flush=True)
+        if pricing is not None:validate_pricing(pricing,model)
         if args.generate:
             read_key()  # Validate without logging; the pipeline reads it again only when needed.
             if pricing is None:print('Cost: UNKNOWN until a verified pricing file is supplied; actual usage will be saved.',flush=True)
@@ -61,9 +77,10 @@ def main():
                 import json
                 source_path=run_dir/'questions.jsonl'
                 source_path.write_text(json.dumps({'id':'single','question':args.question},ensure_ascii=False)+'\n',encoding='utf-8')
-            env={k:v for k,v in os.environ.items() if k.upper() not in ('DEEPSEEK_API_KEY','OPENAI_API_KEY')}
+            env={k:v for k,v in os.environ.items() if k.upper() not in ('DEEPSEEK_API_KEY','OPENAI_API_KEY','M5_API_KEY')}
             env.update(PYTHONUTF8='1',PYTHONDONTWRITEBYTECODE='1')
-            command=[str(ROOT/'.venv_m4/Scripts/python.exe'),'-B','-X','utf8','-m','scripts.m4_retrieval.cli',
+            require(args.m4_python.is_file(),'M4_PYTHON_NOT_FOUND','Select the M4 Python 3.11 interpreter with --m4-python.')
+            command=[str(args.m4_python.resolve()),'-B','-X','utf8','-m','scripts.m4_retrieval.cli',
                      '--input-jsonl',str(source_path),'--config',str(run_dir/'retrieval_config.json'),
                      '--work-base',str(args.work_base.resolve()),'--output-dir',str(a_root)]
             code=run_process(command,stage='a_live_retrieval',cwd=ROOT,env=env,timeout=1800)
@@ -72,7 +89,7 @@ def main():
         else:
             output=run_dir
         result=run_saved_batch(a_root,output,generate=args.generate,network_retries=args.network_retries,
-                              pricing=pricing,max_items=args.max_items)
+                              pricing=pricing,max_items=args.max_items,model=model)
         print('B batch status: '+result['status'])
         print('Physical API requests: '+str(result['api_requests']))
         print('Billing complete: '+str(result.get('billing',{}).get('complete',False)).lower())

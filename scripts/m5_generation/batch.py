@@ -85,9 +85,9 @@ def failed_pipeline(code,message,request_id=None):
 
 
 def run_saved_batch(a_root,output,*,generate=False,network_retries=1,pricing=None,max_items=10,
-                    pipeline_fn=run_pipeline):
+                    pipeline_fn=run_pipeline,model='deepseek-flash'):
     require(type(network_retries) is int and network_retries in (0,1),'INVALID_RETRY_LIMIT','Network retries must be 0 or 1.')
-    if pricing is not None:validate_pricing(pricing,'deepseek-flash')
+    if pricing is not None:validate_pricing(pricing,model)
     # Invalid metadata and hashes abort before any key access or billable operation.
     manifest,items=load_a_run(a_root,max_items)
     output=Path(output).resolve();output.mkdir(parents=True,exist_ok=False)
@@ -99,7 +99,7 @@ def run_saved_batch(a_root,output,*,generate=False,network_retries=1,pricing=Non
            'a_input_sha256':manifest.get('input_sha256'),'retrieval_config':manifest['config'],
            'request_count':len(items),'completed_count':0,'max_api_requests':len(items)*4*(1+network_retries) if generate else 0,
            'api_requests':0,'network_retries_per_call':network_retries,'content_repairs_per_item':1,
-           'pricing_snapshot':deepcopy(pricing),'results_file':'predictions.jsonl','automatic_resume':False,
+           'model':model,'pricing_snapshot':deepcopy(pricing),'results_file':'predictions.jsonl','automatic_resume':False,
            'code_sha256':{},'limitations':['Automatic review is not human verification.','Cost estimates are not invoices.',
               'A timeout or retry can incur unreported provider cost.','Historical A evidence is replayed unless live retrieval was explicitly requested.']}
     root=Path(__file__).resolve().parents[2]
@@ -127,7 +127,7 @@ def run_saved_batch(a_root,output,*,generate=False,network_retries=1,pricing=Non
                     pipeline=failed_pipeline('BATCH_ABORTED','An earlier credential, account or cancellation error stopped paid work.',item['packed']['retrieval']['request_id'])
                 else:
                     pipeline=pipeline_fn(item['packed'],dry_run=not generate,network_retries=network_retries,
-                                         pricing=pricing,checkpoint=checkpoint)
+                                         pricing=pricing,checkpoint=checkpoint,model=model)
                 checkpoint(pipeline)
                 all_calls.extend(deepcopy(pipeline['api_calls']))
                 contract_status='PASS'
@@ -151,7 +151,7 @@ def run_saved_batch(a_root,output,*,generate=False,network_retries=1,pricing=Non
                 stream.write(json.dumps(row,ensure_ascii=False,allow_nan=False)+'\n');stream.flush()
                 counts[row['status']]+=1
                 state.update(completed_count=index,status_counts=dict(counts),api_requests=len(all_calls),
-                             billing=summarize_calls(all_calls,pricing,'deepseek-flash'))
+                             billing=summarize_calls(all_calls,pricing,model))
                 write_json(output/'run.json',state)
                 print('Item '+str(index)+': '+row['status']+'; contracts: '+contract_status,flush=True)
             state['status']='COMPLETED_WITH_ERRORS' if counts['ERROR'] else 'COMPLETE'

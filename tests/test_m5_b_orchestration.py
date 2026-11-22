@@ -2,6 +2,7 @@
 from copy import deepcopy
 import json
 import os
+import sys
 from pathlib import Path
 import tempfile
 import unittest
@@ -199,16 +200,18 @@ class BBatchTests(unittest.TestCase):
         output=self.root/'live_b'
         seen=[]
         def fake_runner(command,**kwargs):
+            self.assertEqual(command[0],str(Path(sys.executable).resolve()))
             seen.append(kwargs['env'])
             inp=Path(command[command.index('--input-jsonl')+1])
             target=Path(command[command.index('--output-dir')+1])
             run_batch(load_requests(inp),a_helpers.config(),target,lambda:a_helpers.BatchTests().workshop())
             return 0
-        argv=['b_cli','--question','What happened?','--work-base',str(self.root),'--output-dir',str(output),'--dry-run']
-        with patch('sys.argv',argv),patch.object(b_cli,'run_process',side_effect=fake_runner),patch.dict(os.environ,{'DEEPSEEK_API_KEY':'SECRET_TEST_ONLY'}):
+        argv=['b_cli','--question','What happened?','--work-base',str(self.root),'--output-dir',str(output),'--m4-python',sys.executable,'--dry-run']
+        with patch('sys.argv',argv),patch.object(b_cli,'run_process',side_effect=fake_runner),patch.dict(os.environ,{'DEEPSEEK_API_KEY':'SECRET_TEST_ONLY','M5_API_KEY':'GATEWAY_TEST_ONLY'}):
             code=b_cli.main()
         self.assertEqual(code,0);self.assertEqual(len(seen),1)
         self.assertNotIn('DEEPSEEK_API_KEY',seen[0])
+        self.assertNotIn('M5_API_KEY',seen[0])
         for path in output.rglob('*.json'):
             self.assertNotIn('SECRET_TEST_ONLY',path.read_text(encoding='utf-8'))
 

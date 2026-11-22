@@ -71,11 +71,11 @@ def strict_json(text, *, source='json_text'):
                 details['excerpt_truncated'] = len(text) > 16384
         raise M5Error('INVALID_JSON', 'Invalid JSON (' + details['reason'] + '); no answer is displayed.', details) from None
 
-def make_payload(question, evidence, model, revision_feedback=None):
+def make_payload(question, evidence, model, revision_feedback=None, system_prompt=None):
     data = {"QUESTION": question, "EVIDENCE": evidence}
     if revision_feedback is not None:
         data['REVISION_FEEDBACK'] = revision_feedback
-    system = SYSTEM_PROMPT
+    system = SYSTEM_PROMPT if system_prompt is None else system_prompt
     if revision_feedback is not None:
         system += '\n' + (Path(__file__).parent / 'prompts/repair_v1.txt').read_text(encoding='utf-8')
     user_content = json.dumps(data, ensure_ascii=False, allow_nan=False)
@@ -99,9 +99,23 @@ def make_payload(question, evidence, model, revision_feedback=None):
                  else 'INPUT_TOKEN_BUDGET_EXCEEDED')
     return payload
 
+def configured_endpoint():
+    base = os.environ.get('M5_API_BASE')
+    if not base:
+        if os.environ.get('M5_API_KEY'):
+            raise M5Error('MISSING_API_BASE', 'M5_API_KEY requires its corresponding M5_API_BASE.')
+        return ENDPOINT
+    from urllib.parse import urlsplit
+    parsed = urlsplit(base)
+    if (parsed.scheme != 'https' or not parsed.hostname or parsed.username is not None
+            or parsed.password is not None or parsed.query or parsed.fragment):
+        raise M5Error('INVALID_API_BASE', 'M5_API_BASE must be an HTTPS base URL without credentials, query or fragment.')
+    return base.rstrip('/') + '/chat/completions'
+
+
 def call_api(payload, key):
     request = urllib.request.Request(
-        ENDPOINT, data=json.dumps(payload, ensure_ascii=False).encode("utf-8"),
+        configured_endpoint(), data=json.dumps(payload, ensure_ascii=False).encode("utf-8"),
         headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
         method="POST",
     )
@@ -115,8 +129,8 @@ def call_api(payload, key):
     except urllib.error.HTTPError as exc:
         messages = {
             400: "Request rejected. Check the model name and parameters.",
-            401: "Authentication failed. Use a key from the official DeepSeek platform.",
-            402: "Insufficient API credit. Check your DeepSeek balance.",
+            401: "Authentication failed. Check the key for the configured API service.",
+            402: "Insufficient API credit. Check the configured API service balance.",
             403: "Account access denied. Check platform permissions.",
             404: "Endpoint or model unavailable. Check the official model name.",
             422: "Invalid request parameters. Check the model and input.",
@@ -152,9 +166,10 @@ def parse_envelope(envelope):
 
 def read_key():
     """Read one process environment variable; never prompt, echo or persist it."""
-    key = os.environ.get('DEEPSEEK_API_KEY')
+    configured_endpoint()  # Never send a gateway key to the default provider.
+    key = os.environ.get('M5_API_KEY') if os.environ.get('M5_API_BASE') else os.environ.get('DEEPSEEK_API_KEY')
     if key is None or not key.strip():
-        raise M5Error('MISSING_API_KEY', 'Set DEEPSEEK_API_KEY in this process environment before generation.')
+        raise M5Error('MISSING_API_KEY', 'Set M5_API_KEY for M5_API_BASE, or DEEPSEEK_API_KEY for the default provider.')
     if key != key.strip() or any(c.isspace() for c in key) or not key.isascii():
-        raise M5Error('INVALID_API_KEY', 'DEEPSEEK_API_KEY must contain one nonempty ASCII value without whitespace.')
+        raise M5Error('INVALID_API_KEY', 'The API key must contain one nonempty ASCII value without whitespace.')
     return key

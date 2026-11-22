@@ -1,0 +1,18 @@
+{
+  "schema_version": "m5_budget_profile.v1",
+  "profile_version": "m5-token-budget-cityu-cs5351-v1",
+  "model": "CS5351/DeepSeek-V4-Flash",
+  "based_on_profile": "m5-token-budget-v0.5",
+  "tokenizer_asset_dir": "vendor/m5/deepseek_v4_tokenizer",
+  "tokenizer_version": "0.22.2",
+  "asset_sha256": {
+    "tokenizer.json": "89085f12ef79460ac5f66d1119325ddfc694b4ab209d80bbd81d35f081dc9614",
+    "tokenizer_config.json": "841f8cf146e3f0ad1082594a31f68ecf7608c20467ef355081333d85bbaeb1cb"
+  },
+  "application_total_token_limit": 8192,
+  "safety_margin_tokens": 512,
+  "template_scope": "official_sample_system_user_add_generation_prompt",
+  "source_url": "https://api-docs.deepseek.com/quick_start/token_usage",
+  "provider_tokenizer_parity_verified": false,
+  "notes": "CityU CS gateway alias for DeepSeek-V4-Flash. Reuses the pinned V4 tokenizer and the same 8192-token application budget. Does not replace the built-in deepseek-flash profile. Provider tokenizer parity remains unverified."
+}

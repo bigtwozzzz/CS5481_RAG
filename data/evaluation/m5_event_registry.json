@@ -1,0 +1,241 @@
+[
+  {
+    "event_id": "event_astronaut",
+    "split": "dev",
+    "anchor_document_id": "australia-news/2026/oct/23/australian-astronaut-katherine-bennell-pegg-2028-space-mission",
+    "related_document_ids": [
+      "australia-news/2026/oct/23/australian-astronaut-katherine-bennell-pegg-2028-space-mission"
+    ],
+    "candidate_match_patterns": [
+      "bennell-pegg"
+    ],
+    "assignment_basis": "One named study, discovery, policy announcement, product launch or incident; all related corpus candidates assigned to this split.",
+    "agent_checked": true,
+    "human_review_status": "PENDING"
+  },
+  {
+    "event_id": "event_sand",
+    "split": "dev",
+    "anchor_document_id": "science/2026/aug/26/terrawatch-sand-overextraction-riverbanks-concrete-demand",
+    "related_document_ids": [
+      "science/2026/aug/26/terrawatch-sand-overextraction-riverbanks-concrete-demand"
+    ],
+    "candidate_match_patterns": [
+      "\\bsand\\b",
+      "gravel|extraction"
+    ],
+    "assignment_basis": "One named study, discovery, policy announcement, product launch or incident; all related corpus candidates assigned to this split.",
+    "agent_checked": true,
+    "human_review_status": "PENDING"
+  },
+  {
+    "event_id": "event_orangutan",
+    "split": "dev",
+    "anchor_document_id": "science/2026/oct/21/orangutans-prefer-food-laughter-sounds-study",
+    "related_document_ids": [
+      "science/2026/oct/21/orangutans-prefer-food-laughter-sounds-study"
+    ],
+    "candidate_match_patterns": [
+      "orangutan",
+      "laughter|laughing"
+    ],
+    "assignment_basis": "One named study, discovery, policy announcement, product launch or incident; all related corpus candidates assigned to this split.",
+    "agent_checked": true,
+    "human_review_status": "PENDING"
+  },
+  {
+    "event_id": "event_danish",
+    "split": "dev",
+    "anchor_document_id": "technology/2026/aug/06/students-ai-cheating-schools-denmark",
+    "related_document_ids": [
+      "technology/2026/aug/06/students-ai-cheating-schools-denmark"
+    ],
+    "candidate_match_patterns": [
+      "\\b(?:danish|denmark)\\b",
+      "\\b(?:cheating|essays|sso)\\b"
+    ],
+    "assignment_basis": "One named study, discovery, policy announcement, product launch or incident; all related corpus candidates assigned to this split.",
+    "agent_checked": true,
+    "human_review_status": "PENDING"
+  },
+  {
+    "event_id": "event_aircon",
+    "split": "dev",
+    "anchor_document_id": "business/2026/aug/14/heatwaves-air-conditioning-searches-uk-rightmove",
+    "related_document_ids": [
+      "business/2026/aug/14/heatwaves-air-conditioning-searches-uk-rightmove"
+    ],
+    "candidate_match_patterns": [
+      "rightmove",
+      "air conditioning"
+    ],
+    "assignment_basis": "One named study, discovery, policy announcement, product launch or incident; all related corpus candidates assigned to this split.",
+    "agent_checked": true,
+    "human_review_status": "PENDING"
+  },
+  {
+    "event_id": "event_wreck",
+    "split": "dev",
+    "anchor_document_id": "science/2026/aug/10/roman-shipwreck-with-500-amphorae-found-off-coast-of-sicily",
+    "related_document_ids": [
+      "science/2026/aug/10/roman-shipwreck-with-500-amphorae-found-off-coast-of-sicily"
+    ],
+    "candidate_match_patterns": [
+      "\\b(?:wreck|amphorae)\\b",
+      "mazara del vallo|dressel 1a"
+    ],
+    "assignment_basis": "One named study, discovery, policy announcement, product launch or incident; all related corpus candidates assigned to this split.",
+    "agent_checked": true,
+    "human_review_status": "PENDING"
+  },
+  {
+    "event_id": "event_lagoon",
+    "split": "holdout",
+    "anchor_document_id": "science/2026/oct/28/rising-seas-transformed-dry-land-venice-lagoon",
+    "related_document_ids": [
+      "science/2026/oct/28/rising-seas-transformed-dry-land-venice-lagoon"
+    ],
+    "candidate_match_patterns": [
+      "ongaro|venice lagoon",
+      "seismic|sedimentary|10,000"
+    ],
+    "assignment_basis": "One named study, discovery, policy announcement, product launch or incident; all related corpus candidates assigned to this split.",
+    "agent_checked": true,
+    "human_review_status": "PENDING"
+  },
+  {
+    "event_id": "event_weather",
+    "split": "holdout",
+    "anchor_document_id": "science/2026/sep/08/how-meteorologists-helped-recreate-one-of-historys-most-important-weather-forecasts",
+    "related_document_ids": [
+      "science/2026/sep/08/how-meteorologists-helped-recreate-one-of-historys-most-important-weather-forecasts",
+      "science/2026/sep/11/every-day-should-be-d-day-for-weather-forecasters",
+      "world/2026/sep/11/friday-briefing-would-a-wealth-tax-save-our-public-services-or-be-billionaire-repellent"
+    ],
+    "candidate_match_patterns": [
+      "\\bstagg\\b"
+    ],
+    "assignment_basis": "One named study, discovery, policy announcement, product launch or incident; all related corpus candidates assigned to this split.",
+    "agent_checked": true,
+    "human_review_status": "PENDING"
+  },
+  {
+    "event_id": "event_plant",
+    "split": "holdout",
+    "anchor_document_id": "science/2026/sep/16/plantwatch-the-insect-eating-alpine-plant-that-proves-darwin-was-right",
+    "related_document_ids": [
+      "science/2026/sep/16/plantwatch-the-insect-eating-alpine-plant-that-proves-darwin-was-right"
+    ],
+    "candidate_match_patterns": [
+      "saxifraga candelabrum"
+    ],
+    "assignment_basis": "One named study, discovery, policy announcement, product launch or incident; all related corpus candidates assigned to this split.",
+    "agent_checked": true,
+    "human_review_status": "PENDING"
+  },
+  {
+    "event_id": "event_dyson",
+    "split": "holdout",
+    "anchor_document_id": "technology/2026/sep/01/dyson-toothbrush-camera-films-live-footage-inside-mouth",
+    "related_document_ids": [
+      "technology/2026/sep/01/dyson-toothbrush-camera-films-live-footage-inside-mouth"
+    ],
+    "candidate_match_patterns": [
+      "dyson",
+      "toothbrush"
+    ],
+    "assignment_basis": "One named study, discovery, policy announcement, product launch or incident; all related corpus candidates assigned to this split.",
+    "agent_checked": true,
+    "human_review_status": "PENDING"
+  },
+  {
+    "event_id": "event_cave",
+    "split": "holdout",
+    "anchor_document_id": "world/2026/oct/12/cave-rescue-sardinia-rockslide-gorroppeddu",
+    "related_document_ids": [
+      "world/2026/oct/12/cave-rescue-sardinia-rockslide-gorroppeddu"
+    ],
+    "candidate_match_patterns": [
+      "gorroppeddu|luca olmetto"
+    ],
+    "assignment_basis": "One named study, discovery, policy announcement, product launch or incident; all related corpus candidates assigned to this split.",
+    "agent_checked": true,
+    "human_review_status": "PENDING"
+  },
+  {
+    "event_id": "event_relics",
+    "split": "holdout",
+    "anchor_document_id": "world/2026/oct/03/remains-czar-samuel-return-bulgaria-greece-talks",
+    "related_document_ids": [
+      "world/2026/oct/03/remains-czar-samuel-return-bulgaria-greece-talks"
+    ],
+    "candidate_match_patterns": [
+      "tsar samuel"
+    ],
+    "assignment_basis": "One named study, discovery, policy announcement, product launch or incident; all related corpus candidates assigned to this split.",
+    "agent_checked": true,
+    "human_review_status": "PENDING"
+  },
+  {
+    "event_id": "event_trains",
+    "split": "holdout",
+    "anchor_document_id": "business/2026/aug/17/virgin-trains-services-to-europe-eurostar",
+    "related_document_ids": [
+      "business/2026/aug/17/virgin-trains-services-to-europe-eurostar",
+      "business/2026/oct/09/virgin-cross-channel-train-eurostar"
+    ],
+    "candidate_match_patterns": [
+      "virgin",
+      "\\b(?:trains|rail)\\b",
+      "hs1|cross-channel|eurostar"
+    ],
+    "assignment_basis": "One named study, discovery, policy announcement, product launch or incident; all related corpus candidates assigned to this split.",
+    "agent_checked": true,
+    "human_review_status": "PENDING"
+  },
+  {
+    "event_id": "event_qantas",
+    "split": "holdout",
+    "anchor_document_id": "business/2026/sep/23/qantas-direct-flights-from-sydney-to-new-york",
+    "related_document_ids": [
+      "business/2026/aug/27/qantas-profits-lowest-in-four-years-jet-fuel-costs-iran-conflict",
+      "business/2026/sep/23/qantas-direct-flights-from-sydney-to-new-york"
+    ],
+    "candidate_match_patterns": [
+      "qantas",
+      "project sunrise|sydney to new york"
+    ],
+    "assignment_basis": "One named study, discovery, policy announcement, product launch or incident; all related corpus candidates assigned to this split.",
+    "agent_checked": true,
+    "human_review_status": "PENDING"
+  },
+  {
+    "event_id": "event_kew",
+    "split": "holdout",
+    "anchor_document_id": "science/2026/aug/27/kew-gardens-london-palm-house-renovation-project",
+    "related_document_ids": [
+      "science/2026/aug/27/kew-gardens-london-palm-house-renovation-project"
+    ],
+    "candidate_match_patterns": [
+      "palm house"
+    ],
+    "assignment_basis": "One named study, discovery, policy announcement, product launch or incident; all related corpus candidates assigned to this split.",
+    "agent_checked": true,
+    "human_review_status": "PENDING"
+  },
+  {
+    "event_id": "event_banana",
+    "split": "holdout",
+    "anchor_document_id": "science/2026/sep/28/gene-edited-non-browning-banana-britain-shops",
+    "related_document_ids": [
+      "science/2026/sep/28/gene-edited-non-browning-banana-britain-shops"
+    ],
+    "candidate_match_patterns": [
+      "tropic",
+      "banana"
+    ],
+    "assignment_basis": "One named study, discovery, policy announcement, product launch or incident; all related corpus candidates assigned to this split.",
+    "agent_checked": true,
+    "human_review_status": "PENDING"
+  }
+]

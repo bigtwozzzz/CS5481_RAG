@@ -1,0 +1,165 @@
+{
+  "schema_version": "m6_experiment_plan.v1",
+  "plan_id": "m6-dev-plan-draft-2026-11-22",
+  "freeze_status": "not_frozen",
+  "base_commit": "fa2fc97637bf5fbd41a8f3f9aefac6ad1dfb74eb",
+  "working_tree_dirty": true,
+  "freeze_blocked_because": [
+    "The school gateway model is not confirmed.",
+    "The budget profile is not frozen.",
+    "No verified pricing snapshot exists.",
+    "The working tree is dirty, so the base commit is not a reproducible snapshot."
+  ],
+  "model": {
+    "status": "pending_gateway_confirmation",
+    "candidate_profile": "configs/m5_budget_cityu_cs5351.json",
+    "candidate_profile_sha256": "733c96f7dff9b6e34572da71294319942c6ecd0a78c8816aa79f364212ec94b8",
+    "candidate_model": "CS5351/DeepSeek-V4-Flash",
+    "builtin_profile_retained": "deepseek-flash / m5-token-budget-v0.5",
+    "frozen_model": null
+  },
+  "budget_profile": {
+    "status": "pending_gateway_confirmation",
+    "application_total_token_limit_candidate": 8192,
+    "safety_margin_tokens_candidate": 512,
+    "provider_tokenizer_parity_verified": false,
+    "frozen_profile": null
+  },
+  "pricing": {
+    "status": "pending_gateway_confirmation",
+    "template": "configs/m5_pricing.template.json",
+    "template_sha256": "8ec3c1c844d9b1b2c0733e3ce638e2a0429dd305164b3fafe233153a825ddd1e",
+    "template_rates_are_null": true,
+    "frozen_pricing": null,
+    "unknown_cost_recorded_as": null
+  },
+  "data": {
+    "dataset_version": "1.1.0",
+    "dataset_manifest": "data/evaluation/m5_dataset_manifest.json",
+    "questions_file": "data/evaluation/inputs/m5_dev.questions.jsonl",
+    "questions_sha256": "868b4a198b4cce5570ab6c1d341e8ec641b0b95cff9fbe3ceeec71b96813751e",
+    "gold_file": "data/evaluation/m5_dev.json",
+    "gold_sha256": "a9ef3d34d8d968eb545f7252b1a42da0ffbf3e24f1124d49e7e671cf96c04184",
+    "gold_sent_to_model": false,
+    "question_count": 15,
+    "answerable_count": 12,
+    "unanswerable_count": 3,
+    "corpus_sha256": "4c622f978805f888767a8559d7c7cd693771567ad1d2c3fc2dd03cc3e7314edb",
+    "index_manifests": {
+      "A": ".local-m4/m3_data/data/vector_store/manifests/chunks_a_09ffa2bf18_c6c1836bed.manifest.json",
+      "B": ".local-m4/m3_data/data/vector_store/manifests/chunks_b_4ef08cb904_c6c1836bed.manifest.json",
+      "C": ".local-m4/m3_data/data/vector_store/manifests/chunks_c_e9f8efe647_c6c1836bed.manifest.json"
+    },
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "embedding_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+  },
+  "holdout": {
+    "sealed": true,
+    "included_in_current_runs": false,
+    "questions_file": "data/evaluation/inputs/m5_holdout.questions.jsonl",
+    "questions_sha256": "c8a4d55ffe5c5c01ed63ea46f034f1fbd55afd42a12e367f69442823da6bcf07",
+    "gold_sha256": "ecfc269501141df471ca7d215be876ce199b747313d4100ecc1a704e6e1b1cda",
+    "release_gate": "Write a freeze record, then run holdout retrieval and generation once."
+  },
+  "retrieval_control": {
+    "status": "completed_on_dev",
+    "summary": "m5_runs/d_dev_retrieval/summary.json",
+    "live_searches": 135,
+    "planned_generation_evidence": {
+      "path": "m5_runs/d_dev_retrieval/C_hybrid_k5_skip",
+      "role": "planned control bundle for the later protocol comparison",
+      "results_sha256": "15d8e6b369c24c2bfcc3f73d2ad3159449df83768d0af07ee88ed64829ceb9ee",
+      "config": {
+        "strategy": "C",
+        "mode": "hybrid",
+        "top_k": 5,
+        "candidate_k": 30,
+        "rrf_constant": 60,
+        "context_tokens": 1024,
+        "packing_policy": "skip_continue_dedup_v1"
+      }
+    }
+  },
+  "matrix": [
+    {
+      "factor": "retrieval",
+      "levels": ["strategy A/B/C", "dense/bm25/hybrid", "k=3/5/10", "legacy_break_v1/skip_continue_dedup_v1"],
+      "population": "dev, 15 questions",
+      "status": "completed",
+      "api_calls": 0
+    },
+    {
+      "factor": "protocol",
+      "levels": ["G0", "G1", "G2"],
+      "fixed": ["dev questions", "one evidence bundle", "one model", "one budget profile"],
+      "status": "driver_ready_generation_not_run",
+      "api_calls": 0
+    }
+  ],
+  "protocols": {
+    "G0": {
+      "accepted_entry": false,
+      "evaluation_driver": "scripts/m6_evaluation/protocol_driver.py",
+      "prompt": "scripts/m5_generation/prompts/g0_prompt_citation_v1.txt",
+      "prompt_requires_citation": true,
+      "separate_prompt_required": true,
+      "current_generation_prompt_can_be_reused": false,
+      "hard_validation_is_release_gate": false,
+      "automatic_review": false,
+      "repair": false,
+      "uncited_facts_count_in_coverage": true,
+      "citation_support": "NOT_APPLICABLE",
+      "dev_generation_executed": false
+    },
+    "G1": {
+      "accepted_entry": false,
+      "evaluation_driver": "scripts/m6_evaluation/protocol_driver.py",
+      "prompt": "scripts/m5_generation/prompts/generation_v1.txt",
+      "hard_validation_is_release_gate": true,
+      "automatic_review": false,
+      "repair": false,
+      "citation_support_for_correct": "FULL",
+      "dev_generation_executed": false
+    },
+    "G2": {
+      "accepted_entry": true,
+      "entry": "python -m scripts.m5_generation.b_cli --retrieval-run <evidence> --generate",
+      "generation_prompt": "scripts/m5_generation/prompts/generation_v1.txt",
+      "repair_prompt": "scripts/m5_generation/prompts/repair_v1.txt",
+      "review_prompt": "scripts/m5_generation/prompts/support_v1.txt",
+      "review_prompt_version": "m5-support-en-v0.10.1",
+      "automatic_review": true,
+      "max_shared_repairs": 1,
+      "dev_generation_executed": false
+    }
+  },
+  "driver_rules": {
+    "dry_run_is_protocol": false,
+    "no_repair_is_g1": false,
+    "strip_review_is_g1": false,
+    "same_questions": true,
+    "same_evidence": true,
+    "same_model_and_budget_once_frozen": true,
+    "gold_not_sent_to_model": true
+  },
+  "prompts_recorded_not_frozen": {
+    "scripts/m5_generation/prompts/generation_v1.txt": "f6a094e8693e3b6e883db3083f5aa7c691c4e24e917cb5ac9eb1707a21b6500f",
+    "scripts/m5_generation/prompts/repair_v1.txt": "2a5ebe21b2b0eca8ddcade0b47b4b35b322d7075070bf48ed43516c59fde66da",
+    "scripts/m5_generation/prompts/support_v1.txt": "827432d78152c5aed87fcd6ab2a5d3ad96c0c72d4d057a5f6704dc902d3e6aaa"
+  },
+  "network_retries_candidate": 0,
+  "max_items_for_dev": 15,
+  "waits_for_api": [
+    "live generation and automatic review",
+    "measured repair effect",
+    "G0/G1/G2 answer-quality comparison",
+    "model-call latency, tokens, and cost"
+  ],
+  "human_scoring": {
+    "status": "wait_for_generation",
+    "sheet": "data/evaluation/answer_score_sheet.csv",
+    "rubric": "documents/m6/ANSWER_SCORING_v1.md",
+    "official_scores": "0/0",
+    "official_zero_means": "no official score has been entered"
+  }
+}
