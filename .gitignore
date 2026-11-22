@@ -70,3 +70,4 @@ M4_work/
 model_cache/
 runtime_chroma*/
 # End M5 local exclusions
+/cityu-beamer-main/
