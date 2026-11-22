@@ -323,8 +323,9 @@ def main():
     parser.add_argument('--declare', choices=('G0', 'G1', 'G2'))
     args = parser.parse_args()
     plan = load_json(args.plan)
+    manifest = load_json(args.manifest)
     errors = check_plan(plan)
-    errors.extend('manifest: ' + item for item in check_manifest(load_json(args.manifest), plan, ROOT))
+    errors.extend('manifest: ' + item for item in check_manifest(manifest, plan, ROOT))
     if args.pipeline or args.declare:
         if not args.pipeline or not args.declare:
             errors.append('protocol check needs both a pipeline and a declared label')
@@ -334,8 +335,11 @@ def main():
         for item in errors:
             print('ERROR: ' + item)
         return 1
-    print('Draft plan check passed. This command only reads the draft plan, which stays not_frozen by design.')
-    print('It does not judge results/m6/freeze_20261122_dev_protocols.json. G0 and G1 have no accepted product entry.')
+    if manifest.get('freeze_status') == 'frozen':
+        print('Draft check passed. The specified freeze manifest check passed.')
+    else:
+        print('Draft check passed. The specified manifest is not a freeze record.')
+    print('G0 and G1 have no accepted product entry.')
     return 0
 
 
