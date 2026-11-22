@@ -1,0 +1,129 @@
+{
+  "schema_version": "m6_offline_summary.v1",
+  "limits": [
+    "Offline checks validate program handling.",
+    "They do not show that a live model detects factual errors.",
+    "A null cost is unknown, not zero.",
+    "ERROR requests remain in the all-request denominator."
+  ],
+  "scores": {
+    "official_rows": 15,
+    "labels_all_requests": {
+      "CORRECT": {
+        "numerator": 11,
+        "denominator": 15,
+        "text": "11/15"
+      },
+      "CORRECT_REFUSAL": {
+        "numerator": 3,
+        "denominator": 15,
+        "text": "3/15"
+      },
+      "PARTIAL": {
+        "numerator": 1,
+        "denominator": 15,
+        "text": "1/15"
+      }
+    },
+    "labels_excluding_error": {
+      "CORRECT": {
+        "numerator": 11,
+        "denominator": 15,
+        "text": "11/15"
+      },
+      "CORRECT_REFUSAL": {
+        "numerator": 3,
+        "denominator": 15,
+        "text": "3/15"
+      },
+      "PARTIAL": {
+        "numerator": 1,
+        "denominator": 15,
+        "text": "1/15"
+      }
+    },
+    "error_requests_retained": {
+      "numerator": 0,
+      "denominator": 15,
+      "text": "0/15"
+    },
+    "fact_coverage_excluding_error": {
+      "numerator": 25,
+      "denominator": 28,
+      "text": "25/28"
+    },
+    "citation_coverage_excluding_error": {
+      "numerator": 0,
+      "denominator": 0,
+      "text": "0/0"
+    },
+    "fact_omission_excluding_error": {
+      "numerator": 3,
+      "denominator": 28,
+      "text": "3/28"
+    },
+    "fact_contradiction_excluding_error": {
+      "numerator": 0,
+      "denominator": 28,
+      "text": "0/28"
+    },
+    "check_problems": []
+  },
+  "generation": [
+    {
+      "run_dir": "m5_runs/m6_dev_protocols_20261122T165403/G0",
+      "status": "COMPLETE",
+      "request_count": 15,
+      "saved_predictions": 15,
+      "unfinished_requests": {
+        "numerator": 0,
+        "denominator": 15,
+        "text": "0/15"
+      },
+      "status_counts": {
+        "PROMPT_ANSWER": 15
+      },
+      "error_requests": {
+        "numerator": 0,
+        "denominator": 15,
+        "text": "0/15"
+      },
+      "ledger_verified": true,
+      "ledger_problems": [],
+      "verified_subtotal": null,
+      "api_calls": 15,
+      "repairs_used": 0,
+      "tokens": {
+        "input_tokens": 22477,
+        "output_tokens": 1391
+      },
+      "token_usage_complete": true,
+      "call_latency_ms": {
+        "n": 15,
+        "p50": 2561.8,
+        "p95": 3470.5,
+        "mean": 2671.3
+      },
+      "total_cost": null,
+      "cost_known": false,
+      "billing_reason": "pricing_not_configured",
+      "missing_or_unknown_calls": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    }
+  ]
+}
