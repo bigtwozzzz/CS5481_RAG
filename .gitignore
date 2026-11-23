@@ -71,3 +71,15 @@ model_cache/
 runtime_chroma*/
 # End M5 local exclusions
 /cityu-beamer-main/
+
+# Local browser demo dependencies, generated output and archives
+node_modules/
+/demo/frontend/build/
+/demo/frontend/dist/
+/demo/**/*.zip
+/demo/**/*.tar
+/demo/**/*.tar.gz
+/demo/**/*.tgz
+/demo/**/*.7z
+/demo/**/*.gz
+.~*
