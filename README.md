@@ -98,3 +98,13 @@ M4 now includes Dense, BM25 and RRF hybrid retrieval with source-verifiable cita
 On the 24-question science subset, Hybrid/C achieves Hit@5 of 100% and budgeted evidence recall of 95.8% with a 1024 embedding-tokenizer budget. These are retrieval metrics, not answer correctness. The configuration was selected after observing this evaluation; no independent post-selection result is claimed. Unanswerable-question evaluation and M5 generation/refusal evaluation remain outstanding. Large M3 data and model caches are external dependencies, not included in this commit.
 
 To verify saved artifacts and unit tests without a model download, run `python verify_delivery.py` in the M4 environment. The handoff notebook contains separate cells for real database integration checks and optional experiment reproduction.
+
+## Local browser Demo
+
+The browser Demo is included in this repository. Start with [中文：本地配置、启动与知识库位置](documents/demo/Demo_本地配置与启动_中文.md) and [中文：前端功能与展示指南](documents/demo/Demo_前端功能与展示指南_中文.md).
+
+- Frontend: [`demo/frontend/`](demo/frontend/README.md).
+- Backend: [`scripts/demo/`](scripts/demo/), with [API documentation](documents/demo/README.md).
+- Batch input: [17 development/demo questions](examples/demo/batch_demo_questions.jsonl).
+
+Knowledge-base data, model caches, environments, gateway credentials, builds and run directories are not included. Prepare the existing M4 runtime separately; no data archive is part of this Demo source delivery.
