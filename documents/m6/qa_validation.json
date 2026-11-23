@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "counts": {
+    "dev": {
+      "total": 15,
+      "answerable": 12,
+      "unanswerable": 3,
+      "events": 6
+    },
+    "holdout": {
+      "total": 25,
+      "answerable": 20,
+      "unanswerable": 5,
+      "events": 10
+    }
+  },
+  "source_quotes_checked": 55,
+  "api_requests": 0,
+  "retrieval_requests": 0,
+  "human_review": "PENDING",
+  "meaning": "Structural, provenance and source-span verification; not independent human or semantic validation."
+}

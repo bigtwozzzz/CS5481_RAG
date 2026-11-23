@@ -1,0 +1,22 @@
+{
+  "schema_version": "answer_response.v1",
+  "request_id": "fixture-error",
+  "status": "ERROR",
+  "claims": [],
+  "sources": [],
+  "answer": "",
+  "missing_information": [],
+  "review_required": false,
+  "publication_ready": false,
+  "validation": {
+    "input": "unchecked",
+    "support": "not_applicable"
+  },
+  "generation": {
+    "calls": []
+  },
+  "error": {
+    "code": "RETRIEVAL_ERROR",
+    "message": "Retrieval failed. An answer cannot be generated."
+  }
+}

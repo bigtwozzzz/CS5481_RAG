@@ -1,0 +1,113 @@
+Item 1: READY_FOR_RETRIEVAL
+Item 1: OK
+Item 2: ERROR
+Item 3: OK
+Item 1: NO_EVIDENCE
+Item 1: ERROR
+Item 1: ERROR
+Item 2: ERROR
+Item 1: ERROR
+Item 1: OK
+Item 2: ERROR
+Item 3: OK
+Batch mode: generate; maximum physical API requests: 24
+Item 1: OK
+Batch mode: dry_run; maximum physical API requests: 0
+Item 1: READY_FOR_PIPELINE; contracts: PASS
+B batch status: COMPLETE
+Physical API requests: 0
+Billing complete: true
+Batch record saved: C:\Users\13523\AppData\Local\Temp\tmphyo2f98e\live_b\generation\run.json
+Predictions saved: C:\Users\13523\AppData\Local\Temp\tmphyo2f98e\live_b\generation\predictions.jsonl
+Human review: not performed; publication_ready=false.
+Item 1: OK
+Item 2: ERROR
+Item 3: OK
+Item 1: OK
+Item 2: ERROR
+Item 3: OK
+Batch mode: dry_run; maximum physical API requests: 0
+Item 1: READY_FOR_PIPELINE; contracts: PASS
+Item 2: ERROR; contracts: PASS
+Item 3: READY_FOR_PIPELINE; contracts: PASS
+Item 1: OK
+Item 2: ERROR
+Item 3: OK
+Item 1: OK
+Item 2: ERROR
+Item 3: OK
+Item 1: OK
+Item 2: ERROR
+Item 3: OK
+Batch mode: generate; maximum physical API requests: 24
+Item 1: ERROR; contracts: PASS
+Item 2: ERROR; contracts: PASS
+Item 3: ERROR; contracts: PASS
+Item 1: OK
+Item 2: ERROR
+Item 3: OK
+Run directory: C:\Users\13523\AppData\Local\Temp\tmp5yj7rauk\output with spaces
+Mode: check_only. DeepSeek API calls: 0.
+Run directory: C:\Users\13523\AppData\Local\Temp\tmpxb6q5ql5\output with spaces
+Mode: check_only. DeepSeek API calls: 0.
+Stage: test
+Still running: test
+Run directory: C:\Users\13523\AppData\Local\Temp\tmp938fn0e5\output with spaces
+Mode: generate. Paid API calls enabled only after retrieval checks.
+Run directory: C:\Users\13523\AppData\Local\Temp\tmpz7_t06cy\output with spaces
+Mode: generate. Paid API calls enabled only after retrieval checks.
+Run directory: C:\Users\13523\AppData\Local\Temp\tmpowyr2bd_\output with spaces
+Mode: dry_run. DeepSeek API calls: 0.
+Run directory: C:\Users\13523\AppData\Local\Temp\tmpg1vfx855\output with spaces
+Mode: dry_run. DeepSeek API calls: 0.
+Run directory: C:\Users\13523\AppData\Local\Temp\tmp38woct1y\output with spaces
+Mode: generate. Paid API calls enabled only after retrieval checks.
+Run directory: C:\Users\13523\AppData\Local\Temp\tmp_jtdx9d1\output with spaces
+Mode: generate. Paid API calls enabled only after retrieval checks.
+Run directory: C:\Users\13523\AppData\Local\Temp\tmpdhti4vgz\output with spaces
+Mode: dry_run. DeepSeek API calls: 0.
+Run directory: C:\Users\13523\AppData\Local\Temp\tmpe4roa2nr\output with spaces
+Mode: dry_run. DeepSeek API calls: 0.
+Run directory: C:\Users\13523\AppData\Local\Temp\tmpv_cv8_3e\output with spaces
+Mode: generate. Paid API calls enabled only after retrieval checks.
+Run directory: C:\Users\13523\AppData\Local\Temp\tmpnzxxtzj8\output with spaces
+Mode: dry_run. DeepSeek API calls: 0.
+Run directory: C:\Users\13523\AppData\Local\Temp\tmpmr8n_k2c\output with spaces
+Mode: generate. Paid API calls enabled only after retrieval checks.
+Run directory: C:\Users\13523\AppData\Local\Temp\tmpilwwfbbg\output with spaces
+Mode: generate. Paid API calls enabled only after retrieval checks.
+Run directory: C:\Users\13523\AppData\Local\Temp\tmpq1y9j89y\output with spaces
+Mode: dry_run. DeepSeek API calls: 0.
+Run directory: C:\Users\13523\AppData\Local\Temp\tmpskq7ihfz\output with spaces
+Mode: dry_run. DeepSeek API calls: 0.
+Run directory: C:\Users\13523\AppData\Local\Temp\tmplhj9sgm_\output with spaces
+Mode: generate. Paid API calls enabled only after retrieval checks.
+BM25 ready: A
+BM25 ready: B
+BM25 ready: C
+BM25 ready: A
+BM25 ready: B
+BM25 ready: C
+BM25 ready: A
+BM25 ready: B
+BM25 ready: C
+BM25 ready: A
+BM25 ready: B
+BM25 ready: C
+BM25 ready: A
+BM25 ready: B
+BM25 ready: C
+BM25 ready: A
+BM25 ready: B
+BM25 ready: C
+BM25 ready: A
+BM25 ready: B
+BM25 ready: C
+BM25 ready: A
+BM25 ready: B
+BM25 ready: C
+.....................................................................................................................................................................................................................................................................
+----------------------------------------------------------------------
+Ran 261 tests in 22.402s
+
+OK

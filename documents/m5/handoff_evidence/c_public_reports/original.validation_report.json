@@ -1,0 +1,63 @@
+{
+  "schema_version": "validation_report.v1",
+  "request_id": "008c81ce43654bcfbde99c88c4cdb7d0",
+  "answer_object_sha256": "b91a20e2fa1e79947c4a64c22e61a83942a2aadbccc9704d4774c01eeb8fd1c8",
+  "decision": "PASS",
+  "method": "llm_judge",
+  "human_review": "not_performed",
+  "publication_ready": false,
+  "checks": {
+    "support": "pass",
+    "relevance": "pass",
+    "answer_scope": "pass"
+  },
+  "claim_reviews": [
+    {
+      "claim_id": "C1",
+      "verdict": "supported",
+      "relevant": true,
+      "reason": "The cited evidence explicitly states that the event that sparked the IAU's 2006 vote was the discovery of a distant celestial body that would come to be called Eris, matching the claim exactly.",
+      "citation_reviews": [
+        {
+          "source_id": "S1",
+          "verdict": "supports",
+          "reason": "The quote directly states the discovery of the distant body later called Eris sparked the IAU's 2006 vote, fully supporting the claim."
+        }
+      ]
+    },
+    {
+      "claim_id": "C2",
+      "verdict": "supported",
+      "relevant": true,
+      "reason": "The evidence states Eris was in the Kuiper Belt beyond Neptune, where Pluto also resides, matching the claim's location and comparison.",
+      "citation_reviews": [
+        {
+          "source_id": "S1",
+          "verdict": "supports",
+          "reason": "The quote directly places Eris in the Kuiper Belt beyond Neptune and notes Pluto also resides there, fully supporting the claim."
+        }
+      ]
+    }
+  ],
+  "answer_review": {
+    "recommended_status": "ANSWERED",
+    "status_appropriate": true,
+    "missing_information_accurate": true,
+    "no_unresolved_conflicts": true,
+    "reason": "The draft answers the question with the discovery of Eris, which the evidence explicitly identifies as the event sparking the IAU's 2006 vote. The additional location detail is supported and relevant context. No gaps or unresolved conflicts."
+  },
+  "error": null,
+  "source_review_sha256": "3b87c2ab7e51fe2d675c19fe4546dd2dc09774df5d2848e1432f25c7b64b0961",
+  "judge": {
+    "requested_model": "deepseek-flash",
+    "returned_model": "deepseek-flash",
+    "prompt_version": "m5-support-en-v0.7.2",
+    "temperature": 0,
+    "max_output_tokens": 2400,
+    "calls": 1,
+    "input_tokens": 2512,
+    "output_tokens": 289,
+    "latency_ms": 1958.48,
+    "cost_usd": null
+  }
+}

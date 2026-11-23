@@ -1,0 +1,159 @@
+{
+  "schema_version": "m5_pipeline.v1",
+  "implementation_version": "m5-token-budget-v0.5",
+  "created_at_utc": "2026-11-20T15:09:45.406010+00:00",
+  "status": "ERROR",
+  "gate": "ERROR",
+  "active_stage": null,
+  "publication_ready": false,
+  "human_review": "not_performed",
+  "output_language": "en",
+  "answer": "",
+  "claims": [],
+  "sources": [],
+  "missing_information": [],
+  "answer_status": null,
+  "answer_record": null,
+  "attempts": [],
+  "repair_used": false,
+  "max_repairs": 1,
+  "api_calls": [],
+  "max_api_calls": 4,
+  "error": {
+    "code": "RETRIEVAL_ERROR",
+    "message": "Retrieval failed. An answer cannot be generated."
+  },
+  "limitations": [
+    "Model review can miss unsupported or unnecessary claims; it is not human verification.",
+    "Official offline token budgets are enforced; provider parity is not verified and API usage is authoritative.",
+    "This command consumes supplied M4 data and does not execute retrieval.",
+    "At most one shared repair is allowed for generation or semantic failures."
+  ],
+  "preview": {
+    "schema_version": "answer_response.v1",
+    "implementation_version": "m5-token-budget-v0.5",
+    "output_language": "en",
+    "request_id": "472f596da2ec4f67b641c24d67807530",
+    "created_at_utc": "2026-11-20T15:09:45.406066+00:00",
+    "status": "ERROR",
+    "claims": [],
+    "sources": [],
+    "answer": "",
+    "missing_information": [],
+    "review_required": false,
+    "publication_ready": false,
+    "validation": {
+      "input": "pass",
+      "schema": "unchecked",
+      "citation_ids": "not_applicable",
+      "quote_match": "not_applicable",
+      "support": "not_applicable",
+      "answerability": "unchecked"
+    },
+    "generation": {
+      "model": "deepseek-flash",
+      "prompt_version": "m5-generation-en-v0.4",
+      "calls": [],
+      "max_calls": 1,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "token_usage_complete": true,
+      "latency_ms": 0,
+      "cost_usd": null
+    },
+    "evidence": [],
+    "excluded_evidence": [],
+    "warnings": [],
+    "validation_log": [],
+    "error": {
+      "code": "RETRIEVAL_ERROR",
+      "message": "Retrieval failed. An answer cannot be generated."
+    },
+    "m4_input": {
+      "source_schema_version": "retrieval_response.v2",
+      "input_kind": "saved_packed_example",
+      "live_retrieval_executed": false,
+      "input_object_sha256": "5159a0630199258477a9fa66a64c05894c2a8c1bbcc0c5b444a44c0add95ffe5",
+      "candidate_count": 0,
+      "original_input": {
+        "retrieval": {
+          "schema_version": "retrieval_response.v2",
+          "request_id": "472f596da2ec4f67b641c24d67807530",
+          "query": "Which celestial body prompted the 2006 vote on Pluto?",
+          "retrieval_query": "Which celestial body prompted the 2006 vote on Pluto?",
+          "status": "ERROR",
+          "index": {
+            "strategy": "C",
+            "collection": "chunks_c_e9f8efe647_c6c1836bed",
+            "manifest_sha256": "c5f99cd5d7218722f5ed8e2c85cdc6bb4a7ad09ed1896ec7a831bdb4fef51034"
+          },
+          "config": {
+            "mode": "hybrid",
+            "top_k": 5,
+            "candidate_k": 30,
+            "rrf_constant": 60
+          },
+          "filters": null,
+          "results": [],
+          "warnings": [],
+          "error": {
+            "code": "BM25_NOT_READY",
+            "message": "Call build_bm25() before lexical or hybrid retrieval"
+          },
+          "timing_ms": {
+            "encode": 88.56519999972079,
+            "search": 15.19449999977951,
+            "rerank": 0.0,
+            "total": 109.82750000039232
+          }
+        },
+        "context": "",
+        "context_tokens": 0,
+        "selected_chunk_ids": []
+      },
+      "selected_chunk_ids": [],
+      "reported_context_tokens": 0,
+      "budget_tokenizer": "M4 embedding tokenizer proxy; count not recomputed by M5",
+      "generation_token_budget_verified": false
+    },
+    "index": {
+      "strategy": "C",
+      "collection": "chunks_c_e9f8efe647_c6c1836bed",
+      "manifest_sha256": "c5f99cd5d7218722f5ed8e2c85cdc6bb4a7ad09ed1896ec7a831bdb4fef51034"
+    },
+    "query": "Which celestial body prompted the 2006 vote on Pluto?",
+    "retrieval_query": "Which celestial body prompted the 2006 vote on Pluto?",
+    "retrieval_config": {
+      "mode": "hybrid",
+      "top_k": 5,
+      "candidate_k": 30,
+      "rrf_constant": 60
+    },
+    "filters": null,
+    "retrieval_timing_ms": {
+      "encode": 88.56519999972079,
+      "search": 15.19449999977951,
+      "rerank": 0.0,
+      "total": 109.82750000039232
+    },
+    "upstream_error": {
+      "code": "BM25_NOT_READY",
+      "message": "Call build_bm25() before lexical or hybrid retrieval"
+    },
+    "timing_ms": {
+      "total": 3.14
+    }
+  },
+  "request_id": "472f596da2ec4f67b641c24d67807530",
+  "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "complete": true,
+    "cost_usd": null
+  },
+  "timing_ms": {
+    "total": 3.34
+  },
+  "input_file": "D:\\Cityu SemA\\CS5481\\CS5481_RAG-main\\CS5481_RAG-main\\m5_runs\\live_4d6d6cd1743a48d692a3a54fd1d2dc8d\\retrieval.json",
+  "input_file_sha256": "12885690c22336c2fdeb088ea7cb6a03a0b9e5a7c533790a58df02542e367bb2"
+}

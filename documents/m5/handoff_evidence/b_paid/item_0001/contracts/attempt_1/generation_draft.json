@@ -1,0 +1,30 @@
+{
+  "status": "ANSWERED",
+  "claims": [
+    {
+      "text": "The event that sparked the IAU's 2006 vote was the discovery of a distant celestial body that would come to be called Eris.",
+      "source_ids": [
+        "S1"
+      ],
+      "evidence_quotes": [
+        {
+          "source_id": "S1",
+          "quote": "The event that sparked the IAU’s 2006 vote was the discovery of a distant celestial body that would come to be called Eris."
+        }
+      ]
+    },
+    {
+      "text": "Eris was located in the Kuiper Belt, beyond Neptune, where Pluto also resides.",
+      "source_ids": [
+        "S1"
+      ],
+      "evidence_quotes": [
+        {
+          "source_id": "S1",
+          "quote": "Eris was out in the Kuiper Belt, beyond Neptune – where Pluto also resides."
+        }
+      ]
+    }
+  ],
+  "missing_information": []
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "historical_regression_case",
+  "source_pipeline_sha256": "4b2364ffc32f9e863e752a2df828272f7254d8d0a996f68fcdd0aa98ec13b028",
+  "question": "What discovery sparked the IAU's 2006 vote on Pluto?",
+  "source_run": "b_paid_acceptance_633542a321234bc099aca31c15db201f",
+  "human_gold_label": null,
+  "assessment": "Assistant assessment against the user-stated answer scope; not independent human gold.",
+  "expected_scope": {
+    "C1": "direct_answer",
+    "C2": "unnecessary"
+  },
+  "original_model_decision": "PASS",
+  "new_model_review": "NOT_RUN",
+  "limitation": "Offline mocked verdicts test control flow only; they do not establish judge accuracy."
+}

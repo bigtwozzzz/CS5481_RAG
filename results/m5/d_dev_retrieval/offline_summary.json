@@ -1,0 +1,210 @@
+{
+  "schema_version": "m6_offline_summary.v1",
+  "limits": [
+    "Offline checks validate program handling.",
+    "They do not show that a live model detects factual errors.",
+    "A null cost is unknown, not zero.",
+    "ERROR requests remain in the all-request denominator."
+  ],
+  "retrieval": {
+    "stored_latency": {
+      "A_bm25": {
+        "n": 15,
+        "encode_p50_ms": 0.0,
+        "search_p50_ms": 25.5,
+        "total_p50_ms": 26.5,
+        "total_p95_ms": 32.2,
+        "total_mean_ms": 25.9
+      },
+      "A_dense": {
+        "n": 15,
+        "encode_p50_ms": 6.0,
+        "search_p50_ms": 5.6,
+        "total_p50_ms": 12.3,
+        "total_p95_ms": 18.8,
+        "total_mean_ms": 13.5
+      },
+      "A_hybrid": {
+        "n": 15,
+        "encode_p50_ms": 5.3,
+        "search_p50_ms": 30.6,
+        "total_p50_ms": 36.9,
+        "total_p95_ms": 47.2,
+        "total_mean_ms": 36.4
+      },
+      "B_bm25": {
+        "n": 15,
+        "encode_p50_ms": 0.0,
+        "search_p50_ms": 21.6,
+        "total_p50_ms": 23.2,
+        "total_p95_ms": 43.3,
+        "total_mean_ms": 25.5
+      },
+      "B_dense": {
+        "n": 15,
+        "encode_p50_ms": 4.8,
+        "search_p50_ms": 6.4,
+        "total_p50_ms": 12.2,
+        "total_p95_ms": 17.7,
+        "total_mean_ms": 12.4
+      },
+      "B_hybrid": {
+        "n": 15,
+        "encode_p50_ms": 5.0,
+        "search_p50_ms": 23.7,
+        "total_p50_ms": 29.7,
+        "total_p95_ms": 34.9,
+        "total_mean_ms": 29.1
+      },
+      "C_bm25": {
+        "n": 15,
+        "encode_p50_ms": 0.0,
+        "search_p50_ms": 22.6,
+        "total_p50_ms": 23.6,
+        "total_p95_ms": 42.1,
+        "total_mean_ms": 25.5
+      },
+      "C_dense": {
+        "n": 15,
+        "encode_p50_ms": 4.6,
+        "search_p50_ms": 6.3,
+        "total_p50_ms": 11.9,
+        "total_p95_ms": 16.7,
+        "total_mean_ms": 12.5
+      },
+      "C_hybrid": {
+        "n": 15,
+        "encode_p50_ms": 5.0,
+        "search_p50_ms": 24.7,
+        "total_p50_ms": 30.4,
+        "total_p95_ms": 35.8,
+        "total_mean_ms": 29.9
+      }
+    },
+    "recomputed_from_k10_skip_ms": {
+      "n": 135,
+      "p50": 23.6,
+      "p95": 38.8,
+      "mean": 23.4
+    },
+    "live_searches": 135,
+    "answerable_count": 12,
+    "question_count": 15
+  },
+  "scores": {
+    "official_rows": 0,
+    "labels_all_requests": {},
+    "labels_excluding_error": {},
+    "error_requests_retained": {
+      "numerator": 0,
+      "denominator": 0,
+      "text": "0/0"
+    },
+    "fact_coverage_excluding_error": {
+      "numerator": 0,
+      "denominator": 0,
+      "text": "0/0"
+    },
+    "fact_omission_excluding_error": {
+      "numerator": 0,
+      "denominator": 0,
+      "text": "0/0"
+    },
+    "fact_contradiction_excluding_error": {
+      "numerator": 0,
+      "denominator": 0,
+      "text": "0/0"
+    },
+    "check_problems": []
+  },
+  "generation": [
+    {
+      "run_dir": "m5_runs/b_2db23a0069f644b0b69afa5728db6ce3",
+      "status": "COMPLETE",
+      "request_count": 2,
+      "saved_predictions": 2,
+      "unfinished_requests": {
+        "numerator": 0,
+        "denominator": 2,
+        "text": "0/2"
+      },
+      "status_counts": {
+        "ANSWERED": 1,
+        "INSUFFICIENT_SOURCES": 1
+      },
+      "error_requests": {
+        "numerator": 0,
+        "denominator": 2,
+        "text": "0/2"
+      },
+      "ledger_verified": true,
+      "ledger_problems": [],
+      "verified_subtotal": null,
+      "api_calls": 6,
+      "repairs_used": 1,
+      "tokens": {
+        "input_tokens": 16000,
+        "output_tokens": 1111
+      },
+      "token_usage_complete": true,
+      "call_latency_ms": {
+        "n": 6,
+        "p50": 2999.0,
+        "p95": 4310.7,
+        "mean": 3120.0
+      },
+      "total_cost": null,
+      "cost_known": false,
+      "billing_reason": "pricing_not_configured",
+      "missing_or_unknown_calls": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "run_dir": "m5_runs/b_03f9550560a243e18cca42fbeb924abe",
+      "status": "COMPLETED_WITH_ERRORS",
+      "request_count": 2,
+      "saved_predictions": 2,
+      "unfinished_requests": {
+        "numerator": 0,
+        "denominator": 2,
+        "text": "0/2"
+      },
+      "status_counts": {
+        "ERROR": 2
+      },
+      "error_requests": {
+        "numerator": 2,
+        "denominator": 2,
+        "text": "2/2"
+      },
+      "ledger_verified": true,
+      "ledger_problems": [],
+      "verified_subtotal": null,
+      "api_calls": 1,
+      "repairs_used": 0,
+      "tokens": {
+        "input_tokens": null,
+        "output_tokens": null
+      },
+      "token_usage_complete": false,
+      "call_latency_ms": {
+        "n": 1,
+        "p50": 1741.2,
+        "p95": 1741.2,
+        "mean": 1741.2
+      },
+      "total_cost": null,
+      "cost_known": false,
+      "billing_reason": "pricing_not_configured",
+      "missing_or_unknown_calls": [
+        1
+      ]
+    }
+  ]
+}

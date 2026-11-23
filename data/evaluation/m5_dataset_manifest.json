@@ -1,0 +1,80 @@
+{
+  "schema_version": "m6_qa_manifest.v1",
+  "created_at_utc": "2026-11-21T11:56:30.574733+00:00",
+  "status": "FROZEN_CANDIDATE_PENDING_HUMAN_REVIEW",
+  "base_commit": "fa2fc97637bf5fbd41a8f3f9aefac6ad1dfb74eb",
+  "working_tree_was_dirty": true,
+  "corpus_sha256": "4c622f978805f888767a8559d7c7cd693771567ad1d2c3fc2dd03cc3e7314edb",
+  "corpus_document_count": 3152,
+  "historical_qa_sha256": "555c839e2225f7ed6ca93c751434cd7ad0c0b8cb2055cb413da7911aeaa213e3",
+  "counts": {
+    "dev": {
+      "total": 15,
+      "answerable": 12,
+      "unanswerable": 3,
+      "events": 6
+    },
+    "holdout": {
+      "total": 25,
+      "answerable": 20,
+      "unanswerable": 5,
+      "events": 10
+    }
+  },
+  "files": {
+    "data/evaluation/m5_dev.json": "a9ef3d34d8d968eb545f7252b1a42da0ffbf3e24f1124d49e7e671cf96c04184",
+    "data/evaluation/m5_holdout.json": "ecfc269501141df471ca7d215be876ce199b747313d4100ecc1a704e6e1b1cda",
+    "data/evaluation/inputs/m5_dev.questions.jsonl": "868b4a198b4cce5570ab6c1d341e8ec641b0b95cff9fbe3ceeec71b96813751e",
+    "data/evaluation/inputs/m5_holdout.questions.jsonl": "c8a4d55ffe5c5c01ed63ea46f034f1fbd55afd42a12e367f69442823da6bcf07",
+    "data/evaluation/m5_event_registry.json": "88d182016bf42ee12094d18b5d33df34208e8144424ef2e8666bee8d4cf66726",
+    "data/evaluation/m5_exclusion_audit.json": "52ccfb604adba7ee914ad551d30177e562072aa53dedc3b48c1b78cc44633f12"
+  },
+  "holdout": {
+    "sealed": true,
+    "retrieval_executed": false,
+    "generation_executed": false,
+    "used_for_configuration_selection": false,
+    "human_review_complete": false,
+    "author_exposure": "Codex saw source documents and labels while authoring; not blind to the author.",
+    "release_gate": "Independent human review and adjudication, then reseal changed files before any holdout run.",
+    "seal_meaning": "SHA-256 plus read-only holdout files; procedural change detection, not encryption or a claim of human approval."
+  },
+  "operations": {
+    "llm_api_requests": 0,
+    "vector_retrieval_requests": 0,
+    "corpus_lexical_scan_only": true
+  },
+  "limitations": [
+    "Independent human review not performed.",
+    "Negative labels are bounded-corpus agent judgements; lexical alias checks can miss alternatives.",
+    "Multiple questions per event are correlated.",
+    "Source claims are evaluated as reported, not independently verified real-world facts."
+  ],
+  "dataset_version": "1.1.0",
+  "updated_at_utc": "2026-11-21T12:34:55.449979+00:00",
+  "previous_version": {
+    "dataset_version": "1.0.0",
+    "manifest_file": "data/evaluation/revisions/v1.0.0/m5_dataset_manifest.json",
+    "manifest_sha256": "2dae5c835f9b3e97e7ee82785c0fc94e7149ff7c58f67c5caca867adc10663b0"
+  },
+  "revision": {
+    "reason": "User-supplied source review; two gold-standard corrections before evaluation.",
+    "changes": [
+      {
+        "id": "m5_dev_002",
+        "change": "Corrected where to physical location, added centre/city/country fact units and exact source evidence; retained year evidence."
+      },
+      {
+        "id": "m5_holdout_003",
+        "change": "Expanded existing evidence to include the opening paragraph containing both actors full names and the following role mappings."
+      }
+    ],
+    "questions_changed": false,
+    "answerability_changed": false,
+    "event_assignments_changed": false,
+    "holdout_evaluation_executed": false,
+    "user_supplied_review_received": true,
+    "reviewer_identity_verified": false,
+    "formal_human_release_pending": true
+  }
+}

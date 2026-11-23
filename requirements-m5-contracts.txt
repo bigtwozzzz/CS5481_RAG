@@ -1,0 +1,2 @@
+# Optional offline contract validator; use the existing M4 environment when available.
+jsonschema==4.26.0

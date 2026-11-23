@@ -1,0 +1,18 @@
+{
+  "status": "ANSWERED",
+  "claims": [
+    {
+      "text": "At least 35 Australians are missing in Nepal.",
+      "source_ids": [
+        "S1"
+      ],
+      "evidence_quotes": [
+        {
+          "source_id": "S1",
+          "quote": "at least 35 Australians missing in Nepal"
+        }
+      ]
+    }
+  ],
+  "missing_information": []
+}

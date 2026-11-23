@@ -1,0 +1,30 @@
+{
+  "version": "m5-public-contracts-v0.6",
+  "examples": [
+    {
+      "status": "ANSWERED",
+      "pipeline": "answered/pipeline.json",
+      "synthetic": true,
+      "contract_artifact_count": 7
+    },
+    {
+      "status": "PARTIAL",
+      "pipeline": "partial/pipeline.json",
+      "synthetic": true,
+      "contract_artifact_count": 7
+    },
+    {
+      "status": "INSUFFICIENT_SOURCES",
+      "pipeline": "insufficient_sources/pipeline.json",
+      "synthetic": true,
+      "contract_artifact_count": 7
+    },
+    {
+      "status": "ERROR",
+      "pipeline": "error/pipeline.json",
+      "synthetic": true,
+      "contract_artifact_count": 1
+    }
+  ],
+  "warning": "Synthetic contract examples only; not live evaluation results."
+}

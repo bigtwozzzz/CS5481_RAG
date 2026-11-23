@@ -1,0 +1,9 @@
+{
+  "strategy": "C",
+  "mode": "hybrid",
+  "top_k": 5,
+  "candidate_k": 30,
+  "rrf_constant": 60,
+  "context_tokens": 1024,
+  "packing_policy": "legacy_break_v1"
+}

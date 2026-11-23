@@ -1,0 +1,50 @@
+{
+  "schema_version": "validation_report.v1",
+  "request_id": "fixture-answerable-001",
+  "answer_object_sha256": "18655c780892c8a57f9a60f32c961106b7e4d5f8e471da9f8e5a7ae7fd490ed6",
+  "decision": "PASS",
+  "method": "llm_judge",
+  "human_review": "not_performed",
+  "publication_ready": false,
+  "checks": {
+    "support": "pass",
+    "relevance": "pass",
+    "answer_scope": "pass"
+  },
+  "claim_reviews": [
+    {
+      "claim_id": "C1",
+      "verdict": "supported",
+      "relevant": true,
+      "reason": "Mock review for state transitions.",
+      "citation_reviews": [
+        {
+          "source_id": "S1",
+          "verdict": "supports",
+          "reason": "Mock citation review."
+        }
+      ]
+    }
+  ],
+  "answer_review": {
+    "recommended_status": "PARTIAL",
+    "status_appropriate": true,
+    "missing_information_accurate": true,
+    "no_unresolved_conflicts": true,
+    "reason": "Mock scope review."
+  },
+  "error": null,
+  "source_review_sha256": "67e800e25e916f7cc034f57452a4de21c90f9966f21e7498e175d07cddec6ba0",
+  "judge": {
+    "requested_model": "deepseek-flash",
+    "returned_model": "offline-test",
+    "prompt_version": "m5-support-en-v0.4",
+    "temperature": 0,
+    "max_output_tokens": 2400,
+    "calls": 1,
+    "input_tokens": 100,
+    "output_tokens": 20,
+    "latency_ms": 14.35,
+    "cost_usd": null
+  }
+}

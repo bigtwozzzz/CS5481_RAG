@@ -1,5 +1,31 @@
 # CS5481 News RAG
 
+## macOS 本地检索（已配置）
+
+本机使用项目内 `.venv` 的 Python 3.11 和 `requirements-m4.txt` 锁定依赖。
+M3 数据已校验并放在 `.local-m4/m3_data/`，查询使用独立数据库副本
+`.local-m4/runtime_chroma/`，固定版本模型缓存在 `.local-m4/model_cache/`。
+这些本地文件不提交到 Git。
+
+从项目根目录运行（默认 Hybrid/C，返回前 5 条）：
+
+```bash
+.venv/bin/python run_retrieval.py "What happened to Australian tourists in Nepal?"
+.venv/bin/python run_retrieval.py "Which celestial body prompted the 2006 vote on Pluto?" --mode dense --strategy B
+.venv/bin/python run_retrieval.py --check
+.venv/bin/python verify_delivery.py
+```
+
+`--mode` 可选 `dense`、`bm25`、`hybrid`，`--strategy` 可选 `A`、`B`、`C`。
+普通查询使用本地缓存；首次准备模型时才使用 `--allow-model-download`。
+命令行入口复用交付 notebook 的四个初始化单元，保留模型、索引身份及完整性检查。
+初始化显式选择 PyTorch 所需的模型文件，兼容 Hugging Face 对部分下载快照的检查。
+
+最新完整响应与选中的上下文分别保存在 `.local-m4/last_response.json` 和
+`.local-m4/last_context.json`；`--check` 另保存 `.local-m4/local_checks.json`，
+核验三种检索模式、语言/栏目过滤、引用原文和错误参数。
+日期索引未启用，当前功能仅检索证据，不生成答案。
+
 当前已完成 M1 新闻数据采集和 M2 Chunking，并提供 M3 embedding 与持久化向量库构建模块。各阶段通过 `documents/interfaces/接口文档.md` 中的数据契约衔接。
 
 ## 目录
